@@ -1,5 +1,36 @@
 <template>
-  <div class="relative max-w-5xl mx-auto px-4 sm:px-0" isActive>
+  <div class="relative max-w-5xl mx-auto px-4 sm:px-0">
+    <nav class="flex justify-center p-4">
+        <ul class="flex">
+            <li class="flex space-x-2">
+                <NuxtLink
+                isActive
+                to="/"
+                :class="['block px-4 py-2 rounded-md text-gray-900 dark:text-gray-50', { 'bg-indigo-100 dark:bg-indigo-900 text-indigo-700 dark:text-indigo-200': isActive }]"
+                >
+                Home
+                </NuxtLink>
+                <NuxtLink
+                to="/about"
+                :class="['block px-4 py-2 rounded-md text-gray-900 dark:text-gray-50']"
+                >
+                About
+                </NuxtLink>
+                <NuxtLink
+                to="/thoughts"
+                :class="['block px-4 py-2 rounded-md text-gray-900 dark:text-gray-50']"
+                >
+                Thoughts
+                </NuxtLink>
+                <NuxtLink
+                to="/uses"
+                :class="['block px-4 py-2 rounded-md text-gray-900 dark:text-gray-50']"
+                >
+                Uses
+                </NuxtLink>
+            </li>
+        </ul>
+    </nav>
     <header class="pt-10 pb-2 max-w-xl mx-auto">
       <h1 class="text-5xl font-black dark:text-white text-center">
         Hey, I'm Karl
