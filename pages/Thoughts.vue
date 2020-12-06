@@ -4,7 +4,6 @@
         <ul class="flex">
             <li class="flex space-x-2">
                 <NuxtLink
-                isActive
                 to="/"
                 :class="['block px-4 py-2 rounded-md text-gray-900 dark:text-gray-50']"
                 >

@@ -1,9 +1,10 @@
 <template>
   <div class="relative max-w-3xl mx-auto px-4 sm:px-0">
     <nav class="flex justify-center p-4">
-        <ul class="flex">
+      <ul class="flex">
             <li class="flex space-x-2">
-                <NuxtLink
+                 <NuxtLink
+                isActive
                 to="/"
                 :class="['block px-4 py-2 rounded-md text-gray-900 dark:text-gray-50']"
                 >
@@ -22,7 +23,6 @@
                 Thoughts
                 </NuxtLink>
                 <NuxtLink
-                isActive
                 to="/uses"
                 :class="['block px-4 py-2 rounded-md text-gray-900 dark:text-gray-50', { 'bg-indigo-100 dark:bg-indigo-900 text-indigo-700 dark:text-indigo-200': isActive }]"
                 >
@@ -295,7 +295,7 @@ export default {
   },
   data() {
     return {
-      isActive: false,
+      isActive: Boolean,
     }
   }
 };
