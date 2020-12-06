@@ -1,13 +1,13 @@
 <template>
-  <div class="divide-y divide-gray-100">
-    <nav class="p-4">
-        <ul class="flex space-x-2">
+  <div class="bg-gray-50 dark:bg-black pb-8">
+    <nav class="flex justify-center p-4">
+        <ul class="flex">
             <li class="flex space-x-2">
                 <nuxt-link
                 v-for="link in links"
                 :key="link.label"
                 :to="`${link.url}`"
-                :class="['block px-4 py-2 rounded-md', { 'bg-indigo-100 text-indigo-700': isActive }]"
+                :class="['block px-4 py-2 rounded-md text-gray-900 dark:text-gray-50', { 'bg-indigo-100 text-indigo-700': isActive }]"
                 >
                 {{ link.label }}
                 </nuxt-link>
@@ -26,22 +26,18 @@ export default {
           {
             label: "Home",
             url: "/",
-            isActive: true,
           },
           {
             label: "About",
             url: "/about",
-            isActive: true,
           },
           {
             label: "Thoughts",
             url: "/thoughts",
-            isActive: true,
           },
           {
             label: "Uses",
             url: "/uses",
-            isActive: true,
           },
       ],
     };
