@@ -1,12 +1,12 @@
 <template>
-  <div class="relative max-w-5xl mx-auto">
+  <div class="relative max-w-5xl mx-auto px-4 sm:px-0" isActive>
     <header class="pt-10 pb-2 max-w-xl mx-auto">
-      <h1 class="text-5xl font-black dark:text-white">
+      <h1 class="text-5xl font-black dark:text-white text-center">
         Hey, I'm Karl
       </h1>
     </header>
     <header class="pt-4 pb-2 max-w-xl mx-auto">
-      <h2 class="font-regular text-2xl dark:text-white">
+      <h2 class="font-regular text-2xl dark:text-white text-center">
           Currently, I'm designing and helping define the Home as a Service at
           <a href="https://www.homehero.co.uk" class="text-indigo-600 font-bold" target="_blank" rel="noreferrer">HomeHero</a> in London, UK.
       </h2>
@@ -17,7 +17,7 @@
       </h2>
     </header>
     <div class="flex flex-row mt-4">
-        <div class="grid grid-cols-12 sm:grid-cols-4 gap-4">
+        <div class="grid sm:grid-cols-12 md:grid-cols-4 gap-4">
           <div v-for="made in mades" :key="made.title">
               <keep-alive>
                   <MadeCard :made="made" />
@@ -59,7 +59,7 @@
         </h2>
       </header>
     <div class="flex flex-row mt-4">
-      <div class="grid grid-row grid-cols-12 md:grid-cols-3 gap-4">
+      <div class="grid grid-row xs:grid-cols-12 md:grid-cols-3 w-full gap-4">
         <div v-for="media in medias" :key="media._id">
               <keep-alive>
                 <MediaCard :media="media" />
@@ -84,6 +84,16 @@ const bucket = api.bucket({
 });
 
 export default {
+  head: {
+    title: 'Karl Emil James Koch – Home',
+    meta: [
+      {
+        hid: 'description',
+        name: 'description',
+        content: 'Karl is a Product Designer, crafting intelligent interfaces for the web, mobile and meta services.'
+      }
+    ],
+  },
   components: {
     BlogCard,
     PostCard,
@@ -92,7 +102,7 @@ export default {
   },
   data() {
     return {
-      isActive: true,
+      isActive: Boolean,
       loading: false,
       medias: {},
       mades: [

@@ -28,8 +28,8 @@ export default {
   name: "Media",
   props: {
     media: {
-      type: String,
-      default: "No posts are loaded"
+      type: Object,
+      default: () => {"No posts are loaded"}
     }
   }
 };

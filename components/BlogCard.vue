@@ -1,6 +1,6 @@
 <template>
-  <a 
-    :to="blog.metadata.url"
+  <NuxtLink 
+    :to="`/thoughts/${blog.slug}`"
     class="hover:shadow-md rounded-lg cursor-pointer"
   >
     <div
@@ -16,7 +16,7 @@
         {{ blog.metadata.snippet }}
       </p>
     </div>
-  </a>
+  </NuxtLink>
 </template>
 
 <script>
@@ -24,8 +24,8 @@ export default {
   name: "Blog",
   props: {
     blog: {
-      type: String,
-      default: "No posts are loaded"
+      type: Object,
+      default: () => {"No posts are loaded"}
     }
   }
 };

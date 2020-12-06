@@ -1,7 +1,7 @@
 <template>
-  <div class="relative max-w-5xl mx-auto" isActive>
+  <div class="relative max-w-5xl mx-auto px-4 sm:px-0" isActive>
     <header class="pt-10 pb-2 max-w-md mx-auto">
-      <h1 class="text-5xl font-black  dark:text-white">
+      <h1 class="text-5xl font-black  dark:text-white text-center">
         /Thoughts
       </h1>
     </header>
@@ -10,7 +10,7 @@
         Thoughts on design and development.
       </h2>
     </header>
-      <div class="flex flex-row">
+      <div class="flex flex-row mt-4">
         <div class="grid grid-row sm:grid-cols-12 md:grid-cols-2 gap-4">
           <div v-for="blog in blogs" :key="blog._id">
               <keep-alive>
@@ -24,7 +24,7 @@
           Posts from around the web.
         </h2>
       </header>
-      <div class="flex flex-row">
+      <div class="flex flex-row mt-4">
         <div class="grid grid-row sm:grid-cols-12 md:grid-cols-2 gap-4">
           <div v-for="post in posts" :key="post._id">
             <keep-alive>
@@ -48,13 +48,23 @@ const bucket = api.bucket({
 });
 
 export default {
+  head: {
+    title: 'Karl Emil James Koch – Thoughts',
+    meta: [
+      {
+        hid: 'description',
+        name: 'description',
+        content: 'Thoughts on Design and Development from here and around the web.'
+      }
+    ],
+  },
   components: {
     BlogCard,
     PostCard,
   },
   data() {
     return {
-      isActive: true,
+      isActive: Boolean,
       loading: false,
       posts: {},
       blogs: {},

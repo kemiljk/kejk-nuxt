@@ -15,6 +15,16 @@ export default {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+    ],
+    script: [
+      {
+        type: "module",
+        src: "https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.esm.js"
+      },
+      {
+        nomodule: "",
+        src: "https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.js"
+      }
     ]
   },
 
