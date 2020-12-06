@@ -57,7 +57,7 @@ export default {
     this.fetchData();
   },
   methods: {
-    fetchData() {
+    async fetchData() {
       this.error = this.blog = null;
       this.loading = true;
       bucket
