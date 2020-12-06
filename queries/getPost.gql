@@ -1,0 +1,10 @@
+query getPost($slug: String!){
+  getObject(bucket_slug: "d1ffcb90-35a5-11eb-b56f-05f2cd29bdde", input: {
+    slug: $slug,
+    read_key: "uNXYQDbNTCWQyEaFjq44PUolieGKBuzePTaEdnDl0CHLcnJtPK"
+  }) {
+    title
+    content
+    metadata
+  }
+}
