@@ -41,6 +41,8 @@
           Currently, I'm designing and helping define the Home as a Service at
           <a href="https://www.homehero.co.uk" class="text-indigo-600 font-bold" target="_blank" rel="noreferrer">HomeHero</a> in London, UK.
       </h2>
+        <a href="https://www.twitter.com/_kejk"><button type="button" class="bg-blue-500 text-white rounded-md px-4 py-2 transition duration-500 ease hover:bg-blue-600 focus:outline-none focus:shadow-outline">Follow me on Twitter
+        </button></a>
     </header>
     <header class="pt-16 pb-2 max-w-xl">
       <h2 class="font-medium text-2xl dark:text-white">
