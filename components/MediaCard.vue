@@ -4,7 +4,7 @@
     target="`_blank"
     rel="noreferrer"
   >
-    <div class="bg-gray-100 dark:bg-gray-900 rounded-lg">
+    <div class="bg-gray-100 dark:bg-gray-900 hover:shadow-md transition ease-in-out duration-300 rounded-lg">
       <div class="px-4 py-4">
       <img
         :src="media.metadata.cover.imgix_url"
