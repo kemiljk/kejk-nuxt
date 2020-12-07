@@ -3,8 +3,9 @@
     :href="media.metadata.url"
     target="`_blank"
     rel="noreferrer"
+    cursor="pointer"
   >
-    <div class="bg-gray-100 dark:bg-gray-900 hover:shadow-md transition ease-in-out duration-300 rounded-lg">
+    <div class="bg-gray-100 dark:bg-gray-900 hover:shadow-lg hover:bg-gray-50 dark:hover:bg-gray-800 transition ease-in-out duration-300 rounded-lg">
       <div class="px-4 py-4">
       <header class="flex justify-between">
         <img

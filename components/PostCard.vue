@@ -3,10 +3,10 @@
     :href="post.metadata.url"
     target="`_blank"
     rel="noreferrer"
-    class="hover:shadow-md transition ease-in-out duration-300  rounded-lg cursor-pointer"
+    class="cursor-pointer"
   >
     <div
-      class="bg-gray-100 dark:bg-gray-900 hover:shadow-md transition ease-in-out duration-300  rounded-lg"
+      class="bg-gray-100 dark:bg-gray-900 hover:shadow-lg hover:bg-gray-50 dark:hover:bg-gray-800 transition ease-in-out duration-300 rounded-lg"
     >
     <header class="flex items-center justify-between">
       <h1 class="text-yellow-600 dark:text-yellow-300 px-4 pt-4 pb-0 text-lg font-medium">

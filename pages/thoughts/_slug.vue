@@ -65,6 +65,12 @@ export default {
   components: {
     Blog
   },
+  head() {
+    let blog = this.blog
+    return {
+      title: this.blog.title,
+    }
+  },
   data() {
     return {
       isActive: Boolean,

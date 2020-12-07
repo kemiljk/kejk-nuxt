@@ -109,8 +109,29 @@ export default {
     '@nuxtjs/moment',
   ],
 
+  sitemap: {
+    path: '/kejk.tech.xml',
+    hostname: 'https://kejk.tech',
+    cacheTime: 1000 * 60 * 15,
+    gzip: true,
+    generate: false,
+    routes: [
+      '/',
+      '/about',
+      '/thoughts',
+      '/thougts/_slug',
+      '/uses',
+    ].map(route => ({
+      url: route,
+      changefreq: 'monthly',
+      priority: 1,
+      lastmodISO: new Date().toISOString().split('T')[0]
+    })),
+  },
+
   // Modules (https://go.nuxtjs.dev/config-modules)
   modules: [
+    '@nuxtjs/sitemap'
   ],
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)

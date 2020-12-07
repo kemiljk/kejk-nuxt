@@ -1,10 +1,10 @@
 <template>
   <NuxtLink 
     :to="`/thoughts/${blog.slug}`"
-    class="hover:shadow-md transition ease-in-out duration-300 rounded-lg cursor-pointer"
+    class="cursor-pointer"
   >
     <div
-      class="bg-gray-100 dark:bg-gray-900 hover:shadow-md transition ease-in-out duration-300 rounded-lg"
+      class="bg-gray-100 dark:bg-gray-900 hover:shadow-lg hover:bg-gray-50 dark:hover:bg-gray-800 transition ease-in-out duration-300 rounded-lg"
       v-if="blog.metadata"
     >
       <header class="flex items-center justify-between">
