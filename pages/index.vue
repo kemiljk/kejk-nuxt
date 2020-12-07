@@ -41,13 +41,13 @@
           Currently, I'm designing and helping define the Home as a Service at
           <a href="https://www.homehero.co.uk" class="text-indigo-600 dark:text-indigo-500 font-bold" target="_blank" rel="noreferrer">HomeHero</a> in London, UK.
       </h2>
-      <div class="flex flex-row justify-center mt-8">
+      <div class="flex flex-col md:flex-row justify-center mt-8">
         <a href="https://www.twitter.com/_kejk" class="mx-2">
-          <button type="button" class="bg-blue-500 text-white rounded-md px-4 py-2 transition duration-500 ease hover:bg-blue-600 focus:outline-none focus:shadow-outline"><ion-icon name="logo-twitter" class="mr-2"></ion-icon>Follow me on Twitter
+          <button type="button" class="w-vw md:w-full bg-blue-500 text-white rounded-md px-4 py-2 transition duration-500 ease hover:bg-blue-600 focus:outline-none focus:shadow-outline"><ion-icon name="logo-twitter" class="mr-2"></ion-icon>Follow me on Twitter
           </button>
         </a>
         <a href="mailto:karl@kejk.tech?subject=Website%20enquiry" class="mx-2">
-          <button type="button" class="bg-gray-300 dark:bg-gray-700 text-black dark:text-white rounded-md px-4 py-2 transition duration-500 ease hover:bg-gray-400 dark:hover:bg-gray-600 focus:outline-none focus:shadow-outline"><ion-icon name="mail" class="mr-2"></ion-icon>Email me
+          <button type="button" class="w-vw md:w-full bg-gray-300 dark:bg-gray-700 text-black dark:text-white rounded-md px-4 py-2 transition duration-500 ease hover:bg-gray-400 dark:hover:bg-gray-600 focus:outline-none focus:shadow-outline"><ion-icon name="mail" class="mr-2"></ion-icon>Email me
           </button>
         </a>
       </div>
