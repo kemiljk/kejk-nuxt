@@ -68,8 +68,8 @@
 </template>
 
 <script>
-import BlogCard from '../components/BlogCard.vue';
-import PostCard from '../components/PostCard.vue';
+import BlogCard from '../../components/BlogCard.vue';
+import PostCard from '../../components/PostCard.vue';
 
 const Cosmic = require("cosmicjs");
 const api = Cosmic();

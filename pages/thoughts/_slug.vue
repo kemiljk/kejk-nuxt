@@ -30,7 +30,7 @@
 </template>
 
 <script>
-import Blog from "../components/Blog.vue";
+import Blog from "../../components/Blog.vue";
 
 const Cosmic = require("cosmicjs");
 const api = Cosmic();

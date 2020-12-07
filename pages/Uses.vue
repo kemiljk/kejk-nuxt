@@ -3,7 +3,7 @@
     <nav class="flex justify-center p-4">
       <ul class="flex">
             <li class="flex space-x-2">
-                 <NuxtLink
+                <NuxtLink
                 isActive
                 to="/"
                 :class="['block px-4 py-2 rounded-md text-gray-900 dark:text-gray-50']"
