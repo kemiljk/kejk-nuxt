@@ -121,7 +121,7 @@ export default {
           href: 'https://www.github.com/kemiljk/',
           icon: 'logo-github',
           title: 'Github',
-          color: 'text-white dark:text-black'
+          color: 'dark:text-white text-black'
         },
         {
           href: 'https://dribbble.com/_kejk',
