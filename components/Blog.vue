@@ -32,7 +32,7 @@ export default {
   head() {
     let title = this?.blog?.metadata?.seo_metatitle,
     desc = this?.blog?.metadata?.seo_metadescription,
-    url = 'https://kejk.tech/thoughts/' + this?.blog?.slug,
+    url = 'https://kejk.tech/thoughts/' + this?.blog?.slug;
     return {
         title: title,
           meta: [
