@@ -30,9 +30,10 @@ export default {
     }
   },
   head() {
-    let title = this?.blog?.metadata?.seo_metatitle,
-    desc = this?.blog?.metadata?.seo_metadescription,
-    url = 'https://kejk.tech/thoughts/' + this?.blog?.slug;
+    let blog = this.blog,
+    let title = this.title,
+    desc = this.blog.metadata.snippet,
+    url = 'https://kejk.tech/thoughts/' + this.blog.slug;
     return {
         title: title,
           meta: [
