@@ -53,7 +53,7 @@
       </div>
     </header>
     <header class="pt-16 pb-2 max-w-xl">
-      <h2 class="font-medium text-2xl dark:text-white">
+      <h2 class="font-bold text-2xl dark:text-white">
         Some things I've made.
       </h2>
     </header>
@@ -67,7 +67,7 @@
         </div>
     </div>
     <header class="pt-16 pb-2 max-w-xl">
-      <h2 class="font-medium text-2xl dark:text-white">
+      <h2 class="font-bold text-2xl dark:text-white">
         Thoughts on design and development.
       </h2>
     </header>
@@ -86,7 +86,7 @@
         </div>
       </div>
       <header class="pt-16 pb-2 max-w-xl">
-        <h2 class="font-medium text-2xl dark:text-white">
+        <h2 class="font-bold text-2xl dark:text-white">
           Some things I'm currently enjoying.
         </h2>
       </header>
@@ -100,7 +100,7 @@
         </div>
       </div>
       <header class="pt-16 pb-2 max-w-xl">
-        <h2 class="font-medium text-2xl dark:text-white">
+        <h2 class="font-bold text-2xl dark:text-white">
           Music I've written.
         </h2>
       </header>
