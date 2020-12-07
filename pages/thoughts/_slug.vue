@@ -65,17 +65,6 @@ export default {
   components: {
     Blog
   },
-  head: [
-    { name: "twitter:label1", content: "Written by" },
-    { name: "twitter:data1", content: "Karl Koch" },
-    ],
-    link: [
-    {
-      hid: "canonical",
-      rel: "canonical",
-      href: `https://kejk.tech/thoughts/${this.$route.params.slug}`,
-    },
-  ],
   data() {
     return {
       isActive: Boolean,

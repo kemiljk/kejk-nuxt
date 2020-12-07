@@ -37,7 +37,7 @@
       </h1>
     </header>
     <header class="pt-4 pb-2 max-w-xl mx-auto">
-      <h2 class="font-regular text-2xl dark:text-white text-center">
+      <h2 class="font-regular text-2xl dark:text-white text-center divide-y-2 divide-solid">
           Currently, I'm designing and helping define the Home as a Service at
           <a href="https://www.homehero.co.uk" class="text-indigo-600 font-bold" target="_blank" rel="noreferrer">HomeHero</a> in London, UK.
       </h2>
