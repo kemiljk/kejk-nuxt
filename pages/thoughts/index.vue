@@ -5,13 +5,13 @@
             <li class="flex space-x-2">
                 <NuxtLink
                 to="/"
-                :class="['block px-4 py-2 rounded-md text-gray-900 dark:text-gray-50']"
+                :class="['block px-4 py-2 rounded-md text-gray-900 dark:text-gray-50 hover:bg-indigo-50 hover:text-indigo-600 dark:hover:bg-indigo-800 dark:hover:text-indigo-300']"
                 >
                 Home
                 </NuxtLink>
                 <NuxtLink
                 to="/about"
-                :class="['block px-4 py-2 rounded-md text-gray-900 dark:text-gray-50']"
+                :class="['block px-4 py-2 rounded-md text-gray-900 dark:text-gray-50 hover:bg-indigo-50 hover:text-indigo-600 dark:hover:bg-indigo-800 dark:hover:text-indigo-300']"
                 >
                 About
                 </NuxtLink>
@@ -24,7 +24,7 @@
                 </NuxtLink>
                 <NuxtLink
                 to="/uses"
-                :class="['block px-4 py-2 rounded-md text-gray-900 dark:text-gray-50']"
+                :class="['block px-4 py-2 rounded-md text-gray-900 dark:text-gray-50 hover:bg-indigo-50 hover:text-indigo-600 dark:hover:bg-indigo-800 dark:hover:text-indigo-300']"
                 >
                 Uses
                 </NuxtLink>
