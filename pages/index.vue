@@ -91,7 +91,7 @@
       </div>
       <header class="pt-16 pb-2 max-w-xl">
         <h2 class="font-medium text-2xl dark:text-white">
-          Some things I'm currently enjoying.
+          Music I've written.
         </h2>
       </header>
     <div class="flex flex-row mt-4">
