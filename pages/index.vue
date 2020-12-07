@@ -1,6 +1,6 @@
 <template>
   <div class="relative max-w-5xl mx-auto px-4 sm:px-0">
-    <nav class="flex flex-row justify-center pt-4">
+    <nav class="flex flex-row justify-center pt-4 ">
         <ul class="flex">
             <li class="flex space-x-2">
                 <NuxtLink
@@ -37,7 +37,7 @@
       </h1>
     </header>
     <header class="pt-4 pb-2 max-w-xl mx-auto">
-      <h2 class="font-regular text-2xl dark:text-white text-center divide-y-2 divide-solid">
+      <h2 class="font-regular text-2xl dark:text-white text-center">
           Currently, I'm designing and helping define the Home as a Service at
           <a href="https://www.homehero.co.uk" class="text-indigo-600 font-bold" target="_blank" rel="noreferrer">HomeHero</a> in London, UK.
       </h2>
@@ -95,7 +95,7 @@
         </h2>
       </header>
     <div class="flex flex-row mt-4">
-      <div class="flex flex-row grid-cols-12 w-full">
+      <div class="flex flex-row grid-cols-12 w-full shadow-xs">
             <iframe src="https://embed.music.apple.com/us/album/cornerstone/1300802348?app=music&amp;itsct=music_box&amp;itscg=30200&amp;ct=albums_cornerstone&amp;ls=1" height="440px" frameborder="0" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation-by-user-activation" allow="autoplay *; encrypted-media *;" style="width: 100%; max-width: 100%; overflow: hidden; border-top-left-radius: 10px; border-top-right-radius: 10px; border-bottom-right-radius: 10px; border-bottom-left-radius: 10px; background-color: transparent; background-position: initial initial; background-repeat: initial initial;"></iframe>
         </div>
       </div>
