@@ -62,7 +62,7 @@
         <p
           class="dark:text-white mb-3"
         >
-          Most recently, I've transitioned into a tighter Product Design focus with a strong DesignOps responsibility. At <a href="https://www.homehero.co.uk" target="_blank" el="noreferrer" class="text-indigo-600 dark:text-indigo-300">HomeHero</a> I'm helping to design and define the Home as a Service, a new customer and business category. HomeHero is a VC-backed startup transforming how people manage their homes. Our native app helps users manage their bills and household services, as well as bringing users closer to their neighbourhoods.
+          Most recently, I've transitioned into a tighter Product Design focus with a strong DesignOps responsibility. At <a href="https://www.homehero.co.uk" target="_blank" el="noreferrer" class="text-indigo-600 dark:text-indigo-300">HomeHero</a> I'm helping to design and define the Home as a Service, a new customer and business category. HomeHero is a VC-backed startup transforming how people manage their homes. Our network of products and services help users manage their bills and household services, as well as bringing users closer to their neighbourhoods.
         </p>
       </div>
     </div>
@@ -121,7 +121,7 @@ export default {
           href: 'https://www.github.com/kemiljk/',
           icon: 'logo-github',
           title: 'Github',
-          color: 'text-white'
+          color: 'text-white dark:text-black'
         },
         {
           href: 'https://dribbble.com/_kejk',
