@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-gray-50 dark:bg-black pb-16 h-full">
+  <div class="pb-16 h-full">
     <Nuxt />
   </div>
 </template>
@@ -9,29 +9,14 @@ export default {
   data() {
     return {
       isActive: Boolean,
-      links: [
-          {
-            label: "Home",
-            url: "/",
-            isActive: true,
-          },
-          {
-            label: "About",
-            url: "/about",
-            isActive: true,
-          },
-          {
-            label: "Thoughts",
-            url: "/thoughts",
-            isActive: true,
-          },
-          {
-            label: "Uses",
-            url: "/uses",
-            isActive: true,
-          },
-      ],
     };
+  },
+  head () {
+    return {
+      bodyAttrs: {
+        class: 'bg-gray-50 dark:bg-black'
+      }
+    }
   },
 };
 </script>
