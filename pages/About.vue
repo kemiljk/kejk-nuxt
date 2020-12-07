@@ -52,7 +52,7 @@
         <p
           class="dark:text-white mb-3"
         >
-          I've been fortunate to work at several awesome and interesting companies over the years, across several different industries. I started out working within Pharmaceutical advertising at Incuna [now shuttered] and then <a href="https://www.cognite.co" target="_blank" el="noreferrer" class="text-indigo-600 dark:text-indigo-300">Cognite</a> across their digital portfolios, delivering user experience and digital management, progressing into leadership.
+          I've been fortunate to work at several awesome and interesting startups over the years, across several different industries. I started out working within Pharmaceutical advertising at Incuna [now shuttered] and then <a href="https://www.cognite.co" target="_blank" el="noreferrer" class="text-indigo-600 dark:text-indigo-300">Cognite</a> across their digital portfolios, delivering user experience and digital management, progressing into leadership.
         </p>
         <p
           class="dark:text-white mb-3"
