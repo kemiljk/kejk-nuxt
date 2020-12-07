@@ -58,7 +58,6 @@ export default {
   },
   methods: {
     async fetchData() {
-      this.error = this.blog = null;
       this.loading = true;
       bucket
         .getObject({
@@ -66,6 +65,7 @@ export default {
         })
         .then(data => {
           console.log(data);
+          console.log(this.blog)
           this.blog = data.object;
           this.loading = false;
         });
