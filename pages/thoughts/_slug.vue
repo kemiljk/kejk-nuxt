@@ -68,7 +68,7 @@ export default {
   head() {
     let blog = this.blog
     return {
-      title: this.blog.title,
+      title: blog.title,
     }
   },
   data() {
