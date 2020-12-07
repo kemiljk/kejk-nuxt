@@ -38,7 +38,7 @@ export default {
       {
         hid: "og:image",
         property: "og:image",
-        content: "./assets/meta-image.png",
+        content: "https://res.cloudinary.com/kejk/image/upload/v1607350321/meta-image_eon7mi.png",
       },
       { property: "og:image:width", content: "740" },
       { property: "og:image:height", content: "300" },
@@ -62,7 +62,7 @@ export default {
       {
         hid: "twitter:image",
         name: "twitter:image",
-        content: "./assets/meta-image.png",
+        content: "https://res.cloudinary.com/kejk/image/upload/v1607350321/meta-image_eon7mi.png",
       },
       {
         hid: "canonical",
