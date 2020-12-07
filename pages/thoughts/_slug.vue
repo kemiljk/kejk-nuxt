@@ -69,6 +69,48 @@ export default {
     let blog = this.blog
     return {
       title: blog.title,
+      meta: [
+          {
+          hid: "og:url",
+          property: "og:url",
+          content: blog.slug,
+        },
+        {
+          hid: "og:title",
+          property: "og:title",
+          content: blog.title,
+        },
+        {
+          hid: "og:description",
+          property: "og:description",
+          content: blog.content,
+        },
+        {
+          hid: "og:image",
+          property: "og:image",
+          content: "https://res.cloudinary.com/kejk/image/upload/v1607350722/og-image_bcs2c8.png",
+        },
+        { property: "og:image:width", content: "740" },
+        { property: "og:image:height", content: "300" },
+
+        { name: "twitter:site", content: "@bobross" },
+        { name: "twitter:card", content: "summary_large_image" },
+        {
+          hid: "twitter:url",
+          name: "twitter:url",
+          content: blog.slug,
+        },
+        {
+          hid: "twitter:title",
+          name: "twitter:title",
+          content: blog.title,
+        },
+        {
+          hid: "twitter:description",
+          name: "twitter:description",
+          content: blog.content,
+        },
+      ],
     }
   },
   data() {
