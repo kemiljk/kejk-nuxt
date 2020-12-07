@@ -6,10 +6,13 @@
   >
     <div class="bg-gray-100 dark:bg-gray-900 hover:shadow-md transition ease-in-out duration-300 rounded-lg">
       <div class="px-4 py-4">
-      <img
-        :src="media.metadata.cover.imgix_url"
-        class="rounded-md max-h-24"
-        />
+      <header class="flex justify-between">
+        <img
+          :src="media.metadata.cover.imgix_url"
+          class="rounded-md max-h-24"
+          />
+          <ion-icon name="link-outline" class="text-2xl text-black dark:text-white pr-4"></ion-icon>
+        </header>
         <div class="mt-4">
           <p class="text-lg font-medium text-gray-900 dark:text-gray-100">
             {{ media.title }}
