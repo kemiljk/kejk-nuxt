@@ -68,22 +68,22 @@ export default {
   head() {
     let blog = this.blog
     return {
-      title: blog.title,
+      title: `${blog.title}`,
       meta: [
           {
           hid: "og:url",
           property: "og:url",
-          content: blog.slug,
+          content: `${blog.slug}`,
         },
         {
           hid: "og:title",
           property: "og:title",
-          content: blog.title,
+          content: `${blog.title}`,
         },
         {
           hid: "og:description",
           property: "og:description",
-          content: blog.content,
+          content: "Latest post",
         },
         {
           hid: "og:image",
@@ -98,17 +98,17 @@ export default {
         {
           hid: "twitter:url",
           name: "twitter:url",
-          content: blog.slug,
+          content: `${blog.slug}`,
         },
         {
           hid: "twitter:title",
           name: "twitter:title",
-          content: blog.title,
+          content: `${blog.title}`,
         },
         {
           hid: "twitter:description",
           name: "twitter:description",
-          content: blog.content,
+          content: "Lastest post",
         },
       ],
     }
