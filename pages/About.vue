@@ -47,7 +47,7 @@
         <p
           class="dark:text-white mb-3"
         >
-          I also apply this principle across my work life. Both internal and external stakeholders are bogged down with lots of things to worry about; from budget, to planning and strategy and delivering on tight timelines. So I see it that in my role leading design and frontend development, I should be able to provide my team with the most minimal and intuitive solution to their problem, whilst adding as much value to the business and providing the best possible user experience for the human interacting with the end product or service.
+          I also apply this principle across my work life. Both internal and external stakeholders are bogged down with lots of things to worry about; from budget, to planning and strategy and delivering on tight timelines. So I see it that in my role as a product designer and frontend developer, I should be able to provide my team with the most minimal and intuitive solution to their problem, whilst adding as much value to the business and the best possible experience for the person interacting with the end product or service.
         </p>
         <p
           class="dark:text-white mb-3"
