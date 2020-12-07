@@ -31,7 +31,7 @@ export default {
   },
   head() {
     let blog = this.blog,
-    let title = this.title,
+    title = this.title,
     desc = this.blog.metadata.snippet,
     url = 'https://kejk.tech/thoughts/' + this.blog.slug;
     return {
