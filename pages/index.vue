@@ -47,7 +47,7 @@
           </button>
         </a>
         <a href="mailto:karl@kejk.tech?subject=Website%20enquiry" class="mx-2">
-          <button type="button" class="w-full mt-2 md:mt-0 bg-gray-300 dark:bg-gray-700 text-black dark:text-white rounded-md px-5 py-3 btn btn-primary transition duration-500 ease hover:bg-gray-400 dark:hover:bg-gray-600 focus:outline-none focus:shadow-outline"><ion-icon name="mail" class="mr-2"></ion-icon>Email me
+          <button type="button" class="w-full mt-2 md:mt-0 bg-gray-300 dark:bg-gray-700 text-black dark:text-white rounded-md px-5 py-3 btn btn-secondary transition duration-500 ease hover:bg-gray-400 dark:hover:bg-gray-600 focus:outline-none focus:shadow-outline"><ion-icon name="mail" class="mr-2"></ion-icon>Send me an email
           </button>
         </a>
       </div>
