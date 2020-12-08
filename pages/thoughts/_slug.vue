@@ -38,7 +38,7 @@
             to="/thoughts"
             class="text-black bg-gray-50 hover:bg-gray-100 dark:hover:bg-gray-800 dark:text-white dark:bg-gray-900 rounded-xl px-6 py-3 btn btn--primary"
           >
-            <ion-icon class="align-middle" name="chevron-back-outline" /><span class="pl-2">Back to all posts</span>
+            <ion-icon class="mr-2 mb-1 align-middle" name="chevron-back-outline" />Back to all posts
           </NuxtLink>
         </div>
           <keep-alive>
