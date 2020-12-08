@@ -162,7 +162,8 @@ export default {
         {
           href: "https://www.figma.com/community/plugin/837070613195594890/Px-%E2%80%BA%E2%80%BA-Em",
           img: "https://res.cloudinary.com/kejk/image/upload/v1607281435/px2em_qnscic.png",
-          title: "Px ›› em"
+          title: "Px ›› em",
+          id: "install-count"
         },
         {
           href: "https://www.lazypdf.tech",
@@ -185,6 +186,12 @@ export default {
     this.getBlogsData();
     this.getPostsData();
     this.getMediasData();
+    fetch("../../api/plugin-stats.js")
+            .then((response) => response.json())
+            .then((data) => {
+                console.log(data);
+                document.getElementById("install-count").prepend(data.install_count);
+        })
   },
   methods: {
     getBlogsData() {
