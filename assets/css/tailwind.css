@@ -59,6 +59,15 @@
     @apply ml-8;
     @apply mb-4;
   }
+  
+  blockquote {
+    @apply divide-x-4
+    @apply divide-solid 
+    @apply divide-gray-400
+    @apply divide-gray-800
+    @apply ml-4
+    @apply my-4
+  }
 
   code {
     @apply bg-gray-200;
