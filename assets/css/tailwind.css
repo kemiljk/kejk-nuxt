@@ -43,6 +43,16 @@
     @apply dark:text-white;
     @apply mb-4;
   }
+  
+  ul {
+    @apply list-disc;
+    @apply ml-8;
+  }
+  
+  ol {
+    @apply list-decimal;
+    @apply ml-8;
+  }
 
   code {
     @apply bg-gray-200;
