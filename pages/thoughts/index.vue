@@ -32,7 +32,7 @@
         </ul>
     </nav>
     <header class="pt-10 pb-2 max-w-md mx-auto">
-      <h1>
+      <h1 class="text-center">
         /Thoughts
       </h1>
     </header>

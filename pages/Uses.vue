@@ -32,7 +32,7 @@
         </ul>
     </nav>
     <header class="pt-10 pb-2 mb-10 max-w-md mx-auto">
-      <h1>
+      <h1 class="text-center">
         /Uses
       </h1>
     </header>
