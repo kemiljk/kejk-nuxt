@@ -105,7 +105,7 @@ export default {
           href: 'https://www.figma.com/@_kejk',
           icon: 'earth-outline',
           title: 'Figma',
-          color: 'text-red-500'
+          color: 'text-green-400'
         },
         {
           href: 'https://www.github.com/kemiljk/',
