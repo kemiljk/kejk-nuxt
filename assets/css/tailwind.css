@@ -3,7 +3,8 @@
 @tailwind utilities;
 
 code {
-background: #FCA5A5;
+background: #FECACA;
 color: #7F1D1D;
 padding: 4px 6px;
+border-radius: 4px;
 }
