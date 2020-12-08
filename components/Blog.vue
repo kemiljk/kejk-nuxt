@@ -31,7 +31,7 @@ export default {
   },
   head() {
     let blog = this.blog,
-    title = blog.title,
+    title = this.blog.title,
     desc = "Latest post",
     url = 'https://kejk.tech/thoughts/' + blog.slug,
     image = 'https://res.cloudinary.com/kejk/image/upload/v1607350722/og-image_bcs2c8.png';

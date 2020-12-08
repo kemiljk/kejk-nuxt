@@ -7,18 +7,19 @@
   >
     <div class="bg-gray-100 dark:bg-gray-900 hover:shadow-lg hover:bg-gray-50 dark:hover:bg-gray-800 transition ease-in-out duration-300 rounded-lg">
       <div class="px-4 py-4">
-      <header class="flex justify-between">
-        <img
-          :src="media.metadata.cover.imgix_url"
-          class="rounded-md max-h-24"
-          />
-          <ion-icon name="link-outline" class="text-2xl text-black dark:text-white pr-4"></ion-icon>
-        </header>
-        <div class="mt-4">
-          <p class="text-lg font-medium text-gray-900 dark:text-gray-100">
-            {{ media.title }}
-          </p>
-          <p class="pt-2 text-gray-400 dark:text-gray-200">
+        <div class="divide-y divide-solid divide-gray-300">
+          <header class="mb-4 flex justify-between">
+            <img
+            :src="media.metadata.cover.imgix_url"
+            class="rounded-md max-h-24"
+            />
+            <external-link-icon class="text-gray-700 dark:text-gray-300"></external-link-icon>
+          </header>
+            <h4 class="pt-2 font-medium text-gray-900 dark:text-gray-100">
+              {{ media.title }}
+            </h4>
+          </div>
+          <p class="mb-0 text-gray-500 dark:text-gray-200">
             {{ media.metadata.subtitle }}
           </p>
         </div>
@@ -28,8 +29,13 @@
 </template>
 
 <script>
+import { ExternalLinkIcon } from 'vue-feather-icons'
+
 export default {
   name: "Media",
+  components: {
+    ExternalLinkIcon
+  },
   props: {
     media: {
       type: Object,

@@ -11,7 +11,7 @@
         <h1 class="text-indigo-600 dark:text-indigo-300 px-4 pt-4 pb-0 text-lg font-medium">
           {{ blog.title }}
         </h1>
-      <ion-icon name="arrow-forward-outline" class="text-2xl text-black dark:text-white pr-4"></ion-icon>
+      <arrow-right-icon class="text-gray-700 dark:text-gray-300 mr-4"></arrow-right-icon>
     </header>
       <p class="text-gray-500 dark:text-gray-400 px-4 pt-0 pb-2">
         {{ blog.metadata.published | moment("DD MMM, YYYY") }}
@@ -24,8 +24,13 @@
 </template>
 
 <script>
+import { ArrowRightIcon } from 'vue-feather-icons'
+
 export default {
   name: "Blog",
+  components: {
+    ArrowRightIcon
+  },
   props: {
     blog: {
       type: Object,

@@ -12,7 +12,7 @@
       <h1 class="text-yellow-600 dark:text-yellow-300 px-4 pt-4 pb-0 text-lg font-medium">
         {{ post.title }}
       </h1>
-      <ion-icon name="link-outline" class="text-2xl text-black dark:text-white pr-4"></ion-icon>
+      <external-link-icon class="text-gray-700 dark:text-gray-300 mr-4"></external-link-icon>
     </header>
       <p class="text-gray-500 dark:text-gray-400 px-4 pt-0 pb-2">
         {{ post.metadata.published | moment("DD MMM, YYYY") }}
@@ -25,8 +25,13 @@
 </template>
 
 <script>
+import { ExternalLinkIcon } from 'vue-feather-icons'
+
 export default {
   name: "Post",
+  components: {
+    ExternalLinkIcon
+  },
   props: {
     post: {
       type: Object,

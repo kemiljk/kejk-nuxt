@@ -1,5 +1,5 @@
 <template>
-  <div class="relative max-w-5xl mx-auto px-4 sm:px-0">
+  <div class="container max-w-5xl mx-auto px-4 sm:px-0">
     <nav class="flex flex-row justify-center pt-4 ">
         <ul class="flex">
             <li class="flex space-x-2">
@@ -43,11 +43,13 @@
       </p>
       <div class="flex flex-col md:flex-row justify-center mt-8">
         <a href="https://www.twitter.com/_kejk" class="mx-2">
-          <button type="button" class="font-medium w-full bg-blue-400 text-white rounded-xl px-6 py-3 btn btn-primary transition duration-500 ease hover:bg-blue-500 focus:outline-none focus:shadow-outline"><ion-icon name="logo-twitter" class="mr-2 mb-1 text-2xl align-middle"></ion-icon>Follow me on Twitter
+          <button type="button" class="flex flex-row font-medium w-full bg-blue-400 text-white rounded-xl px-6 py-3 btn btn-primary transition duration-500 ease hover:bg-blue-500 focus:outline-none focus:shadow-outline">
+            <twitter-icon size="1x" class="text-white mr-2 mt-1"></twitter-icon>Follow me on Twitter
           </button>
         </a>
         <a href="mailto:karl@kejk.tech?subject=Website%20enquiry" class="mx-2">
-          <button type="button" class="font-medium w-full mt-2 md:mt-0 bg-gray-300 dark:bg-gray-700 text-gray-800 dark:text-white rounded-xl px-6 py-3 btn btn-secondary transition duration-500 ease hover:bg-gray-400 dark:hover:bg-gray-600 focus:outline-none focus:shadow-outline"><ion-icon name="mail" class="mr-2 mb-1 text-2xl align-middle"></ion-icon>Send me an email
+          <button type="button" class="flex flex-row font-medium w-full mt-2 md:mt-0 bg-gray-300 dark:bg-gray-700 text-gray-800 dark:text-white rounded-xl px-6 py-3 btn btn-secondary transition duration-500 ease hover:bg-gray-400 dark:hover:bg-gray-600 focus:outline-none focus:shadow-outline">
+            <mail-icon size="1x" class="text-gray-800 dark:text-white mr-2 mt-1"></mail-icon>Send me an email
           </button>
         </a>
       </div>
@@ -117,6 +119,8 @@ import BlogCard from '../components/BlogCard.vue';
 import PostCard from '../components/PostCard.vue';
 import MediaCard from '../components/MediaCard.vue';
 import MadeCard from '../components/MadeCard.vue';
+import { TwitterIcon } from 'vue-feather-icons';
+import { MailIcon } from 'vue-feather-icons';
 
 const Cosmic = require("cosmicjs");
 const api = Cosmic();
@@ -140,7 +144,9 @@ export default {
     BlogCard,
     PostCard,
     MediaCard,
-    MadeCard
+    MadeCard,
+    TwitterIcon,
+    MailIcon
   },
   data() {
     return {
