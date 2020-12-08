@@ -37,7 +37,7 @@
       </h1>
     </header>
     <header class="pt-16 pb-2 max-w-xl">
-      <h2 class="font-medium text-2xl dark:text-white">
+      <h2>
         Thoughts on design and development.
       </h2>
     </header>
@@ -51,7 +51,7 @@
         </div>
       </div>
       <header class="pt-16 pb-2 max-w-xl">
-        <h2 class="font-medium text-2xl dark:text-white">
+        <h2>
           Posts from around the web.
         </h2>
       </header>
