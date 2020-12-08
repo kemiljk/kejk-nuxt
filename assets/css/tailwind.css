@@ -65,7 +65,7 @@
     @apply border-gray-400;
     @apply dark:border-gray-800;
     @apply ml-4;
-    @apply mr-4
+    @apply pr-4
     @apply my-4;
   }
 
