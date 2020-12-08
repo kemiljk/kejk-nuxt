@@ -22,8 +22,7 @@ code {
     @apply text-5xl; 
     @apply font-black; 
     @apply text-black; 
-    @apply dark:text-white; 
-    @apply text-center;
+    @apply dark:text-white;
   }
 
   h2 {

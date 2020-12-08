@@ -32,7 +32,7 @@
         </ul>
     </nav>
     <header class="pt-10 pb-2 max-w-xl mx-auto">
-      <h1>
+      <h1 class="text-center">
         Hej, I'm Karl
       </h1>
     </header>
