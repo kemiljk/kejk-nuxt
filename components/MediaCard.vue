@@ -7,7 +7,7 @@
   >
     <div class="bg-gray-100 dark:bg-gray-900 hover:shadow-lg hover:bg-gray-50 dark:hover:bg-gray-800 transition ease-in-out duration-300 rounded-lg">
       <div class="px-4 py-4">
-        <div class="divide-y divide-solid divide-gray-300">
+        <div class="divide-y divide-solid divide-gray-300 dark:divide-gray-700">
           <header class="mb-4 flex justify-between">
             <img
             :src="media.metadata.cover.imgix_url"

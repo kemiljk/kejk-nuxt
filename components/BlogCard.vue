@@ -7,8 +7,8 @@
       class="bg-gray-100 dark:bg-gray-900 hover:shadow-lg hover:bg-gray-50 dark:hover:bg-gray-800 transition ease-in-out duration-300 rounded-lg"
       v-if="blog.metadata"
     >
-      <header class="flex items-center justify-between">
-        <h1 class="text-indigo-600 dark:text-indigo-300 px-4 pt-4 pb-0 text-lg font-medium">
+      <header class="flex items-center justify-between px-4 pt-4 pb-0">
+        <h1 class="text-indigo-600 dark:text-indigo-300 text-lg font-medium">
           {{ blog.title }}
         </h1>
       <arrow-right-icon class="text-gray-700 dark:text-gray-300 mr-4"></arrow-right-icon>
