@@ -61,10 +61,9 @@
   }
   
   blockquote {
-    @apply divide-x-4;
-    @apply divide-solid;
-    @apply divide-gray-400;
-    @apply divide-gray-800;
+    @apply border-l-2;
+    @apply border-gray-400;
+    @apply dark:border-gray-800;
     @apply ml-4;
     @apply my-4;
   }
