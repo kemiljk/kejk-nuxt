@@ -46,12 +46,18 @@
   
   ul {
     @apply list-disc;
+    @apply text-black; 
+    @apply dark:text-white;
     @apply ml-8;
+    @apply mb-4;
   }
   
   ol {
     @apply list-decimal;
+    @apply text-black; 
+    @apply dark:text-white;
     @apply ml-8;
+    @apply mb-4;
   }
 
   code {
