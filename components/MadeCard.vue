@@ -5,7 +5,7 @@
           <div class="flex flex-col align-center">
           <button class="flex mt-2 text-md text-gray-900 dark:text-gray-50 font-semibold mx-auto py-2 rounded-md">
               {{ made.title }}
-              <div v-if="made.id" class="ml-4 bg-yellow-400 -mb-3 px-3 py-1 rounded-full"><span :id="made.id" class="text-black pb-2 mr-2" /><ion-icon name="arrow-down-outline" class="text-black mt-1"></ion-icon></div>
+              <div v-if="made.id" class="ml-4 bg-yellow-400 -mb-3 px-3 py-1 rounded-full"><span :id="made.id" class="text-black pb-2 mr-2" /><ion-icon name="arrow-down-outline" class="text-black pt-1"></ion-icon></div>
           </button>
           </div>
       </a>
