@@ -4,7 +4,7 @@
           <img alt="Px to Em logo visual" :src="`${made.img}`" class="rounded-md" />
           <button class="flex mt-2 text-md text-gray-900 dark:text-gray-50 font-semibold mx-auto py-2 rounded-md">
               {{ made.title }}
-              <strong v-if="made.id" class="ml-4 bg-yellow-400 px-3 py-2 rounded-full"><span :id="made.id" class="text-black mr-2" /><ion-icon name="download-outline"></ion-icon></strong>
+              <div v-if="made.id" class="ml-4 bg-yellow-400 px-2 py-1 rounded-full"><span :id="made.id" class="text-black mr-2" /><ion-icon name="download-outline" class="text-black"></ion-icon></div>
           </button>
       </a>
   </div>  
