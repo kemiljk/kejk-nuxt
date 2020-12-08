@@ -32,15 +32,15 @@
         </ul>
     </nav>
     <header class="pt-10 pb-2 max-w-xl mx-auto">
-      <h1 class="text-5xl font-black dark:text-white text-center">
+      <h1>
         Hej, I'm Karl
       </h1>
     </header>
     <header class="pt-4 pb-2 max-w-xl mx-auto">
-      <h2 class="font-regular text-2xl dark:text-white text-center">
+      <p class="text-2xl text-center">
           Currently, I'm designing and helping define the Home as a Service at
           <a href="https://www.homehero.co.uk" class="text-indigo-600 dark:text-indigo-500 font-bold" target="_blank" rel="noreferrer">HomeHero</a> in London, UK.
-      </h2>
+      </p>
       <div class="flex flex-col md:flex-row justify-center mt-8">
         <a href="https://www.twitter.com/_kejk" class="mx-2">
           <button type="button" class="font-medium w-full bg-blue-400 text-white rounded-xl px-6 py-4 btn btn-primary transition duration-500 ease hover:bg-blue-500 focus:outline-none focus:shadow-outline"><ion-icon name="logo-twitter" class="mr-2 mb-1 text-2xl align-middle"></ion-icon>Follow me on Twitter
@@ -53,7 +53,7 @@
       </div>
     </header>
     <header class="pt-16 pb-2 max-w-xl">
-      <h2 class="font-bold text-2xl dark:text-white">
+      <h2>
         Some things I've made.
       </h2>
     </header>
@@ -67,7 +67,7 @@
         </div>
     </div>
     <header class="pt-16 pb-2 max-w-xl">
-      <h2 class="font-bold text-2xl dark:text-white">
+      <h2>
         Thoughts on design and development.
       </h2>
     </header>
@@ -86,7 +86,7 @@
         </div>
       </div>
       <header class="pt-16 pb-2 max-w-xl">
-        <h2 class="font-bold text-2xl dark:text-white">
+        <h2>
           Some things I'm currently enjoying.
         </h2>
       </header>
@@ -100,7 +100,7 @@
         </div>
       </div>
       <header class="pt-16 pb-2 max-w-xl">
-        <h2 class="font-bold text-2xl dark:text-white">
+        <h2>
           Music I've written.
         </h2>
       </header>

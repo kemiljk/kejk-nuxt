@@ -2,18 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-h3 {
-  font-size: 1.5rem;
-  line-height: 2rem;
-  font-weight: bold;
-}
-
-h4 {
-  font-size: 1.125rem;
-  line-height: 1.75rem;
-  font-weight: bold;
-}
-
 code {
   background: #ffe2e2;
   color: #9c2525;
@@ -21,4 +9,42 @@ code {
   border-radius: 6px;
   font-size: 0.9rem;
   font-weight: 600;
+}
+
+@layer base {
+  a {
+    @apply text-indigo-600; 
+    @apply dark:text-indigo-300;
+    @apply font-medium;
+  }
+
+  h1 {
+    @apply text-5xl; 
+    @apply font-black; 
+    @apply text-black; 
+    @apply dark:text-white; 
+    @apply text-center;
+  }
+
+  h2 {
+    @apply text-2xl;
+    @apply font-bold;
+  }
+
+  h3 {
+    @apply text-xl;
+    @apply font-bold;
+    @apply mb-4;
+  }
+  
+  h4 {
+    @apply text-lg;
+    @apply font-bold;
+  }
+
+  p {
+    @apply text-black;
+    @apply dark:text-white;
+    @apply mb-4;
+  }
 }
