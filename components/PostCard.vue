@@ -12,7 +12,7 @@
       <h1 class="text-yellow-600 dark:text-yellow-300 text-lg font-medium">
         {{ post.title }}
       </h1>
-      <external-link-icon class="text-gray-700 dark:text-gray-300 mr-4"></external-link-icon>
+      <external-link-icon class="text-gray-700 dark:text-gray-300"></external-link-icon>
     </header>
       <p class="text-gray-500 dark:text-gray-400 px-4 pt-0 pb-2">
         {{ post.metadata.published | moment("DD MMM, YYYY") }}

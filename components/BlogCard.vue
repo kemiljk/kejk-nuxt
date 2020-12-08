@@ -11,7 +11,7 @@
         <h1 class="text-indigo-600 dark:text-indigo-300 text-lg font-medium">
           {{ blog.title }}
         </h1>
-      <arrow-right-icon class="text-gray-700 dark:text-gray-300 mr-4"></arrow-right-icon>
+      <arrow-right-icon class="text-gray-700 dark:text-gray-300"></arrow-right-icon>
     </header>
       <p class="text-gray-500 dark:text-gray-400 px-4 pt-0 pb-2">
         {{ blog.metadata.published | moment("DD MMM, YYYY") }}
