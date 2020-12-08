@@ -2,9 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
+h3 {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: bold;
+}
+
+h4 {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  font-weight: bold;
+}
+
 code {
-background: #FECACA;
-color: #7F1D1D;
-padding: 4px 6px;
-border-radius: 4px;
+  background: #ffe2e2;
+  color: #7F1D1D;
+  padding: 4px 6px;
+  border-radius: 4px;
 }
