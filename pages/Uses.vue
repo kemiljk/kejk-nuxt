@@ -1,5 +1,5 @@
 <template>
-  <div class="relative max-w-3xl mx-auto px-4 sm:px-0">
+  <div class="container max-w-3xl mx-auto px-4 lg:px-0">
     <nav class="flex flex-row justify-center pt-4">
       <ul class="flex">
             <li class="flex space-x-2">
