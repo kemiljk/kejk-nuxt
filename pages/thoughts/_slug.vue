@@ -54,7 +54,6 @@ import Blog from "../../components/Blog.vue";
 
 const Cosmic = require("cosmicjs");
 const api = Cosmic();
-// Set these values, found in Bucket > Settings after logging in at https://app.cosmicjs.com/login
 const bucket = api.bucket({
   slug: "d1ffcb90-35a5-11eb-b56f-05f2cd29bdde",
   read_key: "uNXYQDbNTCWQyEaFjq44PUolieGKBuzePTaEdnDl0CHLcnJtPK"
