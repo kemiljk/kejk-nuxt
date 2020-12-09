@@ -1,8 +1,8 @@
 <template>
   <div class="container max-w-3xl mx-auto px-4">
     <nav class="flex flex-row justify-center pt-4 mx-auto">
-        <ul class="flex">
-            <li class="flex space-x-2">
+        <ul class="mx-auto">
+            <li class="flex space-x-4">
                 <NuxtLink
                 to="/"
                 :class="['font-medium block px-4 py-2 rounded-md text-gray-900 dark:text-gray-50 hover:bg-indigo-50 hover:text-indigo-600 dark:hover:bg-indigo-800 dark:hover:text-indigo-300 transition ease-in-out duration-100']"
@@ -31,7 +31,7 @@
             </li>
         </ul>
     </nav>
-    <div class="mx-4 pt-10">
+    <div class="pt-10">
       <div class="flex flex-col col-span-full">
         <div class="flex flex-row">
           <NuxtLink

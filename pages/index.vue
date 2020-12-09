@@ -1,8 +1,8 @@
 <template>
   <div class="container max-w-5xl mx-auto px-4">
     <nav class="flex flex-row justify-center pt-4 mx-auto">
-        <ul class="flex">
-            <li class="flex space-x-2">
+        <ul class="mx-auto">
+            <li class="flex space-x-4">
                 <NuxtLink
                 isActive
                 to="/"
