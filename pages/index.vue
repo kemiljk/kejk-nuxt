@@ -162,7 +162,7 @@ export default {
         {
           href: "https://www.figma.com/community/plugin/837070613195594890/Px-%E2%80%BA%E2%80%BA-Em",
           img: "https://res.cloudinary.com/kejk/image/upload/v1607281435/px2em_qnscic.png",
-          title: "Px ›› em",
+          title: "Px ›› Em",
           id: "install-count"
         },
         {
