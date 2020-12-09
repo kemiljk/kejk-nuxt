@@ -38,7 +38,7 @@
     </header>
     <header class="pt-4 pb-2 max-w-xl mx-auto">
       <p class="text-2xl text-center">
-          Currently, I'm designing and helping define the Home as a Service at
+          I'm a Product Designer and "sometimes" Frontend Developer, designing and defining the Home as a Service at
           <a href="https://www.homehero.co.uk" class="text-indigo-600 dark:text-indigo-500 font-bold" target="_blank" rel="noreferrer">HomeHero</a> in London, UK.
       </p>
       <div class="flex flex-col md:flex-row justify-center mt-8">
