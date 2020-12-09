@@ -1,6 +1,6 @@
 <template>
   <div class="container max-w-3xl mx-auto px-4">
-    <nav class="flex flex-row justify-center pt-4">
+    <nav class="flex flex-row justify-center pt-4 mx-auto">
         <ul class="flex">
             <li class="flex space-x-2">
                 <NuxtLink
