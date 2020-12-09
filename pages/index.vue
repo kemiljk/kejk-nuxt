@@ -60,7 +60,7 @@
       </h2>
     </header>
     <div class="flex flex-row mt-4">
-        <div class="grid xs:grid-cols-12 md:grid-cols-4 gap-4">
+        <div class="grid xs:grid-cols-12 sm:grid-cols-6 md:grid-cols-4 gap-4">
           <div v-for="made in mades" :key="made.title">
               <keep-alive>
                   <MadeCard :made="made" />
@@ -74,7 +74,7 @@
       </h2>
     </header>
       <div class="flex flex-row mt-4">
-        <div class="grid grid-row xs:grid-cols-12 md:grid-cols-2 gap-4">
+        <div class="grid grid-row xs:grid-cols-12 sm:grid-cols-6 md:grid-cols-2 gap-4">
           <div v-for="blog in blogs" :key="blog._id">
               <keep-alive>
                   <BlogCard :blog="blog" />
@@ -93,7 +93,7 @@
         </h2>
       </header>
     <div class="flex flex-row mt-4">
-      <div class="grid grid-row xs:grid-cols-12 md:grid-cols-3 w-full gap-4">
+      <div class="grid grid-row xs:grid-cols-12 sm:grid-cols-6 md:grid-cols-3 w-full gap-4">
         <div v-for="media in medias" :key="media._id">
               <keep-alive>
                 <MediaCard :media="media" />
