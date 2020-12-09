@@ -1,6 +1,6 @@
 <template>
-  <div class="container max-w-5xl mx-auto px-4">
-    <nav class="flex flex-row justify-center pt-4 mx-auto">
+  <div class="container">
+    <nav class="fixed flex bg-white dark:bg-black w-full pt-4 border-b-2 border-gray-100">
         <ul class="mx-auto">
             <li class="flex space-x-4">
                 <NuxtLink
@@ -31,11 +31,12 @@
             </li>
         </ul>
     </nav>
-    <header class="pt-10 pb-2 max-w-md mx-auto">
-      <h1 class="text-center">
-        /Thoughts
-      </h1>
-    </header>
+    <div class="max-w-5xl mx-auto px-4">
+      <header class="container pt-10 pb-2 max-w-xl mx-auto">
+        <h1 class="pt-16 text-center">
+          /Thoughts
+        </h1>
+      </header>
     <header class="pt-16 pb-2 max-w-xl">
       <h2>
         Thoughts on design and development.
@@ -55,12 +56,13 @@
           Posts from around the web.
         </h2>
       </header>
-      <div class="flex flex-row mt-4">
-        <div class="grid grid-row xs:grid-cols-1 sm:grid-cols-2 gap-4">
-          <div v-for="post in posts" :key="post._id">
-            <keep-alive>
-                <PostCard :post="post" />
-            </keep-alive>
+        <div class="flex flex-row mt-4">
+          <div class="grid grid-row xs:grid-cols-1 sm:grid-cols-2 gap-4">
+            <div v-for="post in posts" :key="post._id">
+              <keep-alive>
+                  <PostCard :post="post" />
+              </keep-alive>
+          </div>
         </div>
       </div>
     </div>

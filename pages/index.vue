@@ -1,6 +1,6 @@
 <template>
-  <div class="container max-w-5xl mx-auto px-4">
-    <nav class="flex flex-row justify-center pt-4 mx-auto">
+  <div class="container">
+    <nav class="fixed flex bg-white dark:bg-black w-full pt-4 border-b-2 border-gray-100">
         <ul class="mx-auto">
             <li class="flex space-x-4">
                 <NuxtLink
@@ -31,8 +31,9 @@
             </li>
         </ul>
     </nav>
-    <header class="pt-10 pb-2 max-w-xl mx-auto">
-      <h1 class="text-center">
+  <div class="max-w-5xl mx-auto px-4">
+    <header class="container pt-10 pb-2 max-w-xl mx-auto">
+      <h1 class="pt-16 text-center">
         Hej, I'm Karl
       </h1>
     </header>
@@ -112,6 +113,7 @@
         </div>
       </div>
     </div>
+  </div>
 </template>
 
 <script>
