@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <nav class="fixed flex bg-white dark:bg-black w-full pt-4 border-b-2 border-gray-100">
+    <nav class="fixed flex bg-white dark:bg-black w-full pt-4 border-b-2 border-gray-100 dark:border-gray-900">
         <ul class="mx-auto">
             <li class="flex space-x-4">
                 <NuxtLink
