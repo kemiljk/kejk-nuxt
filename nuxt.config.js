@@ -64,13 +64,15 @@ export default {
         content: "Human-first Product Designer and Developer.",
       },
       {
-        hid: "twitter:image",
-        name: "twitter:image",
+        hid: "twitter:image:src",
+        name: "twitter:image:src",
         content: "https://res.cloudinary.com/kejk/image/upload/v1607350722/twitter-og_bbzz2a.png",
       },
     ],
     link: [
       { rel: "icon", href: "/favicon.svg" },
+      { rel: "icon", href: "/favicon.ico" },
+      { rel: "mask-icon", href: "/mask-icon.svg", color: "#667EEA" },
       {
         hid: "canonical",
         rel: "canonical",
