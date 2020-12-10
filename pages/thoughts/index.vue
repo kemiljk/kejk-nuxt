@@ -84,12 +84,18 @@ export default {
   head: {
     title: 'KEJK – Thoughts',
     meta: [
-      {
-        hid: 'description',
-        name: 'description',
-        content: 'Thoughts on Design and Development from here and around the web.'
-      }
-    ],
+      { hid: 'description', name: 'description', content: 'Thoughts on Design and Development from here and around the web.' },
+      { hid: 'og:title', property: 'og:title', content: 'KEJK – Thoughts'},
+      { hid: 'og:url', property: 'og:url', content: 'https://www.kejk.tech/thoughts'},
+      { hid: 'og:image', property: 'og:image', content: 'https://res.cloudinary.com/kejk/image/upload/v1607350722/og-image_bcs2c8.png'},
+      { hid: 'og:description', property: 'og:description', content: 'Thoughts on Design and Development from here and around the web.'},
+      { property: 'twitter:domain', content: 'https://www.kejk.tech/thoughts'},
+      { hid: 'twitter:title', property: 'twitter:title', content: 'KEJK – Thoughts'},
+      { hid: 'twitter:description', property: 'twitter:description', content: 'Thoughts on Design and Development from here and around the web.'},
+      { hid: 'twitter:image', property: 'twitter:image', content: 'https://res.cloudinary.com/kejk/image/upload/v1607350722/og-image_bcs2c8.png'},
+      { hid: 'twitter:url', property: 'twitter:url', content: 'https://www.kejk.tech/thoughts'},
+      { hid: 'twitter:label1', property: 'twitter:label1', content: 'KEJK – Thoughts'},  
+      ], link: [ { rel: 'canonical', href: 'https://www.kejk.tech/thoughts'} ]
   },
   components: {
     BlogCard,
@@ -111,19 +117,19 @@ export default {
   },
   methods: {
     getBlogsData() {
-            this.error = this.blog = null;
-            this.loading = true;
-            bucket
-            .getObjects({
-                type: "blogs",
-                props: "_id,slug,title,content,metadata"
-            })
-            .then(data => {
-                const blogs = data.objects;
-                this.loading = false;
-                this.blogs = blogs;
-            });
-        },
+        this.error = this.blog = null;
+        this.loading = true;
+        bucket
+        .getObjects({
+            type: "blogs",
+            props: "_id,slug,title,content,metadata"
+        })
+        .then(data => {
+            const blogs = data.objects;
+            this.loading = false;
+            this.blogs = blogs;
+        });
+    },
     getPostsData() {
         this.error = this.post = null;
         this.loading = true;
