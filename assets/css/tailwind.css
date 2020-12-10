@@ -87,4 +87,16 @@
     @apply text-sm;
     @apply font-medium;
   }
+
+  @supports (-webkit-backdrop-filter: blur(40px)) {
+    .backgroundBlur {
+      -webkit-backdrop-filter: blur(40px);
+      background: rgba(255, 255, 255, 0.5);
+    }
+    @media (prefers-color-scheme: dark) {
+      .backgroundBlur {
+        background-color: rgba(0, 0, 0, 0.5);
+      }
+    }
+  }
 }
