@@ -63,7 +63,7 @@
   
   blockquote {
     @apply border-l-4;
-    @apply italic
+    @apply italic;
     @apply border-gray-200;
     @apply dark:border-gray-800;
     @apply ml-4;
