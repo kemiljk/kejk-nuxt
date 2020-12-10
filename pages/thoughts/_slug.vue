@@ -79,6 +79,8 @@ export default {
           { hid: 'og:image', property: 'og:image', content: image},
           { hid: 'og:description', property: 'og:description', content: desc},
           { property: 'twitter:domain', content: url},
+          { name: "twitter:site", content: "@_kejk" },
+          { name: "twitter:card", content: "summary_large_image" },
           { hid: 'twitter:title', property: 'twitter:title', content: title},
           { hid: 'twitter:description', property: 'twitter:description', content: desc},
           { hid: 'twitter:image', property: 'twitter:image', content: image},

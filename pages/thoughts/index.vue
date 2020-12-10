@@ -91,6 +91,8 @@ export default {
       { hid: 'og:image', property: 'og:image', content: 'https://res.cloudinary.com/kejk/image/upload/v1607350722/og-image_bcs2c8.png'},
       { hid: 'og:description', property: 'og:description', content: 'Thoughts on Design and Development from here and around the web.'},
       { property: 'twitter:domain', content: 'https://www.kejk.tech/thoughts'},
+      { name: "twitter:site", content: "@_kejk" },
+      { name: "twitter:card", content: "summary_large_image" },
       { hid: 'twitter:title', property: 'twitter:title', content: 'KEJK – Thoughts'},
       { hid: 'twitter:description', property: 'twitter:description', content: 'Thoughts on Design and Development from here and around the web.'},
       { hid: 'twitter:image', property: 'twitter:image', content: 'https://res.cloudinary.com/kejk/image/upload/v1607350722/og-image_bcs2c8.png'},
