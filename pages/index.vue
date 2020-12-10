@@ -132,15 +132,17 @@ const bucket = api.bucket({
 });
 
 export default {
-  head: {
+  head() {
+    return {
     title: 'KEJK – Home',
     meta: [
-      {
+        {
         hid: 'description',
         name: 'description',
         content: 'Karl is a Product Designer, crafting intelligent interfaces for the web, mobile and meta services.'
-      }
-    ],
+        }
+      ],
+    }
   },
   components: {
     BlogCard,

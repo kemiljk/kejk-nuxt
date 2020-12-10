@@ -81,7 +81,8 @@ const bucket = api.bucket({
 });
 
 export default {
-  head: {
+  head() {
+    return {
     title: 'KEJK – Thoughts',
     meta: [
       { hid: 'description', name: 'description', content: 'Thoughts on Design and Development from here and around the web.' },
@@ -96,6 +97,7 @@ export default {
       { hid: 'twitter:url', property: 'twitter:url', content: 'https://www.kejk.tech/thoughts'},
       { hid: 'twitter:label1', property: 'twitter:label1', content: 'KEJK – Thoughts'},  
       ], link: [ { rel: 'canonical', href: 'https://www.kejk.tech/thoughts'} ]
+    }
   },
   components: {
     BlogCard,

@@ -77,15 +77,17 @@
 
 <script>
 export default {
-  head: {
+  head() {
+    return {
     title: 'KEJK – About',
     meta: [
-      {
-        hid: 'description',
-        name: 'description',
-        content: 'A Product and Frontend Designer, building for the web with Vue, Nuxt and Tailwind, building for mobile with SwiftUI.'
-      }
-    ],
+        {
+          hid: 'description',
+          name: 'description',
+          content: 'A Product and Frontend Designer, building for the web with Vue, Nuxt and Tailwind, building for mobile with SwiftUI.'
+        }
+      ],
+    }
   },
   data() {
     return {

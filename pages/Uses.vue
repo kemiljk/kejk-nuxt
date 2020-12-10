@@ -57,15 +57,17 @@ const bucket = api.bucket({
 });
 
 export default {
-  head: {
+  head() {
+    return {
     title: 'KEJK – Uses',
-    meta: [
-      {
-        hid: 'description',
-        name: 'description',
-        content: 'What software, hardware and services I use daily.'
-      }
-    ],
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: 'What software, hardware and services I use daily.'
+        }
+      ],
+    }
   },
   components: {
     Uses
