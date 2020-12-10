@@ -1,36 +1,11 @@
 <template>
   <div class="relative mx-auto">
-    <nav class="fixed flex backgroundBlur w-full pt-4 border-b-2 border-gray-100 dark:border-gray-900">
-        <ul class="mx-auto">
-            <li class="flex space-x-4">
-                <NuxtLink
-                to="/"
-                :class="['font-medium block px-4 py-2 rounded-md text-gray-900 dark:text-gray-50 hover:bg-indigo-50 hover:text-indigo-600 dark:hover:bg-indigo-800 dark:hover:text-indigo-300 transition ease-in-out duration-100']"
-                >
-                Home
-                </NuxtLink>
-                <NuxtLink
-                to="/about"
-                :class="['font-medium block px-4 py-2 rounded-md text-gray-900 dark:text-gray-50 hover:bg-indigo-50 hover:text-indigo-600 dark:hover:bg-indigo-800 dark:hover:text-indigo-300 transition ease-in-out duration-100']"
-                >
-                About
-                </NuxtLink>
-                <NuxtLink
-                isActive
-                to="/thoughts"
-                :class="['font-medium block px-4 py-2 rounded-md text-gray-900 dark:text-gray-50', { 'bg-indigo-100 dark:bg-indigo-900 text-indigo-700 dark:text-indigo-200 transition ease-in-out duration-100': isActive }]"
-                >
-                Thoughts
-                </NuxtLink>
-                <NuxtLink
-                to="/uses"
-                :class="['font-medium block px-4 py-2 rounded-md text-gray-900 dark:text-gray-50 hover:bg-indigo-50 hover:text-indigo-600 dark:hover:bg-indigo-800 dark:hover:text-indigo-300 transition ease-in-out duration-100']"
-                >
-                Uses
-                </NuxtLink>
-            </li>
-        </ul>
-    </nav>
+    <Nav>
+      <NavItem to="/">Home</NavItem>
+      <NavItem to="/about">About</NavItem>
+      <NavItem to="/thoughts" isActive>Thoughts</NavItem>
+      <NavItem to="/uses">Uses</NavItem>
+    </Nav>
     <div class="mx-auto px-4">
       <div class="container pt-10 pb-2 max-w-3xl mx-auto">
         <div class="flex flex-row pt-16">
@@ -54,7 +29,9 @@
 
 <script>
 import Blog from "../../components/Blog.vue";
-import { ArrowLeftIcon } from 'vue-feather-icons'
+import { ArrowLeftIcon } from 'vue-feather-icons';
+import Nav from '../../components/Nav.vue';
+import NavItem from '../../components/NavItem.vue';
 
 const Cosmic = require("cosmicjs");
 const api = Cosmic();
@@ -67,7 +44,9 @@ export default {
   name: "BlogView",
   components: {
     Blog,
-    ArrowLeftIcon
+    ArrowLeftIcon,
+    Nav,
+    NavItem,
   },
   head() {
     let blog = this.blog,
@@ -97,7 +76,6 @@ export default {
   },
   data() {
     return {
-      isActive: Boolean,
       loading: false,
       blog: {},
       slug: ""

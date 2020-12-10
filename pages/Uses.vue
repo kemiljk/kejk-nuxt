@@ -1,36 +1,11 @@
 <template>
   <div class="relative mx-auto">
-    <nav class="fixed flex backgroundBlur w-full pt-4 border-b-2 border-gray-100 dark:border-gray-900">
-        <ul class="mx-auto">
-            <li class="flex space-x-4">
-                <NuxtLink
-                isActive
-                to="/"
-                :class="['font-medium block px-4 py-2 rounded-md text-gray-900 dark:text-gray-50 hover:bg-indigo-50 hover:text-indigo-600 dark:hover:bg-indigo-800 dark:hover:text-indigo-300 transition ease-in-out duration-100']"
-                >
-                Home
-                </NuxtLink>
-                <NuxtLink
-                to="/about"
-                :class="['font-medium block px-4 py-2 rounded-md text-gray-900 dark:text-gray-50 hover:bg-indigo-50 hover:text-indigo-600 dark:hover:bg-indigo-800 dark:hover:text-indigo-300 transition ease-in-out duration-100']"
-                >
-                About
-                </NuxtLink>
-                <NuxtLink
-                to="/thoughts"
-                :class="['font-medium block px-4 py-2 rounded-md text-gray-900 dark:text-gray-50 hover:bg-indigo-50 hover:text-indigo-600 dark:hover:bg-indigo-800 dark:hover:text-indigo-300 transition ease-in-out duration-100']"
-                >
-                Thoughts
-                </NuxtLink>
-                <NuxtLink
-                to="/uses"
-                :class="['font-medium block px-4 py-2 rounded-md text-gray-900 dark:text-gray-50', { 'bg-indigo-100 dark:bg-indigo-900 text-indigo-700 dark:text-indigo-200 transition ease-in-out duration-100': isActive }]"
-                >
-                Uses
-                </NuxtLink>
-            </li>
-        </ul>
-    </nav>
+    <Nav>
+      <NavItem to="/">Home</NavItem>
+      <NavItem to="/about">About</NavItem>
+      <NavItem to="/thoughts">Thoughts</NavItem>
+      <NavItem to="/uses" isActive>Uses</NavItem>
+    </Nav>
     <div class="max-w-3xl mx-auto px-4">
       <header class="container pt-10 pb-2 max-w-xl mx-auto">
         <h1 class="pt-16 pb-8 text-center">
@@ -48,6 +23,8 @@
 
 <script>
 import Uses from '../components/Uses.vue'
+import Nav from '../components/Nav.vue';
+import NavItem from '../components/NavItem.vue';
 
 const Cosmic = require("cosmicjs");
 const api = Cosmic();
@@ -118,11 +95,12 @@ export default {
     }
   },
   components: {
-    Uses
+    Uses,
+    Nav,
+    NavItem,
   },
   data() {
     return {
-      isActive: Boolean,
       gears: {},
     }
   },
