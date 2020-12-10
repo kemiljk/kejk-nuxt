@@ -19,7 +19,7 @@
               {{ media.title }}
             </h4>
           </div>
-          <p class="mb-0 text-gray-500 dark:text-gray-200">
+          <p class="mb-0 text-gray-500 dark:text-gray-400 font-medium">
             {{ media.metadata.subtitle }}
           </p>
         </div>

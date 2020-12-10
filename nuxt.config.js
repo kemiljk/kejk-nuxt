@@ -1,3 +1,5 @@
+import axios from 'axios'
+
 export default {
   // Disable server-side rendering (https://go.nuxtjs.dev/ssr-mode)
   ssr: false,
@@ -127,7 +129,7 @@ export default {
   ],
 
   sitemap: {
-    path: '/kejk.tech.xml',
+    path: '/sitemap.xml',
     hostname: 'https://kejk.tech',
     cacheTime: 1000 * 60 * 15,
     gzip: true,
@@ -148,7 +150,42 @@ export default {
 
   // Modules (https://go.nuxtjs.dev/config-modules)
   modules: [
-    '@nuxtjs/sitemap'
+    '@nuxtjs/sitemap',
+    '@nuxtjs/feed',
+  ],
+  
+  feed: [
+  //   {
+  //     path: '/feed.xml', // The route to your feed.
+  //     // In your `feed` array's object:
+  //     async create(feed) {
+  //       feed.options = {
+  //         title: 'KEJK — Thoughts',
+  //         link: 'https://kejk.tech/feed.xml',
+  //         description: 'Thoughts on Design and Development from here and around the web.'
+  //       };
+
+  //       const blogs = await (axios.get('https://api.cosmicjs.com/v1/d1ffcb90-35a5-11eb-b56f-05f2cd29bdde/objects?pretty=true&hide_metafields=true&type=blogs&read_key=uNXYQDbNTCWQyEaFjq44PUolieGKBuzePTaEdnDl0CHLcnJtPK&limit=20&props=slug,title,content')).data;
+  //       blogs.forEach(blog => {
+  //         feed.addItem({
+  //           title: blog.title,
+  //           id: blog._id,
+  //           link: blog.slug,
+  //           content: blog.content
+  //         });
+  //       });
+
+  //       feed.addCategory('Design & Development');
+
+  //       feed.addContributor({
+  //         name: 'Karl Koch',
+  //         email: 'karl@kejk.tech',
+  //         link: 'https://www.kejk.tech'
+  //       });
+  //     },
+  //     cacheTime: 1000 * 60 * 15, // How long should the feed be cached
+  //     type: 'rss2', // Can be: rss2, atom1, json1
+  //   }
   ],
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)

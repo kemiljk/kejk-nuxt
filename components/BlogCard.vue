@@ -8,15 +8,15 @@
       v-if="blog.metadata"
     >
       <header class="flex items-center justify-between px-4 pt-4 pb-0">
-        <h1 class="text-indigo-600 dark:text-indigo-300 text-lg font-medium">
+        <h1 class="text-indigo-600 dark:text-indigo-300 text-lg font-bold">
           {{ blog.title }}
         </h1>
       <arrow-right-icon class="text-gray-700 dark:text-gray-300"></arrow-right-icon>
     </header>
-      <p class="text-gray-500 dark:text-gray-400 px-4 pt-0 pb-2">
+      <p class="text-gray-500 dark:text-gray-400 px-4 pt-0 pb-2 font-medium">
         {{ blog.metadata.published | moment("DD MMM, YYYY") }}
       </p>
-      <p class="text-gray-900 dark:text-gray-50 px-4 pt-2 pb-4">
+      <p class="text-gray-700 dark:text-gray-300 px-4 pt-2 pb-4 font-medium">
         {{ blog.metadata.snippet }}
       </p>
     </div>
