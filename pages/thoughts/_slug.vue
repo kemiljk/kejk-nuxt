@@ -38,7 +38,10 @@
             to="/thoughts"
             class="text-black bg-gray-50 hover:bg-gray-100 dark:hover:bg-gray-800 dark:text-white dark:bg-gray-900 rounded-xl px-6 py-3 btn btn--primary"
           >
-            <ion-icon class="mr-2 mb-1 align-middle" name="chevron-back-outline" />Back to all posts
+          <div class="flex items-center justify-between font-medium">
+            <arrow-left-icon class="text-gray-700 dark:text-gray-300 mr-2"></arrow-left-icon>
+            Back to all posts
+          </div>
           </NuxtLink>
         </div>
           <keep-alive>
@@ -51,6 +54,7 @@
 
 <script>
 import Blog from "../../components/Blog.vue";
+import { ArrowLeftIcon } from 'vue-feather-icons'
 
 const Cosmic = require("cosmicjs");
 const api = Cosmic();
@@ -62,7 +66,8 @@ const bucket = api.bucket({
 export default {
   name: "BlogView",
   components: {
-    Blog
+    Blog,
+    ArrowLeftIcon
   },
   head() {
     let blog = this.blog,
