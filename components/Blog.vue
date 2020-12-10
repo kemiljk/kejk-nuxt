@@ -49,7 +49,7 @@ export default {
           { name: "twitter:card", content: "summary_large_image" },
           { hid: 'twitter:title', property: 'twitter:title', content: title},
           { hid: 'twitter:description', property: 'twitter:description', content: desc},
-          { hid: 'twitter:image', property: 'twitter:image', content: image},
+          { hid: 'twitter:image:src', property: 'twitter:image:src', content: image},
           { hid: 'twitter:url', property: 'twitter:url', content: url},
           { hid: 'twitter:label1', property: 'twitter:label1', content: title},  
           ], link: [ { rel: 'canonical', href: url} ]

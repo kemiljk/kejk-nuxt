@@ -130,8 +130,8 @@ export default {
           content: "Human-first Product Designer and Developer.",
         },
         {
-          hid: "twitter:image",
-          name: "twitter:image",
+          hid: "twitter:image:src",
+          name: "twitter:image:src",
           content: "https://res.cloudinary.com/kejk/image/upload/v1607350722/twitter-og_bbzz2a.png",
         },
       ],
