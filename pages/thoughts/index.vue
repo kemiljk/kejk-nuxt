@@ -37,12 +37,12 @@
           /Thoughts
         </h1>
       </header>
-    <header class="pt-16 pb-2 max-w-xl">
+    <header class="pt-16 max-w-xl">
       <h2>
         Thoughts on design and development.
       </h2>
     </header>
-      <div class="flex flex-row mt-4">
+      <div class="flex flex-row">
         <div class="grid grid-row xs:grid-cols-1 sm:grid-cols-2 gap-4">
           <div v-for="blog in blogs" :key="blog._id">
               <keep-alive>
@@ -51,12 +51,12 @@
           </div>
         </div>
       </div>
-      <header class="pt-16 pb-2 max-w-xl">
+      <header class="pt-16 max-w-xl">
         <h2>
           Posts from around the web.
         </h2>
       </header>
-        <div class="flex flex-row mt-4">
+        <div class="flex flex-row">
           <div class="grid grid-row xs:grid-cols-1 sm:grid-cols-2 gap-4">
             <div v-for="post in posts" :key="post._id">
               <keep-alive>

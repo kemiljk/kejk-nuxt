@@ -55,12 +55,12 @@
         </a>
       </div>
     </header>
-    <header class="pt-16 pb-2 max-w-xl">
+    <header class="pt-16 max-w-xl">
       <h2>
         Some things I've made.
       </h2>
     </header>
-    <div class="flex flex-row mt-4">
+    <div class="flex flex-row">
         <div class="grid xs:grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
           <div v-for="made in mades" :key="made.title">
               <keep-alive>
@@ -69,12 +69,12 @@
           </div>
         </div>
     </div>
-    <header class="pt-16 pb-2 max-w-xl">
+    <header class="pt-16 max-w-xl">
       <h2>
         Thoughts on design and development.
       </h2>
     </header>
-      <div class="flex flex-row mt-4">
+      <div class="flex flex-row">
         <div class="grid grid-row xs:grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-4">
           <div v-for="blog in blogs" :key="blog._id">
               <keep-alive>
@@ -88,12 +88,12 @@
           </div>
         </div>
       </div>
-      <header class="pt-16 pb-2 max-w-xl">
+      <header class="pt-16 max-w-xl">
         <h2>
           Some things I'm currently enjoying.
         </h2>
       </header>
-    <div class="flex flex-row mt-4">
+    <div class="flex flex-row">
       <div class="grid grid-row xs:grid-cols-1 sm:grid-cols-2 md:grid-cols-3 w-full gap-4">
         <div v-for="media in medias" :key="media._id">
               <keep-alive>
@@ -102,12 +102,12 @@
           </div>
         </div>
       </div>
-      <header class="pt-16 pb-2 max-w-xl">
+      <header class="pt-16 max-w-xl">
         <h2>
           Music I've written.
         </h2>
       </header>
-    <div class="flex flex-row mt-4">
+    <div class="flex flex-row">
       <div class="flex flex-row grid-cols-1 w-full shadow-xs">
             <iframe src="https://embed.music.apple.com/us/album/cornerstone/1300802348?app=music&amp;itsct=music_box&amp;itscg=30200&amp;ct=albums_cornerstone&amp;ls=1" height="440px" frameborder="0" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation-by-user-activation" allow="autoplay *; encrypted-media *;" style="width: 100%; max-width: 100%; overflow: hidden; border-top-left-radius: 10px; border-top-right-radius: 10px; border-bottom-right-radius: 10px; border-bottom-left-radius: 10px; background-color: transparent; background-position: initial initial; background-repeat: initial initial;"></iframe>
         </div>

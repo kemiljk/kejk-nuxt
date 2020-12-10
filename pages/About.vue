@@ -57,12 +57,12 @@
         </p>
       </div>
     </div>
-    <header class="pt-4 pb-2 max-w-xl">
+    <header class="pt-4 max-w-xl">
       <h2>
         Where to find me.
       </h2>
     </header>
-      <div class="flex flex-row mt-4">
+      <div class="flex flex-row">
         <div class="grid grid-row grid-cols-2 md:grid-cols-6 w-full gap-4">
           <div v-for="social in socials" :key="social._id">
               <keep-alive>
