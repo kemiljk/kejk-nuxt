@@ -16,7 +16,7 @@ export default {
       { name: "HandheldFriendly", content: "True" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
       { name: 'apple-mobile-web-app-capable', content: 'yes' },
-      { name: 'apple-mobile-web-app-status-bar-style', content: 'black' },
+      { name: 'apple-mobile-web-app-status-bar-style', content: 'black-translucent' },
       { name: 'apple-mobile-web-app-title', content: "KEJK" },
       { hid: 'description', name: 'description', content: "Product Designer and Frontend Developer" },
       {
@@ -90,7 +90,7 @@ export default {
       {
         hid: "canonical",
         rel: "canonical",
-        href: "https://kejk.tech",
+        href: "https://www.kejk.tech",
       },
     ],
     script: [
