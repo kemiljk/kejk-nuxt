@@ -92,7 +92,7 @@ export default {
         { property: "og:image:height", content: "300" },
 
         { name: "twitter:site", content: "@_kejk" },
-        { name: "twitter:card", content: "summary_large_image" },
+        { name: "twitter:card", content: "https://res.cloudinary.com/kejk/image/upload/v1607350722/twitter-og_bbzz2a.png" },
         {
           hid: "twitter:url",
           name: "twitter:url",

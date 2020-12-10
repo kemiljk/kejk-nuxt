@@ -45,7 +45,7 @@ export default {
           { hid: 'og:description', property: 'og:description', content: desc},
           { property: 'twitter:domain', content: url},
           { name: "twitter:site", content: "@_kejk" },
-          { name: "twitter:card", content: "summary_large_image" },
+          { name: "twitter:card", content: "https://res.cloudinary.com/kejk/image/upload/v1607350722/twitter-og_bbzz2a.png" },
           { hid: 'twitter:title', property: 'twitter:title', content: title},
           { hid: 'twitter:description', property: 'twitter:description', content: desc},
           { hid: 'twitter:image', property: 'twitter:image', content: image},
