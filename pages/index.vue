@@ -37,7 +37,7 @@
     </header>
     <div class="flex flex-row">
         <div class="grid xs:grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
-          <div v-for="made in mades.slice(0,4)" :key="made.title">
+          <div v-for="made in mades.slice" :key="made.title">
               <keep-alive>
                   <MadeCard :made="made" />
               </keep-alive>
@@ -51,9 +51,9 @@
     </header>
     <div class="flex flex-row">
         <div class="grid xs:grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
-          <div v-for="made in mades.slice(4,7)" :key="made.title">
+          <div v-for="helpedMake in helpedMakes" :key="helpedMake.title">
               <keep-alive>
-                  <MadeCard :made="made" />
+                  <HelpedMakeCard :helpedMakes="helpedMakes" />
               </keep-alive>
           </div>
         </div>
@@ -110,6 +110,7 @@ import BlogCard from '../components/BlogCard.vue';
 import PostCard from '../components/PostCard.vue';
 import MediaCard from '../components/MediaCard.vue';
 import MadeCard from '../components/MadeCard.vue';
+import HelpedMakeCard from '../components/HelpedMakeCard.vue';
 import Nav from '../components/Nav.vue';
 import NavItem from '../components/NavItem.vue';
 import { TwitterIcon } from 'vue-feather-icons';
@@ -188,6 +189,7 @@ export default {
     PostCard,
     MediaCard,
     MadeCard,
+    HelpedMakeCard,
     Nav,
     NavItem,
     TwitterIcon,
@@ -219,20 +221,25 @@ export default {
           img: "https://res.cloudinary.com/kejk/image/upload/v1607281439/lazyPDF_vxsn1b.png",
           title: "Lazy PDF"
         },
+      ],
+      helpedMakes: [
         {
           href: "https://apps.apple.com/gb/app/make-me-a-cocktail/id1541820377",
           img: "https://res.cloudinary.com/kejk/image/upload/v1606907284/mmac_z5flxv.png",
-          title: "Make Me a Cocktail"
+          title: "Make Me a Cocktail",
+          skill: "Design"
         },
         {
           href: "https://www.confidotalent.com",
           img: "https://res.cloudinary.com/kejk/image/upload/v1607678970/confido_g9gr6k.png",
-          title: "Confido"
+          title: "Confido",
+          skill: "Design & Development
         },
         {
           href: "https://www.locallyuk.com",
           img: "https://res.cloudinary.com/kejk/image/upload/v1607678848/locally_m7wzjq.png",
-          title: "Locally UK"
+          title: "Locally UK",
+          skill: "Design"
         }
       ],
       posts: {},
