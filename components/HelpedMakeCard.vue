@@ -16,9 +16,9 @@
 
 <script>
 export default {
-  name: "Made",
+  name: "HelpedMake",
   props: {
-    made: {
+    helpedMake: {
       type: Object,
       default: () => {"No posts are loaded"}
     }
