@@ -53,7 +53,7 @@
         <div class="grid xs:grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
           <div v-for="helpedMake in helpedMakes" :key="helpedMake.title">
               <keep-alive>
-                  <HelpedMakeCard :helpedMakes="helpedMakes" />
+                  <HelpedMakeCard :helpedMake="helpedMake" />
               </keep-alive>
           </div>
         </div>

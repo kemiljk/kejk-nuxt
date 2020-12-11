@@ -3,13 +3,13 @@
       <a :href="made.href" target="_blank" rel="noreferrer">
           <img alt="Logo visual" :src="`${helpedMake.img}`" class="rounded-md" />
           <div class="flex flex-col align-middle my-auto">
-          <div class="flex mt-2 text-md text-gray-900 dark:text-gray-50 font-semibold mx-auto py-2 rounded-md align-middle">
+          <button class="flex mt-2 text-md text-gray-900 dark:text-gray-50 font-semibold mx-auto py-2 rounded-md align-middle">
               {{ helpedMake.title }}
           </div>
           <p class="mb-0 text-gray-500 dark:text-gray-400 font-medium">
               {{ helpedMake.skill }}
           </p>
-          </div>
+          </button>
       </a>
   </div>  
 </template>
