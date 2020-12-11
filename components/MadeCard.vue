@@ -5,7 +5,7 @@
           <div class="flex flex-col align-middle my-auto">
           <div class="flex mt-2 text-md text-gray-900 dark:text-gray-50 font-semibold mx-auto py-2 rounded-md align-middle">
               {{ made.title }}
-              <div v-if="made.id" class="ml-4 bg-yellow-500 dark:text-yellow-300 -mb-3 -mt-1 px-4 py-1 rounded-full"><span :id="made.id" class="text-gray-900" /></div>
+              <div v-if="made.id" class="ml-4 bg-yellow-500 dark:text-yellow-300 -mb-3 -mt-1 px-4 py-1 rounded-full"><span :id="made.id" class="text-gray-900 align-middle font-bold" /></div>
           </div>
           </div>
       </a>
