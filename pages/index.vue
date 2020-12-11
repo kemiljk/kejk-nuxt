@@ -37,7 +37,21 @@
     </header>
     <div class="flex flex-row">
         <div class="grid xs:grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
-          <div v-for="made in mades" :key="made.title">
+          <div v-for="made in mades.slice(0,4)" :key="made.title">
+              <keep-alive>
+                  <MadeCard :made="made" />
+              </keep-alive>
+          </div>
+        </div>
+    </div>
+    <header class="pt-16 max-w-xl">
+      <h2>
+        Some things I've helped make.
+      </h2>
+    </header>
+    <div class="flex flex-row">
+        <div class="grid xs:grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
+          <div v-for="made in mades.slice(4,7)" :key="made.title">
               <keep-alive>
                   <MadeCard :made="made" />
               </keep-alive>
@@ -192,8 +206,13 @@ export default {
         {
           href: "https://www.figma.com/community/plugin/837070613195594890/Px-%E2%80%BA%E2%80%BA-Em",
           img: "https://res.cloudinary.com/kejk/image/upload/v1607281435/px2em_qnscic.png",
-          title: "Px ›› Em",
+          title: "Px››Em",
           id: "install-count"
+        },
+        {
+          href: "https://actions.getdrafts.com/a/1fP",
+          img: "https://res.cloudinary.com/kejk/image/upload/v1607678050/drafts_cosmic_tykczi.png",
+          title: "Drafts››Cosmic"
         },
         {
           href: "https://www.lazypdf.tech",
@@ -204,6 +223,16 @@ export default {
           href: "https://apps.apple.com/gb/app/make-me-a-cocktail/id1541820377",
           img: "https://res.cloudinary.com/kejk/image/upload/v1606907284/mmac_z5flxv.png",
           title: "Make Me a Cocktail"
+        },
+        {
+          href: "https://www.confidotalent.com",
+          img: "https://res.cloudinary.com/kejk/image/upload/v1607678970/confido_g9gr6k.png",
+          title: "Confido"
+        },
+        {
+          href: "https://www.locallyuk.com",
+          img: "https://res.cloudinary.com/kejk/image/upload/v1607678848/locally_m7wzjq.png",
+          title: "Locally UK"
         }
       ],
       posts: {},
