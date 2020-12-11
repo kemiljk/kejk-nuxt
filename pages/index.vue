@@ -233,7 +233,7 @@ export default {
           href: "https://www.confidotalent.com",
           img: "https://res.cloudinary.com/kejk/image/upload/v1607678970/confido_g9gr6k.png",
           title: "Confido",
-          skill: "Design & Development
+          skill: "Design & Development"
         },
         {
           href: "https://www.locallyuk.com",
