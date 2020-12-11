@@ -37,7 +37,7 @@
     </header>
     <div class="flex flex-row">
         <div class="grid xs:grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
-          <div v-for="made in mades.slice" :key="made.title">
+          <div v-for="made in mades" :key="made.title">
               <keep-alive>
                   <MadeCard :made="made" />
               </keep-alive>

@@ -6,7 +6,7 @@
           <button class="flex mt-2 text-md text-gray-900 dark:text-gray-50 font-semibold mx-auto py-2 rounded-md align-middle">
               {{ helpedMake.title }}
           </div>
-          <p class="mb-0 text-gray-500 dark:text-gray-400 font-medium">
+          <p class="mb-0 text-gray-500 dark:text-gray-400 font-medium mx-auto">
               {{ helpedMake.skill }}
           </p>
           </button>
