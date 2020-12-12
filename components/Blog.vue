@@ -50,7 +50,7 @@ export default {
       const metaData = {
         type: "blog",
         title: this.blog.title,
-        description: "Latest post",
+        description: this.blog.metadata.snippet,
         url: 'https://kejk.tech/thoughts/' + `${this.$route.params.id}`,
         image: 'https://res.cloudinary.com/kejk/image/upload/v1607350722/og-image_bcs2c8.png',
       };
