@@ -5,11 +5,25 @@
         <h1>
           {{ blog.title }}
         </h1>
-        <p class="text-gray-500 dark:text-gray-400 pt-2 pb-8">
+        <p class="text-gray-500 dark:text-gray-400 pt-2 pb-2">
         {{ blog.metadata.published | moment("DD MMM, YYYY") }}
         </p>
       </div>
     </div>
+    <!-- <div class="border-b-2 border-gray-100 py-4 inline-block mb-8" id="article-action-sheet-target">
+      <div class="space-x-8">
+        <span class="font-bold text-lg mr-2">
+          Share this article
+        </span>
+          <a href="https://twitter.com/intent/tweet?text=Awesome%20article%20from%20KEJK%21&amp;url=https%3A%2F%2Fkejk.tech%2Fthoughts&amp;via=_kejk" rel="noopener noreferrer" class="mt-2 inline-block">
+            <ion-icon name="logo-twitter" class="text-blue-400"></ion-icon><span class="font-medium text-black dark:text-white ml-2">Twitter</span>
+          </a>
+
+          <a href="">
+            <ion-icon name="logo-linkedin" class="text-blue-600"></ion-icon><span class="font-medium text-black dark:text-white ml-2">LinkedIn</span>
+          </a>
+        </div>
+      </div> -->
     <div class="flex flex-row px-lg-12">
       <div class="flex flex-col col-span-full md:col-span-6">
         <section
@@ -21,6 +35,8 @@
 </template>
 
 <script>
+import getSiteMeta from "~/utils/getSiteMeta.js";
+
 export default {
   name: "Blog",
   props: {
@@ -29,30 +45,38 @@ export default {
       default: () => {}
     }
   },
+  computed: {
+    meta() {
+      const metaData = {
+        type: "blog",
+        title: this.blog.title,
+        description: "Latest post",
+        url: `https://kejk.tech/thoughts/${this.blog.slug}`,
+        image: 'https://res.cloudinary.com/kejk/image/upload/v1607350722/og-image_bcs2c8.png',
+      };
+      return getSiteMeta(metaData);
+    }
+  },
   head() {
-    let blog = this.blog,
-    title = blog.title,
-    desc = 'Latest post',
-    url = 'https://kejk.tech/thoughts/' + blog.slug,
-    image = 'https://res.cloudinary.com/kejk/image/upload/v1607350722/og-image_bcs2c8.png';
     return {
-        title: title,
+      title: this.blog.title,
           meta: [
-          { hid: 'description', name: 'description', content: desc },
-          { hid: 'og:title', property: 'og:title', content: title},
-          { hid: 'og:url', property: 'og:url', content: url},
-          { hid: 'og:image', property: 'og:image', content: image},
-          { hid: 'og:description', property: 'og:description', content: desc},
-          { property: 'twitter:domain', content: url},
-          { name: "twitter:site", content: "@_kejk" },
-          { name: "twitter:creator", content: "@_kejk" },
-          { name: "twitter:card", content: "summary_large_image" },
-          { hid: 'twitter:title', property: 'twitter:title', content: title},
-          { hid: 'twitter:description', property: 'twitter:description', content: desc},
-          { hid: 'twitter:image:src', property: 'twitter:image:src', content: image},
-          { hid: 'twitter:url', property: 'twitter:url', content: url},
-          { hid: 'twitter:label1', property: 'twitter:label1', content: title},  
-          ], link: [ { rel: 'canonical', href: url} ]
+          ...this.meta,
+          // { hid: 'description', name: 'description', content: desc },
+          // { hid: 'og:title', property: 'og:title', content: title},
+          // { hid: 'og:url', property: 'og:url', content: url},
+          // { hid: 'og:image', property: 'og:image', content: image},
+          // { hid: 'og:description', property: 'og:description', content: desc},
+          // { property: 'twitter:domain', content: url},
+          // { name: "twitter:site", content: "@_kejk" },
+          // { name: "twitter:creator", content: "@_kejk" },
+          // { name: "twitter:card", content: "summary_large_image" },
+          // { hid: 'twitter:title', property: 'twitter:title', content: title},
+          // { hid: 'twitter:description', property: 'twitter:description', content: desc},
+          // { hid: 'twitter:image:src', property: 'twitter:image:src', content: image},
+          // { hid: 'twitter:url', property: 'twitter:url', content: url},
+          // { hid: 'twitter:label1', property: 'twitter:label1', content: title},  
+          ], link: [ { rel: 'canonical', href: `https://kejk.tech/thoughts/${this.blog.slug}`} ]
     }
   }
 };

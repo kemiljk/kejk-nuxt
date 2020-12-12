@@ -88,6 +88,16 @@
     @apply font-medium;
   }
 
+  input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+  }
+
+  textarea {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+  }
+
   @supports (-webkit-backdrop-filter: blur(40px)) {
     .backgroundBlur {
       -webkit-backdrop-filter: blur(40px);
