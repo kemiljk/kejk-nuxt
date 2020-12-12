@@ -112,10 +112,10 @@ export default {
     this.fetchData();
   },
   methods: {
-    getGearsData() {
+    async getGearsData() {
         // this.error = this.use = null;
         this.loading = true;
-        bucket
+        await bucket
         .getObjects({
             limit: 1,
             type: "gears",
@@ -129,7 +129,7 @@ export default {
     },
     async fetchData() {
       this.loading = true;
-      bucket
+      await bucket
         .getObject({
           slug: this.slug
         })

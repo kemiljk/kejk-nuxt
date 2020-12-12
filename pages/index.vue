@@ -258,10 +258,10 @@ export default {
         })
   },
   methods: {
-    getBlogsData() {
+    async getBlogsData() {
         this.error = this.blog = null;
         this.loading = true;
-        bucket
+        await bucket
         .getObjects({
             limit: 1,
             type: "blogs",
@@ -273,10 +273,10 @@ export default {
             this.blogs = blogs;
         });
     },
-    getPostsData() {
+    async getPostsData() {
         this.error = this.post = null;
         this.loading = true;
-        bucket
+        await bucket
         .getObjects({
             limit: 1,
             type: "posts",
@@ -288,10 +288,10 @@ export default {
             this.posts = posts;
         });
     },
-    getMediasData() {
+    async getMediasData() {
         this.error = this.media = null;
         this.loading = true;
-        bucket
+        await bucket
         .getObjects({
             limit: 3,
             type: "medias",

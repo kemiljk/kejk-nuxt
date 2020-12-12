@@ -79,14 +79,14 @@ export default {
       slug: ""
     };
   },
-  mounted() {
+  beforeMount() {
     this.slug = this.$route.params.slug;
     this.fetchData();
   },
   methods: {
-    fetchData() {
+    async fetchData() {
       this.loading = true;
-      bucket
+      await bucket
         .getObject({
           slug: this.slug
         })

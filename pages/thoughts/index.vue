@@ -97,10 +97,10 @@ export default {
     this.getPostsData();
   },
   methods: {
-    getBlogsData() {
+    async getBlogsData() {
         this.error = this.blog = null;
         this.loading = true;
-        bucket
+        await bucket
         .getObjects({
             type: "blogs",
             props: "_id,slug,title,content,metadata"
@@ -111,10 +111,10 @@ export default {
             this.blogs = blogs;
         });
     },
-    getPostsData() {
+    async getPostsData() {
         this.error = this.post = null;
         this.loading = true;
-        bucket
+        await bucket
         .getObjects({
             type: "posts",
             props: "_id,slug,title,content,metadata"
