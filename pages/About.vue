@@ -45,6 +45,14 @@
           </div>
         </div>
       </div>
+      <header class="pt-16 max-w-xl">
+        <h2>
+          How to reach me.
+        </h2>
+      </header>
+      <div> 
+        <GetInTouch />
+      </div>
     </div>
   </div>
 </template>

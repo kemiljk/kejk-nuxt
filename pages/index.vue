@@ -101,6 +101,14 @@
             <iframe src="https://embed.music.apple.com/us/album/cornerstone/1300802348?app=music&amp;itsct=music_box&amp;itscg=30200&amp;ct=albums_cornerstone&amp;ls=1" height="440px" frameborder="0" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation-by-user-activation" allow="autoplay *; encrypted-media *;" style="width: 100%; max-width: 100%; overflow: hidden; border-top-left-radius: 10px; border-top-right-radius: 10px; border-bottom-right-radius: 10px; border-bottom-left-radius: 10px; background-color: transparent; background-position: initial initial; background-repeat: initial initial;"></iframe>
         </div>
       </div>
+      <header class="pt-16 max-w-xl">
+        <h2>
+          How to reach me.
+        </h2>
+      </header>
+      <div> 
+        <GetInTouch />
+      </div>
     </div>
   </div>
 </template>

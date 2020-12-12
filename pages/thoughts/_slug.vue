@@ -22,6 +22,15 @@
           <keep-alive>
             <Blog :blog="blog" />
           </keep-alive>
+        <div class="mt-16 pb-16 border-t-2 border-gray-200 dark:border-gray-800" />
+        <header>
+          <h2>
+            How to reach me.
+          </h2>
+        </header>
+        <div> 
+          <GetInTouch />
+        </div>
       </div>
     </div>
   </div>
