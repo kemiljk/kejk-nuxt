@@ -17,13 +17,13 @@
         Thoughts on design and development.
       </h2>
     </header>
-    <div class="my-8">
+    <!-- <div class="my-8">
       <a href="http://createfeed.fivefilters.org/extract.php?url=https%3A%2F%2Fwww.kejk.tech%2Fthoughts">
         <button class="bg-indigo-300 dark:bg-indigo-600 px-4 py-2 rounded-md text-indigo-900 dark:text-indigo-100 font-medium">
           Subscribe via RSS
         </button>
       </a>
-    </div>
+    </div> -->
       <div class="flex flex-row">
         <div class="grid grid-row xs:grid-cols-1 sm:grid-cols-2 gap-4" v-if="blogs.blogList">
           <div v-for="blog in blogs.blogList" :key="blog._id">
