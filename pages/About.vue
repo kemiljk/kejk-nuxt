@@ -137,7 +137,8 @@ export default {
         },
         {
           href: 'https://www.figma.com/@_kejk',
-          icon: 'earth-outline',
+          icon: '',
+          figma: true,
           title: 'Figma',
           color: 'text-green-400'
         },
