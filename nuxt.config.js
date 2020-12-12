@@ -1,12 +1,3 @@
-import axios from 'axios'
-
-const Cosmic = require("cosmicjs");
-const api = Cosmic();
-const bucket = api.bucket({
-  slug: "d1ffcb90-35a5-11eb-b56f-05f2cd29bdde",
-  read_key: "uNXYQDbNTCWQyEaFjq44PUolieGKBuzePTaEdnDl0CHLcnJtPK"
-});
-
 export default {
   // Disable server-side rendering (https://go.nuxtjs.dev/ssr-mode)
   ssr: false,
@@ -134,20 +125,6 @@ export default {
     '@nuxtjs/tailwindcss',
     '@nuxtjs/moment',
   ],
-
-  generate: {
-    routes() {
-      return Promise.all([
-        bucket.getObjects({
-          type: 'blogs',
-          props: 'slug,title,content',
-          limit: 20
-        }),
-      ]).then(([blogEntries]) => {
-        return [...blogEntries.items.map(entry => entry.fields.slug)];
-      });
-    }
-  },
 
   sitemap: {
     path: '/sitemap.xml',
