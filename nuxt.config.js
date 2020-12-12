@@ -1,9 +1,11 @@
+import axios from 'axios';
+
 export default {
   // Disable server-side rendering (https://go.nuxtjs.dev/ssr-mode)
   ssr: true,
 
   // Target (https://go.nuxtjs.dev/config-target)
-  target: 'server',
+  target: 'static',
 
   // Global page headers (https://go.nuxtjs.dev/config-head)
   head: {
@@ -131,12 +133,11 @@ export default {
     hostname: 'https://kejk.tech',
     cacheTime: 1000 * 60 * 15,
     gzip: true,
-    generate: false,
     routes: [
       '/',
       '/about',
       '/thoughts',
-      '/thougts/_slug',
+      '/thougts/_id',
       '/uses',
     ].map(route => ({
       url: route,
@@ -167,37 +168,38 @@ export default {
   },
   
   feed: [
-  //   {
-  //     path: '/feed.xml', // The route to your feed.
-  //     // In your `feed` array's object:
-  //     async create(feed) {
-  //       feed.options = {
-  //         title: 'KEJK — Thoughts',
-  //         link: 'https://kejk.tech/feed.xml',
-  //         description: 'Thoughts on Design and Development from here and around the web.'
-  //       };
+    // {
+    //   path: './static/feed.xml', // The route to your feed.
+    //   // In your `feed` array's object:
+    //   async create(feed) {
+    //     feed.options = {
+    //       title: 'KEJK — Thoughts',
+    //       link: 'https://kejk.tech/feed.xml',
+    //       description: 'Thoughts on Design and Development from here and around the web.'
+    //     };
+        
+    //     let blogList = this.$store.getters.getBlog;
+    //     const blogs = await (axios.get(blogList)).data;
+    //     blogs.forEach(blog => {
+    //       feed.addItem({
+    //         title: blog.title,
+    //         id: blog._id,
+    //         link: blog.slug,
+    //         content: blog.content
+    //       });
+    //     });
 
-  //       const blogs = await (axios.get('https://api.cosmicjs.com/v1/kemiljk/objects?pretty=true&hide_metafields=true&type=blogs&read_key=uNXYQDbNTCWQyEaFjq44PUolieGKBuzePTaEdnDl0CHLcnJtPK&limit=20&props=slug,title,content')).data;
-  //       blogs.forEach(blog => {
-  //         feed.addItem({
-  //           title: blog.title,
-  //           id: blog._id,
-  //           link: blog.slug,
-  //           content: blog.content
-  //         });
-  //       });
+    //     feed.addCategory('Design & Development');
 
-  //       feed.addCategory('Design & Development');
-
-  //       feed.addContributor({
-  //         name: 'Karl Koch',
-  //         email: 'karl@kejk.tech',
-  //         link: 'https://www.kejk.tech'
-  //       });
-  //     },
-  //     cacheTime: 1000 * 60 * 15, // How long should the feed be cached
-  //     type: 'rss2', // Can be: rss2, atom1, json1
-  //   }
+    //     feed.addContributor({
+    //       name: 'Karl Koch',
+    //       email: 'karl@kejk.tech',
+    //       link: 'https://www.kejk.tech'
+    //     });
+    //   },
+    //   cacheTime: 1000 * 60 * 15, // How long should the feed be cached
+    //   type: 'rss2', // Can be: rss2, atom1, json1
+    // }
   ],
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)

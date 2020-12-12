@@ -17,6 +17,13 @@
         Thoughts on design and development.
       </h2>
     </header>
+    <div class="my-8">
+      <a href="http://createfeed.fivefilters.org/extract.php?url=https%3A%2F%2Fwww.kejk.tech%2Fthoughts">
+        <button class="bg-indigo-300 dark:bg-indigo-600 px-4 py-2 rounded-md text-indigo-900 dark:text-indigo-100 font-medium">
+          Subscribe via RSS
+        </button>
+      </a>
+    </div>
       <div class="flex flex-row">
         <div class="grid grid-row xs:grid-cols-1 sm:grid-cols-2 gap-4" v-if="blogs.blogList">
           <div v-for="blog in blogs.blogList" :key="blog._id">
@@ -53,6 +60,8 @@
 </template>
 
 <script>
+import getSiteMeta from "~/utils/getSiteMeta.js";
+
 const Cosmic = require("cosmicjs");
 const api = Cosmic();
 const bucket = api.bucket({
@@ -62,36 +71,32 @@ const bucket = api.bucket({
 
 export default {
   computed: {
-      blogs(){
-        let blogs = this.$store.getters.getBlog;
-        let blogList = [];
+    meta() {
+      const metaData = {
+        title: "KEJK | Thoughts",
+        description: "Thoughts on Design and Development from here and around the web.",
+        url: "https://kejk.tech/thoughts",
+        image: "https://res.cloudinary.com/kejk/image/upload/v1607350722/og-image_bcs2c8.png",
+      };
+      return getSiteMeta(metaData);
+    },
+    blogs() {
+      let blogs = this.$store.getters.getBlog;
+      let blogList = [];
 
-        blogs.forEach(function (blog) {
-            blogList.push(blog);
-        });
+      blogs.forEach(function (blog) {
+          blogList.push(blog);
+      });
 
-        return {blogList: blogList};
-      }
+      return {blogList: blogList};
+    },
   },
   head() {
-    return {
-    title: 'KEJK – Thoughts',
-    meta: [
-      { hid: 'description', name: 'description', content: 'Thoughts on Design and Development from here and around the web.' },
-      { hid: 'og:title', property: 'og:title', content: 'KEJK – Thoughts'},
-      { hid: 'og:url', property: 'og:url', content: 'https://www.kejk.tech/thoughts'},
-      { hid: 'og:image', property: 'og:image', content: 'https://res.cloudinary.com/kejk/image/upload/v1607350722/og-image_bcs2c8.png'},
-      { hid: 'og:description', property: 'og:description', content: 'Thoughts on Design and Development from here and around the web.'},
-      { property: 'twitter:domain', content: 'https://www.kejk.tech/thoughts'},
-      { name: "twitter:site", content: "@_kejk" },
-      { name: "twitter:creator", content: "@_kejk" },
-      { name: "twitter:card", content: "summary_large_image" },
-      { hid: 'twitter:title', property: 'twitter:title', content: 'KEJK – Thoughts'},
-      { hid: 'twitter:description', property: 'twitter:description', content: 'Thoughts on Design and Development from here and around the web.'},
-      { hid: 'twitter:image:src', property: 'twitter:image:src', content: 'https://res.cloudinary.com/kejk/image/upload/v1607350722/og-image_bcs2c8.png'},
-      { hid: 'twitter:url', property: 'twitter:url', content: 'https://www.kejk.tech/thoughts'},
-      { hid: 'twitter:label1', property: 'twitter:label1', content: 'KEJK – Thoughts'},  
-      ], link: [ { rel: 'canonical', href: 'https://www.kejk.tech/thoughts'} ]
+  return {
+    title: "KEJK | Thoughts",
+        meta: [
+        ...this.meta,
+        ], link: [ { rel: 'canonical', href: "https://kejk.tech/thoughts"} ]
     }
   },
   data() {

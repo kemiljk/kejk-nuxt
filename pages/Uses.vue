@@ -31,6 +31,7 @@
 </template>
 
 <script>
+import getSiteMeta from "~/utils/getSiteMeta.js";
 
 const Cosmic = require("cosmicjs");
 const api = Cosmic();
@@ -40,64 +41,23 @@ const bucket = api.bucket({
 });
 
 export default {
+  computed: {
+    meta() {
+      const metaData = {
+        title: "KEJK | Uses",
+        description: "Karl's Product Design and Development EDC and equipment",
+        url: "https://kejk.tech/uses",
+        image: "https://res.cloudinary.com/kejk/image/upload/v1607350722/og-image_bcs2c8.png",
+      };
+      return getSiteMeta(metaData);
+    }
+  },
   head() {
     return {
-    title: 'KEJK – Uses',
-      meta: [
-        {
-          hid: 'description',
-          name: 'description',
-          content: 'What software, hardware and services I use daily.'
-        },
-        { property: "og:site_name", content: "KEJK" },
-        { hid: "og:type", property: "og:type", content: "website" },
-        {
-          hid: "og:url",
-          property: "og:url",
-          content: "https://www.kejk.tech",
-        },
-        {
-          hid: "og:title",
-          property: "og:title",
-          content: "Karl Emil James Koch",
-        },
-        {
-          hid: "og:description",
-          property: "og:description",
-          content: "Human-first Product Designer and Developer.",
-        },
-        {
-          hid: "og:image",
-          property: "og:image",
-          content: "https://res.cloudinary.com/kejk/image/upload/v1607350722/og-image_bcs2c8.png",
-        },
-        { property: "og:image:width", content: "740" },
-        { property: "og:image:height", content: "300" },
-
-        { name: "twitter:site", content: "@_kejk" },
-        { name: "twitter:creator", content: "@_kejk" },
-        { name: "twitter:card", content: "summary_large_image" },
-        {
-          hid: "twitter:url",
-          name: "twitter:url",
-          content: "https://www.kejk.tech",
-        },
-        {
-          hid: "twitter:title",
-          name: "twitter:title",
-          content: "Karl Emil James Koch",
-        },
-        {
-          hid: "twitter:description",
-          name: "twitter:description",
-          content: "Human-first Product Designer and Developer.",
-        },
-        {
-          hid: "twitter:image:src",
-          name: "twitter:image:src",
-          content: "https://res.cloudinary.com/kejk/image/upload/v1607350722/twitter-og_bbzz2a.png",
-        },
-      ],
+      title: "KEJK | Uses",
+        meta: [
+        ...this.meta,
+        ], link: [ { rel: 'canonical', href: "https://kejk.tech/uses"} ]
     }
   },
   data() {
