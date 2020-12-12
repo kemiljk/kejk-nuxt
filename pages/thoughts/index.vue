@@ -18,8 +18,8 @@
       </h2>
     </header>
       <div class="flex flex-row">
-        <div class="grid grid-row xs:grid-cols-1 sm:grid-cols-2 gap-4">
-          <div v-for="blog in blogs" :key="blog._id">
+        <div class="grid grid-row xs:grid-cols-1 sm:grid-cols-2 gap-4" v-if="blogs.blogList">
+          <div v-for="blog in blogs.blogList" :key="blog._id">
               <keep-alive>
                   <BlogCard :blog="blog" />
               </keep-alive>
@@ -61,6 +61,18 @@ const bucket = api.bucket({
 });
 
 export default {
+  computed: {
+      blogs(){
+        let blogs = this.$store.getters.getBlog;
+        let blogList = [];
+
+        blogs.forEach(function (blog) {
+            blogList.push(blog);
+        });
+
+        return {blogList: blogList};
+      }
+  },
   head() {
     return {
     title: 'KEJK – Thoughts',
@@ -85,31 +97,13 @@ export default {
   data() {
     return {
       loading: false,
-      blogs: {},
       posts: {},
-      slug: "",
     }
   },
   created() {
-    this.slug = this.$route.params.slug;
-    this.getBlogsData();
     this.getPostsData();
   },
   methods: {
-    async getBlogsData() {
-        this.error = this.blog = null;
-        this.loading = true;
-        await bucket
-        .getObjects({
-            type: "blogs",
-            props: "_id,slug,title,content,metadata"
-        })
-        .then(data => {
-            const blogs = data.objects;
-            this.loading = false;
-            this.blogs = blogs;
-        });
-    },
     async getPostsData() {
         this.error = this.post = null;
         this.loading = true;

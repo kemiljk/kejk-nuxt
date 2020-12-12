@@ -1,6 +1,6 @@
 <template>
   <div class="mt-0 pt-4">
-    <div class="flex flex-row text-left"  v-if="blog.metadata">
+    <div class="flex flex-row text-left"  v-if="blog">
       <div class="flex flex-col col-span-full md:col-span-6">
         <h1>
           {{ blog.title }}
@@ -51,7 +51,7 @@ export default {
         type: "blog",
         title: this.blog.title,
         description: "Latest post",
-        url: `https://kejk.tech/thoughts/${this.blog.slug}`,
+        url: 'https://kejk.tech/thoughts/' + `${this.$route.params.id}`,
         image: 'https://res.cloudinary.com/kejk/image/upload/v1607350722/og-image_bcs2c8.png',
       };
       return getSiteMeta(metaData);
@@ -62,7 +62,7 @@ export default {
       title: this.blog.title,
           meta: [
           ...this.meta,
-          ], link: [ { rel: 'canonical', href: `https://kejk.tech/thoughts/${this.blog.slug}`} ]
+          ], link: [ { rel: 'canonical', href: `https://kejk.tech/thoughts/${this.$route.params.id}`} ]
     }
   }
 };

@@ -20,7 +20,10 @@
           </NuxtLink>
         </div>
           <keep-alive>
-            <Blog :blog="blog" />
+            <Blog 
+              v-if="page"
+              :blog="page"
+            />
           </keep-alive>
         <div class="mt-16 pb-16 border-t-2 border-gray-200 dark:border-gray-800" />
         <header>
@@ -39,64 +42,34 @@
 <script>
 import { ArrowLeftIcon } from 'vue-feather-icons';
 import getSiteMeta from "~/utils/getSiteMeta.js";
-
-const Cosmic = require("cosmicjs");
-const api = Cosmic();
-const bucket = api.bucket({
-  slug: "kemiljk",
-  read_key: "uNXYQDbNTCWQyEaFjq44PUolieGKBuzePTaEdnDl0CHLcnJtPK"
-});
+import getBlog from "../../queries/getBlog";
 
 export default {
   name: "BlogView",
   components: {
     ArrowLeftIcon,
   },
-  computed: {
-    meta() {
-      const metaData = {
-        type: "blog",
-        title: this.blog.title,
-        description: "Latest post",
-        url: `https://kejk.tech/thoughts/${this.blog.slug}`,
-        image: 'https://res.cloudinary.com/kejk/image/upload/v1607350722/og-image_bcs2c8.png',
+  async asyncData({ app, route, redirect }) {
+    let data = {};
+    try {
+      const d = await app.apolloProvider.defaultClient.query({
+        query: getBlog,
+        variables: { slug: route.params.id },
+      });
+      const data = d.data;
+      console.log("data", data);
+      return {
+        page: data.getObject,
       };
-      return getSiteMeta(metaData);
+    } catch (error) {
+      console.log("error", error);
+      redirect("/thoughts");
     }
   },
-  head() {
-    return {
-      title: this.blog.title,
-          meta: [
-          ...this.meta,
-          ], link: [ { rel: 'canonical', href: `https://kejk.tech/thoughts/${this.blog.slug}`} ]
-    }
-  },
-  data() {
-    return {
-      loading: false,
-      blog: {},
-      slug: ""
-    };
-  },
-  beforeMount() {
-    this.slug = this.$route.params.slug;
-    this.fetchData();
-  },
-  methods: {
-    async fetchData() {
-      this.loading = true;
-      await bucket
-        .getObject({
-          slug: this.slug
-        })
-        .then(data => {
-          console.log(data);
-          console.log(this.blog)
-          this.blog = data.object;
-          this.loading = false;
-        });
+  computed: {
+    myRoute() {
+      return this.$route.params.id;
     },
-  }
+  },
 };
 </script>

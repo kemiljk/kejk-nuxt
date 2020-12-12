@@ -150,7 +150,21 @@ export default {
   modules: [
     '@nuxtjs/sitemap',
     '@nuxtjs/feed',
+    "@nuxtjs/axios",
+    "@nuxtjs/apollo",
   ],
+
+  apollo: {
+    clientConfigs: {
+      default: {
+        httpEndpoint: "https://graphql.cosmicjs.com/v2"
+      }
+    }
+  },
+
+  axios: {
+    baseURL: "https://graphql.cosmicjs.com/v2"
+  },
   
   feed: [
   //   {
