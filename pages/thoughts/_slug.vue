@@ -79,7 +79,7 @@ export default {
       slug: ""
     };
   },
-  beforeMount() {
+  mounted() {
     this.slug = this.$route.params.slug;
     this.fetchData();
   },
