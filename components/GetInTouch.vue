@@ -3,7 +3,7 @@
         <div class="max-w-5xl mx-auto">
             <div class="overflow-hidden">
                 <div class="grid grid-cols-1 md:grid-cols-2">
-                    <div class="p-6 mr-2 bg-gray-100 dark:bg-gray-900 rounded-lg">
+                    <div class="p-6 sm:mr-2 bg-gray-100 dark:bg-gray-900 rounded-lg">
                         <h1 class="text-xl sm:text-2xl text-gray-800 dark:text-white font-bold tracking-tight">
                             Get in touch.
                         </h1>
@@ -40,21 +40,21 @@
                     <form class="p-6 flex flex-col justify-center" action="https://formcarry.com/s/mGfGBUrWtY" method="POST" accept-charset="UTF-8">
                         <div class="flex flex-col">
                             <label for="name" class="font-medium text-black dark:text-white">Name</label>
-                            <input type="name" name="name" id="name" placeholder="e.g. Arnold Schwarzenegger" class="w-100 mt-2 py-3 px-3 rounded-md bg-white dark:bg-gray-900 border-2 border-gray-200 dark:border-gray-700 text-gray-800 font-medium focus:border-indigo-500 focus:border-4 focus:outline-none">
+                            <input type="name" name="name" id="name" placeholder="e.g. Arnold Schwarzenegger" class="w-100 mt-2 py-3 px-3 rounded-md bg-white dark:bg-gray-900 border-2 border-gray-200 dark:border-gray-700 text-gray-800 dark:text-gray-50 font-medium focus:border-indigo-500 focus:border-4 focus:outline-none" required />
                         </div>
 
                         <div class="flex flex-col mt-2">
                             <label for="email" class="font-medium text-black dark:text-white">Email</label>
-                            <input type="email" name="email" id="email" placeholder="e.g. arnold@schwarzenegger.com" class="w-100 mt-2 py-3 px-3 rounded-md bg-white dark:bg-gray-900 border-2 border-gray-200 dark:border-gray-700 text-gray-800 font-medium focus:border-indigo-500 focus:border-4 focus:outline-none">
+                            <input type="email" name="email" id="email" placeholder="e.g. arnold@schwarzenegger.com" class="w-100 mt-2 py-3 px-3 rounded-md bg-white dark:bg-gray-900 border-2 border-gray-200 dark:border-gray-700 text-gray-800 dark:text-gray-50 font-medium focus:border-indigo-500 focus:border-4 focus:outline-none" required />
                         </div>
 
                         <div class="flex flex-col mt-2">
                             <label for="textarea" class="font-medium text-black dark:text-white">Your message</label>
-                            <textarea type="text" name="text" id="tel" placeholder="Ask me anything" class="w-100 mt-2 py-3 px-3 rounded-md bg-white dark:bg-gray-900 border-2 border-gray-200 dark:border-gray-700 text-gray-800 font-medium focus:border-indigo-500 focus:border-4 focus:outline-none" />
+                            <textarea type="text" name="text" id="tel" placeholder="Ask me anything" class="w-100 mt-2 py-3 px-3 rounded-md bg-white dark:bg-gray-900 border-2 border-gray-200 dark:border-gray-700 text-gray-800 dark:text-gray-50 font-medium focus:border-indigo-500 focus:border-4 focus:outline-none" required />
                         </div>
                         <input type="hidden" name="_gotcha">
 
-                        <button type="submit" class="mt-8 md:w-32 bg-indigo-500 hover:bg-indigo-600 dark:bg-indigo-700 text-white font-bold py-3 px-6 rounded-xl mt-3 transition ease-in-out duration-300">
+                        <button  id="submitbutton" type="submit" class="mt-8 md:w-32 bg-indigo-500 hover:bg-indigo-600 dark:bg-indigo-700 text-white font-bold py-3 px-6 rounded-xl transition ease-in-out duration-300" >
                             Submit
                         </button>
                     </form>
@@ -70,7 +70,7 @@ import { CheckIcon } from 'vue-feather-icons';
 export default {
     name: "GetInTouch",
     components: {
-      CheckIcon,
+        CheckIcon,
     },
 };
 </script>
