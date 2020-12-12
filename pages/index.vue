@@ -189,23 +189,27 @@ export default {
         {
           href: "https://apps.apple.com/us/app/id1518887590",
           img: "https://res.cloudinary.com/kejk/image/upload/v1607281437/pxtoem_ubarny.png",
-          title: "Hand››over"
+          title: "Hand››over",
+          type: "iOS app"
         },
         {
           href: "https://www.figma.com/community/plugin/837070613195594890/Px-%E2%80%BA%E2%80%BA-Em",
           img: "https://res.cloudinary.com/kejk/image/upload/v1607281435/px2em_qnscic.png",
           title: "Px››Em",
+          type: "Figma plugin installs",
           id: "install-count"
         },
         {
           href: "https://actions.getdrafts.com/a/1fP",
           img: "https://res.cloudinary.com/kejk/image/upload/v1607678050/drafts_cosmic_tykczi.png",
-          title: "Drafts››Cosmic"
+          title: "Drafts››Cosmic",
+          type: "Drafts Action"
         },
         {
           href: "https://www.lazypdf.tech",
           img: "https://res.cloudinary.com/kejk/image/upload/v1607281439/lazyPDF_vxsn1b.png",
-          title: "Lazy PDF"
+          title: "Lazy PDF",
+          type: "macOS app"
         },
       ],
       helpedMakes: [

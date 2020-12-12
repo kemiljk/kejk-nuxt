@@ -3,10 +3,15 @@
       <a :href="made.href" target="_blank" rel="noreferrer">
           <img alt="Logo visual" :src="`${made.img}`" class="rounded-md" />
           <div class="flex flex-col align-middle my-auto">
-          <div class="flex mt-2 text-md text-gray-900 dark:text-gray-50 font-semibold mx-auto py-2 rounded-md align-middle">
+          <div class="flex mt-2 text-md text-gray-900 dark:text-gray-50 font-semibold mx-auto py-2 align-middle">
               {{ made.title }}
-              <div v-if="made.id" class="ml-4 rounded-full px-4 py-2 bg-yellow-500 dark:text-yellow-300 -mb-3 -mt-1"><span :id="made.id" class="text-gray-900 align-middle font-bold" /></div>
           </div>
+            <p v-if="made.id" class="flex mb-0 text-gray-500 dark:text-gray-400 font-medium mx-auto">
+                <span :id="made.id" class="text-yellow-600 dark:text-yellow-300 font-bold mr-1" />{{ made.type }}
+            </p>
+            <p v-else class="flex mb-0 text-gray-500 dark:text-gray-400 font-medium mx-auto">
+                {{ made.type }}
+            </p>
           </div>
       </a>
   </div>  
