@@ -22,9 +22,6 @@
 </template>
 
 <script>
-import Uses from '../components/Uses.vue'
-import Nav from '../components/Nav.vue';
-import NavItem from '../components/NavItem.vue';
 
 const Cosmic = require("cosmicjs");
 const api = Cosmic();
@@ -93,11 +90,6 @@ export default {
         },
       ],
     }
-  },
-  components: {
-    Uses,
-    Nav,
-    NavItem,
   },
   data() {
     return {

@@ -28,10 +28,7 @@
 </template>
 
 <script>
-import Blog from "../../components/Blog.vue";
 import { ArrowLeftIcon } from 'vue-feather-icons';
-import Nav from '../../components/Nav.vue';
-import NavItem from '../../components/NavItem.vue';
 
 const Cosmic = require("cosmicjs");
 const api = Cosmic();
@@ -43,10 +40,7 @@ const bucket = api.bucket({
 export default {
   name: "BlogView",
   components: {
-    Blog,
     ArrowLeftIcon,
-    Nav,
-    NavItem,
   },
   head() {
     let blog = this.blog,

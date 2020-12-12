@@ -106,13 +106,6 @@
 </template>
 
 <script>
-import BlogCard from '../components/BlogCard.vue';
-import PostCard from '../components/PostCard.vue';
-import MediaCard from '../components/MediaCard.vue';
-import MadeCard from '../components/MadeCard.vue';
-import HelpedMakeCard from '../components/HelpedMakeCard.vue';
-import Nav from '../components/Nav.vue';
-import NavItem from '../components/NavItem.vue';
 import { TwitterIcon } from 'vue-feather-icons';
 import { MailIcon } from 'vue-feather-icons';
 
@@ -185,13 +178,6 @@ export default {
     }
   },
   components: {
-    BlogCard,
-    PostCard,
-    MediaCard,
-    MadeCard,
-    HelpedMakeCard,
-    Nav,
-    NavItem,
     TwitterIcon,
     MailIcon
   },

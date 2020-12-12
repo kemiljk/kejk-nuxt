@@ -50,8 +50,6 @@
 </template>
 
 <script>
-import Nav from '../components/Nav.vue';
-import NavItem from '../components/NavItem.vue';
 
 export default {
   head() {
@@ -116,10 +114,6 @@ export default {
   },
   data() {
     return {
-      components: {
-        Nav,
-        NavItem,
-      },
       socials: [
         {
           href: 'https://www.twitter.com/_kejk',

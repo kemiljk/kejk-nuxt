@@ -45,10 +45,6 @@
 </template>
 
 <script>
-import BlogCard from '../../components/BlogCard.vue';
-import PostCard from '../../components/PostCard.vue';
-import Nav from '../../components/Nav.vue';
-import NavItem from '../../components/NavItem.vue';
 
 const Cosmic = require("cosmicjs");
 const api = Cosmic();
@@ -78,12 +74,6 @@ export default {
       { hid: 'twitter:label1', property: 'twitter:label1', content: 'KEJK – Thoughts'},  
       ], link: [ { rel: 'canonical', href: 'https://www.kejk.tech/thoughts'} ]
     }
-  },
-  components: {
-    BlogCard,
-    PostCard,
-    Nav,
-    NavItem,
   },
   data() {
     return {
