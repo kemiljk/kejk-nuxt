@@ -12,69 +12,69 @@ export default {
     htmlAttrs: {
       lang: "en-GB",
     },
-    title: "KEJK – Product Designer and Developer",
-    meta: [
-      { charset: "utf-8" },
-      { name: "HandheldFriendly", content: "True" },
-      { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { name: 'apple-mobile-web-app-capable', content: 'yes' },
-      { name: 'apple-mobile-web-app-status-bar-style', content: 'default' },
-      { name: 'apple-mobile-web-app-title', content: "KEJK" },
-      { hid: 'description', name: 'description', content: "Product Designer and Frontend Developer" },
-      {
-        hid: "description",
-        name: "description",
-        content: "Human-first Product Designer and Developer.",
-      },
-      { property: "og:site_name", content: "KEJK" },
-      { hid: "og:type", property: "og:type", content: "website" },
-      {
-        hid: "og:url",
-        property: "og:url",
-        content: "https://www.kejk.tech",
-      },
-      {
-        hid: "og:title",
-        property: "og:title",
-        content: "Karl Emil James Koch",
-      },
-      {
-        hid: "og:description",
-        property: "og:description",
-        content: "Human-first Product Designer and Developer.",
-      },
-      {
-        hid: "og:image",
-        property: "og:image",
-        content: "https://res.cloudinary.com/kejk/image/upload/v1607350722/og-image_bcs2c8.png",
-      },
-      { property: "og:image:width", content: "740" },
-      { property: "og:image:height", content: "300" },
+    // title: "KEJK – Product Designer and Developer",
+    // meta: [
+    //   { charset: "utf-8" },
+    //   { name: "HandheldFriendly", content: "True" },
+    //   { name: "viewport", content: "width=device-width, initial-scale=1" },
+    //   { name: 'apple-mobile-web-app-capable', content: 'yes' },
+    //   { name: 'apple-mobile-web-app-status-bar-style', content: 'default' },
+    //   { name: 'apple-mobile-web-app-title', content: "KEJK" },
+    //   { hid: 'description', name: 'description', content: "Product Designer and Frontend Developer" },
+    //   {
+    //     hid: "description",
+    //     name: "description",
+    //     content: "Human-first Product Designer and Developer.",
+    //   },
+    //   { property: "og:site_name", content: "KEJK" },
+    //   { hid: "og:type", property: "og:type", content: "website" },
+    //   {
+    //     hid: "og:url",
+    //     property: "og:url",
+    //     content: "https://www.kejk.tech",
+    //   },
+    //   {
+    //     hid: "og:title",
+    //     property: "og:title",
+    //     content: "Karl Emil James Koch",
+    //   },
+    //   {
+    //     hid: "og:description",
+    //     property: "og:description",
+    //     content: "Human-first Product Designer and Developer.",
+    //   },
+    //   {
+    //     hid: "og:image",
+    //     property: "og:image",
+    //     content: "https://res.cloudinary.com/kejk/image/upload/v1607350722/og-image_bcs2c8.png",
+    //   },
+    //   { property: "og:image:width", content: "740" },
+    //   { property: "og:image:height", content: "300" },
 
-      { name: "twitter:site", content: "@_kejk" },
-      { name: "twitter:creator", content: "@_kejk" },
-      { name: "twitter:card", content: "summary_large_image" },
-      {
-        hid: "twitter:url",
-        name: "twitter:url",
-        content: "https://www.kejk.tech",
-      },
-      {
-        hid: "twitter:title",
-        name: "twitter:title",
-        content: "Karl Emil James Koch",
-      },
-      {
-        hid: "twitter:description",
-        name: "twitter:description",
-        content: "Human-first Product Designer and Developer.",
-      },
-      {
-        hid: "twitter:image:src",
-        name: "twitter:image:src",
-        content: "https://res.cloudinary.com/kejk/image/upload/v1607350722/twitter-og_bbzz2a.png",
-      },
-    ],
+    //   { name: "twitter:site", content: "@_kejk" },
+    //   { name: "twitter:creator", content: "@_kejk" },
+    //   { name: "twitter:card", content: "summary_large_image" },
+    //   {
+    //     hid: "twitter:url",
+    //     name: "twitter:url",
+    //     content: "https://www.kejk.tech",
+    //   },
+    //   {
+    //     hid: "twitter:title",
+    //     name: "twitter:title",
+    //     content: "Karl Emil James Koch",
+    //   },
+    //   {
+    //     hid: "twitter:description",
+    //     name: "twitter:description",
+    //     content: "Human-first Product Designer and Developer.",
+    //   },
+    //   {
+    //     hid: "twitter:image:src",
+    //     name: "twitter:image:src",
+    //     content: "https://res.cloudinary.com/kejk/image/upload/v1607350722/twitter-og_bbzz2a.png",
+    //   },
+    // ],
     link: [
       { rel: "icon", href: "/favicon.svg" },
       { rel: "icon", href: "/favicon.ico" },
@@ -127,6 +127,18 @@ export default {
     '@nuxtjs/tailwindcss',
     '@nuxtjs/moment',
   ],
+
+  generate: {
+    routes() {
+      return Promise.all([
+        client.getEntries({
+          content_type: "blog"
+        })
+      ]).then(([blogEntries]) => {
+        return [...blogEntries.items.map(entry => entry.fields.slug)];
+      });
+    }
+  },
 
   sitemap: {
     path: '/sitemap.xml',
