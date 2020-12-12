@@ -38,6 +38,7 @@
 
 <script>
 import { ArrowLeftIcon } from 'vue-feather-icons';
+import getSiteMeta from "~/utils/getSiteMeta.js";
 
 const Cosmic = require("cosmicjs");
 const api = Cosmic();
@@ -51,30 +52,24 @@ export default {
   components: {
     ArrowLeftIcon,
   },
+  computed: {
+    meta() {
+      const metaData = {
+        type: "blog",
+        title: this.blog.title,
+        description: "Latest post",
+        url: `https://kejk.tech/thoughts/${this.blog.slug}`,
+        image: 'https://res.cloudinary.com/kejk/image/upload/v1607350722/og-image_bcs2c8.png',
+      };
+      return getSiteMeta(metaData);
+    }
+  },
   head() {
-    let blog = this.blog,
-    title = blog.title,
-    desc = 'Latest post',
-    url = 'https://kejk.tech/thoughts/' + blog.slug,
-    image = 'https://res.cloudinary.com/kejk/image/upload/v1607350722/og-image_bcs2c8.png';
     return {
-        title: title,
+      title: this.blog.title,
           meta: [
-          { hid: 'description', name: 'description', content: desc },
-          { hid: 'og:title', property: 'og:title', content: title},
-          { hid: 'og:url', property: 'og:url', content: url},
-          { hid: 'og:image', property: 'og:image', content: image},
-          { hid: 'og:description', property: 'og:description', content: desc},
-          { property: 'twitter:domain', content: url},
-          { name: "twitter:site", content: "@_kejk" },
-          { name: "twitter:creator", content: "@_kejk" },
-          { name: "twitter:card", content: "summary_large_image" },
-          { hid: 'twitter:title', property: 'twitter:title', content: title},
-          { hid: 'twitter:description', property: 'twitter:description', content: desc},
-          { hid: 'twitter:image:src', property: 'twitter:image:src', content: image},
-          { hid: 'twitter:url', property: 'twitter:url', content: url},
-          { hid: 'twitter:label1', property: 'twitter:label1', content: title},  
-          ], link: [ { rel: 'canonical', href: url} ]
+          ...this.meta,
+          ], link: [ { rel: 'canonical', href: `https://kejk.tech/thoughts/${this.blog.slug}`} ]
     }
   },
   data() {

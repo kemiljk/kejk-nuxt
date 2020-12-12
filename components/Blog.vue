@@ -62,20 +62,6 @@ export default {
       title: this.blog.title,
           meta: [
           ...this.meta,
-          // { hid: 'description', name: 'description', content: desc },
-          // { hid: 'og:title', property: 'og:title', content: title},
-          // { hid: 'og:url', property: 'og:url', content: url},
-          // { hid: 'og:image', property: 'og:image', content: image},
-          // { hid: 'og:description', property: 'og:description', content: desc},
-          // { property: 'twitter:domain', content: url},
-          // { name: "twitter:site", content: "@_kejk" },
-          // { name: "twitter:creator", content: "@_kejk" },
-          // { name: "twitter:card", content: "summary_large_image" },
-          // { hid: 'twitter:title', property: 'twitter:title', content: title},
-          // { hid: 'twitter:description', property: 'twitter:description', content: desc},
-          // { hid: 'twitter:image:src', property: 'twitter:image:src', content: image},
-          // { hid: 'twitter:url', property: 'twitter:url', content: url},
-          // { hid: 'twitter:label1', property: 'twitter:label1', content: title},  
           ], link: [ { rel: 'canonical', href: `https://kejk.tech/thoughts/${this.blog.slug}`} ]
     }
   }
