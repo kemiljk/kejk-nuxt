@@ -1,7 +1,7 @@
 query getPost($slug: String!){
-  getObject(bucket_slug: "d1ffcb90-35a5-11eb-b56f-05f2cd29bdde", input: {
+  getObject(bucket_slug: "confido", input: {
     slug: $slug,
-    read_key: "uNXYQDbNTCWQyEaFjq44PUolieGKBuzePTaEdnDl0CHLcnJtPK"
+    read_key: "0O6acZ2ATKQSdKr8rLb5b489Kxg4yNPQRvVii3KCL8T8atx3gn"
   }) {
     title
     content

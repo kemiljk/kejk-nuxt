@@ -53,11 +53,10 @@
 </template>
 
 <script>
-
 const Cosmic = require("cosmicjs");
 const api = Cosmic();
 const bucket = api.bucket({
-    slug: "d1ffcb90-35a5-11eb-b56f-05f2cd29bdde",
+    slug: "kemiljk",
     read_key: "uNXYQDbNTCWQyEaFjq44PUolieGKBuzePTaEdnDl0CHLcnJtPK"
 });
 
@@ -86,8 +85,8 @@ export default {
   data() {
     return {
       loading: false,
-      posts: {},
       blogs: {},
+      posts: {},
       slug: "",
     }
   },

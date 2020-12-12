@@ -163,7 +163,7 @@ export default {
   //         description: 'Thoughts on Design and Development from here and around the web.'
   //       };
 
-  //       const blogs = await (axios.get('https://api.cosmicjs.com/v1/d1ffcb90-35a5-11eb-b56f-05f2cd29bdde/objects?pretty=true&hide_metafields=true&type=blogs&read_key=uNXYQDbNTCWQyEaFjq44PUolieGKBuzePTaEdnDl0CHLcnJtPK&limit=20&props=slug,title,content')).data;
+  //       const blogs = await (axios.get('https://api.cosmicjs.com/v1/kemiljk/objects?pretty=true&hide_metafields=true&type=blogs&read_key=uNXYQDbNTCWQyEaFjq44PUolieGKBuzePTaEdnDl0CHLcnJtPK&limit=20&props=slug,title,content')).data;
   //       blogs.forEach(blog => {
   //         feed.addItem({
   //           title: blog.title,

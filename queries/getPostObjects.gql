@@ -1,0 +1,15 @@
+{
+  getObjects(
+    bucket_slug: "kemiljk"
+    input: 
+      { limit: 20, read_key: "uNXYQDbNTCWQyEaFjq44PUolieGKBuzePTaEdnDl0CHLcnJtPK", type: "posts" }
+  ) {
+    objects {
+      _id
+      slug
+      title
+      content
+      metadata
+    }
+  }
+}
