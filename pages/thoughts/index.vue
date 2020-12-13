@@ -19,7 +19,7 @@
     </header>
     <div class="my-8">
       <a href="http://www.kejk.tech/feed.xml">
-        <button class="bg-indigo-300 dark:bg-indigo-600 px-4 py-2 rounded-md text-indigo-900 dark:text-indigo-100 font-medium">
+        <button class="bg-indigo-100 dark:bg-indigo-600 px-4 py-2 rounded-md text-indigo-900 dark:text-indigo-100 font-medium">
           Subscribe via RSS
         </button>
       </a>
