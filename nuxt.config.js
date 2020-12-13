@@ -1,4 +1,5 @@
 import axios from 'axios';
+import Vuex from 'vuex';
 
 export default {
   // Disable server-side rendering (https://go.nuxtjs.dev/ssr-mode)
@@ -149,10 +150,10 @@ export default {
 
   // Modules (https://go.nuxtjs.dev/config-modules)
   modules: [
-    '@nuxtjs/sitemap',
-    '@nuxtjs/feed',
     "@nuxtjs/axios",
     "@nuxtjs/apollo",
+    '@nuxtjs/feed',
+    '@nuxtjs/sitemap',
   ],
 
   apollo: {
@@ -168,38 +169,38 @@ export default {
   },
   
   feed: [
-    // {
-    //   path: './static/feed.xml', // The route to your feed.
-    //   // In your `feed` array's object:
-    //   async create(feed) {
-    //     feed.options = {
-    //       title: 'KEJK — Thoughts',
-    //       link: 'https://kejk.tech/feed.xml',
-    //       description: 'Thoughts on Design and Development from here and around the web.'
-    //     };
+    {
+      path: './static/feed.xml', // The route to your feed.
+      
+      async create(feed) {
+        feed.options = {
+          title: 'KEJK | Thoughts',
+          link: 'https://kejk.tech/feed.xml',
+          description: 'Thoughts on Design and Development from here and around the web.'
+        };
+
+        const blogs = 
         
-    //     let blogList = this.$store.getters.getBlog;
-    //     const blogs = await (axios.get(blogList)).data;
-    //     blogs.forEach(blog => {
-    //       feed.addItem({
-    //         title: blog.title,
-    //         id: blog._id,
-    //         link: blog.slug,
-    //         content: blog.content
-    //       });
-    //     });
+        blogs.forEach(blog => {
+          feed.addItem({
+            title: blog.title,
+            id: blog.slug,
+            link: blog.slug,
+            content: blog.content
+          });
+        });
 
-    //     feed.addCategory('Design & Development');
+        feed.addCategory('Design & Development');
 
-    //     feed.addContributor({
-    //       name: 'Karl Koch',
-    //       email: 'karl@kejk.tech',
-    //       link: 'https://www.kejk.tech'
-    //     });
-    //   },
-    //   cacheTime: 1000 * 60 * 15, // How long should the feed be cached
-    //   type: 'rss2', // Can be: rss2, atom1, json1
-    // }
+        feed.addContributor({
+          name: 'Karl Koch',
+          email: 'karl@kejk.tech',
+          link: 'https://www.kejk.tech'
+        });
+      },
+      cacheTime: 1000 * 60 * 15, // How long should the feed be cached
+      type: 'rss2', // Can be: rss2, atom1, json1
+    }
   ],
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)

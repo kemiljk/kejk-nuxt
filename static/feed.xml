@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+
+<channel>
+  <title>KEJK | Thoughts</title>
+  <link>https://www.kejk.com/thoughts</link>
+  <description>KEJK's thoughts on design and development</description>
+  <category>Design and Development</category>
+  <item>
+    <title>Code as Design</title>
+    <link>https://www.kejk.tech/thoughts/code-as-design</link>
+    <description>Exploring the idea of designing through code</description>
+  </item>
+  <item>
+    <title>Design in the open</title>
+    <link>https://www.kejk.tech/thoughts/designing-in-the-open</link>
+    <description>What I’ve learnt about sharing constantly and live designing with my team.</description>
+  </item>
+  <item>
+    <title>From problem to plugin</title>
+    <link>https://www.kejk.tech/thoughts/from-problem-to-plugin</link>
+    <description>Learning Typescript, the Figma API and solving a real personal problem.</description>
+  </item>
+  <item>
+    <title>Ten Principles for Good Design</title>
+    <link>https://www.kejk.tech/thoughts/ten-principles-for-good-design</link>
+    <description>I decided to put together a free, multi-device, minimal wallpaper of Ram's ten principles.</description>
+  </item>
+  <item>
+    <title>Design as Code</title>
+    <link>https://www.kejk.tech/thoughts/designing-in-code</link>
+    <description>What learning Vue has taught me about the future of design, development and the modern web.</description>
+  </item>
+  <item>
+    <title>Getting to yes</title>
+    <link>https://www.kejk.tech/thoughts/getting-to-yes</link>
+    <description>Why I think designers and developers should learn the basics of sales.</description>
+  </item>
+  <item>
+    <title>Why ‘users’ are humans</title>
+    <link>https://www.kejk.tech/thoughts/why-users-are-humans</link>
+    <description>Design is about people, and I've been thinking a lot about the problem of the term 'user'.</description>
+  </item>
+</channel>
+
+</rss>

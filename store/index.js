@@ -1,5 +1,4 @@
 import Vuex from 'vuex';
-import vue from 'vue';
 import Request from '~/common/request';
 
 const state = {
