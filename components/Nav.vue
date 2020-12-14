@@ -1,5 +1,5 @@
 <template>
-  <nav class="fixed backgroundBlur w-full pt-4 border-b-1 border-gray-100 dark:border-gray-900">
+  <nav class="fixed backgroundBlur w-full pt-4 border-b border-gray-100 dark:border-gray-900">
         <ul class="flex space-x-4 justify-center mx-auto">
           <slot></slot>
         </ul>
