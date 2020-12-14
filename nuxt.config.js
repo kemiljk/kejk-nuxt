@@ -171,35 +171,27 @@ export default {
   feed: [
     // {
     //   path: './static/feed.xml', // The route to your feed.
-      
-    //   async create(feed) {
+    //   async create(feed, blogs) {
     //     feed.options = {
     //       title: 'KEJK | Thoughts',
     //       link: 'https://kejk.tech/feed.xml',
     //       description: 'Thoughts on Design and Development from here and around the web.'
     //     };
 
-    //     const blogs = 
-        
-    //     blogs.forEach(blog => {
+    //     const blogs = this.$store.getters.getBlog;
+    //     blogs.forEach(function (blog) {
     //       feed.addItem({
     //         title: blog.title,
-    //         id: blog.slug,
-    //         link: blog.slug,
+    //         id: blog.url,
+    //         link: blog.url,
+    //         date: new Date(blog.date),
+    //         description: blog.metadata.snippet,
     //         content: blog.content
-    //       });
-    //     });
-
-    //     feed.addCategory('Design & Development');
-
-    //     feed.addContributor({
-    //       name: 'Karl Koch',
-    //       email: 'karl@kejk.tech',
-    //       link: 'https://www.kejk.tech'
-    //     });
+    //       })
+    //     })
     //   },
-    //   cacheTime: 1000 * 60 * 15, // How long should the feed be cached
-    //   type: 'rss2', // Can be: rss2, atom1, json1
+    //   cacheTime: 1000 * 60 * 15,
+    //   type: 'rss2',
     // }
   ],
 
