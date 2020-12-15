@@ -58,8 +58,8 @@
           </div>
         </div>
     </div>
-    <header class="flex pt-16 mb-4 align-middle max-w-5xl justify-between">
-      <h2 class="pt-4">
+    <header class="flex pt-16 align-middle max-w-5xl justify-between">
+      <h2>
         Thoughts on design and development.
       </h2>
       <NuxtLink to="/thoughts" class="flex justify-between text-black bg-transparent hover:bg-gray-1-0 dark:hover:bg-gray-800 dark:text-white dark:bg-transparent rounded-xl px-6 py-3">
@@ -67,7 +67,7 @@
         <arrow-right-icon class="text-gray-700 dark:text-gray-300 ml-2"></arrow-right-icon>
       </NuxtLink>
     </header>
-      <div class="flex flex-row">
+      <div class="flex flex-row mt-4">
         <div class="grid grid-row xs:grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-4">
           <div v-for="blog in blogs" :key="blog._id">
               <keep-alive>
