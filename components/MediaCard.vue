@@ -15,11 +15,11 @@
             />
             <external-link-icon class="text-gray-700 dark:text-gray-300"></external-link-icon>
           </header>
-            <h4 class="pt-2 font-medium text-gray-900 dark:text-gray-100">
+            <h4 class="pt-4 font-bold text-sm text-gray-900 dark:text-gray-100">
               {{ media.title }}
             </h4>
           </div>
-          <p class="mb-0 text-gray-500 dark:text-gray-400 font-medium">
+          <p class="mb-0 pt-1 text-gray-500 dark:text-gray-400 font-normal text-sm">
             {{ media.metadata.subtitle }}
           </p>
         </div>
