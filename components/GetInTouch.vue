@@ -3,7 +3,7 @@
         <div class="max-w-5xl mx-auto">
             <div class="overflow-hidden">
                 <div class="grid grid-cols-1 md:grid-cols-2">
-                    <div class="p-6 sm:mr-2 bg-gray-100 dark:bg-gray-900 rounded-lg sm:rounded-tr-none sm:rounded-bl-lg">
+                    <div class="p-6 sm:mr-2 bg-gray-100 dark:bg-gray-900 rounded-tl-lg rounded-tr-lg sm:rounded-tr-none sm:rounded-bl-lg">
                         <h1 class="text-xl sm:text-2xl text-gray-800 dark:text-white font-bold tracking-tight">
                             Get in touch.
                         </h1>
