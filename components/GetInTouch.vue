@@ -3,7 +3,7 @@
         <div class="max-w-5xl mx-auto">
             <div class="overflow-hidden">
                 <div class="grid grid-cols-1 md:grid-cols-2">
-                    <div class="p-6 sm:mr-2 bg-gray-100 dark:bg-gray-900 rounded-tl-lg rounded-tr-lg sm:rounded-tr-none sm:rounded-bl-lg">
+                    <div class="p-6 sm:mr-2 bg-gray-100 dark:bg-gray-900 rounded-lg sm:rounded-tr-none sm:rounded-bl-lg">
                         <h1 class="text-xl sm:text-2xl text-gray-800 dark:text-white font-bold tracking-tight">
                             Get in touch.
                         </h1>
@@ -54,7 +54,7 @@
                         </div>
                         <input type="hidden" name="_gotcha">
 
-                        <button  id="submitbutton" type="submit" class="mt-8 md:w-32 bg-indigo-500 hover:bg-indigo-600 dark:bg-indigo-700 text-white font-bold py-3 px-6 rounded-xl transition ease-in-out duration-300" >
+                        <button  id="submitbutton" type="submit" class="mt-8 md:w-32 bg-indigo-500 hover:bg-indigo-600 dark:bg-indigo-700 text-white font-bold py-3 px-6 rounded-md transition ease-in-out duration-300" >
                             Submit
                         </button>
                     </form>
