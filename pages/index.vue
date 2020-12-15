@@ -58,11 +58,11 @@
           </div>
         </div>
     </div>
-    <header class="flex pt-16 mb-4 max-w-5xl justify-between">
+    <header class="flex pt-16 mb-4 align-middle max-w-5xl justify-between">
       <h2 class="mb-0">
         Thoughts on design and development.
       </h2>
-      <NuxtLink to="/thoughts" class="flex justify-between align-middle text-black bg-transparent hover:bg-gray-1-0 dark:hover:bg-gray-800 dark:text-white dark:bg-transparent rounded-xl px-6 py-3">
+      <NuxtLink to="/thoughts" class="flex justify-between text-black bg-transparent hover:bg-gray-1-0 dark:hover:bg-gray-800 dark:text-white dark:bg-transparent rounded-xl px-6 py-3">
         See all
         <arrow-right-icon class="text-gray-700 dark:text-gray-300 ml-2"></arrow-right-icon>
       </NuxtLink>
