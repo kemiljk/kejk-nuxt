@@ -114,6 +114,7 @@ export default {
         this.loading = true;
         await bucket
         .getObjects({
+            limit: 6,
             type: "posts",
             props: "_id,slug,title,content,metadata"
         })
