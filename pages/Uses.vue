@@ -12,11 +12,9 @@
           /Uses
         </h1>
       </header>
-      <div v-for="gear in gears" :key="gear._id">
         <keep-alive>
           <Uses :gear="gear" /> 
         </keep-alive>
-      </div>
       <div class="mt-16 pb-16 border-t-2 border-gray-200 dark:border-gray-800" />
       <header>
         <h2>
@@ -71,38 +69,21 @@ export default {
   },
   data() {
     return {
-      gears: {},
+      gear: {},
       tech: {},
     }
-  },
-  created() {
-    this.getGearsData();
-    this.getTechsData();
   },
   mounted() {
     this.fetchGearsData();
     this.fetchTechsData();
   },
   methods: {
-    async getGearsData() {
-        this.loading = true;
-        await bucket
-        .getObjects({
-            limit: 1,
-            type: "gears",
-            props: "_id,slug,content"
-        })
-        .then(data => {
-            const gears = data.objects;
-            this.loading = false;
-            this.gears = gears;
-        });
-    },
     async fetchGearsData() {
       this.loading = true;
       await bucket
         .getObject({
-          slug: this.slug
+          slug: 'uses',
+          props: 'slug,title,content'
         })
         .then(data => {
           this.gear = data.object;
@@ -113,7 +94,8 @@ export default {
       this.loading = true;
       await bucket
         .getObject({
-          slug: this.slug
+          slug: 'site-uses',
+          props: 'slug,title,content'
         })
         .then(data => {
           this.tech = data.object;
