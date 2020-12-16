@@ -22,6 +22,7 @@
     "fontsource-inter": "^3.1.7",
     "graphql": "^15.4.0",
     "nuxt": "^2.14.9",
+    "plausible-tracker": "^0.3.1",
     "postcss": "^7",
     "tailwindcss": "npm:@tailwindcss/postcss7-compat",
     "vue-feather-icons": "^5.1.0",

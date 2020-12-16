@@ -85,40 +85,33 @@ export default {
       socials: [
         {
           href: 'https://www.twitter.com/_kejk',
-          icon: 'logo-twitter',
+          twitter: true,
           title: 'Twitter',
-          color: 'text-blue-400'
         },
         {
           href: 'https://www.Linkedin.com/kejk',
-          icon: 'logo-linkedin',
+          linkedin: true,
           title: 'LinkedIn',
-          color: 'text-blue-600'
         },
         {
           href: 'https://www.figma.com/@_kejk',
-          icon: '',
           figma: true,
           title: 'Figma',
-          color: 'text-green-400'
         },
         {
           href: 'https://www.github.com/kemiljk/',
-          icon: 'logo-github',
+          github: true,
           title: 'Github',
-          color: 'dark:text-white text-black'
         },
         {
           href: 'https://dribbble.com/_kejk',
-          icon: 'logo-dribbble',
+          dribbble: true,
           title: 'Dribbble',
-          color: 'text-pink-400'
         },
         {
           href: 'https://music.apple.com/gb/album/cornerstone/1300802348',
-          icon: 'musical-notes',
+          music: true,
           title: 'Music',
-          color: 'text-red-600'
         },
       ]
     }

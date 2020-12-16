@@ -158,9 +158,6 @@ export default {
     "@nuxtjs/apollo",
     '@nuxtjs/feed',
     '@nuxtjs/sitemap',
-    ['vue-plausible', {
-        domain: "kejk.tech"
-    }]
   ],
 
   apollo: {
