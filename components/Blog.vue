@@ -50,7 +50,7 @@ export default {
   component: {
     TwitterIcon,
     LinkedinIcon,
-  }
+  },
   computed: {
     meta() {
       const metaData = {
