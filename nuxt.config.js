@@ -108,7 +108,7 @@ export default {
       {
         nomodule: "",
         src: "https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.js"
-      }
+      },
     ]
   },
 
@@ -158,6 +158,9 @@ export default {
     "@nuxtjs/apollo",
     '@nuxtjs/feed',
     '@nuxtjs/sitemap',
+    ['vue-plausible', {
+        domain: "kejk.tech"
+    }]
   ],
 
   apollo: {
