@@ -1,14 +1,14 @@
 <template>
-  <section v-html="gear.content" class="text-black dark:text-gray-300"
+  <section v-html="tech.content" class="text-black dark:text-gray-300"
   />
 </template>
 
 <script>
 
 export default {
-  name: "Uses",
+  name: "SiteUses",
   props: {
-    gear: {
+    tech: {
       type: Object,
       default: () => {}
     }

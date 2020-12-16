@@ -16,15 +16,24 @@
         <keep-alive>
           <Uses :gear="gear" /> 
         </keep-alive>
-        <div class="mt-16 pb-16 border-t-2 border-gray-200 dark:border-gray-800" />
-        <header>
-          <h2>
-            How to reach me.
-          </h2>
-        </header>
-        <div> 
-          <GetInTouch />
-        </div>
+      </div>
+      <div class="mt-16 pb-16 border-t-2 border-gray-200 dark:border-gray-800" />
+      <header>
+        <h2>
+          About this site.
+        </h2>
+      </header>
+      <keep-alive>
+        <SiteUses :tech="tech" /> 
+      </keep-alive>
+      <div class="mt-16 pb-16 border-t-2 border-gray-200 dark:border-gray-800" />
+      <header>
+        <h2>
+          How to reach me.
+        </h2>
+      </header>
+      <div> 
+        <GetInTouch />
       </div>
     </div>
   </div>
@@ -63,17 +72,19 @@ export default {
   data() {
     return {
       gears: {},
+      tech: {},
     }
   },
   created() {
     this.getGearsData();
+    this.getTechsData();
   },
   mounted() {
-    this.fetchData();
+    this.fetchGearsData();
+    this.fetchTechsData();
   },
   methods: {
     async getGearsData() {
-        // this.error = this.use = null;
         this.loading = true;
         await bucket
         .getObjects({
@@ -87,7 +98,7 @@ export default {
             this.gears = gears;
         });
     },
-    async fetchData() {
+    async fetchGearsData() {
       this.loading = true;
       await bucket
         .getObject({
@@ -95,6 +106,17 @@ export default {
         })
         .then(data => {
           this.gear = data.object;
+          this.loading = false;
+        });
+    },
+    async fetchTechsData() {
+      this.loading = true;
+      await bucket
+        .getObject({
+          slug: this.slug
+        })
+        .then(data => {
+          this.tech = data.object;
           this.loading = false;
         });
     },

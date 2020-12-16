@@ -15,12 +15,12 @@
         <span class="font-bold text-lg mr-2">
           Share this article
         </span>
-          <a href="https://twitter.com/intent/tweet?text=Awesome%20article%20from%20KEJK%21&amp;url=https%3A%2F%2Fkejk.tech%2Fthoughts&amp;via=_kejk" rel="noopener noreferrer" class="mt-2 inline-block">
-            <ion-icon name="logo-twitter" class="text-blue-400"></ion-icon><span class="font-medium text-black dark:text-white ml-2">Twitter</span>
+          <a href=`https://twitter.com/intent/tweet?url=https://www.kejk.tech/thoughts/${blog.slug}&text&amp;via=_kejk` rel="noopener noreferrer" class="mt-2 inline-block">
+            <twitter-icon v-if="social.twitter" size="2x" class="text-blue-400 mb-4"></twitter-icon><span class="font-medium text-black dark:text-white ml-2">Twitter</span>
           </a>
 
-          <a href="">
-            <ion-icon name="logo-linkedin" class="text-blue-600"></ion-icon><span class="font-medium text-black dark:text-white ml-2">LinkedIn</span>
+          <a href=`https://www.linkedin.com/shareArticle?mini=true&url=https://www.kejk.tech/thoughts/${blog.slug}&title=&summary=&source=`>
+            <linkedin-icon v-if="social.linkedin" size="1x" class="text-blue-600 mb-4"></linkedin-icon><span class="font-medium text-black dark:text-white ml-2">LinkedIn</span>
           </a>
         </div>
       </div> -->
@@ -36,6 +36,8 @@
 
 <script>
 import getSiteMeta from "~/utils/getSiteMeta.js";
+import { TwitterIcon } from 'vue-feather-icons'
+import { LinkedinIcon } from 'vue-feather-icons'
 
 export default {
   name: "Blog",
@@ -45,6 +47,10 @@ export default {
       default: () => {}
     }
   },
+  component: {
+    TwitterIcon,
+    LinkedinIcon,
+  }
   computed: {
     meta() {
       const metaData = {
