@@ -18,15 +18,6 @@
       <div class="mt-16 pb-16 border-t-2 border-gray-200 dark:border-gray-800" />
       <header>
         <h2>
-          About this site.
-        </h2>
-      </header>
-      <keep-alive>
-        <SiteUses :tech="tech" /> 
-      </keep-alive>
-      <div class="mt-16 pb-16 border-t-2 border-gray-200 dark:border-gray-800" />
-      <header>
-        <h2>
           How to reach me.
         </h2>
       </header>
@@ -70,12 +61,10 @@ export default {
   data() {
     return {
       gear: {},
-      tech: {},
     }
   },
   mounted() {
     this.fetchGearsData();
-    this.fetchTechsData();
   },
   methods: {
     async fetchGearsData() {
@@ -87,18 +76,6 @@ export default {
         })
         .then(data => {
           this.gear = data.object;
-          this.loading = false;
-        });
-    },
-    async fetchTechsData() {
-      this.loading = true;
-      await bucket
-        .getObject({
-          slug: 'site-uses',
-          props: 'slug,title,content'
-        })
-        .then(data => {
-          this.tech = data.object;
           this.loading = false;
         });
     },

@@ -43,6 +43,15 @@
         </div>
       </div>
       <div class="mt-16 pb-16 border-t-2 border-gray-200 dark:border-gray-800" />
+      <header>
+        <h2>
+          About this site.
+        </h2>
+      </header>
+      <keep-alive>
+        <SiteUses :tech="tech" /> 
+      </keep-alive>
+      <div class="mt-16 pb-16 border-t-2 border-gray-200 dark:border-gray-800" />
       <header class="max-w-xl">
         <h2>
           How to reach me.
@@ -57,6 +66,13 @@
 
 <script>
 import getSiteMeta from "~/utils/getSiteMeta.js";
+
+const Cosmic = require("cosmicjs");
+const api = Cosmic();
+const bucket = api.bucket({
+    slug: "kemiljk",
+    read_key: "uNXYQDbNTCWQyEaFjq44PUolieGKBuzePTaEdnDl0CHLcnJtPK"
+});
 
 export default {
   computed: {
@@ -80,6 +96,7 @@ export default {
   },
   data() {
     return {
+      tech: {},
       socials: [
         {
           href: 'https://www.twitter.com/_kejk',
@@ -113,6 +130,23 @@ export default {
         },
       ]
     }
+  },
+  mounted() {
+    this.fetchTechsData();
+  },
+  methods: {
+    async fetchTechsData() {
+      this.loading = true;
+      await bucket
+        .getObject({
+          slug: 'site-uses',
+          props: 'slug,title,content'
+        })
+        .then(data => {
+          this.tech = data.object;
+          this.loading = false;
+        });
+    },
   }
 };
 </script>
