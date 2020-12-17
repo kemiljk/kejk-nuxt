@@ -100,21 +100,7 @@ export default {
         href: 'https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap'
       }
     ],
-    script: [
-      {
-        type: "module",
-        src: "https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.esm.js"
-      },
-      {
-        nomodule: "",
-        src: "https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.js"
-      },
-    ]
   },
-
-  // Global CSS (https://go.nuxtjs.dev/config-css)
-  css: [
-  ],
 
   // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
   plugins: [
