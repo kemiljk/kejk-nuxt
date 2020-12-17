@@ -14,18 +14,9 @@
       </header>
     <div class="flex flex-row">
       <div class="flex flex-col">
-        <p>
-          "Less, but better", a design principle that I live by when thinking about anything I do in life. As an <a href="https://gregmckeown.com/book/" target="_blank" el="noreferrer">essentialist</a> and practitioner of <a href="https://www.humanetech.com/who-we-are" target="_blank" el="noreferrer">Time Well Spent</a>, I believe in focusing on what is best, not on what is perceived to be important.
-        </p>
-        <p>
-          I've been fortunate to work at several awesome and interesting startups over the years across several different industries. I started out working within Pharmaceutical advertising at Incuna [now shuttered] and then <a href="https://www.cognite.co" target="_blank" el="noreferrer">Cognite</a> across their digital portfolios, delivering user experience and digital management, progressing into leadership.
-        </p>
-        <p>
-          I then moved into Renewable Energy, using design thinking methodologies to lead the product design of an innovative AI-driven renewable energy purchasing marketplace for corporations at <a href="https://www.neuerenergy.com" target="_blank" el="noreferrer">NeuerEnergy</a>.
-        </p>
-        <p>
-          Most recently, I've transitioned into integrating a strong DesignOps responsibility alongside Product Design and Frontend Development roles. At <a href="https://www.homehero.co.uk" target="_blank" el="noreferrer">HomeHero</a> I'm helping to design, build and define the Home as a Service, a new customer and business category. We're transforming how people manage their homes with a network of products and services that help people consolidate their bills and household services, as well as bringing them closer to their neighbourhoods.
-        </p>
+        <keep-alive>
+          <About :about="about" /> 
+        </keep-alive>
       </div>
     </div>
     <header class="pt-4 max-w-xl">
@@ -97,6 +88,7 @@ export default {
   data() {
     return {
       tech: {},
+      about: {},
       socials: [
         {
           href: 'https://www.twitter.com/_kejk',
@@ -133,6 +125,7 @@ export default {
   },
   mounted() {
     this.fetchTechsData();
+    this.fetchAboutData();
   },
   methods: {
     async fetchTechsData() {
@@ -144,6 +137,18 @@ export default {
         })
         .then(data => {
           this.tech = data.object;
+          this.loading = false;
+        });
+    },
+    async fetchAboutData() {
+      this.loading = true;
+      await bucket
+        .getObject({
+          slug: 'about',
+          props: 'slug,title,content'
+        })
+        .then(data => {
+          this.about = data.object;
           this.loading = false;
         });
     },
