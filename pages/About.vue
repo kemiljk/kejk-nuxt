@@ -21,10 +21,10 @@
           I've been fortunate to work at several awesome and interesting startups over the years across several different industries. I started out working within Pharmaceutical advertising at Incuna [now shuttered] and then <a href="https://www.cognite.co" target="_blank" el="noreferrer">Cognite</a> across their digital portfolios, delivering user experience and digital management, progressing into leadership.
         </p>
         <p>
-          I then moved into Renewable Energy, using design thinking methodologies to create a human-centred AI-driven PaaS at <a href="https://www.neuerenergy.com" target="_blank" el="noreferrer">NeuerEnergy</a>.
+          I then moved into Renewable Energy, using design thinking methodologies to lead the product design of an innovative AI-driven renewable energy purchasing marketplace for corporations at <a href="https://www.neuerenergy.com" target="_blank" el="noreferrer">NeuerEnergy</a>.
         </p>
         <p>
-          Most recently, I've transitioned into a tighter Product Design focus with a strong DesignOps responsibility. At <a href="https://www.homehero.co.uk" target="_blank" el="noreferrer">HomeHero</a> I'm helping to design and define the Home as a Service, a new customer and business category. We're transforming how people manage their homes. Our network of products and services help people manage their bills and household services, as well as bringing them closer to their neighbourhoods.
+          Most recently, I've transitioned into integrating a strong DesignOps responsibility alongside Product Design and Frontend Development roles. At <a href="https://www.homehero.co.uk" target="_blank" el="noreferrer">HomeHero</a> I'm helping to design, build and define the Home as a Service, a new customer and business category. We're transforming how people manage their homes with a network of products and services that help people consolidate their bills and household services, as well as bringing them closer to their neighbourhoods.
         </p>
       </div>
     </div>
