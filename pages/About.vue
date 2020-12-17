@@ -15,19 +15,16 @@
     <div class="flex flex-row">
       <div class="flex flex-col">
         <p>
-          "Less, but better", a design principle coined by Dieter Rams that I live by when thinking about anything I do in life. As an essentialist and practitioner of Time Well Spent, I believe in focusing on what is best, not on what is perceived to be important.
+          "Less, but better", a design principle that I live by when thinking about anything I do in life. As an <a href="https://gregmckeown.com/book/" target="_blank" el="noreferrer">essentialist</a> and practitioner of <a href="https://www.humanetech.com/who-we-are" target="_blank" el="noreferrer">Time Well Spent</a>, I believe in focusing on what is best, not on what is perceived to be important.
         </p>
         <p>
-          I also apply this principle across my work life. Both internal and external stakeholders are bogged down with lots of things to worry about; from budget, to planning and strategy and delivering on tight timelines. So I see it that in my role as a product designer and frontend developer, I should be able to provide my team with the most minimal and intuitive solution to their problem, whilst adding as much value to the business and the best possible experience for the person interacting with the end product or service.
-        </p>
-        <p>
-          I've been fortunate to work at several awesome and interesting startups over the years, across several different industries. I started out working within Pharmaceutical advertising at Incuna [now shuttered] and then <a href="https://www.cognite.co" target="_blank" el="noreferrer">Cognite</a> across their digital portfolios, delivering user experience and digital management, progressing into leadership.
+          I've been fortunate to work at several awesome and interesting startups over the years across several different industries. I started out working within Pharmaceutical advertising at Incuna [now shuttered] and then <a href="https://www.cognite.co" target="_blank" el="noreferrer">Cognite</a> across their digital portfolios, delivering user experience and digital management, progressing into leadership.
         </p>
         <p>
           I then moved into Renewable Energy, using design thinking methodologies to create a human-centred AI-driven PaaS at <a href="https://www.neuerenergy.com" target="_blank" el="noreferrer">NeuerEnergy</a>.
         </p>
         <p>
-          Most recently, I've transitioned into a tighter Product Design focus with a strong DesignOps responsibility. At <a href="https://www.homehero.co.uk" target="_blank" el="noreferrer">HomeHero</a> I'm helping to design and define the Home as a Service, a new customer and business category. HomeHero is a VC-backed startup transforming how people manage their homes. Our network of products and services help users manage their bills and household services, as well as bringing users closer to their neighbourhoods.
+          Most recently, I've transitioned into a tighter Product Design focus with a strong DesignOps responsibility. At <a href="https://www.homehero.co.uk" target="_blank" el="noreferrer">HomeHero</a> I'm helping to design and define the Home as a Service, a new customer and business category. We're transforming how people manage their homes. Our network of products and services help people manage their bills and household services, as well as bringing them closer to their neighbourhoods.
         </p>
       </div>
     </div>
