@@ -6,17 +6,12 @@
 
 <script>
 export default {
-  data() {
-    return {
-      isActive: Boolean,
-    };
-  },
-  head () {
+  head() {
     return {
       bodyAttrs: {
-        class: 'bg-white dark:bg-black'
-      }
-    }
+        class: "bg-white dark:bg-black",
+      },
+    };
   },
 };
 </script>
