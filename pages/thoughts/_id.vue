@@ -10,10 +10,10 @@
     </Nav>
     <div class="mx-auto px-4">
       <div class="container pt-10 pb-2 max-w-3xl mx-auto">
-        <div class="flex flex-row pt-16">
+        <div class="flex flex-row pt-16 pb-8">
           <NuxtLink
             to="/thoughts"
-            class="text-black bg-gray-50 hover:bg-gray-100 dark:hover:bg-gray-800 dark:text-white dark:bg-gray-900 rounded-xl px-6 py-3 btn btn--primary"
+            class="text-black hover:bg-gray-50 dark:hover:bg-gray-900 dark:text-white rounded-xl px-6 py-3 btn btn-primary transition ease-in-out duration-200"
           >
             <div class="flex items-center justify-between font-medium">
               <arrow-left-icon
