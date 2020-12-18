@@ -4,24 +4,24 @@
       <NavItem to="/">Home</NavItem>
       <NavItem to="/about">About</NavItem>
       <NavItem to="/thoughts">Thoughts</NavItem>
-      <NavItem to="/uses" isActive>Uses</NavItem>
+      <NavItem to="/uses" isActive id="USES" v-scroll-to="'#USES'"
+        >Uses</NavItem
+      >
     </Nav>
     <div class="max-w-3xl mx-auto px-4">
       <header class="container pt-10 pb-2 max-w-xl mx-auto">
-        <h1 class="pt-16 pb-8 text-center">
-          /Uses
-        </h1>
+        <h1 class="pt-16 pb-8 text-center">/Uses</h1>
       </header>
-        <keep-alive>
-          <Uses :uses="uses" /> 
-        </keep-alive>
-      <div class="mt-16 pb-16 border-t-2 border-gray-200 dark:border-gray-800" />
+      <keep-alive>
+        <Uses :uses="uses" />
+      </keep-alive>
+      <div
+        class="mt-16 pb-16 border-t-2 border-gray-200 dark:border-gray-800"
+      />
       <header>
-        <h2>
-          How to reach me.
-        </h2>
+        <h2>How to reach me.</h2>
       </header>
-      <div> 
+      <div>
         <GetInTouch />
       </div>
     </div>
@@ -34,8 +34,8 @@ import getSiteMeta from "~/utils/getSiteMeta.js";
 const Cosmic = require("cosmicjs");
 const api = Cosmic();
 const bucket = api.bucket({
-    slug: "kemiljk",
-    read_key: "uNXYQDbNTCWQyEaFjq44PUolieGKBuzePTaEdnDl0CHLcnJtPK"
+  slug: "kemiljk",
+  read_key: "uNXYQDbNTCWQyEaFjq44PUolieGKBuzePTaEdnDl0CHLcnJtPK",
 });
 
 export default {
@@ -45,23 +45,23 @@ export default {
         title: "KEJK | Uses",
         description: "Karl's Product Design and Development EDC and equipment",
         url: "https://kejk.tech/uses",
-        image: "https://res.cloudinary.com/kejk/image/upload/v1607350722/og-image_bcs2c8.png",
+        image:
+          "https://res.cloudinary.com/kejk/image/upload/v1607350722/og-image_bcs2c8.png",
       };
       return getSiteMeta(metaData);
-    }
+    },
   },
   head() {
     return {
       title: "KEJK | Uses",
-        meta: [
-        ...this.meta,
-        ], link: [ { rel: 'canonical', href: "https://kejk.tech/uses"} ]
-    }
+      meta: [...this.meta],
+      link: [{ rel: "canonical", href: "https://kejk.tech/uses" }],
+    };
   },
   data() {
     return {
       uses: {},
-    }
+    };
   },
   mounted() {
     this.fetchUsesData();
@@ -71,10 +71,10 @@ export default {
       this.loading = true;
       await bucket
         .getObject({
-          slug: 'uses',
-          props: 'slug,title,content'
+          slug: "uses",
+          props: "slug,title,content",
         })
-        .then(data => {
+        .then((data) => {
           this.uses = data.object;
           this.loading = false;
         });

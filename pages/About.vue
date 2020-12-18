@@ -2,53 +2,51 @@
   <div class="relative mx-auto">
     <Nav>
       <NavItem to="/">Home</NavItem>
-      <NavItem to="/about" isActive>About</NavItem>
+      <NavItem to="/about" isActive id="ABOUT" v-scroll-to="'#ABOUT'"
+        >About</NavItem
+      >
       <NavItem to="/thoughts">Thoughts</NavItem>
       <NavItem to="/uses">Uses</NavItem>
     </Nav>
     <div class="max-w-3xl mx-auto px-4">
       <header class="container pt-10 pb-2 max-w-xl mx-auto">
-        <h1 class="pt-16 pb-8 text-center">
-          /About
-        </h1>
+        <h1 class="pt-16 pb-8 text-center">/About</h1>
       </header>
-    <div class="flex flex-row">
-      <div class="flex flex-col">
-        <keep-alive>
-          <About :about="about" /> 
-        </keep-alive>
+      <div class="flex flex-row">
+        <div class="flex flex-col">
+          <keep-alive>
+            <About :about="about" />
+          </keep-alive>
+        </div>
       </div>
-    </div>
-    <header class="pt-4 max-w-xl">
-      <h2>
-        Where to find me.
-      </h2>
-    </header>
+      <header class="pt-4 max-w-xl">
+        <h2>Where to find me.</h2>
+      </header>
       <div class="flex flex-row">
         <div class="grid grid-row grid-cols-2 md:grid-cols-6 w-full gap-4">
           <div v-for="social in socials" :key="social._id">
-              <keep-alive>
-                  <SocialCard :social="social" />
-              </keep-alive>
+            <keep-alive>
+              <SocialCard :social="social" />
+            </keep-alive>
           </div>
         </div>
       </div>
-      <div class="mt-16 pb-16 border-t-2 border-gray-200 dark:border-gray-800" />
+      <div
+        class="mt-16 pb-16 border-t-2 border-gray-200 dark:border-gray-800"
+      />
       <header>
-        <h2>
-          About this site.
-        </h2>
+        <h2>About this site.</h2>
       </header>
       <keep-alive>
-        <SiteUses :tech="tech" /> 
+        <SiteUses :tech="tech" />
       </keep-alive>
-      <div class="mt-16 pb-16 border-t-2 border-gray-200 dark:border-gray-800" />
+      <div
+        class="mt-16 pb-16 border-t-2 border-gray-200 dark:border-gray-800"
+      />
       <header class="max-w-xl">
-        <h2>
-          How to reach me.
-        </h2>
+        <h2>How to reach me.</h2>
       </header>
-      <div> 
+      <div>
         <GetInTouch />
       </div>
     </div>
@@ -61,8 +59,8 @@ import getSiteMeta from "~/utils/getSiteMeta.js";
 const Cosmic = require("cosmicjs");
 const api = Cosmic();
 const bucket = api.bucket({
-    slug: "kemiljk",
-    read_key: "uNXYQDbNTCWQyEaFjq44PUolieGKBuzePTaEdnDl0CHLcnJtPK"
+  slug: "kemiljk",
+  read_key: "uNXYQDbNTCWQyEaFjq44PUolieGKBuzePTaEdnDl0CHLcnJtPK",
 });
 
 export default {
@@ -70,20 +68,21 @@ export default {
     meta() {
       const metaData = {
         title: "KEJK | About",
-        description: "Karl is a Product Designer, crafting intelligent interfaces for the web, mobile and meta services.",
+        description:
+          "Karl is a Product Designer, crafting intelligent interfaces for the web, mobile and meta services.",
         url: "https://kejk.tech/about",
-        image: "https://res.cloudinary.com/kejk/image/upload/v1607350722/og-image_bcs2c8.png",
+        image:
+          "https://res.cloudinary.com/kejk/image/upload/v1607350722/og-image_bcs2c8.png",
       };
       return getSiteMeta(metaData);
-    }
+    },
   },
   head() {
     return {
       title: "KEJK | About",
-          meta: [
-          ...this.meta,
-          ], link: [ { rel: 'canonical', href: "https://kejk.tech/about"} ]
-    }
+      meta: [...this.meta],
+      link: [{ rel: "canonical", href: "https://kejk.tech/about" }],
+    };
   },
   data() {
     return {
@@ -91,37 +90,37 @@ export default {
       about: {},
       socials: [
         {
-          href: 'https://www.twitter.com/_kejk',
+          href: "https://www.twitter.com/_kejk",
           twitter: true,
-          title: 'Twitter',
+          title: "Twitter",
         },
         {
-          href: 'https://www.Linkedin.com/kejk',
+          href: "https://www.Linkedin.com/kejk",
           linkedin: true,
-          title: 'LinkedIn',
+          title: "LinkedIn",
         },
         {
-          href: 'https://www.figma.com/@_kejk',
+          href: "https://www.figma.com/@_kejk",
           figma: true,
-          title: 'Figma',
+          title: "Figma",
         },
         {
-          href: 'https://www.github.com/kemiljk/',
+          href: "https://www.github.com/kemiljk/",
           github: true,
-          title: 'Github',
+          title: "Github",
         },
         {
-          href: 'https://dribbble.com/_kejk',
+          href: "https://dribbble.com/_kejk",
           dribbble: true,
-          title: 'Dribbble',
+          title: "Dribbble",
         },
         {
-          href: 'https://music.apple.com/gb/album/cornerstone/1300802348',
+          href: "https://music.apple.com/gb/album/cornerstone/1300802348",
           music: true,
-          title: 'Music',
+          title: "Music",
         },
-      ]
-    }
+      ],
+    };
   },
   mounted() {
     this.fetchTechsData();
@@ -132,10 +131,10 @@ export default {
       this.loading = true;
       await bucket
         .getObject({
-          slug: 'site-uses',
-          props: 'slug,title,content'
+          slug: "site-uses",
+          props: "slug,title,content",
         })
-        .then(data => {
+        .then((data) => {
           this.tech = data.object;
           this.loading = false;
         });
@@ -144,14 +143,14 @@ export default {
       this.loading = true;
       await bucket
         .getObject({
-          slug: 'about',
-          props: 'slug,title,content'
+          slug: "about",
+          props: "slug,title,content",
         })
-        .then(data => {
+        .then((data) => {
           this.about = data.object;
           this.loading = false;
         });
     },
-  }
+  },
 };
 </script>

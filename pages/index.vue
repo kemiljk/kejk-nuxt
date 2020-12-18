@@ -1,7 +1,7 @@
 <template>
   <div class="relative mx-auto">
     <Nav>
-      <NavItem to="/" isActive>Home</NavItem>
+      <NavItem to="/" isActive id="HOME" v-scroll-to="'#HOME'">Home</NavItem>
       <NavItem to="/about">About</NavItem>
       <NavItem to="/thoughts">Thoughts</NavItem>
       <NavItem to="/uses">Uses</NavItem>
