@@ -24,6 +24,7 @@
     "nuxt": "^2.14.9",
     "plausible-tracker": "^0.3.1",
     "postcss": "^7",
+    "prismjs": "^1.22.0",
     "tailwindcss": "npm:@tailwindcss/postcss7-compat",
     "vue-feather-icons": "^5.1.0",
     "vue-meta": "^2.4.0",

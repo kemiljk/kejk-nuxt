@@ -43,6 +43,7 @@
 import { ArrowLeftIcon } from 'vue-feather-icons';
 import getSiteMeta from "~/utils/getSiteMeta.js";
 import getBlog from "../../queries/getBlog";
+import Prism from '~/plugins/prism'
 
 export default {
   name: "BlogView",
@@ -65,6 +66,9 @@ export default {
       console.log("error", error);
       redirect("/thoughts");
     }
+  },
+  mounted() {
+    Prism.highlightAll()
   },
   computed: {
     myRoute() {
