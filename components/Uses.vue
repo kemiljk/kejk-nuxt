@@ -1,5 +1,5 @@
 <template>
-  <section v-html="gear.content" class="text-black dark:text-gray-300"
+  <section v-html="uses.content" class="text-black dark:text-gray-300"
   />
 </template>
 
@@ -8,7 +8,7 @@
 export default {
   name: "Uses",
   props: {
-    gear: {
+    uses: {
       type: Object,
       default: () => {}
     }

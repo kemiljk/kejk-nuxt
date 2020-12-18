@@ -13,7 +13,7 @@
         </h1>
       </header>
         <keep-alive>
-          <Uses :gear="gear" /> 
+          <Uses :uses="uses" /> 
         </keep-alive>
       <div class="mt-16 pb-16 border-t-2 border-gray-200 dark:border-gray-800" />
       <header>
@@ -60,14 +60,14 @@ export default {
   },
   data() {
     return {
-      gear: {},
+      uses: {},
     }
   },
   mounted() {
-    this.fetchGearsData();
+    this.fetchUsesData();
   },
   methods: {
-    async fetchGearsData() {
+    async fetchUsesData() {
       this.loading = true;
       await bucket
         .getObject({
@@ -75,7 +75,7 @@ export default {
           props: 'slug,title,content'
         })
         .then(data => {
-          this.gear = data.object;
+          this.uses = data.object;
           this.loading = false;
         });
     },
