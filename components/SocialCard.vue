@@ -1,9 +1,9 @@
 <template>
   <div class="flex flex-cols-6 sm:flex-cols-3 mb-3 p-4 bg-gray-100 dark:bg-gray-900 hover:shadow-md rounded-xl hover:bg-gray-50 dark:hover:bg-gray-800 transition ease-in-out duration-300">
       <a :href="social.href" target="_blank" rel="noreferrer">
-          <figma-icon v-if="social.figma" size="1x" class="text-green-600 dark:text-green-400 mb-4"></figma-icon>
           <twitter-icon v-if="social.twitter" size="1x" class="text-blue-400 mb-4"></twitter-icon>
-          <linkedin-icon v-if="social.linkedin" size="1x" class="text-blue-600 mb-4"></linkedin-icon>
+          <linkedin-icon v-if="social.linkedin" size="1x" class="text-blue-600 dark:text-blue-200 mb-4"></linkedin-icon>
+          <figma-icon v-if="social.figma" size="1x" class="text-red-900 dark:text-red-200 mb-4"></figma-icon>
           <github-icon v-if="social.github" size="1x" class="dark:text-white text-black mb-4"></github-icon>
           <dribbble-icon v-if="social.dribbble" size="1x" class="text-pink-400 mb-4"></dribbble-icon>
           <music-icon v-if="social.music" size="1x" class="text-red-600 mb-4"></music-icon>
@@ -11,7 +11,7 @@
               {{ social.title }}
           </div>
       </a>
-  </div>  
+  </div>
 </template>
 
 <script>
