@@ -91,9 +91,9 @@
               <BlogCard :blog="blog" />
             </keep-alive>
           </div>
-          <div v-for="post in posts" :key="post._id">
+          <div v-for="link in links" :key="link._id">
             <keep-alive>
-              <PostCard :post="post" />
+              <LinkCard :link="link" />
             </keep-alive>
           </div>
         </div>
@@ -246,7 +246,7 @@ export default {
           skill: "Design",
         },
       ],
-      posts: {},
+      links: {},
       blogs: {},
       slug: "",
     };
@@ -254,7 +254,7 @@ export default {
   created() {
     this.slug = this.$route.params.slug;
     this.getBlogsData();
-    this.getPostsData();
+    this.getLinksData();
     this.getMediasData();
     fetch("../../api/plugin-stats.js")
       .then((response) => response.json())
@@ -279,19 +279,19 @@ export default {
           this.blogs = blogs;
         });
     },
-    async getPostsData() {
-      this.error = this.post = null;
+    async getLinksData() {
+      this.error = this.link = null;
       this.loading = true;
       await bucket
         .getObjects({
           limit: 1,
-          type: "posts",
+          type: "links",
           props: "_id,slug,title,content,metadata",
         })
         .then((data) => {
-          const posts = data.objects;
+          const links = data.objects;
           this.loading = false;
-          this.posts = posts;
+          this.links = links;
         });
     },
     async getMediasData() {

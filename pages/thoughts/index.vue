@@ -41,9 +41,9 @@
       </header>
       <div class="flex flex-row">
         <div class="grid grid-row xs:grid-cols-1 sm:grid-cols-2 gap-4">
-          <div v-for="post in posts" :key="post._id">
+          <div v-for="link in links" :key="link._id">
             <keep-alive>
-              <PostCard :post="post" />
+              <LinkCard :link="link" />
             </keep-alive>
           </div>
         </div>
@@ -105,26 +105,26 @@ export default {
   data() {
     return {
       loading: false,
-      posts: {},
+      links: {},
     };
   },
   created() {
-    this.getPostsData();
+    this.getLinksData();
   },
   methods: {
-    async getPostsData() {
-      this.error = this.post = null;
+    async getLinksData() {
+      this.error = this.link = null;
       this.loading = true;
       await bucket
         .getObjects({
           limit: 6,
-          type: "posts",
+          type: "links",
           props: "_id,slug,title,content,metadata",
         })
         .then((data) => {
-          const posts = data.objects;
+          const links = data.objects;
           this.loading = false;
-          this.posts = posts;
+          this.links = links;
         });
     },
   },
