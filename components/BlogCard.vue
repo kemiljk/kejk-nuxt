@@ -1,5 +1,5 @@
 <template>
-  <NuxtLink 
+  <NuxtLink
     :to="`/thoughts/${blog.slug}`"
     class="cursor-pointer"
   >
@@ -7,7 +7,7 @@
       class="bg-gray-100 dark:bg-gray-900 hover:shadow-lg hover:bg-gray-50 dark:hover:bg-gray-800 transition ease-in-out duration-300 rounded-lg"
       v-if="blog.metadata"
     >
-      <header class="flex items-center justify-between px-4 pt-4 pb-0">
+      <header class="flex items-center justify-between px-4 pt-4 pb-2">
         <h1 class="text-indigo-600 dark:text-indigo-300 text-lg font-bold">
           {{ blog.title }}
         </h1>
@@ -15,6 +15,7 @@
     </header>
       <p class="text-gray-500 dark:text-gray-400 px-4 pt-0 pb-2 font-medium">
         {{ blog.metadata.published | moment("DD MMM, YYYY") }}
+        <span class="ml-2 text-indigo-900 dark:text-indigo-300 bg-indigo-100 dark:bg-indigo-800 rounded-full px-3 py-1"> {{ blog.metadata.tag }} </span>
       </p>
       <p class="text-gray-700 dark:text-gray-300 px-4 pt-2 pb-4 font-medium">
         {{ blog.metadata.snippet }}
