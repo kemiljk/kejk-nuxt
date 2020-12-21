@@ -55,22 +55,15 @@
 import getSiteMeta from "~/utils/getSiteMeta.js";
 import All from "../../components/All";
 import Design from "../../components/Design";
-import Code from "../../components/Development";
+import Dev from "../../components/Development";
 import Opinion from "../../components/Opinion";
 import Links from "../../components/External";
-
-const Cosmic = require("cosmicjs");
-const api = Cosmic();
-const bucket = api.bucket({
-  slug: "kemiljk",
-  read_key: "uNXYQDbNTCWQyEaFjq44PUolieGKBuzePTaEdnDl0CHLcnJtPK",
-});
 
 export default {
   components: {
     All,
     Design,
-    Code,
+    Dev,
     Opinion,
     Links,
   },
@@ -108,29 +101,9 @@ export default {
     return {
       loading: false,
       // links: {},
-      tabs: ["All", "Design", "Code", "Opinion", "Links"],
+      tabs: ["All", "Design", "Dev", "Opinion", "Links"],
       selected: "All",
     };
   },
-  // created() {
-  //   this.getLinksData();
-  // },
-  // methods: {
-  //   async getLinksData() {
-  //     this.error = this.link = null;
-  //     this.loading = true;
-  //     await bucket
-  //       .getObjects({
-  //         limit: 6,
-  //         type: "links",
-  //         props: "_id,slug,title,content,metadata",
-  //       })
-  //       .then((data) => {
-  //         const links = data.objects;
-  //         this.loading = false;
-  //         this.links = links;
-  //       });
-  //   },
-  // },
 };
 </script>
