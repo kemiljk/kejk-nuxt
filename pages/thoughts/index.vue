@@ -15,7 +15,7 @@
       <div class="my-8">
         <a href="http://www.kejk.tech/feed.xml">
           <button
-            class="bg-indigo-100 dark:bg-indigo-600 px-4 py-2 rounded-md text-indigo-900 dark:text-indigo-100 hover:bg-indigo-200 dark:hover:bg-indigo-500 font-medium"
+            class="flex flex-row justify-center text-center font-medium w-full bg-indigo-100 dark:bg-indigo-600 px-4 py-2 rounded-md text-indigo-900 dark:text-indigo-100 hover:bg-indigo-200 dark:hover:bg-indigo-500"
           >
             Subscribe via RSS
           </button>
