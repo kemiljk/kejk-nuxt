@@ -17,7 +17,7 @@
         ></external-link-icon>
       </header>
       <p class="text-gray-500 dark:text-gray-400 px-4 pt-0 pb-2 font-medium">
-        {{ link.metadata.published | moment("DD MMM, YYYY") }}
+        {{ link.metadata.published | moment("DD MMM, YYYY").fromNow(); }}
       </p>
       <p
         class="text-gray-700 dark:text-gray-300 px-4 pb-4 font-medium mb-0"

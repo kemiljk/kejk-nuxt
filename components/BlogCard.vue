@@ -13,7 +13,7 @@
         ></arrow-right-icon>
       </header>
       <p class="text-gray-500 dark:text-gray-400 px-4 pt-0 pb-2 font-medium">
-        Updated {{ blog.modified_at | moment("DD MMM, YYYY") }}
+        Updated {{ blog.modified_at | moment("DD MMM, YYYY").fromNow(); }}
         <span
           class="ml-2 text-indigo-900 dark:text-indigo-300 bg-indigo-100 dark:bg-indigo-800 rounded-full px-3 py-1"
         >
