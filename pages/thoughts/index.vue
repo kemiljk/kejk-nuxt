@@ -101,7 +101,7 @@ export default {
     return {
       loading: false,
       // links: {},
-      tabs: ["All", "Design", "Dev", "Opinion", "Ext."],
+      tabs: ["All", "Design", "Dev", "Opinion", "Ext"],
       selected: "All",
     };
   },
