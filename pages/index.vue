@@ -116,7 +116,7 @@
         <h2>Music I've written.</h2>
       </header>
       <div class="flex flex-row">
-        <div class="grid grid-row xs:grid-cols-1 sm:grid-cols-2 md:grid-cols-2 w-full gap-4">
+        <div class="grid grid-row xs:grid-cols-1 sm:grid-cols-2 md:grid-cols-3 w-full gap-4">
           <div v-for="album in albums" :key="album._id">
             <keep-alive>
               <AlbumCard :album="album" />
@@ -302,7 +302,6 @@ export default {
       this.loading = true;
       await bucket
         .getObjects({
-          limit: 2,
           type: "albums",
           props: "_id,title,metadata",
         })
