@@ -243,6 +243,7 @@ export default {
     this.getBlogsData();
     this.getLinksData();
     this.getMediasData();
+    this.getAlbumsData();
     fetch("../../api/plugin-stats.js")
       .then((response) => response.json())
       .then((data) => {
@@ -294,6 +295,21 @@ export default {
           const medias = data.objects;
           this.loading = false;
           this.medias = medias;
+        });
+    },
+    async getAlbumsData() {
+      this.error = this.album = null;
+      this.loading = true;
+      await bucket
+        .getObjects({
+          limit: 2,
+          type: "albums",
+          props: "_id,title,metadata",
+        })
+        .then((data) => {
+          const albums = data.objects;
+          this.loading = false;
+          this.albums = albums;
         });
     },
   },
