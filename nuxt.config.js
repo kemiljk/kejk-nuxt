@@ -148,7 +148,7 @@ export default {
       {
         hid: "canonical",
         rel: "canonical",
-        href: "https://www.kejk.tech",
+        href: "https://kejk.tech",
       },
       {
         rel: "stylesheet",
