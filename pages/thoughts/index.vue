@@ -12,9 +12,6 @@
       <header class="container pt-10 pb-2 max-w-xl mx-auto">
         <h1 class="pt-16 text-center">/thoughts</h1>
       </header>
-      <header class="pt-16 max-w-xl">
-        <h2>Thoughts on design and development.</h2>
-      </header>
       <div class="my-8">
         <a href="http://www.kejk.tech/feed.xml">
           <button
