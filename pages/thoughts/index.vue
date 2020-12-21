@@ -57,7 +57,7 @@ import All from "../../components/All";
 import Design from "../../components/Design";
 import Dev from "../../components/Development";
 import Opinion from "../../components/Opinion";
-import Ext. from "../../components/External";
+import Ext from "../../components/External";
 
 export default {
   components: {
@@ -65,7 +65,7 @@ export default {
     Design,
     Dev,
     Opinion,
-    Ext.,
+    Ext,
   },
   computed: {
     meta() {
