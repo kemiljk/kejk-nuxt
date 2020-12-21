@@ -20,7 +20,7 @@
         {{ link.metadata.published | moment("DD MMM, YYYY") }}
       </p>
       <p
-        class="text-gray-700 dark:text-gray-300 px-4 pt-2 pb-4 font-medium mb-0"
+        class="text-gray-700 dark:text-gray-300 px-4 pb-4 font-medium mb-0"
         v-html="link.metadata.snippet"
       >
         {{ link.metadata.snippet }}
