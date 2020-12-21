@@ -55,9 +55,9 @@
 import getSiteMeta from "~/utils/getSiteMeta.js";
 import All from "../../components/All";
 import Design from "../../components/Design";
-import Development from "../../components/Development";
+import Code from "../../components/Development";
 import Opinion from "../../components/Opinion";
-import External from "../../components/External";
+import Links from "../../components/External";
 
 const Cosmic = require("cosmicjs");
 const api = Cosmic();
@@ -70,9 +70,9 @@ export default {
   components: {
     All,
     Design,
-    Development,
+    Code,
     Opinion,
-    External,
+    Links,
   },
   computed: {
     meta() {
