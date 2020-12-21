@@ -25,29 +25,19 @@
         </a>
       </div>
       <div class="flex flex-row">
-        <div
-          class="grid grid-row xs:grid-cols-1 sm:grid-cols-2 gap-4"
-          v-if="blogs.blogList"
+        <button
+          v-for="tab in tabs"
+          :key="tab"
+          @click="selected = tab"
+          :class="[
+            'font-medium block border-b-2 border-gray-50 dark:border-gray-800 px-4 py-2 text-gray-900 dark:text-gray-50',
+            { active: selected === tab },
+          ]"
         >
-          <div v-for="blog in blogs.blogList" :key="blog._id">
-            <keep-alive>
-              <BlogCard :blog="blog" />
-            </keep-alive>
-          </div>
-        </div>
+          {{ tab }}
+        </button>
       </div>
-      <header class="pt-16 max-w-xl">
-        <h2>Posts from around the web.</h2>
-      </header>
-      <div class="flex flex-row">
-        <div class="grid grid-row xs:grid-cols-1 sm:grid-cols-2 gap-4">
-          <div v-for="link in links" :key="link._id">
-            <keep-alive>
-              <LinkCard :link="link" />
-            </keep-alive>
-          </div>
-        </div>
-      </div>
+      <component :is="selected" class="tab mt-8"></component>
       <div
         class="mt-16 pb-16 border-t-2 border-gray-200 dark:border-gray-800"
       />
@@ -63,6 +53,11 @@
 
 <script>
 import getSiteMeta from "~/utils/getSiteMeta.js";
+import All from "../../components/All";
+import Design from "../../components/Design";
+import Development from "../../components/Development";
+import Opinion from "../../components/Opinion";
+import External from "../../components/External";
 
 const Cosmic = require("cosmicjs");
 const api = Cosmic();
@@ -72,6 +67,13 @@ const bucket = api.bucket({
 });
 
 export default {
+  components: {
+    All,
+    Design,
+    Development,
+    Opinion,
+    External,
+  },
   computed: {
     meta() {
       const metaData = {
@@ -105,28 +107,30 @@ export default {
   data() {
     return {
       loading: false,
-      links: {},
+      // links: {},
+      tabs: ["All", "Design", "Development", "Opinion", "External"],
+      selected: "All",
     };
   },
-  created() {
-    this.getLinksData();
-  },
-  methods: {
-    async getLinksData() {
-      this.error = this.link = null;
-      this.loading = true;
-      await bucket
-        .getObjects({
-          limit: 6,
-          type: "links",
-          props: "_id,slug,title,content,metadata",
-        })
-        .then((data) => {
-          const links = data.objects;
-          this.loading = false;
-          this.links = links;
-        });
-    },
-  },
+  // created() {
+  //   this.getLinksData();
+  // },
+  // methods: {
+  //   async getLinksData() {
+  //     this.error = this.link = null;
+  //     this.loading = true;
+  //     await bucket
+  //       .getObjects({
+  //         limit: 6,
+  //         type: "links",
+  //         props: "_id,slug,title,content,metadata",
+  //       })
+  //       .then((data) => {
+  //         const links = data.objects;
+  //         this.loading = false;
+  //         this.links = links;
+  //       });
+  //   },
+  // },
 };
 </script>

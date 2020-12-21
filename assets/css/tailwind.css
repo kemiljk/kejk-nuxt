@@ -4,76 +4,43 @@
 
 @layer base {
   a {
-    @apply text-indigo-500; 
-    @apply dark:text-indigo-300;
-    @apply font-bold;
+    @apply text-indigo-500 dark:text-indigo-300 font-bold;
   }
 
   h1 {
-    @apply text-5xl; 
-    @apply font-black; 
-    @apply text-black; 
-    @apply dark:text-white;
+    @apply text-5xl font-black text-black dark:text-white;
   }
 
   h2 {
-    @apply text-2xl;
-    @apply font-bold;
-    @apply text-black; 
-    @apply dark:text-white;
-    @apply mb-4;
+    @apply text-2xl font-bold text-black dark:text-white mb-4;
   }
 
   h3 {
-    @apply text-xl;
-    @apply font-bold;
-    @apply mb-4;
-    @apply text-black; 
-    @apply dark:text-white;
+    @apply text-xl font-bold  mb-4 text-black dark:text-white;
   }
-  
+
   h4 {
-    @apply text-lg;
-    @apply font-bold;
-    @apply text-black; 
-    @apply dark:text-white;
+    @apply text-lg font-bold text-black dark:text-white;
   }
 
   p {
-    @apply text-black;
-    @apply dark:text-white;
-    @apply mb-4;
+    @apply text-black dark:text-white mb-4;
   }
-  
+
   ul {
-    @apply list-disc;
-    @apply text-black; 
-    @apply dark:text-white;
-    @apply ml-8;
-    @apply mb-4;
+    @apply list-disc text-black dark:text-white ml-8 mb-4;
   }
-  
+
   ol {
-    @apply list-decimal;
-    @apply text-black; 
-    @apply dark:text-white;
-    @apply ml-8;
-    @apply mb-4;
+    @apply list-decimal text-black dark:text-white  ml-8 mb-4;
   }
-  
+
   blockquote {
-    @apply border-l-4;
-    @apply italic;
-    @apply border-gray-200;
-    @apply dark:border-gray-800;
-    @apply ml-4;
-    @apply my-4;
+    @apply border-l-4 italic border-gray-200 dark:border-gray-800 ml-4 my-4;
   }
-  
+
   blockquote p {
-    @apply ml-4;
-    @apply text-gray-500;
-    @apply dark:text-gray-300
+    @apply ml-4 text-gray-500 dark:text-gray-300;
   }
 
   input {
@@ -86,15 +53,29 @@
     -moz-appearance: none;
   }
 
-  @supports (-webkit-backdrop-filter: blur(40px)) {
+  .backgroundBlur {
+    background-color: rgba(255, 255, 255, 1);
+  }
+
+  @media (prefers-color-scheme: dark) {
     .backgroundBlur {
-      -webkit-backdrop-filter: blur(40px);
+      background-color: rgba(0, 0, 0, 1);
+    }
+  }
+
+  @supports (-webkit-backdrop-filter: none) {
+    .backgroundBlur {
       background: rgba(255, 255, 255, 0.5);
+      -webkit-backdrop-filter: blur(40px);
     }
     @media (prefers-color-scheme: dark) {
       .backgroundBlur {
-        background-color: rgba(0, 0, 0, 0.5);
+        background: rgba(0, 0, 0, 0.5);
       }
     }
+  }
+
+  .active {
+    @apply border-b-2 border-black dark:border-white transition ease-in-out duration-200 !important;
   }
 }
