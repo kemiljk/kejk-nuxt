@@ -116,26 +116,12 @@
         <h2>Music I've written.</h2>
       </header>
       <div class="flex flex-row">
-        <div class="flex flex-row grid-cols-1 w-full shadow-xs">
-          <iframe
-            src="https://embed.music.apple.com/us/album/cornerstone/1300802348?app=music&amp;itsct=music_box&amp;itscg=30200&amp;ct=albums_cornerstone&amp;ls=1"
-            height="440px"
-            frameborder="0"
-            sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation-by-user-activation"
-            allow="autoplay *; encrypted-media *;"
-            style="
-              width: 100%;
-              max-width: 100%;
-              overflow: hidden;
-              border-top-left-radius: 10px;
-              border-top-right-radius: 10px;
-              border-bottom-right-radius: 10px;
-              border-bottom-left-radius: 10px;
-              background-color: transparent;
-              background-position: initial initial;
-              background-repeat: initial initial;
-            "
-          ></iframe>
+        <div class="grid grid-row xs:grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-4">
+          <div v-for="album in albums" :key="album._id">
+            <keep-alive>
+              <AlbumCard :album="album" />
+            </keep-alive>
+          </div>
         </div>
       </div>
       <header id="GET_IN_TOUCH" class="pt-16 max-w-xl">
@@ -191,6 +177,7 @@ export default {
     return {
       loading: false,
       medias: {},
+      albums: {},
       mades: [
         {
           href: "https://apps.apple.com/us/app/id1518887590",
