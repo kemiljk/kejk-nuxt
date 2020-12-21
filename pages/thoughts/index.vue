@@ -10,7 +10,7 @@
     </Nav>
     <div class="max-w-5xl mx-auto px-4">
       <header class="container pt-10 pb-2 max-w-xl mx-auto">
-        <h1 class="pt-16 text-center">/Thoughts</h1>
+        <h1 class="pt-16 text-center">/thoughts</h1>
       </header>
       <header class="pt-16 max-w-xl">
         <h2>Thoughts on design and development.</h2>
@@ -57,7 +57,7 @@ import All from "../../components/All";
 import Design from "../../components/Design";
 import Dev from "../../components/Development";
 import Opinion from "../../components/Opinion";
-import Links from "../../components/External";
+import Ext. from "../../components/External";
 
 export default {
   components: {
@@ -65,7 +65,7 @@ export default {
     Design,
     Dev,
     Opinion,
-    Links,
+    Ext.,
   },
   computed: {
     meta() {
@@ -101,7 +101,7 @@ export default {
     return {
       loading: false,
       // links: {},
-      tabs: ["All", "Design", "Dev", "Opinion", "Links"],
+      tabs: ["All", "Design", "Dev", "Opinion", "Ext."],
       selected: "All",
     };
   },

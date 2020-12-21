@@ -10,7 +10,7 @@
     </Nav>
     <div class="max-w-3xl mx-auto px-4">
       <header class="container pt-10 pb-2 max-w-xl mx-auto">
-        <h1 class="pt-16 pb-8 text-center">/About</h1>
+        <h1 class="pt-16 pb-8 text-center">/about</h1>
       </header>
       <div class="flex flex-row">
         <div class="flex flex-col">

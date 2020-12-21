@@ -10,7 +10,7 @@
     </Nav>
     <div class="max-w-3xl mx-auto px-4">
       <header class="container pt-10 pb-2 max-w-xl mx-auto">
-        <h1 class="pt-16 pb-8 text-center">/Uses</h1>
+        <h1 class="pt-16 pb-8 text-center">/uses</h1>
       </header>
       <keep-alive>
         <Uses :uses="uses" />
