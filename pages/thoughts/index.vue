@@ -12,7 +12,7 @@
       <header class="container pt-10 pb-2 max-w-xl mx-auto">
         <h1 class="pt-16 text-center">/thoughts</h1>
       </header>
-      <div class="my-8">
+      <div class="flex flex-col md:flex-row justify-center my-8">
         <a href="http://www.kejk.tech/feed.xml">
           <button
             class="flex flex-row justify-center text-center font-medium w-full bg-indigo-100 dark:bg-indigo-600 px-4 py-2 rounded-md text-indigo-900 dark:text-indigo-100 hover:bg-indigo-200 dark:hover:bg-indigo-500"
