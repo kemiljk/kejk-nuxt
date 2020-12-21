@@ -97,7 +97,6 @@ export default {
   data() {
     return {
       loading: false,
-      // links: {},
       tabs: ["All", "Design", "Dev", "Opinion", "Ext"],
       selected: "All",
     };

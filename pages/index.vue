@@ -271,7 +271,7 @@ export default {
         .getObjects({
           limit: 1,
           type: "blogs",
-          props: "_id,slug,title,content,metadata",
+          props: "_id,slug,title,content,metadata,modified_at",
         })
         .then((data) => {
           const blogs = data.objects;
