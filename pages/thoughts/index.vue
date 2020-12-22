@@ -10,7 +10,7 @@
     </Nav>
     <div class="max-w-5xl mx-auto px-4">
       <header class="container pt-10 pb-2 max-w-xl mx-auto">
-        <h1 class="pt-16 text-center">/thoughts</h1>
+        <h1 class="pt-16 pb-2 text-center">/thoughts</h1>
       </header>
         <p class="text-2xl text-center">
           Thoughts about design, development and the intersection of the two.
