@@ -6,7 +6,7 @@
           {{ blog.title }}
         </h1>
         <p class="text-gray-500 dark:text-gray-400 pt-2 pb-2">
-        {{ blog.metadata.modified_at | moment("from", "now") }}
+        {{ blog.modified_at | moment("from", "now") }}
         </p>
         <p
           class="text-indigo-900 dark:text-indigo-300 bg-indigo-100 dark:bg-indigo-800 rounded-full px-3 py-1 w-max"
