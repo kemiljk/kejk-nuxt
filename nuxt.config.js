@@ -178,7 +178,7 @@ export default {
     hostname: "https://kejk.tech",
     cacheTime: 1000 * 60 * 15,
     gzip: true,
-    routes: ["/", "/about", "/thoughts", "/thougts/_id", "/uses"].map(
+    routes: ["/", "/about", "/thoughts", "/thoughts/_id", "/uses"].map(
       (route) => ({
         url: route,
         changefreq: "monthly",
