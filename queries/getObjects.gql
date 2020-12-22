@@ -9,6 +9,7 @@
       title
       content
       metadata
+      modified_at
     }
     total
   }

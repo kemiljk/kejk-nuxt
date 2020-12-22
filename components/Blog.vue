@@ -63,7 +63,7 @@ export default {
         title: this.blog.title,
         description: this.blog.metadata.snippet,
         url: 'https://kejk.tech/thoughts/' + `${this.$route.params.id}`,
-        image: this.blog.metadata.hero.imgix_url,
+        mainImage: this.blog.metadata.hero.imgix_url,
       };
       return getSiteMeta(metaData);
     }
