@@ -13,57 +13,68 @@
     <description>KEJK's thoughts on design and development</description>
   </image>
   <description>KEJK's thoughts on design and development</description>
+  <author>Karl Koch</author>
   <category>Design</category>
   <item>
     <title>How music, design and code are all the same</title>
     <link>https://www.kejk.tech/thoughts/how-music-design-and-development-are-all-the-same</link>
     <description>How patterns connect three seemingly different creative mediums.</description>
+    <author>Karl Koch</author>
   </item>
   <item>
     <title>Thinking in design-code</title>
     <link>https://www.kejk.tech/thoughts/thinking-in-design-code</link>
     <description>My personal approach on how to think about code from a design perspective and how to implement those changes.</description>
+    <author>Karl Koch</author>
   </item>
   <item>
   <item>
     <title>Don’t let your role define you</title>
     <link>https://www.kejk.tech/thoughts/dont-let-your-role-define-you</link>
     <description>This article started off life as an essay on my career life, now it’s some core tips that helped me. </description>
+    <author>Karl Koch</author>
   </item>
   <item>
     <title>Code as Design</title>
     <link>https://www.kejk.tech/thoughts/code-as-design</link>
     <description>Exploring the idea of designing through code.</description>
+    <author>Karl Koch</author>
   </item>
   <item>
     <title>Design in the open</title>
     <link>https://www.kejk.tech/thoughts/designing-in-the-open</link>
     <description>What I’ve learnt about sharing constantly and live designing with my team.</description>
+    <author>Karl Koch</author>
   </item>
   <item>
     <title>From problem to plugin</title>
     <link>https://www.kejk.tech/thoughts/from-problem-to-plugin</link>
     <description>Learning Typescript, the Figma API and solving a real personal problem.</description>
+    <author>Karl Koch</author>
   </item>
   <item>
     <title>Ten Principles for Good Design</title>
     <link>https://www.kejk.tech/thoughts/ten-principles-for-good-design</link>
     <description>I decided to put together a free, multi-device, minimal wallpaper of Ram's ten principles.</description>
+    <author>Karl Koch</author>
   </item>
   <item>
     <title>Design as Code</title>
     <link>https://www.kejk.tech/thoughts/designing-in-code</link>
     <description>What learning Vue has taught me about the future of design, development and the modern web.</description>
+    <author>Karl Koch</author>
   </item>
   <item>
     <title>Getting to yes</title>
     <link>https://www.kejk.tech/thoughts/getting-to-yes</link>
     <description>Why I think designers and developers should learn the basics of sales.</description>
+    <author>Karl Koch</author>
   </item>
   <item>
     <title>Why ‘users’ are humans</title>
     <link>https://www.kejk.tech/thoughts/why-users-are-humans</link>
     <description>Design is about people, and I've been thinking a lot about the problem of the term 'user'.</description>
+    <author>Karl Koch</author>
   </item>
 </channel>
 
