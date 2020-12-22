@@ -5,11 +5,13 @@
         <h1>
           {{ blog.title }}
         </h1>
-        <p class="text-gray-500 dark:text-gray-400 pt-2">
+        <header class="pt-4 pb-4 max-w-xl mx-auto">
+        <p class="text-gray-500 dark:text-gray-400">
         Updated {{ blog.modified_at | moment("from", "now") }}
         </p>
+        </header>
         <p
-          class="text-indigo-900 dark:text-indigo-300 bg-indigo-100 dark:bg-indigo-800 rounded-full px-3 py-1 w-max pb-4"
+          class="text-indigo-900 dark:text-indigo-300 bg-indigo-100 dark:bg-indigo-800 rounded-full px-3 py-1 w-max"
         >
           {{ blog.metadata.tag }}
         </p>
