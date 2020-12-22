@@ -12,6 +12,9 @@
       <header class="container pt-10 pb-2 max-w-xl mx-auto">
         <h1 class="pt-16 text-center">/thoughts</h1>
       </header>
+        <p class="text-2xl text-center">
+          Thoughts about design, development and the intersection of the two.
+        </p>
       <div class="flex flex-col md:flex-row justify-center md:justify-start my-8">
         <a href="http://www.kejk.tech/feed.xml">
           <button
