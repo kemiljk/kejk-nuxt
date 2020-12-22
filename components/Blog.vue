@@ -9,7 +9,7 @@
         Updated {{ blog.modified_at | moment("from", "now") }}
         </p>
         <p
-          class="text-indigo-900 dark:text-indigo-300 bg-indigo-100 dark:bg-indigo-800 rounded-full px-3 py-1 w-max mb-2"
+          class="text-indigo-900 dark:text-indigo-300 bg-indigo-100 dark:bg-indigo-800 rounded-full px-3 py-1 w-max pb-4"
         >
           {{ blog.metadata.tag }}
         </p>
