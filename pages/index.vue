@@ -182,55 +182,62 @@ export default {
         {
           href: "https://apps.apple.com/us/app/id1518887590",
           img:
-            "https://res.cloudinary.com/kejk/image/upload/c_limit,w_400/v1607281437/pxtoem_ubarny.webp",
+            "https://res.cloudinary.com/kejk/image/upload/c_limit,w_600/v1607281437/pxtoem_ubarny.webp",
           title: "Hand››over",
           type: "iOS app",
+          alt: "The Handover logo"
         },
         {
           href:
             "https://www.figma.com/community/plugin/837070613195594890/Px-%E2%80%BA%E2%80%BA-Em",
           img:
-            "https://res.cloudinary.com/kejk/image/upload/c_limit,w_400/v1607281435/px2em_qnscic.webp",
+            "https://res.cloudinary.com/kejk/image/upload/c_limit,w_600/v1607281435/px2em_qnscic.webp",
           title: "Px››Em",
           type: "Figma plugin installs",
           id: "install-count",
+          alt: "The Px to Em logo"
         },
         {
           href: "https://actions.getdrafts.com/a/1fP",
           img:
-            "https://res.cloudinary.com/kejk/image/upload/c_limit,w_400/v1607678050/drafts_cosmic_tykczi.webp",
+            "https://res.cloudinary.com/kejk/image/upload/c_limit,w_600/v1607678050/drafts_cosmic_tykczi.webp",
           title: "Drafts››Cosmic",
           type: "Drafts Action",
+          alt: "The Drafts to Cosmic logo"
         },
         {
           href: "https://www.lazypdf.tech",
           img:
-            "https://res.cloudinary.com/kejk/image/upload/c_limit,w_400/v1607281439/lazyPDF_vxsn1b.webp",
+            "https://res.cloudinary.com/kejk/image/upload/c_limit,w_600/v1607281439/lazyPDF_vxsn1b.webp",
           title: "Lazy PDF",
           type: "macOS app",
+          alt: "The Lazy PDF logo"
         },
       ],
       helpedMakes: [
         {
           href: "https://apps.apple.com/gb/app/make-me-a-cocktail/id1541820377",
           img:
-            "https://res.cloudinary.com/kejk/image/upload/c_limit,w_400/v1606907284/mmac_z5flxv.webp",
+            "https://res.cloudinary.com/kejk/image/upload/c_limit,w_600/v1606907284/mmac_z5flxv.webp",
           title: "Make Me a Cocktail",
           skill: "Design",
+          alt: "The Make Me a Cocktail logo"
         },
         {
           href: "https://www.confidotalent.com",
           img:
-            "https://res.cloudinary.com/kejk/image/upload/c_limit,w_400/v1607678970/confido_g9gr6k.webp",
+            "https://res.cloudinary.com/kejk/image/upload/c_limit,w_600/v1607678970/confido_g9gr6k.webp",
           title: "Confido",
           skill: "Design & Development",
+          alt: "Confido's logo"
         },
         {
           href: "https://www.locallyuk.com",
           img:
-            "https://res.cloudinary.com/kejk/image/upload/c_limit,w_400/v1607678848/locally_m7wzjq.webp",
+            "https://res.cloudinary.com/kejk/image/upload/c_limit,w_600/v1607678848/locally_m7wzjq.webp",
           title: "Locally UK",
           skill: "Design",
+          alt: "Locally UK logo"
         },
       ],
       links: {},

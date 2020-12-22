@@ -15,7 +15,7 @@
       <keep-alive>
         <Uses :uses="uses" />
       </keep-alive>
-      <p class="text-gray-500 dark:text-gray-400 px-4 pt-0 pt-2 font-medium">
+      <p class="text-gray-500 dark:text-gray-400 px-4 pt-2 font-medium">
         Updated {{ uses.modified_at | moment("from", "now") }}
       </p> 
       <div
