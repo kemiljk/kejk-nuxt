@@ -77,10 +77,6 @@
       </div>
       <header class="pt-16 max-w-xl">
         <h2>Thoughts on design and development.</h2>
-        <!--<NuxtLink to="/thoughts" class="flex justify-between text-black bg-transparent hover:bg-gray-1-0 dark:hover:bg-gray-800 dark:text-white dark:bg-transparent rounded-xl px-6 py-3">
-        See all
-        <arrow-right-icon class="text-gray-700 dark:text-gray-300 ml-2"></arrow-right-icon>
-      </NuxtLink>-->
       </header>
       <div class="flex flex-row mt-4">
         <div
@@ -97,6 +93,10 @@
             </keep-alive>
           </div>
         </div>
+        <NuxtLink to="/thoughts" class="flex flex-row justify-start text-black bg-transparent hover:bg-gray-1-0 dark:hover:bg-gray-800 dark:text-white dark:bg-transparent rounded-xl px-6 py-3">
+        See all
+        <arrow-right-icon class="text-gray-700 dark:text-gray-300 ml-2"></arrow-right-icon>
+      </NuxtLink>
       </div>
       <header class="pt-16 max-w-xl">
         <h2>Some things I'm currently enjoying.</h2>
