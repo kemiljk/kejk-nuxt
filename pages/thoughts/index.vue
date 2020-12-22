@@ -71,7 +71,7 @@ export default {
         description:
           "Thoughts on Design and Development from here and around the web.",
         url: "https://kejk.tech/thoughts",
-        image:
+        mainImage:
           "https://res.cloudinary.com/kejk/image/upload/v1607350722/og-image_bcs2c8.png",
       };
       return getSiteMeta(metaData);

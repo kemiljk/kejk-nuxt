@@ -71,7 +71,7 @@ export default {
         description:
           "Karl is a Product Designer, crafting intelligent interfaces for the web, mobile and meta services.",
         url: "https://kejk.tech/about",
-        image:
+        mainImage:
           "https://res.cloudinary.com/kejk/image/upload/v1607350722/og-image_bcs2c8.png",
       };
       return getSiteMeta(metaData);

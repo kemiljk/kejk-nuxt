@@ -6,5 +6,6 @@ query getBlog($slug: String!){
     title
     content
     metadata
+    modified_at
   }
 }

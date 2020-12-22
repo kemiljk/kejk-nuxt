@@ -155,7 +155,7 @@ export default {
         description:
           "A Product and Frontend Designer, building for the web with Vue, Nuxt and Tailwind, building for mobile with SwiftUI.",
         url: "https://kejk.tech/",
-        image:
+        mainImage:
           "https://res.cloudinary.com/kejk/image/upload/v1607350722/og-image_bcs2c8.png",
       };
       return getSiteMeta(metaData);

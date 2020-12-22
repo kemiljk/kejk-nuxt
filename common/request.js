@@ -8,7 +8,7 @@ const bucket = api.bucket({
 function getBlogs() {
   const params = {
     type_slug: "blogs",
-    props: "slug,title,content,metadata",
+    props: "slug,title,content,metadata,modified_at",
     limit: "20",
   };
   return bucket.getObjectsByType(params);
