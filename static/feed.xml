@@ -4,8 +4,16 @@
 <channel>
   <title>KEJK | Thoughts</title>
   <link>https://www.kejk.com/thoughts</link>
+  <image>
+    <url>https://www.kejk.tech/favicon.svg</url>
+    <title>KEJK</title>
+    <link>https://www.kejk.com/thoughts</link>
+    <width>100</width>
+    <height>100</height>
+    <description>KEJK's thoughts on design and development</description>
+  </image>
   <description>KEJK's thoughts on design and development</description>
-  <category>Design and Development</category>
+  <category>Design</category>
   <item>
     <title>How music, design and code are all the same</title>
     <link>https://www.kejk.tech/thoughts/how-music-design-and-development-are-all-the-same</link>
