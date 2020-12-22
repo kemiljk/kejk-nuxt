@@ -9,7 +9,7 @@
         {{ blog.metadata.published | moment("from", "now") }}
         </p>
         <p
-          class="text-indigo-900 dark:text-indigo-300 bg-indigo-100 dark:bg-indigo-800 rounded-full px-3 py-1"
+          class="text-indigo-900 dark:text-indigo-300 bg-indigo-100 dark:bg-indigo-800 rounded-full px-3 py-1 w-max"
         >
           {{ blog.metadata.tag }}
         </p>
