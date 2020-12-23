@@ -11,7 +11,7 @@
           <header class="mb-4 flex justify-between">
             <img
             :src="media.metadata.cover.imgix_url"
-            class="rounded-md max-h-24"
+            class="rounded-md max-h-24" alt="Image of media"
             />
             <external-link-icon class="text-gray-700 dark:text-gray-300"></external-link-icon>
           </header>

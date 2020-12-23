@@ -11,7 +11,7 @@
           <header class="mb-4 flex justify-between">
             <img
             :src="album.metadata.cover.imgix_url"
-            class="rounded-md max-h-24"
+            class="rounded-md max-h-24" alt="Image of album"
             />
             <music-icon class="text-gray-700 dark:text-gray-300"></music-icon>
           </header>
