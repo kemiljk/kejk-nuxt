@@ -1,6 +1,6 @@
 <template>
   <div class="flex p-4 bg-gray-100 dark:bg-gray-900 hover:shadow-lg hover:bg-gray-50 dark:hover:bg-gray-800 transition ease-in-out duration-300 rounded-xl">
-      <a :href="made.href" target="_blank" rel="noreferrer" :alt="made.alt" @click="fathom.trackGoal('VMWK5SGQ', 0);">
+      <a :href="made.href" target="_blank" rel="noreferrer" :alt="made.alt" @click="window.fathom.trackGoal('VMWK5SGQ', 0);">
           <img alt="Logo visual" :src="`${made.img}`" class="rounded-md" />
           <div class="flex flex-col align-middle my-auto">
           <div class="flex mt-2 text-md text-gray-900 dark:text-gray-50 font-semibold mx-auto py-2 align-middle">
