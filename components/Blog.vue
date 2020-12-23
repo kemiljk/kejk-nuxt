@@ -24,7 +24,6 @@
           <a href=`https://twitter.com/intent/tweet?url=https://www.kejk.tech/thoughts/${blog.slug}&text&amp;via=_kejk` rel="noopener noreferrer" class="mt-2 inline-block">
             <twitter-icon v-if="social.twitter" size="2x" class="text-blue-400 mb-4"></twitter-icon><span class="font-medium text-black dark:text-white ml-2">Twitter</span>
           </a>
-          <div></div>
           <a href=`https://www.linkedin.com/shareArticle?mini=true&url=https://www.kejk.tech/thoughts/${blog.slug}&title=&summary=&source=`>
             <linkedin-icon v-if="social.linkedin" size="1x" class="text-blue-600 mb-4"></linkedin-icon><span class="font-medium text-black dark:text-white ml-2">LinkedIn</span>
           </a>
