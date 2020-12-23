@@ -22,10 +22,10 @@
           <button
             class="flex flex-row justify-center text-center font-medium w-full bg-indigo-100 dark:bg-indigo-600 px-6 py-3 rounded-md text-indigo-900 dark:text-indigo-100 hover:bg-indigo-200 dark:hover:bg-indigo-500"
           >
-          <rss-icon-icon
+          <rss-icon
                 size="1x"
                 class="text-indigo-900 dark:text-indigo-100 mr-2 mt-1"
-              ></rss-icon-icon
+              ></rss-icon
               >
             Subscribe via RSS
           </button>
