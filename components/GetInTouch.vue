@@ -49,8 +49,8 @@
                         </div>
 
                         <div class="flex flex-col mt-2">
-                            <label for="text" class="font-medium text-black dark:text-white">Your message</label>
-                            <textarea type="text" name="text" id="tel" placeholder="Ask me anything" class="w-100 mt-2 py-3 px-3 rounded-md bg-white dark:bg-gray-900 border-2 border-gray-200 dark:border-gray-700 text-gray-800 dark:text-gray-50 font-medium focus:border-indigo-500 focus:border-4 focus:outline-none" required />
+                            <label for="message" class="font-medium text-black dark:text-white">Your message</label>
+                            <textarea type="text" name="message" id="message" placeholder="Ask me anything" class="w-100 mt-2 py-3 px-3 rounded-md bg-white dark:bg-gray-900 border-2 border-gray-200 dark:border-gray-700 text-gray-800 dark:text-gray-50 font-medium focus:border-indigo-500 focus:border-4 focus:outline-none" required />
                         </div>
                         <input type="hidden" name="_gotcha">
 
