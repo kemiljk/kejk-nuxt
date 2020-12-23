@@ -1,6 +1,6 @@
 <template>
   <div class="flex flex-cols-6 sm:flex-cols-3 mb-3 p-4 bg-gray-100 dark:bg-gray-900 hover:shadow-md rounded-xl hover:bg-gray-50 dark:hover:bg-gray-800 transition ease-in-out duration-300">
-      <a :href="social.href" target="_blank" rel="noreferrer">
+      <a :href="social.href" target="_blank" rel="noreferrer" @click="fathom.trackGoal('WIWQ5IBA', 0);">
           <twitter-icon v-if="social.twitter" size="1x" class="text-blue-400 mb-4"></twitter-icon>
           <linkedin-icon v-if="social.linkedin" size="1x" class="text-blue-600 dark:text-blue-200 mb-4"></linkedin-icon>
           <figma-icon v-if="social.figma" size="1x" class="text-red-900 dark:text-red-200 mb-4"></figma-icon>

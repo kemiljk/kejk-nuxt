@@ -19,15 +19,16 @@
             class="text-indigo-600 dark:text-indigo-500 font-bold"
             target="_blank"
             rel="noreferrer"
+            @click="fathom.trackGoal('JL7NM6ER', 0);"
             >HomeHero</a
           >
           in London, UK.
         </p>
         <div class="flex flex-col md:flex-row justify-center mt-8">
-          <a href="https://www.twitter.com/_kejk" class="mx-2">
+          <a href="https://www.twitter.com/_kejk" class="mx-2" @click="fathom.trackGoal('KIAB5VI4', 0);">
             <button
               type="button"
-              class="flex flex-row justify-center text-center font-medium w-full bg-blue-400 text-white rounded-md px-6 py-3 btn btn-primary transition duration-500 ease hover:bg-blue-500 focus:outline-none focus:shadow-outline"
+              class="flex flex-row justify-center text-center font-medium w-full bg-blue-500 text-white rounded-md px-6 py-3 btn btn-primary transition duration-500 ease hover:bg-blue-600 focus:outline-none focus:shadow-outline"
             >
               <twitter-icon
                 size="1x"
@@ -36,11 +37,10 @@
               >Follow me on Twitter
             </button>
           </a>
-          <a class="mx-2">
+          <a href="#" class="mx-2" v-scroll-to="'#GET_IN_TOUCH'">
             <button
               type="button"
               class="flex flex-row justify-center text-center font-medium w-full mt-2 md:mt-0 bg-gray-300 dark:bg-gray-700 text-gray-800 dark:text-white rounded-md px-6 py-3 btn btn-secondary transition duration-500 ease hover:bg-gray-400 dark:hover:bg-gray-600 focus:outline-none focus:shadow-outline"
-              v-scroll-to="'#GET_IN_TOUCH'"
             >
               <mail-icon
                 size="1x"

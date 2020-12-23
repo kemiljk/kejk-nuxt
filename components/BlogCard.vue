@@ -1,5 +1,5 @@
 <template>
-  <NuxtLink :to="`/thoughts/${blog.slug}`" class="cursor-pointer">
+  <NuxtLink :to="`/thoughts/${blog.slug}`" class="cursor-pointer" @click="fathom.trackGoal('ASQADCOL', 0);">
     <div
       class="bg-gray-100 dark:bg-gray-900 hover:shadow-lg hover:bg-gray-50 dark:hover:bg-gray-800 transition ease-in-out duration-300 rounded-lg"
       v-if="blog.metadata"
