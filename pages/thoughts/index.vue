@@ -17,7 +17,7 @@
           Thoughts about design, development and the intersection of the two.
         </p>
       </header>
-      <div class="flex flex-col md:flex-row justify-center my-8">
+      <div class="flex flex-col md:flex-row justify-center mt-6 mb-8">
         <a href="http://www.kejk.tech/feed.xml" @click="fathom.trackGoal('Q6WH9ACE', 0);">
           <button
             class="flex flex-row justify-center text-center mx-2 font-medium w-full bg-indigo-100 dark:bg-indigo-600 px-6 py-3 rounded-md text-indigo-900 dark:text-indigo-100 hover:bg-indigo-200 dark:hover:bg-indigo-500"

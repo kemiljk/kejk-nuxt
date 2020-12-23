@@ -10,7 +10,7 @@
       <header class="container pt-10 pb-2 max-w-xl mx-auto">
         <h1 class="pt-16 text-center">Hej, I'm Karl</h1>
       </header>
-      <header class="pt-4 pb-2 max-w-xl mx-auto">
+      <header class="pt-4 pb-4 max-w-xl mx-auto">
         <p class="text-2xl text-center">
           I'm a Product Designer and "sometimes" Frontend Developer, designing
           and defining the Home as a Service at
@@ -24,7 +24,7 @@
           >
           in London, UK.
         </p>
-        <div class="flex flex-col md:flex-row justify-center mt-8">
+        <div class="flex flex-col md:flex-row justify-center mt-6">
           <a href="https://www.twitter.com/_kejk" class="mx-2" @click="fathom.trackGoal('KIAB5VI4', 0);">
             <button
               type="button"
