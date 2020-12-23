@@ -5,7 +5,7 @@
         <h1>
           {{ blog.title }}
         </h1>
-        <p class="text-gray-500 dark:text-gray-400 pt-2 pb-2">
+        <p class="text-gray-500 dark:text-gray-400 pt-2">
         Updated {{ blog.modified_at | moment("from", "now") }}
         </p>
         <p
@@ -29,7 +29,7 @@
           </a>
         </div>
       </div> -->
-    <div class="flex flex-row px-lg-12">
+    <div class="flex flex-row px-lg-12 pt-4">
       <div class="flex flex-col col-span-full md:col-span-6">
         <section
           v-html="blog.content" class="text-black dark:text-gray-300"

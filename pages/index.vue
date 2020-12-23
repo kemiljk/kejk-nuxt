@@ -27,7 +27,7 @@
           <a href="https://www.twitter.com/_kejk" class="mx-2">
             <button
               type="button"
-              class="flex flex-row justify-center text-center font-medium w-full bg-blue-400 text-white rounded-xl px-6 py-3 btn btn-primary transition duration-500 ease hover:bg-blue-500 focus:outline-none focus:shadow-outline"
+              class="flex flex-row justify-center text-center font-medium w-full bg-blue-400 text-white rounded-md px-6 py-3 btn btn-primary transition duration-500 ease hover:bg-blue-500 focus:outline-none focus:shadow-outline"
             >
               <twitter-icon
                 size="1x"
@@ -39,7 +39,7 @@
           <a class="mx-2">
             <button
               type="button"
-              class="flex flex-row justify-center text-center font-medium w-full mt-2 md:mt-0 bg-gray-300 dark:bg-gray-700 text-gray-800 dark:text-white rounded-xl px-6 py-3 btn btn-secondary transition duration-500 ease hover:bg-gray-400 dark:hover:bg-gray-600 focus:outline-none focus:shadow-outline"
+              class="flex flex-row justify-center text-center font-medium w-full mt-2 md:mt-0 bg-gray-300 dark:bg-gray-700 text-gray-800 dark:text-white rounded-md px-6 py-3 btn btn-secondary transition duration-500 ease hover:bg-gray-400 dark:hover:bg-gray-600 focus:outline-none focus:shadow-outline"
               v-scroll-to="'#GET_IN_TOUCH'"
             >
               <mail-icon

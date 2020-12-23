@@ -12,14 +12,21 @@
       <header class="container pt-10 pb-2 max-w-xl mx-auto">
         <h1 class="pt-16 pb-2 text-center">/thoughts</h1>
       </header>
+      <header class="pt-4 pb-4 max-w-xl mx-auto">
         <p class="text-2xl text-center">
           Thoughts about design, development and the intersection of the two.
         </p>
+      </header>
       <div class="flex flex-col md:flex-row justify-center md:justify-start my-8">
         <a href="http://www.kejk.tech/feed.xml">
           <button
-            class="flex flex-row justify-center text-center font-medium w-full bg-indigo-100 dark:bg-indigo-600 px-4 py-2 rounded-md text-indigo-900 dark:text-indigo-100 hover:bg-indigo-200 dark:hover:bg-indigo-500"
+            class="flex flex-row justify-center text-center font-medium w-full bg-indigo-100 dark:bg-indigo-600 px-6 py-3 rounded-md text-indigo-900 dark:text-indigo-100 hover:bg-indigo-200 dark:hover:bg-indigo-500"
           >
+          <rss-icon
+                size="1x"
+                class="text-indigo-900 dark:text-indigo-100 mr-2 mt-1"
+              ></rss-icon
+              >
             Subscribe via RSS
           </button>
         </a>
@@ -53,6 +60,7 @@
 
 <script>
 import getSiteMeta from "~/utils/getSiteMeta.js";
+import { RssIcon } from 'vue-feather-icons'
 import All from "../../components/All";
 import Design from "../../components/Design";
 import Dev from "../../components/Development";
@@ -61,6 +69,7 @@ import Ext from "../../components/External";
 
 export default {
   components: {
+    RssIcon,
     All,
     Design,
     Dev,
