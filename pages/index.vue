@@ -51,7 +51,7 @@
           </a>
         </div>
       </header>
-      <header class="pt-16 max-w-xl">
+      <header class="pt-16 pl-4 max-w-xl">
         <h2>Some things I've made.</h2>
       </header>
       <div class="flex flex-row">
@@ -63,7 +63,7 @@
           </div>
         </div>
       </div>
-      <header class="pt-16 max-w-xl">
+      <header class="pt-16 pl-4 max-w-xl">
         <h2>Some things I've helped make.</h2>
       </header>
       <div class="flex flex-row">
@@ -75,7 +75,7 @@
           </div>
         </div>
       </div>
-      <header class="pt-16 max-w-xl">
+      <header class="pt-16 pl-4 max-w-xl">
         <h2>Thoughts on design and development.</h2>
       </header>
       <div class="flex flex-row mt-4">
@@ -98,7 +98,7 @@
         See all
         <arrow-right-icon class="text-gray-700 dark:text-gray-300 ml-2"></arrow-right-icon>
       </NuxtLink>
-      <header class="pt-16 max-w-xl">
+      <header class="pt-16 pl-4 max-w-xl">
         <h2>Some things I'm currently enjoying.</h2>
       </header>
       <div class="flex flex-row">
@@ -112,7 +112,7 @@
           </div>
         </div>
       </div>
-      <header class="pt-16 max-w-xl">
+      <header class="pt-16 pl-4 max-w-xl">
         <h2>Music I've written.</h2>
       </header>
       <div class="flex flex-row">
@@ -124,7 +124,7 @@
           </div>
         </div>
       </div>
-      <header id="GET_IN_TOUCH" class="pt-16 max-w-xl">
+      <header id="GET_IN_TOUCH" class="pt-16 pl-4 max-w-xl">
         <h2>How to reach me.</h2>
       </header>
       <div>

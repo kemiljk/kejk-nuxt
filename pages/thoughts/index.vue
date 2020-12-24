@@ -8,7 +8,7 @@
       >
       <NavItem to="/uses">Uses</NavItem>
     </Nav>
-    <div class="max-w-5xl mx-auto px-4">
+    <div class="max-w-3xl mx-auto px-4">
       <header class="container pt-10 pb-2 max-w-xl mx-auto">
         <h1 class="pt-16 pb-2 text-center">/thoughts</h1>
       </header>
@@ -18,7 +18,7 @@
         </p>
       </header>
       <div class="flex flex-col md:flex-row justify-center mb-8">
-        <a href="http://www.kejk.tech/feed.xml" @click="fathom.trackGoal('Q6WH9ACE', 0);">
+        <a href="http://www.kejk.tech/feed.xml" @click="window.fathom.trackGoal('Q6WH9ACE', 0);">
           <button
             class="flex flex-row justify-center text-center mx-2 font-medium w-full bg-indigo-100 dark:bg-indigo-600 px-6 py-3 rounded-md text-indigo-900 dark:text-indigo-100 hover:bg-indigo-200 dark:hover:bg-indigo-500"
           >
@@ -31,7 +31,7 @@
           </button>
         </a>
       </div>
-      <div class="flex flex-row">
+      <div class="flex flex-row ">
         <button
           v-for="tab in tabs"
           :key="tab"
