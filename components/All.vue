@@ -16,7 +16,7 @@
     <div
         class="mt-16 pb-16 border-t-2 border-gray-200 dark:border-gray-800"
       />
-    <div class="mt-8">
+    <div>
       <header>
         <h2 class="inline-block border-b-2 border-gray-100 dark:border-gray-900 max-w-min">External posts.</h2>
       </header>
