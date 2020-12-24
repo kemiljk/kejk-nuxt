@@ -1,7 +1,7 @@
 <template>
   <NuxtLink :to="`/thoughts/${blog.slug}`" class="cursor-pointer" @click="window.fathom.trackGoal('ASQADCOL', 0);">
     <div
-      class="bg-gray-100 dark:bg-gray-900 hover:shadow-lg hover:bg-gray-50 dark:hover:bg-gray-800 transition ease-in-out duration-300 rounded-lg"
+      class="hover:shadow-lg hover:bg-gray-50 dark:hover:bg-gray-800 transition ease-in-out duration-300 rounded-lg"
       v-if="blog.metadata"
     >
       <header class="flex items-center justify-between px-4 pt-4 pb-2">
