@@ -1,7 +1,7 @@
 <template>
   <div>
     <header>
-      <h2 class="pl-4 border-b-2 border-gray-100 dark:border-gray-900">Articles.</h2>
+      <h2 class="inline-block border-b-2 border-gray-100 dark:border-gray-900 max-w-min">Articles.</h2>
     </header>
     <div
       class="grid grid-row xs:grid-cols-1 sm:grid-cols-2 gap-4"
@@ -18,7 +18,7 @@
       />
     <div class="mt-8">
       <header>
-        <h2 class="pl-4 border-b-2 border-gray-100 dark:border-gray-900">External posts.</h2>
+        <h2 class="inline-block border-b-2 border-gray-100 dark:border-gray-900 max-w-min">External posts.</h2>
       </header>
       <div class="grid grid-row xs:grid-cols-1 sm:grid-cols-2 gap-4">
         <div v-for="link in links" :key="link._id">
