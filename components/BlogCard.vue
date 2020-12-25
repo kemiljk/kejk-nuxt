@@ -17,7 +17,7 @@
       </p>
       <div class="pl-4">
       <!--<span class="w-max text-green-700 dark:text-green-400 border-2 border-green-700 dark:border-green-400 rounded-full px-3 py-1 text-sm" v-if="blog.published_at = new)">New</span>-->
-      <p class="w-max text-indigo-700 dark:text-indigo-400 border-2 border-indigo-700 dark:border-indigo-400 rounded-full px-3 py-1 text-sm"
+      <p class="w-max text-indigo-700 dark:text-indigo-400 border-2 border-indigo-700 dark:border-indigo-400 rounded-full px-3 py-1 text-xs"
         >
           {{ blog.metadata.tag }}
         </p>
