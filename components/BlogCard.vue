@@ -16,7 +16,7 @@
         Updated {{ blog.modified_at | moment("from", "now") }}
       </p>
       <div class="pl-4">
-      <span class="w-max text-green-700 dark:text-green-400 border-2 border-green-700 dark:border-green-400 rounded-full px-3 py-1 text-sm" v-if="blog.metadata.published === today || >= lastWeek">New</span>
+      <span class="w-max text-green-700 dark:text-green-400 border-2 border-green-700 dark:border-green-400 rounded-full px-3 py-1 text-sm" v-if="currentDate === blog.metadata.published && >= (currentDate - 7)">New</span>
       <p class="w-max text-indigo-700 dark:text-indigo-400 border-2 border-indigo-700 dark:border-indigo-400 rounded-full px-3 py-1 text-sm"
         >
           {{ blog.metadata.tag }}
@@ -53,12 +53,6 @@ export default {
       let cYear = currentDate.getFullYear();
     return cDay + "/" + cMonth + "/" + cYear
     },
-    lastWeek() {
-      var lastWeek = new Date();
-      var pastDate = lastWeek.getDate() - 7;
-      lastWeek.setDate(pastDate);
-    return lastWeek
-    }
   },
 };
 </script>
