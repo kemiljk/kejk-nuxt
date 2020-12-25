@@ -19,13 +19,12 @@
             class="text-indigo-600 dark:text-indigo-500 font-bold"
             target="_blank"
             rel="noreferrer"
-            @click="window.fathom.trackGoal('JL7NM6ER', 0);"
             >HomeHero</a
           >
           in London, UK.
         </p>
         <div class="flex flex-col md:flex-row justify-center mt-6">
-          <a href="https://www.twitter.com/_kejk" class="mx-2" @click="window.fathom.trackGoal('KIAB5VI4', 0);">
+          <a href="https://www.twitter.com/_kejk" class="mx-2">
             <button
               type="button"
               class="flex flex-row justify-center text-center font-medium w-full bg-blue-500 text-white rounded-md px-6 py-3 btn btn-primary transition duration-500 ease hover:bg-blue-600 focus:outline-none focus:shadow-outline"

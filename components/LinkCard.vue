@@ -4,7 +4,6 @@
     target="`_blank"
     rel="noreferrer"
     class="cursor-pointer mb-0"
-    @click="window.fathom.trackGoal('PHXJSZOX', 0);"
   >
     <div
       class="hover:shadow-lg hover:bg-gray-50 dark:hover:bg-gray-900 transition ease-in-out duration-300 rounded-lg"
