@@ -16,7 +16,7 @@
         Updated {{ blog.modified_at | moment("from", "now") }}
       </p>
       <div class="pl-4">
-      <span class="w-max text-green-700 dark:text-green-400 border-2 border-green-700 dark:border-green-400 rounded-full px-3 py-1 text-sm" v-if="currentDate === blog.metadata.published && >= (currentDate - 7)">New</span>
+      <!--<span class="w-max text-green-700 dark:text-green-400 border-2 border-green-700 dark:border-green-400 rounded-full px-3 py-1 text-sm" v-if="blog.published_at = new)">New</span>-->
       <p class="w-max text-indigo-700 dark:text-indigo-400 border-2 border-indigo-700 dark:border-indigo-400 rounded-full px-3 py-1 text-sm"
         >
           {{ blog.metadata.tag }}
@@ -43,15 +43,6 @@ export default {
       default: () => {
         "No posts are loaded";
       },
-    },
-  },
-  computed: {
-    today() {
-      let currentDate = new Date();
-      let cDay = currentDate.getDate();
-      let cMonth = currentDate.getMonth() + 1;
-      let cYear = currentDate.getFullYear();
-    return cDay + "/" + cMonth + "/" + cYear
     },
   },
 };
