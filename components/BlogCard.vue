@@ -12,15 +12,14 @@
           class="text-gray-700 dark:text-gray-300"
         ></arrow-right-icon>
       </header>
-      <p class="text-gray-500 dark:text-gray-400 px-4 pt-0 pb-2 font-medium">
+      <p class="text-gray-500 dark:text-gray-400 px-4 pt-0 font-medium">
         Updated {{ blog.modified_at | moment("from", "now") }}
-        <span
-          class="ml-2 text-indigo-700 dark:text-indigo-400 border-2 border-indigo-700 dark:border-indigo-400 rounded-full px-3 py-1"
+      </p>
+      <p class="ml-2 text-indigo-700 dark:text-indigo-400 border-2 border-indigo-700 dark:border-indigo-400 rounded-full px-3 py-1"
         >
           {{ blog.metadata.tag }}
-        </span>
-      </p>
-      <p class="text-gray-700 dark:text-gray-300 px-4 pb-4 font-medium mb-0">
+        </p>
+      <p class="text-gray-700 dark:text-gray-300 px-4 pt-2 pb-4 font-medium mb-0">
         {{ blog.metadata.snippet }}
       </p>
     </div>
