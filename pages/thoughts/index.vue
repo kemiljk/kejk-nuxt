@@ -31,7 +31,7 @@
         </a>
       </div>
     </header>
-      <div class="flex flex-row ">
+      <div class="flex flex-row mt-8">
         <button
           v-for="tab in tabs"
           :key="tab"
