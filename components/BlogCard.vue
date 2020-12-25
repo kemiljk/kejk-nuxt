@@ -15,7 +15,7 @@
       <p class="text-gray-500 dark:text-gray-400 px-4 pt-0 pb-2 font-medium">
         Updated {{ blog.modified_at | moment("from", "now") }}
         <span
-          class="ml-2 text-indigo-900 dark:text-indigo-300 border-2 border-indigo-100 dark:border-indigo-800 rounded-full px-3 py-1"
+          class="ml-2 text-indigo-700 dark:text-indigo-600 border-2 border-indigo-700 dark:border-indigo-600 rounded-full px-3 py-1"
         >
           {{ blog.metadata.tag }}
         </span>
