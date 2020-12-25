@@ -16,11 +16,10 @@
         <p class="text-2xl text-center">
           Thoughts about design, development and the intersection of the two.
         </p>
-      </header>
-      <div class="flex flex-col justify-center mb-8 mx-auto">
+      <div class="flex flex-row justify-center mx-auto">
         <a href="http://www.kejk.tech/feed.xml" @click="window.fathom.trackGoal('Q6WH9ACE', 0);">
           <button
-            class="flex flex-row justify-center text-center font-medium w-full md:max-w-max bg-indigo-100 dark:bg-indigo-600 px-6 py-3 rounded-md text-indigo-900 dark:text-indigo-100 hover:bg-indigo-200 dark:hover:bg-indigo-500"
+            class="flex flex-row justify-center text-center font-medium w-full bg-indigo-100 dark:bg-indigo-600 px-6 py-3 rounded-md text-indigo-900 dark:text-indigo-100 hover:bg-indigo-200 dark:hover:bg-indigo-500"
           >
           <rss-icon
                 size="1x"
@@ -31,6 +30,7 @@
           </button>
         </a>
       </div>
+    </header>
       <div class="flex flex-row ">
         <button
           v-for="tab in tabs"
