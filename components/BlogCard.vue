@@ -46,10 +46,6 @@ export default {
     },
   },
   computed: {
-    today(),
-    lastWeek()
-  },
-  methods: {
     today() {
       let currentDate = new Date();
       let cDay = currentDate.getDate();
