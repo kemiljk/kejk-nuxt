@@ -37,7 +37,7 @@
           :key="tab"
           @click="selected = tab"
           :class="[
-            'font-medium block border-b-2 border-gray-50 dark:border-gray-700 px-4 py-2 text-gray-700 dark:text-gray-600',
+            'font-medium block border-b-2 border-gray-50 dark:border-gray-700 px-4 py-2 text-gray-300 dark:text-gray-500',
             { active: selected === tab },
           ]"
         >
