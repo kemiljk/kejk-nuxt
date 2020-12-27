@@ -6,7 +6,7 @@
     class="cursor-pointer mb-0"
   >
     <div
-      class="hover:shadow-lg hover:bg-gray-50 dark:hover:bg-gray-900 transition ease-in-out duration-300 rounded-lg"
+      class="hover:rounded-lg hover:shadow-lg hover:bg-gray-50 dark:hover:bg-gray-900 border-b-2 border-gray-200 dark:border-gray-800 hover:border-b-0 transition ease-in-out duration-300"
     >
       <header class="flex items-center justify-between px-4 pt-4 pb-2">
         <h1 class="text-yellow-600 dark:text-yellow-300 text-lg font-bold w-60 md:w-80">
