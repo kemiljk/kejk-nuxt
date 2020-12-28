@@ -23,7 +23,7 @@
             </div>
           </NuxtLink>
         </div>
-        <keep-alive>
+        <keep-alive>  
           <Blog v-if="page" :blog="page" />
         </keep-alive>
         <div
