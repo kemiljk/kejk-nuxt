@@ -40,7 +40,7 @@ const bucket = api.bucket({
 });
 
 export default {
-  name: "DesignTab",
+  name: "AllTab",
   computed: {
     blogs() {
       let blogs = this.$store.getters.getBlog;

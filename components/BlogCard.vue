@@ -16,7 +16,7 @@
         Updated {{ blog.modified_at | moment("from", "now") }}
       </p>
       <div class="pl-4 pb-4">
-      <!--<span class="w-max text-green-700 dark:text-green-400 border-2 border-green-700 dark:border-green-400 rounded-full px-3 py-1 text-xs mr-2" v-if="blog">New</span>-->
+      <span class="w-max text-green-700 dark:text-green-400 border-2 border-green-700 dark:border-green-400 rounded-full px-3 py-1 text-xs mr-2" v-if="firstBlog">New</span>
       <span class="w-max text-indigo-700 dark:text-indigo-400 border-2 border-indigo-700 dark:border-indigo-400 rounded-full px-3 py-1 text-xs"
         >
           {{ blog.metadata.tag }}
@@ -45,5 +45,10 @@ export default {
       },
     },
   },
+  computed: {
+    firstBlog() {
+      return this.blogs.blogList.slice(0, 1)
+    }
+  }
 };
 </script>
