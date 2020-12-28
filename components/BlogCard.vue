@@ -47,7 +47,7 @@ export default {
   },
   computed: {
     firstBlog() {
-      return this.blogs.blogList.slice(0, 1)
+      return this.blog._id.slice(0, 1)
     }
   }
 };
