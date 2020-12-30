@@ -293,7 +293,7 @@ export default {
       this.loading = true;
       await bucket
         .getObjects({
-          limit: 3,
+          limit: 6,
           type: "medias",
           props: "_id,title,metadata",
         })
