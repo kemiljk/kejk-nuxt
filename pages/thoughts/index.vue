@@ -24,11 +24,11 @@
             class="mx-2"
           >
             <button
-              class="flex flex-row justify-center text-center font-medium w-full sm:w-max bg-indigo-100 dark:bg-indigo-600 px-6 py-3 rounded-md text-indigo-900 dark:text-indigo-100 hover:bg-indigo-200 dark:hover:bg-indigo-500"
+              class="flex flex-row justify-center text-center font-medium w-full sm:w-max bg-indigo-600 px-6 py-3 rounded-md text-indigo-100 hover:bg-indigo-500"
             >
               <rss-icon
                 size="1x"
-                class="flex align-middle text-indigo-900 dark:text-indigo-100 mr-2"
+                class="flex align-middle mt-1 text-indigo-100 mr-2"
               ></rss-icon>
               Subscribe via RSS
             </button>
@@ -40,11 +40,11 @@
             class="mx-2"
           >
             <button
-              class="flex flex-row justify-center text-center font-medium mt-2 md:mt-0 w-full sm:w-max bg-red-200 dark:bg-red-500 px-6 py-3 rounded-md text-red-900 dark:text-red-50 hover:bg-red-300 dark:hover:bg-red-400"
+              class="flex flex-row justify-center text-center font-medium mt-2 md:mt-0 w-full sm:w-max bg-red-500 px-6 py-3 rounded-md text-red-50 hover:bg-red-400"
             >
               <coffee-icon
                 size="1x"
-                class="flex align-middle text-red-900 dark:text-red-100 mr-2"
+                class="flex align-middle mt-1 text-red-100 mr-2"
               ></coffee-icon>
               Subscribe via Mailbrew
             </button>
