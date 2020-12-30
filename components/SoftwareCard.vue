@@ -27,7 +27,7 @@
               >Indie</span
             >
             <span
-              class="flex w-max justify-center text-purple-700 dark:text-purple-400 border-2 border-purple-700 dark:border-purple-400 rounded-full px-3 py-1 text-xs mr-2"
+              class="flex w-max justify-center text-purple-700 dark:text-purple-400 border-2 border-purple-700 dark:border-purple-400 rounded-full px-3 py-1 text-xs"
               v-if="software.metadata.open_source"
               >Open source</span
             >
