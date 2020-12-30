@@ -19,7 +19,7 @@
       </p>
       <div class="pl-4 pb-4">
         <span
-          class="w-max text-green-700 dark:text-green-400 border-2 border-green-700 dark:border-green-400 rounded-full px-3 py-1 text-xs mr-2"
+          class="w-min text-green-700 dark:text-green-400 border-2 border-green-700 dark:border-green-400 rounded-full px-3 py-1 text-xs mr-2"
           v-if="blog.metadata.latest === true"
           >New
         </span>
