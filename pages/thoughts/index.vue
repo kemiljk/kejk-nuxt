@@ -82,6 +82,7 @@ import Ext from "../../components/External";
 export default {
   components: {
     RssIcon,
+    CoffeeIcon,
     All,
     Design,
     Dev,
