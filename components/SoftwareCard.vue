@@ -27,7 +27,7 @@
               >Indie</span
             >
             <span
-              class="h-7 w-max text-indigo-500 border-2 border-indigo-500 rounded-full px-3 py-1 text-xs mr-2"
+              class="h-7 w-max text-indigo-400 border-2 border-purple-400 rounded-full px-3 py-1 text-xs mr-2"
               v-if="software.metadata.open_source"
               >Open source</span
             >
