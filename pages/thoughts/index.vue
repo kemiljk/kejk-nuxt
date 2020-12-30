@@ -33,12 +33,12 @@
           <button
             class="flex flex-row justify-center mx-2 text-center font-medium w-full sm:w-max bg-red-200 dark:bg-red-500 px-6 py-3 rounded-md text-red-900 dark:text-red-50 hover:bg-red-300 dark:hover:bg-red-400"
           >
-          <rss-icon
+          <coffee-icon
                 size="1x"
                 class="text-indigo-900 dark:text-indigo-100 mr-2 mt-1"
-              ></rss-icon
+              ></coffee-icon
               >
-            Subscribe via RSS
+            Subscribe via Mailbrew
           </button>
         </a>
       </div>
