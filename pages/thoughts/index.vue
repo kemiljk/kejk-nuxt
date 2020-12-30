@@ -31,7 +31,7 @@
         </a>
         <a href="https://share.mailbrew.com/_kejk/kejk-sXWcveOcS678" target="_blank" rel="noreferrer">
           <button
-            class="flex flex-row justify-center mx-2 text-center font-medium w-full sm:w-max bg-red-200 dark:bg-red-500 px-6 py-3 rounded-md text-red-900 dark:text-red-50 hover:bg-red-300 dark:hover:bg-red-400"
+            class="flex flex-row justify-center mx-2 text-center font-medium mt-2 md:mt-0 w-full sm:w-max bg-red-200 dark:bg-red-500 px-6 py-3 rounded-md text-red-900 dark:text-red-50 hover:bg-red-300 dark:hover:bg-red-400"
           >
           <coffee-icon
                 size="1x"
