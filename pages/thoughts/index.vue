@@ -29,6 +29,18 @@
             Subscribe via RSS
           </button>
         </a>
+        <a href="https://share.mailbrew.com/_kejk/kejk-sXWcveOcS678"
+          <button
+            class="flex flex-row justify-center mx-2 text-center font-medium w-full sm:w-max bg-red-200 dark:bg-red-500 px-6 py-3 rounded-md text-red-900 dark:text-red-50 hover:bg-red-300 dark:hover:bg-red-400"
+          >
+          <rss-icon
+                size="1x"
+                class="text-indigo-900 dark:text-indigo-100 mr-2 mt-1"
+              ></rss-icon
+              >
+            Subscribe via RSS
+          </button>
+        </a>
       </div>
     </header>
       <div class="flex flex-row mt-8">
@@ -60,7 +72,7 @@
 
 <script>
 import getSiteMeta from "~/utils/getSiteMeta.js";
-import { RssIcon } from 'vue-feather-icons'
+import { RssIcon, CoffeeIcon } from 'vue-feather-icons'
 import All from "../../components/All";
 import Design from "../../components/Design";
 import Dev from "../../components/Development";
