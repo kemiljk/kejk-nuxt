@@ -16,7 +16,7 @@
         <p class="text-2xl text-center">
           Thoughts about design, development and the intersection of the two.
         </p>
-      <div class="flex flex-col md:flex-row justify-center mx-auto mt-6">
+      <div class="flex flex-col md:flex-row justify-center mt-6">
         <a href="https://www.kejk.tech/feed.xml" target="_blank" rel="noreferrer">
           <button
             class="flex flex-row justify-center mx-2 text-center font-medium w-full sm:w-max bg-indigo-100 dark:bg-indigo-600 px-6 py-3 rounded-md text-indigo-900 dark:text-indigo-100 hover:bg-indigo-200 dark:hover:bg-indigo-500"
