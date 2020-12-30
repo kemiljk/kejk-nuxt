@@ -31,7 +31,7 @@
             >
               <twitter-icon
                 size="1x"
-                class="flex align-middle text-white mr-2"
+                class="flex align-middle mt-1 text-white mr-2"
               ></twitter-icon
               >Follow me on Twitter
             </button>
@@ -43,7 +43,7 @@
             >
               <mail-icon
                 size="1x"
-                class="flex align-middle text-gray-800 dark:text-white mr-2"
+                class="flex align-middle mt-1 text-gray-800 dark:text-white mr-2"
               ></mail-icon
               >Get in touch
             </button>
