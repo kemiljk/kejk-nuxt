@@ -1,8 +1,11 @@
 {
-  getObjects(bucket_slug: "kemiljk", input: {
-    read_key: "uNXYQDbNTCWQyEaFjq44PUolieGKBuzePTaEdnDl0CHLcnJtPK",
-    type: "blogs"
-  }) {
+  getObjects(
+    bucket_slug: "kemiljk"
+    input: {
+      read_key: "uNXYQDbNTCWQyEaFjq44PUolieGKBuzePTaEdnDl0CHLcnJtPK"
+      type: "blogs"
+    }
+  ) {
     objects {
       _id
       slug
@@ -10,6 +13,7 @@
       content
       metadata
       modified_at
+      order
     }
     total
   }

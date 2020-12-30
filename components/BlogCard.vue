@@ -5,7 +5,9 @@
       v-if="blog.metadata"
     >
       <header class="flex items-center justify-between px-4 pt-4 pb-2">
-        <h1 class="text-indigo-600 dark:text-indigo-300 text-lg font-bold w-60 md:w-80">
+        <h1
+          class="text-indigo-600 dark:text-indigo-300 text-lg font-bold w-60 md:w-80"
+        >
           {{ blog.title }}
         </h1>
         <arrow-right-icon
@@ -16,13 +18,20 @@
         Updated {{ blog.modified_at | moment("from", "now") }}
       </p>
       <div class="pl-4 pb-4">
-      <span class="w-max text-green-700 dark:text-green-400 border-2 border-green-700 dark:border-green-400 rounded-full px-3 py-1 text-xs mr-2" v-if="index === 0">New</span>
-      <span class="w-max text-indigo-700 dark:text-indigo-400 border-2 border-indigo-700 dark:border-indigo-400 rounded-full px-3 py-1 text-xs"
+        <span
+          class="w-max text-green-700 dark:text-green-400 border-2 border-green-700 dark:border-green-400 rounded-full px-3 py-1 text-xs mr-2"
+          v-if="blog.metadata.latest === true"
+          >New
+        </span>
+        <span
+          class="w-max text-indigo-700 dark:text-indigo-400 border-2 border-indigo-700 dark:border-indigo-400 rounded-full px-3 py-1 text-xs"
         >
           {{ blog.metadata.tag }}
         </span>
-        </div>
-      <p class="text-gray-700 dark:text-gray-300 px-4 pt-2 pb-4 font-medium mb-0">
+      </div>
+      <p
+        class="text-gray-700 dark:text-gray-300 px-4 pt-2 pb-4 font-medium mb-0"
+      >
         {{ blog.metadata.snippet }}
       </p>
     </div>
@@ -45,13 +54,5 @@ export default {
       },
     },
   },
-  computed: {
-    currentDate() {
-      var ourDate = new Date();
-      var pastDate = ourDate.getDate() - 7;
-      ourDate.setDate(pastDate);
-      return ourDate
-    }
-  }
 };
 </script>

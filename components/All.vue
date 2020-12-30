@@ -1,24 +1,30 @@
 <template>
   <div>
     <header>
-      <h2 class="inline-block border-b-2 border-gray-100 dark:border-gray-800 max-w-max">Articles.</h2>
+      <h2
+        class="inline-block border-b-2 border-gray-100 dark:border-gray-800 max-w-max"
+      >
+        Articles.
+      </h2>
     </header>
     <div
       class="grid grid-row xs:grid-cols-1 sm:grid-cols-2 gap-4"
       v-if="blogs.blogList"
     >
-      <div v-for="(blog, index) in blogs.blogList" :key="blog.metadata.tag">
+      <div v-for="(blog, index) in blogs.blogList" :key="index">
         <keep-alive>
           <BlogCard :blog="blog" />
         </keep-alive>
       </div>
     </div>
-    <div
-        class="mt-16 pb-16 border-t-2 border-gray-200 dark:border-gray-800"
-      />
+    <div class="mt-16 pb-16 border-t-2 border-gray-200 dark:border-gray-800" />
     <div>
       <header>
-        <h2 class="inline-block border-b-2 border-gray-100 dark:border-gray-800 max-w-max">External posts.</h2>
+        <h2
+          class="inline-block border-b-2 border-gray-100 dark:border-gray-800 max-w-max"
+        >
+          External posts.
+        </h2>
       </header>
       <div class="grid grid-row xs:grid-cols-1 sm:grid-cols-2 gap-4">
         <div v-for="link in links" :key="link._id">
