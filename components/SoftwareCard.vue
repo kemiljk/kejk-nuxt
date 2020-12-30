@@ -20,9 +20,9 @@
           ></external-link-icon>
         </header>
         <div class="divide-y divide-solid divide-gray-300 dark:divide-gray-800">
-          <div class="flex mb-4">
+          <div class="flex space-x-2 mb-4">
             <span
-              class="flex w-max justify-center text-yellow-700 dark:text-yellow-400 border-2 border-yellow-700 dark:border-yellow-400 rounded-full px-3 py-1 text-xs mr-2"
+              class="flex w-max justify-center text-yellow-700 dark:text-yellow-400 border-2 border-yellow-700 dark:border-yellow-400 rounded-full px-3 py-1 text-xs"
               v-if="software.metadata.indie"
               >Indie</span
             >
