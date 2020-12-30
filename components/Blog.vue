@@ -8,7 +8,8 @@
         <p class="text-gray-500 dark:text-gray-400 pt-2">
           Updated {{ blog.modified_at | moment("from", "now") }}
         </p>
-        <p class="w-max text-indigo-700 dark:text-indigo-400 border-2 border-indigo-700 dark:border-indigo-400 rounded-full px-3 py-1 text-xs"
+        <p
+          class="w-max text-indigo-700 dark:text-indigo-400 border-2 border-indigo-700 dark:border-indigo-400 rounded-full px-3 py-1 text-xs"
         >
           {{ blog.metadata.tag }}
         </p>

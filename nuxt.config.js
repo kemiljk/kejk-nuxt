@@ -1,6 +1,47 @@
 import axios from "axios";
 import Vuex from "vuex";
 
+// let blogs = [];
+//
+// const constructFeedItem = (blog) => {
+//   const url = `http://localhost:3000/thoughts/${blog.slug}`;
+//   return {
+//     title: blog.title,
+//     id: url,
+//     link: url,
+//     description: blog.metadata.snippet,
+//     content: blog.content,
+//   };
+// };
+// const create = async (feed) => {
+//   feed.options = {
+//     title: "KEJK | Thoughts",
+//     description: "Thoughts and opinions on design and development",
+//     link: `http://localhost:3000/feed.xml`,
+//   };
+//   const Cosmic = require("cosmicjs");
+//   const api = Cosmic();
+//   const bucket = api.bucket({
+//     slug: "kemiljk",
+//     read_key: "uNXYQDbNTCWQyEaFjq44PUolieGKBuzePTaEdnDl0CHLcnJtPK",
+//   });
+//   await bucket
+//     .getObjects({
+//       type: "blogs",
+//       props: "_id,slug,title,content,metadata",
+//     })
+//     .then((data) => {
+//       const blogs = data.objects;
+//       this.blogs = blogs;
+//     });
+//
+//   for (const blog of blogs) {
+//     const feedItem = constructFeedItem(blog);
+//     feed.addItem(feedItem);
+//   }
+//   return feed;
+// };
+
 export default {
   // Disable server-side rendering (https://go.nuxtjs.dev/ssr-mode)
   ssr: true,
@@ -211,28 +252,12 @@ export default {
 
   feed: [
     // {
-    //   path: './static/feed.xml', // The route to your feed.
-    //   async create(feed, blogs) {
-    //     feed.options = {
-    //       title: 'KEJK | Thoughts',
-    //       link: 'https://kejk.tech/feed.xml',
-    //       description: 'Thoughts on Design and Development from here and around the web.'
-    //     };
-    //     const blogs = this.$store.getters.getBlog;
-    //     blogs.forEach(function (blog) {
-    //       feed.addItem({
-    //         title: blog.title,
-    //         id: blog.url,
-    //         link: blog.url,
-    //         date: new Date(blog.date),
-    //         description: blog.metadata.snippet,
-    //         content: blog.content
-    //       })
-    //     })
-    //   },
+    //   path: "/feed.xml",
+    //   create, // outside the default export at the top of the config file
     //   cacheTime: 1000 * 60 * 15,
-    //   type: 'rss2',
-    // }
+    //   type: "rss2",
+    //   data: ["blog", "xml"],
+    // },
   ],
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)

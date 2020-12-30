@@ -37,9 +37,17 @@
       <header>
         <h2>About this site.</h2>
       </header>
-      <keep-alive>
-        <SiteUses :tech="tech" />
-      </keep-alive>
+      <div class="flex flex-row">
+        <div
+          class="grid grid-row xs:grid-cols-1 sm:grid-cols-2 md:grid-cols-3 w-full gap-4"
+        >
+          <div v-for="software in softwares" :key="software._id">
+            <keep-alive>
+              <SoftwareCard :software="software" />
+            </keep-alive>
+          </div>
+        </div>
+      </div>
       <div
         class="mt-16 pb-16 border-t-2 border-gray-200 dark:border-gray-800"
       />
@@ -86,8 +94,10 @@ export default {
   },
   data() {
     return {
+      loading: false,
       tech: {},
       about: {},
+      softwares: {},
       socials: [
         {
           href: "https://www.twitter.com/_kejk",
@@ -122,6 +132,9 @@ export default {
       ],
     };
   },
+  created() {
+    this.fetchSoftwareData();
+  },
   mounted() {
     this.fetchTechsData();
     this.fetchAboutData();
@@ -137,6 +150,20 @@ export default {
         .then((data) => {
           this.tech = data.object;
           this.loading = false;
+        });
+    },
+    async fetchSoftwareData() {
+      this.error = this.software = null;
+      this.loading = true;
+      await bucket
+        .getObjects({
+          type: "softwares",
+          props: "_id,title,metadata",
+        })
+        .then((data) => {
+          const softwares = data.objects;
+          this.loading = false;
+          this.softwares = softwares;
         });
     },
     async fetchAboutData() {

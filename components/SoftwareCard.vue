@@ -1,6 +1,6 @@
 <template>
   <a
-    :href="media.metadata.url"
+    :href="software.metadata.url"
     target="`_blank"
     rel="noreferrer"
     cursor="pointer"
@@ -11,9 +11,9 @@
       <div class="px-4 py-4">
         <header class="mb-4 flex justify-between">
           <img
-            :src="media.metadata.cover.imgix_url"
+            :src="software.metadata.cover.imgix_url"
             class="rounded-md max-h-24"
-            alt="Image of media"
+            alt="Image of software"
           />
           <external-link-icon
             class="text-gray-700 dark:text-gray-300"
@@ -23,23 +23,23 @@
           <div class="mb-4">
             <span
               class="h-7 w-max text-green-700 dark:text-green-400 border-2 border-green-700 dark:border-green-400 rounded-full px-3 py-1 text-xs mr-2"
-              v-if="media.metadata.indie"
+              v-if="software.metadata.indie"
               >Indie</span
             >
             <span
               class="h-7 w-max text-indigo-500 border-2 border-indigo-500 rounded-full px-3 py-1 text-xs mr-2"
-              v-if="media.metadata.open_source"
+              v-if="software.metadata.open_source"
               >Open source</span
             >
           </div>
           <h4 class="pt-4 font-bold text-sm text-gray-900 dark:text-gray-100">
-            {{ media.title }}
+            {{ software.title }}
           </h4>
         </div>
         <p
           class="mb-0 pt-1 text-gray-500 dark:text-gray-400 font-normal text-sm"
         >
-          {{ media.metadata.subtitle }}
+          {{ software.metadata.subtitle }}
         </p>
       </div>
     </div>
@@ -50,12 +50,12 @@
 import { ExternalLinkIcon } from "vue-feather-icons";
 
 export default {
-  name: "Media",
+  name: "Software",
   components: {
     ExternalLinkIcon,
   },
   props: {
-    media: {
+    software: {
       type: Object,
       default: () => {
         "No posts are loaded";

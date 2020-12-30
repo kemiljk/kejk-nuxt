@@ -1,6 +1,5 @@
 <template>
-  <section v-html="about.content" class="text-black dark:text-gray-300"
-  />
+  <section v-html="about.content" class="text-black dark:text-gray-300" />
 </template>
 
 <script>
