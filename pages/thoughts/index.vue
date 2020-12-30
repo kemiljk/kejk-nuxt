@@ -16,33 +16,39 @@
         <p class="text-2xl text-center">
           Thoughts about design, development and the intersection of the two.
         </p>
-      <div class="flex flex-col md:flex-row justify-center mt-6">
-        <a href="https://www.kejk.tech/feed.xml" target="_blank" rel="noreferrer">
-          <button
-            class="flex flex-row justify-center mx-2 text-center font-medium w-full sm:w-max bg-indigo-100 dark:bg-indigo-600 px-6 py-3 rounded-md text-indigo-900 dark:text-indigo-100 hover:bg-indigo-200 dark:hover:bg-indigo-500"
+        <div class="flex flex-col md:flex-row justify-center mt-6">
+          <a
+            href="https://www.kejk.tech/feed.xml"
+            target="_blank"
+            rel="noreferrer"
           >
-          <rss-icon
+            <button
+              class="flex flex-row justify-center mx-2 text-center font-medium w-full sm:w-max bg-indigo-100 dark:bg-indigo-600 px-6 py-3 rounded-md text-indigo-900 dark:text-indigo-100 hover:bg-indigo-200 dark:hover:bg-indigo-500"
+            >
+              <rss-icon
                 size="1x"
                 class="text-indigo-900 dark:text-indigo-100 mr-2 mt-1"
-              ></rss-icon
-              >
-            Subscribe via RSS
-          </button>
-        </a>
-        <a href="https://share.mailbrew.com/_kejk/kejk-sXWcveOcS678" target="_blank" rel="noreferrer">
-          <button
-            class="flex flex-row justify-center mx-2 text-center font-medium mt-2 md:mt-0 w-full sm:w-max bg-red-200 dark:bg-red-500 px-6 py-3 rounded-md text-red-900 dark:text-red-50 hover:bg-red-300 dark:hover:bg-red-400"
+              ></rss-icon>
+              Subscribe via RSS
+            </button>
+          </a>
+          <a
+            href="https://share.mailbrew.com/_kejk/kejk-sXWcveOcS678?aff=_kejk"
+            target="_blank"
+            rel="noreferrer"
           >
-          <coffee-icon
+            <button
+              class="flex flex-row justify-center mx-2 text-center font-medium mt-2 md:mt-0 w-full sm:w-max bg-red-200 dark:bg-red-500 px-6 py-3 rounded-md text-red-900 dark:text-red-50 hover:bg-red-300 dark:hover:bg-red-400"
+            >
+              <coffee-icon
                 size="1x"
                 class="text-indigo-900 dark:text-indigo-100 mr-2 mt-1"
-              ></coffee-icon
-              >
-            Subscribe via Mailbrew
-          </button>
-        </a>
-      </div>
-    </header>
+              ></coffee-icon>
+              Subscribe via Mailbrew
+            </button>
+          </a>
+        </div>
+      </header>
       <div class="flex flex-row mt-8">
         <button
           v-for="tab in tabs"
@@ -72,7 +78,7 @@
 
 <script>
 import getSiteMeta from "~/utils/getSiteMeta.js";
-import { RssIcon, CoffeeIcon } from 'vue-feather-icons'
+import { RssIcon, CoffeeIcon } from "vue-feather-icons";
 import All from "../../components/All";
 import Design from "../../components/Design";
 import Dev from "../../components/Development";
