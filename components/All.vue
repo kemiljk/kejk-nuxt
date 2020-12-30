@@ -7,7 +7,7 @@
       class="grid grid-row xs:grid-cols-1 sm:grid-cols-2 gap-4"
       v-if="blogs.blogList"
     >
-      <div v-for="blog in blogs.blogList" :key="blog.metadata.tag">
+      <div v-for="(blog, index) in blogs.blogList" :key="blog.metadata.tag">
         <keep-alive>
           <BlogCard :blog="blog" />
         </keep-alive>
