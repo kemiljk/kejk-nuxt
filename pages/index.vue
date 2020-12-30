@@ -27,11 +27,11 @@
           <a href="https://www.twitter.com/_kejk" class="mx-2">
             <button
               type="button"
-              class="flex flex-row justify-center text-center font-medium w-full bg-blue-500 text-white rounded-md px-6 py-3 btn btn-primary transition duration-500 ease hover:bg-blue-600 focus:outline-none focus:shadow-outline"
+              class="flex flex-row justify-center text-center font-medium w-full bg-blue-500 text-white rounded-md px-6 py-3 transition duration-500 ease hover:bg-blue-600 focus:outline-none focus:shadow-outline"
             >
               <twitter-icon
                 size="1x"
-                class="text-white mr-2 mt-1"
+                class="flex align-middle text-white mr-2"
               ></twitter-icon
               >Follow me on Twitter
             </button>
@@ -39,11 +39,11 @@
           <a href="#" class="mx-2" v-scroll-to="'#GET_IN_TOUCH'">
             <button
               type="button"
-              class="flex flex-row justify-center text-center font-medium w-full mt-2 md:mt-0 bg-gray-300 dark:bg-gray-700 text-gray-800 dark:text-white rounded-md px-6 py-3 btn btn-secondary transition duration-500 ease hover:bg-gray-400 dark:hover:bg-gray-600 focus:outline-none focus:shadow-outline"
+              class="flex flex-row justify-center text-center font-medium w-full mt-2 md:mt-0 bg-gray-300 dark:bg-gray-700 text-gray-800 dark:text-white rounded-md px-6 py-3 transition duration-500 ease hover:bg-gray-400 dark:hover:bg-gray-600 focus:outline-none focus:shadow-outline"
             >
               <mail-icon
                 size="1x"
-                class="text-gray-800 dark:text-white mr-2 mt-1"
+                class="flex align-middle text-gray-800 dark:text-white mr-2"
               ></mail-icon
               >Get in touch
             </button>
