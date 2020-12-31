@@ -1,11 +1,11 @@
 <template>
   <div class="relative mx-auto">
-    <Nav>
+    <Nav class="overflow-x-auto">
       <NavItem to="/">Home</NavItem>
       <NavItem to="/about">About</NavItem>
-      <NavItem to="/thoughts" isActive id="THOUGHTS" v-scroll-to="'#THOUGHTS'"
-        >Thoughts</NavItem
-      >
+      <NavItem to="/thoughts" isActive id="THOUGHTS" v-scroll-to="'#THOUGHTS'">
+        Thoughts
+      </NavItem>
       <NavItem to="/uses">Uses</NavItem>
     </Nav>
     <div class="max-w-3xl mx-auto px-4">
@@ -51,13 +51,13 @@
           </a>
         </div>
       </header>
-      <div class="flex flex-row mt-8">
+      <div class="flex flex-row mt-8 overflow-x-auto">
         <button
           v-for="tab in tabs"
           :key="tab"
           @click="selected = tab"
           :class="[
-            'font-medium block border-b-2 border-gray-200 dark:border-gray-700 px-4 py-2 text-gray-400 dark:text-gray-500',
+            'font-medium block border-b-2 border-gray-200 dark:border-gray-700 px-4 py-2 text-gray-400 hover:text-indigo-800 dark:text-gray-500 dark:hover:text-indigo-50 hover:bg-indigo-100 rounded-t-md dark:hover:bg-indigo-800 whitespace-nowrap',
             { active: selected === tab },
           ]"
         >
@@ -81,11 +81,11 @@
 <script>
 import getSiteMeta from "~/utils/getSiteMeta.js";
 import { RssIcon, CoffeeIcon } from "vue-feather-icons";
-import Everything from "../../components/All";
-import Design from "../../components/Design";
-import Development from "../../components/Development";
-import Opinion from "../../components/Opinion";
-import External from "../../components/External";
+import Everything from "../../components/Tabs/All";
+import Design from "../../components/Tabs/Design";
+import Development from "../../components/Tabs/Development";
+import Opinion from "../../components/Tabs/Opinion";
+import External from "../../components/Tabs/External";
 
 export default {
   components: {
@@ -105,7 +105,7 @@ export default {
           "Thoughts on Design and Development from here and around the web.",
         url: "https://kejk.tech/thoughts",
         mainImage:
-          "https://res.cloudinary.com/kejk/image/upload/v1607350722/og-image_bcs2c8.png",
+          "https://res.cloudinary.com/kejk/image/upload/q_auto,f_auto/v1607350722/og-image_bcs2c8.png",
       };
       return getSiteMeta(metaData);
     },

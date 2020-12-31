@@ -14,17 +14,17 @@
           class="text-gray-700 dark:text-gray-300"
         ></arrow-right-icon>
       </header>
-      <p class="text-gray-500 dark:text-gray-400 px-4 pt-0 font-medium">
+      <p class="font-mono text-gray-500 dark:text-gray-400 px-4 pt-0 font-medium">
         Updated {{ blog.modified_at | moment("from", "now") }}
       </p>
       <div class="flex space-x-2 pl-4 pb-4">
         <span
-          class="flex w-max justify-center text-green-700 dark:text-green-400 border-2 border-green-700 dark:border-green-400 rounded-full px-3 py-1 text-xs"
+          class="flex w-max justify-center font-mono text-green-700 dark:text-green-400 border-2 border-green-700 dark:border-green-400 rounded-full px-3 py-1 text-xs"
           v-if="blog.metadata.latest === true"
           >New
         </span>
         <span
-          class="flex w-max justify-center text-indigo-700 dark:text-indigo-400 border-2 border-indigo-700 dark:border-indigo-400 rounded-full px-3 py-1 text-xs"
+          class="flex w-max justify-center font-mono text-indigo-700 dark:text-indigo-400 border-2 border-indigo-700 dark:border-indigo-400 rounded-full px-3 py-1 text-xs"
         >
           {{ blog.metadata.tag }}
         </span>
