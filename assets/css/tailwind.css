@@ -80,4 +80,11 @@
   .active {
     @apply border-b-2 border-black dark:border-white text-black dark:text-white transition ease-in-out duration-200;
   }
+  .scrollbar-hidden::-webkit-scrollbar {
+  display: none;
+  }
+.scrollbar-hidden {
+  -ms-overflow-style: none;  
+  scrollbar-width: none;
+  }
 }

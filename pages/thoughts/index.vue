@@ -51,7 +51,7 @@
           </a>
         </div>
       </header>
-      <div class="flex flex-row mt-8 overflow-x-auto">
+      <div class="flex flex-row mt-8 overflow-x-auto scrollbar-hidden">
         <button
           v-for="tab in tabs"
           :key="tab"
