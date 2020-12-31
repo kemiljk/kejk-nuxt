@@ -20,7 +20,7 @@
       <div class="flex space-x-2 pl-4 pb-4">
         <span
           class="flex w-max justify-center text-green-700 dark:text-green-400 border-2 border-green-700 dark:border-green-400 rounded-full px-3 py-1 text-xs"
-          v-if="blog.order === null"
+          v-if="blog.order === 0"
           >New
         </span>
         <span
@@ -36,7 +36,6 @@
       </p>
     </div>
   </NuxtLink>
-  <!--v-if="blog.metadata.latest === true"-->
 </template>
 
 <script>
