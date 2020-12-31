@@ -189,7 +189,8 @@ export default {
         {
           href:
             "https://www.figma.com/community/plugin/837070613195594890/Px-%E2%80%BA%E2%80%BA-Em",
-          img: "https://res.cloudinary.com/kejk/image/upload/f_auto,q_auto/v1607281435/px2em_qnscic.webp",
+          img: 
+            "https://res.cloudinary.com/kejk/image/upload/v1607281435/px2em_qnscic.webp",
           title: "Px››Em",
           type: "Figma plugin installs",
           id: "install-count",
