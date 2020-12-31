@@ -93,9 +93,14 @@
           </div>
         </div>
       </div>
-      <NuxtLink to="/thoughts" class="flex flex-row justify-start w-max mt-4 text-black bg-transparent hover:bg-gray-100 dark:hover:bg-gray-800 dark:text-white dark:bg-transparent rounded-xl px-4 py-2">
+      <NuxtLink
+        to="/thoughts"
+        class="flex flex-row justify-start w-max mt-4 text-black bg-transparent hover:bg-gray-100 dark:hover:bg-gray-800 dark:text-white dark:bg-transparent rounded-xl px-4 py-2"
+      >
         See all
-        <arrow-right-icon class="text-gray-700 dark:text-gray-300 ml-2"></arrow-right-icon>
+        <arrow-right-icon
+          class="text-gray-700 dark:text-gray-300 ml-2"
+        ></arrow-right-icon>
       </NuxtLink>
       <header class="pt-16 pl-4 max-w-xl">
         <h2>Some things I'm currently enjoying.</h2>
@@ -115,7 +120,9 @@
         <h2>Music I've written.</h2>
       </header>
       <div class="flex flex-row">
-        <div class="grid grid-row xs:grid-cols-1 sm:grid-cols-2 md:grid-cols-3 w-full gap-4">
+        <div
+          class="grid grid-row xs:grid-cols-1 sm:grid-cols-2 md:grid-cols-3 w-full gap-4"
+        >
           <div v-for="album in albums" :key="album._id">
             <keep-alive>
               <AlbumCard :album="album" />
@@ -134,9 +141,7 @@
 </template>
 
 <script>
-import { TwitterIcon } from "vue-feather-icons";
-import { MailIcon } from "vue-feather-icons";
-import { ArrowRightIcon } from "vue-feather-icons";
+import { TwitterIcon, MailIcon, ArrowRightIcon } from "vue-feather-icons";
 import getSiteMeta from "~/utils/getSiteMeta.js";
 
 const Cosmic = require("cosmicjs");
@@ -184,17 +189,17 @@ export default {
             "https://res.cloudinary.com/kejk/image/upload/q_auto,f_auto/v1607281437/pxtoem_ubarny.webp",
           title: "Hand››over",
           type: "iOS app",
-          alt: "The Handover logo"
+          alt: "The Handover logo",
         },
         {
           href:
             "https://www.figma.com/community/plugin/837070613195594890/Px-%E2%80%BA%E2%80%BA-Em",
-          img: 
+          img:
             "https://res.cloudinary.com/kejk/image/upload/v1607281435/px2em_qnscic.webp",
           title: "Px››Em",
           type: "Figma plugin installs",
           id: "install-count",
-          alt: "The Px to Em logo"
+          alt: "The Px to Em logo",
         },
         {
           href: "https://actions.getdrafts.com/a/1fP",
@@ -202,7 +207,7 @@ export default {
             "https://res.cloudinary.com/kejk/image/upload/q_auto,f_auto/v1607678050/drafts_cosmic_tykczi.webp",
           title: "Drafts››Cosmic",
           type: "Drafts Action",
-          alt: "The Drafts to Cosmic logo"
+          alt: "The Drafts to Cosmic logo",
         },
         {
           href: "https://www.lazypdf.tech",
@@ -210,7 +215,7 @@ export default {
             "https://res.cloudinary.com/kejk/image/upload/q_auto,f_auto/v1607281439/lazyPDF_vxsn1b.webp",
           title: "Lazy PDF",
           type: "macOS app",
-          alt: "The Lazy PDF logo"
+          alt: "The Lazy PDF logo",
         },
       ],
       helpedMakes: [
@@ -220,7 +225,7 @@ export default {
             "https://res.cloudinary.com/kejk/image/upload/q_auto,f_auto/v1606907284/mmac_z5flxv.webp",
           title: "Make Me a Cocktail",
           skill: "Design",
-          alt: "The Make Me a Cocktail logo"
+          alt: "The Make Me a Cocktail logo",
         },
         {
           href: "https://www.confidotalent.com",
@@ -228,7 +233,7 @@ export default {
             "https://res.cloudinary.com/kejk/image/upload/q_auto,f_auto/v1607678970/confido_g9gr6k.webp",
           title: "Confido",
           skill: "Design & Development",
-          alt: "Confido's logo"
+          alt: "Confido's logo",
         },
         {
           href: "https://www.locallyuk.com",
@@ -236,7 +241,7 @@ export default {
             "https://res.cloudinary.com/kejk/image/upload/q_auto,f_auto/v1607678848/locally_m7wzjq.webp",
           title: "Locally UK",
           skill: "Design",
-          alt: "Locally UK logo"
+          alt: "Locally UK logo",
         },
       ],
       links: {},

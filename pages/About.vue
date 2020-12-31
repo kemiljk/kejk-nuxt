@@ -136,22 +136,9 @@ export default {
     this.fetchSoftwareData();
   },
   mounted() {
-    this.fetchTechsData();
     this.fetchAboutData();
   },
   methods: {
-    async fetchTechsData() {
-      this.loading = true;
-      await bucket
-        .getObject({
-          slug: "site-uses",
-          props: "slug,title,content",
-        })
-        .then((data) => {
-          this.tech = data.object;
-          this.loading = false;
-        });
-    },
     async fetchSoftwareData() {
       this.error = this.software = null;
       this.loading = true;
