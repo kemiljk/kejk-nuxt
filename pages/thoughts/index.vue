@@ -81,21 +81,21 @@
 <script>
 import getSiteMeta from "~/utils/getSiteMeta.js";
 import { RssIcon, CoffeeIcon } from "vue-feather-icons";
-import All from "../../components/All";
+import Everything from "../../components/All";
 import Design from "../../components/Design";
-import Dev from "../../components/Development";
+import Development from "../../components/Development";
 import Opinion from "../../components/Opinion";
-import Ext from "../../components/External";
+import External from "../../components/External";
 
 export default {
   components: {
     RssIcon,
     CoffeeIcon,
-    All,
+    Everything,
     Design,
-    Dev,
+    Development,
     Opinion,
-    Ext,
+    External,
   },
   computed: {
     meta() {
@@ -130,8 +130,8 @@ export default {
   data() {
     return {
       loading: false,
-      tabs: ["All", "Design", "Dev", "Opinion", "Ext"],
-      selected: "All",
+      tabs: ["Everything", "Design", "Development", "Opinion", "External"],
+      selected: "Everything",
     };
   },
 };
