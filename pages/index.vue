@@ -155,7 +155,7 @@ export default {
           "A Product and Frontend Designer, building for the web with Vue, Nuxt and Tailwind, building for mobile with SwiftUI.",
         url: "https://kejk.tech/",
         mainImage:
-          "https://res.cloudinary.com/kejk/image/upload/v1607350722/og-image_bcs2c8.png",
+          "https://res.cloudinary.com/kejk/image/upload/q_auto,f_auto/v1607350722/og-image_bcs2c8.png",
       };
       return getSiteMeta(metaData);
     },
@@ -181,7 +181,7 @@ export default {
         {
           href: "https://apps.apple.com/us/app/id1518887590",
           img:
-            "https://res.cloudinary.com/kejk/image/upload/c_limit,w_600/v1607281437/pxtoem_ubarny.webp",
+            "https://res.cloudinary.com/kejk/image/upload/q_auto,f_auto/v1607281437/pxtoem_ubarny.webp",
           title: "Hand››over",
           type: "iOS app",
           alt: "The Handover logo"
@@ -190,7 +190,7 @@ export default {
           href:
             "https://www.figma.com/community/plugin/837070613195594890/Px-%E2%80%BA%E2%80%BA-Em",
           img:
-            "https://res.cloudinary.com/kejk/image/upload/c_limit,w_600/v1607281435/px2em_qnscic.webp",
+            "https://res.cloudinary.com/kejk/image/upload/q_auto,f_auto/v1607281435/px2em_qnscic.webp",
           title: "Px››Em",
           type: "Figma plugin installs",
           id: "install-count",
@@ -199,7 +199,7 @@ export default {
         {
           href: "https://actions.getdrafts.com/a/1fP",
           img:
-            "https://res.cloudinary.com/kejk/image/upload/c_limit,w_600/v1607678050/drafts_cosmic_tykczi.webp",
+            "https://res.cloudinary.com/kejk/image/upload/q_auto,f_auto/v1607678050/drafts_cosmic_tykczi.webp",
           title: "Drafts››Cosmic",
           type: "Drafts Action",
           alt: "The Drafts to Cosmic logo"
@@ -207,7 +207,7 @@ export default {
         {
           href: "https://www.lazypdf.tech",
           img:
-            "https://res.cloudinary.com/kejk/image/upload/c_limit,w_600/v1607281439/lazyPDF_vxsn1b.webp",
+            "https://res.cloudinary.com/kejk/image/upload/q_auto,f_auto/v1607281439/lazyPDF_vxsn1b.webp",
           title: "Lazy PDF",
           type: "macOS app",
           alt: "The Lazy PDF logo"
@@ -217,7 +217,7 @@ export default {
         {
           href: "https://apps.apple.com/gb/app/make-me-a-cocktail/id1541820377",
           img:
-            "https://res.cloudinary.com/kejk/image/upload/c_limit,w_600/v1606907284/mmac_z5flxv.webp",
+            "https://res.cloudinary.com/kejk/image/upload/q_auto,f_auto/v1606907284/mmac_z5flxv.webp",
           title: "Make Me a Cocktail",
           skill: "Design",
           alt: "The Make Me a Cocktail logo"
@@ -225,7 +225,7 @@ export default {
         {
           href: "https://www.confidotalent.com",
           img:
-            "https://res.cloudinary.com/kejk/image/upload/c_limit,w_600/v1607678970/confido_g9gr6k.webp",
+            "https://res.cloudinary.com/kejk/image/upload/q_auto,f_auto/v1607678970/confido_g9gr6k.webp",
           title: "Confido",
           skill: "Design & Development",
           alt: "Confido's logo"
@@ -233,7 +233,7 @@ export default {
         {
           href: "https://www.locallyuk.com",
           img:
-            "https://res.cloudinary.com/kejk/image/upload/c_limit,w_600/v1607678848/locally_m7wzjq.webp",
+            "https://res.cloudinary.com/kejk/image/upload/q_auto,f_auto/v1607678848/locally_m7wzjq.webp",
           title: "Locally UK",
           skill: "Design",
           alt: "Locally UK logo"

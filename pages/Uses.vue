@@ -49,7 +49,7 @@ export default {
         description: "Karl's Product Design and Development EDC and equipment",
         url: "https://kejk.tech/uses",
         mainImage:
-          "https://res.cloudinary.com/kejk/image/upload/v1607350722/og-image_bcs2c8.png",
+          "https://res.cloudinary.com/kejk/image/upload/q_auto,f_auto/v1607350722/og-image_bcs2c8.png",
       };
       return getSiteMeta(metaData);
     },

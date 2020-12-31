@@ -93,7 +93,7 @@ export default {
         hid: "og:image",
         property: "og:image",
         content:
-          "https://res.cloudinary.com/kejk/image/upload/v1607350722/og-image_bcs2c8.png",
+          "https://res.cloudinary.com/kejk/image/upload/q_auto,f_auto/v1607350722/og-image_bcs2c8.png",
       },
       { property: "og:image:width", content: "740" },
       { property: "og:image:height", content: "300" },
