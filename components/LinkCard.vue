@@ -18,7 +18,7 @@
           class="text-gray-700 dark:text-gray-300"
         ></external-link-icon>
       </header>
-      <p class="text-gray-500 dark:text-gray-400 px-4 pt-0 pb-2 font-medium">
+      <p class="font-mono text-gray-500 dark:text-gray-400 px-4 pt-0 pb-2 font-medium">
         {{ link.metadata.published | moment("from", "now") }}
       </p>
       <p

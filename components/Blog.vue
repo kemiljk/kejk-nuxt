@@ -5,7 +5,7 @@
         <h1>
           {{ blog.title }}
         </h1>
-        <p class="text-gray-500 dark:text-gray-400 pt-2">
+        <p class="font-mono text-gray-500 dark:text-gray-400 pt-2">
           Updated {{ blog.modified_at | moment("from", "now") }}
         </p>
         <p

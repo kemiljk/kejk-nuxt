@@ -16,7 +16,7 @@
         >
           <span
             :id="made.id"
-            class="text-yellow-600 dark:text-yellow-300 font-bold mr-1"
+            class="font-mono text-yellow-600 dark:text-yellow-300 font-bold mr-1"
           />{{ made.type }}
         </p>
         <p

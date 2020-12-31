@@ -22,12 +22,12 @@
         <div class="divide-y divide-solid divide-gray-300 dark:divide-gray-800">
           <div class="flex space-x-2 mb-4">
             <span
-              class="flex justify-center w-max text-yellow-700 dark:text-yellow-400 border-2 border-yellow-700 dark:border-yellow-400 rounded-full px-3 py-1 text-xs"
+              class="flex justify-center w-max font-mono text-yellow-700 dark:text-yellow-400 border-2 border-yellow-700 dark:border-yellow-400 rounded-full px-3 py-1 text-xs"
               v-if="media.metadata.indie"
               >Indie</span
             >
             <span
-              class="flex w-max justify-center text-purple-700 dark:text-purple-400 border-2 border-purple-700 dark:border-purple-400 rounded-full px-3 py-1 text-xs"
+              class="flex w-max justify-center font-mono text-purple-700 dark:text-purple-400 border-2 border-purple-700 dark:border-purple-400 rounded-full px-3 py-1 text-xs"
               v-if="media.metadata.open_source"
               >Open source</span
             >
