@@ -50,6 +50,24 @@
             </button>
           </a>
         </div>
+        <div class="flex flex-col justify-center mt-2>
+          <div>
+            <form
+              action="https://buttondown.email/api/emails/embed-subscribe/karl"
+              method="post"
+              target="popupwindow"
+              onsubmit="window.open('https://buttondown.email/karl', 'popupwindow')"
+              class="embeddable-buttondown-form"
+            >
+              <label for="bd-email">Enter your email</label>
+              <input type="email" name="email" id="bd-email" />
+              <input type="hidden" value="1" name="embed" />
+              <button type="submit" class="flex flex-row justify-center text-center font-medium mt-2 md:mt-0 w-full sm:w-max bg-gray-700 px-6 py-3 rounded-md text-gray-800 hover:bg-gray-600">
+              Subscribe for updates
+              </button>
+            </form>
+          </div>
+        </div>
       </header>
       <div class="flex flex-row mt-8 overflow-x-auto scrollbar-hidden">
         <button
