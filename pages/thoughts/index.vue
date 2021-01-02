@@ -51,13 +51,13 @@
           </a>
         </div>
         <div class="flex justify-center mt-2 bg-white dark:bg-black border-2 border-gray-100 dark:border-gray-900 rounded-xl">
-          <div class="flex max-w-5xl mx-auto">
+          <div class="flex max-w-5xl mx-auto space-x-2">
             <form
               action="https://buttondown.email/api/emails/embed-subscribe/karl"
               method="post"
               target="popupwindow"
               onsubmit="window.open('https://buttondown.email/karl', 'popupwindow')"
-              class="flex embeddable-buttondown-form justify-center mx-auto"
+              class="embeddable-buttondown-form"
             >
               <label for="bd-email">Enter your email</label>
               <input type="email" name="email" id="bd-email" class="mt-2 py-3 px-3 rounded-md bg-white dark:bg-gray-900 border-2 border-gray-200 dark:border-gray-700 text-gray-800 dark:text-gray-50 font-medium focus:border-indigo-500 focus:border-4 focus:outline-none"
