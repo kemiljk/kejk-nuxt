@@ -11,10 +11,9 @@
             href="https://www.kejk.tech/feed.xml"
             target="_blank"
             rel="noreferrer"
-            class="mx-2"
           >
             <button
-              class="flex flex-row justify-center text-center font-medium w-full sm:w-max bg-indigo-600 px-6 py-3 rounded-md text-gray-100 hover:bg-gray-600"
+              class="flex flex-row justify-center text-center font-medium w-full md:w-max bg-indigo-600 px-6 py-3 rounded-md text-gray-100 hover:bg-gray-600"
             >
               <rss-icon
                 size="1x"
@@ -27,10 +26,9 @@
             href="https://share.mailbrew.com/_kejk/kejk-sXWcveOcS678?aff=_kejk"
             target="_blank"
             rel="noreferrer"
-            class="mx-2"
           >
             <button
-              class="flex flex-row justify-center text-center font-medium mt-2 md:mt-0 w-full sm:w-max bg-red-500 px-6 py-3 rounded-md text-red-50 hover:bg-red-400"
+              class="flex flex-row justify-center text-center font-medium mt-2 md:mt-0 w-full md:w-max bg-red-500 px-6 py-3 rounded-md text-red-50 hover:bg-red-400"
             >
               <coffee-icon
                 size="1x"
@@ -51,10 +49,10 @@
               <div class="flex flex-col w-full md:w-max mt-4">
                 <label for="bd-email" class="font-medium text-black dark:text-white">Enter your email</label>
                 <div class="flex flex-col md:flex-row md:space-x-2 w-full md:w-max">
-                  <input type="email" name="email" id="bd-email" placeholder="e.g. sly@stallone.com" class="mt-2 mx-2 py-3 px-6 w-full md:w-max rounded-md bg-white dark:bg-black border-2 border-gray-200 dark:border-gray-700 text-gray-800 dark:text-gray-50 font-medium focus:border-indigo-500 focus:border-4 focus:outline-none"
+                  <input type="email" name="email" id="bd-email" placeholder="e.g. sly@stallone.com" class="mt-2 py-3 px-6 w-full md:w-max rounded-md bg-white dark:bg-black border-2 border-gray-200 dark:border-gray-700 text-gray-800 dark:text-gray-50 font-medium focus:border-indigo-500 focus:border-4 focus:outline-none"
                     required />
                   <input type="hidden" value="1" name="embed" />
-                  <button type="submit" class="flex flex-row justify-center text-center font-medium mt-2 w-full md:w-max mx-2 py-3 px-6 bg-indigo-500 hover:bg-indigo-600 dark:bg-indigo-700 text-white rounded-md transition ease-in-out duration-300">
+                  <button type="submit" class="flex flex-row justify-center text-center font-medium mt-2 w-full md:w-max py-3 px-6 bg-indigo-500 hover:bg-indigo-600 dark:bg-indigo-700 text-white rounded-md transition ease-in-out duration-300">
                    <mail-icon
                 size="1x"
                 class="flex align-middle mt-1 text-white mr-2"
