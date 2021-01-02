@@ -17,9 +17,9 @@ module.exports = {
     },
   },
   variants: {
-      extend: {
-        padding: ['hover', 'focus'],
-      }
+    extend: {
+      padding: ['hover', 'focus'],
     }
+  },
   plugins: [],
 };
