@@ -16,7 +16,7 @@
         <p class="text-2xl text-center">
           Thoughts about design, development and the intersection of the two.
         </p>
-        <Subscribe />
+        <Subscribe class="mt-8" />
       </header>
       <div class="flex flex-row mt-8 overflow-x-auto scrollbar-hidden">
         <button

@@ -1,5 +1,5 @@
 <template>
-    <div class="flex justify-center mt-2 bg-gray-50 dark:bg-gray-900 rounded-xl">
+    <div class="flex justify-center bg-gray-50 dark:bg-gray-900 rounded-xl">
           <div class="max-w-5xl mx-auto py-4">
           <h1
               class="text-xl sm:text-2xl text-gray-800 dark:text-white font-bold pb-4"
@@ -52,7 +52,7 @@
                   <input type="email" name="email" id="bd-email" placeholder="e.g. sly@stallone.com" class="mt-2 py-3 px-3 w-full md:w-max rounded-md bg-white dark:bg-black border-2 border-gray-200 dark:border-gray-700 text-gray-800 dark:text-gray-50 font-medium focus:border-indigo-500 focus:border-4 focus:outline-none"
                     required />
                   <input type="hidden" value="1" name="embed" />
-                  <button type="submit" class="flex flex-row justify-center text-center font-medium mt-2 w-full md:w-max py-3 px-6 bg-indigo-500 hover:bg-indigo-600 dark:bg-indigo-700 text-white rounded-md transition ease-in-out duration-300">
+                  <button type="submit" class="flex flex-row justify-center align-middle text-center font-medium mt-2 w-full md:w-max py-3 px-6 bg-indigo-500 hover:bg-indigo-600 dark:bg-indigo-700 text-white rounded-md transition ease-in-out duration-300">
                    <mail-icon
                 size="1x"
                 class="flex align-middle mt-1 text-white mr-2"
