@@ -50,7 +50,7 @@
             </button>
           </a>
         </div>
-        <div class="flex flex-col justify-center mt-2>
+        <div class="flex flex-col justify-center mt-2">
           <div>
             <form
               action="https://buttondown.email/api/emails/embed-subscribe/karl"
