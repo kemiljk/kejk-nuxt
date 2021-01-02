@@ -62,7 +62,7 @@
               <label for="bd-email">Enter your email</label>
               <input type="email" name="email" id="bd-email" />
               <input type="hidden" value="1" name="embed" />
-              <button type="submit" class="flex flex-row justify-center text-center font-medium mt-2 md:mt-0 w-full sm:w-max bg-gray-700 px-6 py-3 rounded-md text-gray-800 hover:bg-gray-600">
+              <button type="submit" class="flex flex-row justify-center text-center font-medium mt-2 md:mt-0 w-full sm:w-max bg-gray-700 px-6 py-3 rounded-md text-gray-50 hover:bg-gray-600">
               Subscribe for updates
               </button>
             </form>
