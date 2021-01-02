@@ -26,7 +26,7 @@
           External posts.
         </h2>
       </header>
-      <div class="grid grid-row xs:grid-cols-1 sm:grid-cols-2 gap-4">
+      <div class="grid grid-row xs:grid-cols-1 sm:grid-cols-2 gap-8">
         <div v-for="link in links" :key="link._id">
           <keep-alive>
             <LinkCard :link="link" />
