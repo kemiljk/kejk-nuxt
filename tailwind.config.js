@@ -13,7 +13,10 @@ module.exports = {
     extend: {
       fontFamily: {
         sans: ["Inter", ...defaultTheme.fontFamily.sans]
-      }
+      },
+      transitionProperty: {
+        'spacing': 'margin, padding',
+        }
     },
   },
   variants: {
