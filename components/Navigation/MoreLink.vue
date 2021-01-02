@@ -9,3 +9,15 @@
         ></arrow-right-icon>
       </NuxtLink>
 </template>
+
+<script>
+import { ArrowRightIcon } from "vue-feather-icons";
+
+export default {
+components: {
+    TwitterIcon,
+    MailIcon,
+    ArrowRightIcon,
+  },
+};
+</script>
