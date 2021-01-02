@@ -51,7 +51,7 @@
           </a>
         </div>
         <div class="flex justify-center mt-2 bg-white dark:bg-black border-2 border-gray-100 dark:border-gray-900 rounded-xl">
-          <div class="flex max-w-5xl mx-auto space-x-2">
+          <div class="max-w-5xl mx-auto space-x-2">
             <form
               action="https://buttondown.email/api/emails/embed-subscribe/karl"
               method="post"
