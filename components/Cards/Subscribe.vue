@@ -6,7 +6,7 @@
             >
               Subscribe to stay up-to-date.
             </h1>
-          <div class="flex flex-col md:flex-row">
+          <div class="flex flex-col md:flex-row md:space-x-2">
           <a
             href="https://www.kejk.tech/feed.xml"
             target="_blank"
