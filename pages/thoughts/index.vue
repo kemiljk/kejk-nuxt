@@ -12,7 +12,7 @@
       <header class="container pt-10 pb-2 max-w-xl mx-auto">
         <h1 class="pt-16 pb-2 text-center">/thoughts</h1>
       </header>
-      <header class="pt-4 pb-4 max-w-xl mx-auto">
+      <header class="pt-4 pb-8 max-w-xl mx-auto">
         <p class="text-2xl text-center">
           Thoughts about design, development and the intersection of the two.
         </p>
