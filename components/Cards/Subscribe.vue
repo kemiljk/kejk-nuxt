@@ -1,7 +1,7 @@
 <template>
     <div class="flex justify-center mt-2 bg-gray-50 dark:bg-gray-900 border-2 border-gray-100 dark:border-gray-900 rounded-xl">
           <div class="max-w-5xl mx-auto py-4">
-          <div class="flex flex-col md:flex-row justify-center mt-6">
+          <!--<div class="flex flex-col md:flex-row justify-center mt-6">-->
           <a
             href="https://www.kejk.tech/feed.xml"
             target="_blank"
@@ -34,7 +34,7 @@
               Subscribe via Mailbrew
             </button>
           </a>
-        </div>
+        <!--</div>-->
             <form
               action="https://buttondown.email/api/emails/embed-subscribe/karl"
               method="post"
