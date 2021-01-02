@@ -71,12 +71,13 @@
 </template>
 
 <script>
-import { RssIcon, CoffeeIcon } from "vue-feather-icons";
+import { RssIcon, CoffeeIcon, MailIcon } from "vue-feather-icons";
 
 export default {
   components: {
     RssIcon,
     CoffeeIcon,
+    MailIcon
     }
 }
 
