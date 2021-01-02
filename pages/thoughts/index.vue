@@ -50,7 +50,7 @@
             </button>
           </a>
         </div>
-        <div class="flex justify-center bg-white dark:bg-black sm:pt-0 border-2 border-gray-100 dark:border-gray-900 rounded-xl">
+        <div class="flex justify-center mt-2 bg-white dark:bg-black border-2 border-gray-100 dark:border-gray-900 rounded-xl">
           <div class="max-w-5xl mx-auto">
             <form
               action="https://buttondown.email/api/emails/embed-subscribe/karl"
@@ -63,7 +63,7 @@
               <input type="email" name="email" id="bd-email" class="mt-2 py-3 px-3 rounded-md bg-white dark:bg-gray-900 border-2 border-gray-200 dark:border-gray-700 text-gray-800 dark:text-gray-50 font-medium focus:border-indigo-500 focus:border-4 focus:outline-none"
                 required />
               <input type="hidden" value="1" name="embed" />
-              <button type="submit" class="mt-2 md:w-32 bg-indigo-500 hover:bg-indigo-600 dark:bg-indigo-700 text-white font-bold py-3 px-6 rounded-md transition ease-in-out duration-300">
+              <button type="submit" class="mt-2 w-full md:w-min bg-indigo-500 hover:bg-indigo-600 dark:bg-indigo-700 text-white font-bold py-3 px-6 rounded-md transition ease-in-out duration-300">
               Subscribe for updates
               </button>
             </form>
