@@ -35,6 +35,7 @@
             </button>
           </a>
          </div>
+         <div class="flex justify-center mx-auto">
             <form
               action="https://buttondown.email/api/emails/embed-subscribe/karl"
               method="post"
@@ -42,7 +43,7 @@
               onsubmit="window.open('https://buttondown.email/karl', 'popupwindow')"
               class="embeddable-buttondown-form"
             >
-              <div class="flex flex-col w-full md:w-max">
+              <div class="flex flex-col w-full md:w-max mt-2">
                 <label for="bd-email" class="font-medium text-black dark:text-white">Enter your email</label>
                 <div class="flex flex-col md:flex-row md:space-x-2 w-full md:w-max">
                   <input type="email" name="email" id="bd-email" class="mt-2 py-3 px-3 w-full md:w-max rounded-md bg-white dark:bg-gray-900 border-2 border-gray-200 dark:border-gray-700 text-gray-800 dark:text-gray-50 font-medium focus:border-indigo-500 focus:border-4 focus:outline-none"
@@ -54,6 +55,7 @@
                 </div>
               </div>
             </form>
+            </div>
           </div>
         </div>
 </template>
