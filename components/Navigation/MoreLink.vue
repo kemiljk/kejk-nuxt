@@ -15,8 +15,6 @@ import { ArrowRightIcon } from "vue-feather-icons";
 
 export default {
 components: {
-    TwitterIcon,
-    MailIcon,
     ArrowRightIcon,
   },
 };
