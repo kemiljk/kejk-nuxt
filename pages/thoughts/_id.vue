@@ -33,7 +33,7 @@
           <h2>How to follow along.</h2>
         </header>
         <Subscribe />
-        <header>
+        <header class="mt-4">
           <h2>How to reach me.</h2>
         </header>
         <div>
