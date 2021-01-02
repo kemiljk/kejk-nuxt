@@ -40,7 +40,7 @@
             </button>
           </a>
          </div>
-         <div class="flex justify-center w-full md:w-max mx-auto">
+         <div class="flex justify-center w-full md:w-max">
             <form
               action="https://buttondown.email/api/emails/embed-subscribe/karl"
               method="post"
