@@ -8,7 +8,7 @@
       </h2>
     </header>
     <div
-      class="grid grid-row xs:grid-cols-1 sm:grid-cols-2 gap-4"
+      class="grid grid-row xs:grid-cols-1 sm:grid-cols-2 gap-8"
       v-if="blogs.blogList"
     >
       <div v-for="(blog, index) in blogs.blogList" :key="index">

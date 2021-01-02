@@ -1,7 +1,7 @@
 <template>
   <div>
     <div
-      class="grid grid-row xs:grid-cols-1 sm:grid-cols-2 gap-4"
+      class="grid grid-row xs:grid-cols-1 sm:grid-cols-2 gap-8"
       v-if="blogs.blogList"
     >
       <div v-for="blog in blogs.blogList" :key="blog.metadata.tag">

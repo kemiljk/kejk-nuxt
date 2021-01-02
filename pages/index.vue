@@ -67,7 +67,7 @@
       </header>
       <div class="flex flex-row mt-4">
         <div
-          class="grid grid-row xs:grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-4"
+          class="grid grid-row xs:grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-8"
         >
           <div v-for="blog in blogs" :key="blog._id">
             <keep-alive>
