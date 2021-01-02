@@ -16,40 +16,6 @@
         <p class="text-2xl text-center">
           Thoughts about design, development and the intersection of the two.
         </p>
-        <div class="flex flex-col md:flex-row justify-center mt-6">
-          <a
-            href="https://www.kejk.tech/feed.xml"
-            target="_blank"
-            rel="noreferrer"
-            class="mx-2"
-          >
-            <button
-              class="flex flex-row justify-center text-center font-medium w-full sm:w-max bg-indigo-600 px-6 py-3 rounded-md text-indigo-100 hover:bg-indigo-500"
-            >
-              <rss-icon
-                size="1x"
-                class="flex align-middle mt-1 text-indigo-100 mr-2"
-              ></rss-icon>
-              Subscribe via RSS
-            </button>
-          </a>
-          <a
-            href="https://share.mailbrew.com/_kejk/kejk-sXWcveOcS678?aff=_kejk"
-            target="_blank"
-            rel="noreferrer"
-            class="mx-2"
-          >
-            <button
-              class="flex flex-row justify-center text-center font-medium mt-2 md:mt-0 w-full sm:w-max bg-red-500 px-6 py-3 rounded-md text-red-50 hover:bg-red-400"
-            >
-              <coffee-icon
-                size="1x"
-                class="flex align-middle mt-1 text-red-100 mr-2"
-              ></coffee-icon>
-              Subscribe via Mailbrew
-            </button>
-          </a>
-        </div>
         <Subscribe />
       </header>
       <div class="flex flex-row mt-8 overflow-x-auto scrollbar-hidden">
@@ -81,7 +47,6 @@
 
 <script>
 import getSiteMeta from "~/utils/getSiteMeta.js";
-import { RssIcon, CoffeeIcon } from "vue-feather-icons";
 import Everything from "../../components/Tabs/All";
 import Design from "../../components/Tabs/Design";
 import Development from "../../components/Tabs/Development";
@@ -90,8 +55,6 @@ import External from "../../components/Tabs/External";
 
 export default {
   components: {
-    RssIcon,
-    CoffeeIcon,
     Everything,
     Design,
     Development,
