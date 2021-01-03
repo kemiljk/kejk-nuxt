@@ -197,7 +197,10 @@ export default {
   },
 
   // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
-  plugins: ["~/plugins/vue-moment.js", "~/plugins/prism.js"],
+  plugins: [
+  {src: "~/plugins/vue-moment.js", ssr: true}, 
+  {src: "~/plugins/prism.js", ssr: true},
+  ],
 
   // Auto import components (https://go.nuxtjs.dev/config-components)
   components: true,
