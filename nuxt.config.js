@@ -1,6 +1,3 @@
-import axios from "axios";
-import Vuex from "vuex";
-
 // let blogs = [];
 //
 // const constructFeedItem = (blog) => {
