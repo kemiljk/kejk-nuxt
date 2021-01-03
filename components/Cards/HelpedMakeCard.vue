@@ -15,9 +15,14 @@
             class="rounded-md max-h-24"
             alt="Image of media"
           />
-          <external-link-icon
+          <compass-icon
+            v-if="helpedMake.metadata.website"
             class="text-gray-700 dark:text-gray-300"
-          ></external-link-icon>
+          ></compass-icon>
+          <download-icon
+            v-if="helpedMake.metadata.download"
+            class="text-gray-700 dark:text-gray-300"
+          ></download-icon>
         </header>
         <div class="divide-y divide-solid divide-gray-300 dark:divide-gray-800">
           <div class="flex space-x-2 mb-4">
@@ -52,8 +57,14 @@
 </template>
 
 <script>
+import { DownloadIcon, CompassIcon } from "vue-feather-icons";
+
 export default {
   name: "HelpedMake",
+  components: {
+    CompassIcon,
+    DownloadIcon,
+  },
   props: {
     helpedMake: {
       type: Object,
