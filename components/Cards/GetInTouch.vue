@@ -95,6 +95,7 @@
                 type="text"
                 name="message"
                 id="message"
+                rows="4"
                 placeholder="Ask me anything"
                 class="w-100 mt-2 py-3 px-3 rounded-md bg-white dark:bg-gray-900 border-2 border-gray-200 dark:border-gray-700 text-gray-800 dark:text-gray-50 font-medium focus:border-indigo-500 focus:border-4 focus:outline-none"
                 required
