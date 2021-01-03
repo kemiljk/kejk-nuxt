@@ -230,7 +230,7 @@ export default {
   modules: [
     "@nuxtjs/axios",
     "@nuxtjs/apollo",
-    "@nuxtjs/feed",
+    // "@nuxtjs/feed",
     "@nuxtjs/sitemap",
     "vue-scrollto/nuxt",
   ],
