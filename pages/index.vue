@@ -54,7 +54,7 @@
         <h2>Some things I've made.</h2>
       </header>
       <div class="flex flex-row">
-        <div class="grid grid-row xs:grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
+        <div class="grid grid-row xs:grid-cols-1 sm:grid-cols-2 md:grid-cols-4 w-full gap-4">
           <div v-for="made in mades" :key="made.title">
             <keep-alive>
               <MadeCard :made="made" />
@@ -67,7 +67,7 @@
       </header>
       <div class="flex flex-row mt-4">
         <div
-          class="grid grid-row xs:grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-8"
+          class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-8"
         >
           <div v-for="blog in blogs" :key="blog._id">
             <keep-alive>
@@ -86,7 +86,7 @@
         <h2>Some things I've helped make.</h2>
       </header>
       <div class="flex flex-row">
-        <div class="grid grid-row xs:grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
+        <div class="grid grid-row xs:grid-cols-1 sm:grid-cols-2 md:grid-cols-3 w-full gap-4">
           <div v-for="helpedMake in helpedMakes" :key="helpedMake.title">
             <keep-alive>
               <HelpedMakeCard :helpedMake="helpedMake" />
