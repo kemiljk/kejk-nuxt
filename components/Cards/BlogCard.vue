@@ -4,7 +4,7 @@
       class="rounded-lg hover:shadow-lg transition duration-300"
       v-if="blog.metadata"
     >
-      <header class="flex items-center justify-between pt-4 pb-2">
+      <header class="flex items-top justify-between pt-4 pb-2">
         <h1
           class="text-indigo-600 dark:text-indigo-300 text-lg font-bold w-60 md:w-80"
         >
@@ -29,9 +29,7 @@
           {{ blog.metadata.tag }}
         </span>
       </div>
-      <p
-        class="text-gray-700 dark:text-gray-300 pt-2 pb-4 font-medium mb-0"
-      >
+      <p class="text-gray-700 dark:text-gray-300 pt-2 pb-4 font-medium mb-0">
         {{ blog.metadata.snippet }}
       </p>
     </div>

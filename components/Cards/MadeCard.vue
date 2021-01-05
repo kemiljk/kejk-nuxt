@@ -53,6 +53,11 @@
               v-if="made.metadata.drafts"
               >Drafts</span
             >
+            <span
+              class="flex w-max justify-center font-mono text-red-700 dark:text-red-400 border-2 border-red-700 dark:border-red-400 rounded-full px-3 py-1 text-xs"
+              v-if="made.metadata.shortcuts"
+              >Shortcuts</span
+            >
           </div>
           <h4 class="pt-4 font-bold text-sm text-gray-900 dark:text-gray-100">
             {{ made.title }}

@@ -51,7 +51,8 @@ import Everything from "../../components/Tabs/All";
 import Design from "../../components/Tabs/Design";
 import Development from "../../components/Tabs/Development";
 import Opinion from "../../components/Tabs/Opinion";
-import External from "../../components/Tabs/External";
+import Links from "../../components/Tabs/External";
+import Bookmarks from "../../components/Tabs/Bookmarks";
 
 export default {
   components: {
@@ -59,7 +60,8 @@ export default {
     Design,
     Development,
     Opinion,
-    External,
+    Links,
+    Bookmarks,
   },
   computed: {
     meta() {
@@ -94,7 +96,14 @@ export default {
   data() {
     return {
       loading: false,
-      tabs: ["Everything", "Design", "Development", "Opinion", "External"],
+      tabs: [
+        "Everything",
+        "Design",
+        "Development",
+        "Opinion",
+        "Links",
+        "Bookmarks",
+      ],
       selected: "Everything",
     };
   },

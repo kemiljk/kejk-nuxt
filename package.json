@@ -18,9 +18,11 @@
     "axios": "^0.21.0",
     "core-js": "^3.6.5",
     "cosmicjs": "^3.3.2",
+    "eslint": "^7.17.0",
     "feed": "^4.2.1",
     "fontsource-inter": "^3.1.7",
     "graphql": "^15.4.0",
+    "lint": "eslint --ext .ts,.js,.vue .",
     "nuxt": "^2.14.9",
     "postcss": "^7",
     "prismjs": "^1.22.0",
@@ -36,6 +38,7 @@
   "devDependencies": {
     "@nuxt/types": "^2.14.12",
     "@nuxt/typescript-build": "^2.0.3",
+    "@nuxtjs/eslint-config-typescript": "^5.0.0",
     "@nuxtjs/moment": "^1.6.1",
     "@nuxtjs/tailwindcss": "^3.3.3"
   }
