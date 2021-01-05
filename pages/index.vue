@@ -207,6 +207,7 @@ export default {
           limit: 1,
           type: "blogs",
           props: "_id,slug,title,content,metadata,modified_at",
+          sort: "-modified_at"
         })
         .then((data) => {
           const blogs = data.objects;
@@ -221,7 +222,8 @@ export default {
         .getObjects({
           limit: 1,
           type: "links",
-          props: "_id,slug,title,content,metadata",
+          props: "_id,slug,title,content,metadata,created_at",
+          sort: "-created_at"
         })
         .then((data) => {
           const links = data.objects;

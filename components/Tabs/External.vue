@@ -34,7 +34,8 @@ export default {
       await bucket
         .getObjects({
           type: "links",
-          props: "_id,slug,title,content,metadata",
+          props: "_id,slug,title,content,metadata,created_at",
+          sort: "-created_at"
         })
         .then((data) => {
           const links = data.objects;
