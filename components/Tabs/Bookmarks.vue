@@ -34,7 +34,7 @@ export default {
       await bucket
         .getObjects({
           type: "bookmarks",
-          props: "_id,title,metadata",
+          props: "_id,title,metadata,created_at",
         })
         .then((data) => {
           const bookmarks = data.objects;

@@ -17,7 +17,7 @@
       <p
         class="font-mono text-gray-500 dark:text-gray-400 pt-0 pb-2 font-medium"
       >
-        {{ bookmark.metadata.published | moment("from", "now") }}
+        {{ bookmark.metadata.created_at | moment("from", "now") }}
       </p>
       <p
         class="text-gray-700 dark:text-gray-300 pb-4 font-medium mb-0"
