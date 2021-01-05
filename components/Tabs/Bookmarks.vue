@@ -35,6 +35,7 @@ export default {
         .getObjects({
           type: "bookmarks",
           props: "_id,title,metadata,created_at",
+          sort: "created_at"
         })
         .then((data) => {
           const bookmarks = data.objects;
