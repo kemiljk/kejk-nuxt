@@ -9,15 +9,15 @@
       <NavItem to="/uses">Uses</NavItem>
     </Nav>
     <div class="max-w-3xl mx-auto px-4">
-      <header class="container pt-10 pb-2 max-w-xl mx-auto">
-        <h1 class="pt-16 pb-2 text-center">/thoughts</h1>
-      </header>
-      <header class="pt-4 pb-4 max-w-xl mx-auto">
-        <p class="text-2xl text-center">
+      <Header>/thoughts</Header>
+      <Subheader>
+        <template #text>
           Thoughts about design, development and the intersection of the two.
-        </p>
-        <Subscribe class="mt-8" />
-      </header>
+        </template>
+        <template #buttons>
+          <Subscribe class="max-w-3xl px-8" />
+        </template>
+      </Subheader>
       <div class="flex flex-row mt-8 overflow-x-auto scrollbar-hidden">
         <button
           v-for="tab in tabs"
@@ -32,15 +32,9 @@
         </button>
       </div>
       <component :is="selected" class="tab mt-8"></component>
-      <div
-        class="mt-16 pb-16 border-t-2 border-gray-200 dark:border-gray-800"
-      />
-      <header class="max-w-xl">
-        <h2>How to reach me.</h2>
-      </header>
-      <div>
-        <GetInTouch />
-      </div>
+      <Divider />
+      <H2Header id="GET_IN_TOUCH">How to reach me.</H2Header>
+      <GetInTouch />
     </div>
   </div>
 </template>

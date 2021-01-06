@@ -9,18 +9,37 @@
       >
     </Nav>
     <div class="max-w-3xl mx-auto px-4">
-      <header class="container pt-10 pb-2 max-w-xl mx-auto">
-        <h1 class="pt-16 pb-8 text-center">/uses</h1>
-      </header>
-      <keep-alive>
-        <Uses :uses="uses" />
-      </keep-alive>
-      <p class="text-gray-500 dark:text-gray-400 px-4 pt-2 font-medium">
-        Updated {{ uses.modified_at | moment("from", "now") }}
-      </p> 
-      <div
-        class="mt-16 pb-16 border-t-2 border-gray-200 dark:border-gray-800"
-      />
+      <Header>/uses</Header>
+      <div class="flex flex-row pt-8">
+        <keep-alive>
+          <Uses :uses="uses" />
+        </keep-alive>
+      </div>
+      <h3>Software.</h3>
+      <div class="flex flex-row">
+        <div
+          class="grid grid-row xs:grid-cols-1 sm:grid-cols-2 md:grid-cols-3 w-full gap-4"
+        >
+          <div v-for="tool in tools" :key="tool._id">
+            <keep-alive>
+              <ToolsCard :tool="tool" />
+            </keep-alive>
+          </div>
+        </div>
+      </div>
+      <H2Header>How this site works.</H2Header>
+      <div class="flex flex-row">
+        <div
+          class="grid grid-row xs:grid-cols-1 sm:grid-cols-2 md:grid-cols-3 w-full gap-4"
+        >
+          <div v-for="software in softwares" :key="software._id">
+            <keep-alive>
+              <SoftwareCard :software="software" />
+            </keep-alive>
+          </div>
+        </div>
+      </div>
+      <Divider />
       <header>
         <h2>How to reach me.</h2>
       </header>
@@ -64,18 +83,49 @@ export default {
   data() {
     return {
       uses: {},
+      tools: {},
+      softwares: {},
     };
   },
-  mounted() {
+  created() {
+    this.fetchSoftwareData();
+    this.fetchToolsData();
     this.fetchUsesData();
   },
   methods: {
+    async fetchSoftwareData() {
+      this.loading = true;
+      await bucket
+        .getObjects({
+          type: "softwares",
+          props: "_id,title,metadata",
+        })
+        .then((data) => {
+          const softwares = data.objects;
+          this.loading = false;
+          this.softwares = softwares;
+        });
+    },
+    async fetchToolsData() {
+      this.loading = true;
+      await bucket
+        .getObjects({
+          type: "tools",
+          props: "_id,title,metadata,modified_at",
+          sort: "created_at",
+        })
+        .then((data) => {
+          const tools = data.objects;
+          this.loading = false;
+          this.tools = tools;
+        });
+    },
     async fetchUsesData() {
       this.loading = true;
       await bucket
         .getObject({
           slug: "uses",
-          props: "slug,title,content,modified_at",
+          props: "slug,title,content",
         })
         .then((data) => {
           this.uses = data.object;

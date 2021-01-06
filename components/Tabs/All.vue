@@ -17,7 +17,7 @@
         </keep-alive>
       </div>
     </div>
-    <div class="mt-16 pb-16 border-t-2 border-gray-200 dark:border-gray-800" />
+    <Divider />
     <div>
       <header>
         <h2
@@ -34,7 +34,7 @@
         </div>
       </div>
     </div>
-    <div class="mt-16 pb-16 border-t-2 border-gray-200 dark:border-gray-800" />
+    <Divider />
     <div>
       <header>
         <h2
@@ -93,7 +93,7 @@ export default {
         .getObjects({
           type: "links",
           props: "_id,slug,title,content,metadata,created_at",
-          sort: "-created_at"
+          sort: "-created_at",
         })
         .then((data) => {
           const links = data.objects;
@@ -107,7 +107,7 @@ export default {
         .getObjects({
           type: "bookmarks",
           props: "_id,title,metadata,created_at",
-          sort: "-created_at"
+          sort: "-created_at",
         })
         .then((data) => {
           const bookmarks = data.objects;

@@ -9,19 +9,13 @@
       <NavItem to="/uses">Uses</NavItem>
     </Nav>
     <div class="max-w-3xl mx-auto px-4">
-      <header class="container pt-10 pb-2 max-w-xl mx-auto">
-        <h1 class="pt-16 pb-8 text-center">/about</h1>
-      </header>
-      <div class="flex flex-row">
-        <div class="flex flex-col">
-          <keep-alive>
-            <About :about="about" />
-          </keep-alive>
-        </div>
+      <Header>/about</Header>
+      <div class="flex flex-row pt-8">
+        <keep-alive>
+          <About :about="about" />
+        </keep-alive>
       </div>
-      <header class="pt-4 max-w-xl">
-        <h2>Where to find me.</h2>
-      </header>
+      <H2Header>Where to find me.</H2Header>
       <div class="flex flex-row">
         <div class="grid grid-row grid-cols-2 md:grid-cols-6 w-full gap-4">
           <div v-for="social in socials" :key="social._id">
@@ -31,32 +25,9 @@
           </div>
         </div>
       </div>
-      <div
-        class="mt-16 pb-16 border-t-2 border-gray-200 dark:border-gray-800"
-      />
-      <header>
-        <h2>About this site.</h2>
-      </header>
-      <div class="flex flex-row">
-        <div
-          class="grid grid-row xs:grid-cols-1 sm:grid-cols-2 md:grid-cols-3 w-full gap-4"
-        >
-          <div v-for="software in softwares" :key="software._id">
-            <keep-alive>
-              <SoftwareCard :software="software" />
-            </keep-alive>
-          </div>
-        </div>
-      </div>
-      <div
-        class="mt-16 pb-16 border-t-2 border-gray-200 dark:border-gray-800"
-      />
-      <header class="max-w-xl">
-        <h2>How to reach me.</h2>
-      </header>
-      <div>
-        <GetInTouch />
-      </div>
+      <Divider />
+      <H2Header id="GET_IN_TOUCH">How to reach me.</H2Header>
+      <GetInTouch />
     </div>
   </div>
 </template>
@@ -97,7 +68,6 @@ export default {
       loading: false,
       tech: {},
       about: {},
-      softwares: {},
       socials: [
         {
           href: "https://www.twitter.com/_kejk",
@@ -133,26 +103,9 @@ export default {
     };
   },
   created() {
-    this.fetchSoftwareData();
-  },
-  mounted() {
     this.fetchAboutData();
   },
   methods: {
-    async fetchSoftwareData() {
-      this.error = this.software = null;
-      this.loading = true;
-      await bucket
-        .getObjects({
-          type: "softwares",
-          props: "_id,title,metadata",
-        })
-        .then((data) => {
-          const softwares = data.objects;
-          this.loading = false;
-          this.softwares = softwares;
-        });
-    },
     async fetchAboutData() {
       this.loading = true;
       await bucket

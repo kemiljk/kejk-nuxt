@@ -7,11 +7,9 @@
       <NavItem to="/uses">Uses</NavItem>
     </Nav>
     <div class="max-w-5xl mx-auto px-4">
-      <header class="container pt-10 pb-2 max-w-xl mx-auto">
-        <h1 class="pt-16 text-center">Hej, I'm Karl</h1>
-      </header>
-      <header class="pt-4 pb-4 max-w-xl mx-auto">
-        <p class="text-2xl text-center">
+      <Header>Hej, I'm Karl</Header>
+      <Subheader>
+        <template #text>
           I'm a Product Designer and "sometimes" Frontend Developer, designing
           and defining the Home as a Service at
           <a
@@ -22,8 +20,8 @@
             >HomeHero</a
           >
           in London, UK.
-        </p>
-        <div class="flex flex-col md:flex-row justify-center mt-6">
+        </template>
+        <template #buttons>
           <a href="https://www.twitter.com/_kejk" class="mx-2">
             <button
               type="button"
@@ -48,11 +46,9 @@
               >Get in touch
             </button>
           </a>
-        </div>
-      </header>
-      <header class="pt-16 max-w-xl">
-        <h2>Some things I've made.</h2>
-      </header>
+        </template>
+      </Subheader>
+      <H2Header>Some things I've made.</H2Header>
       <div class="flex flex-row">
         <div
           class="grid grid-row xs:grid-cols-1 sm:grid-cols-2 md:grid-cols-3 w-full gap-4"
@@ -64,9 +60,7 @@
           </div>
         </div>
       </div>
-      <header class="pt-16 max-w-xl">
-        <h2>Thoughts on design and development.</h2>
-      </header>
+      <H2Header>Thoughts on Design and Development.</H2Header>
       <div class="flex flex-row mt-4">
         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-8">
           <div v-for="blog in blogs" :key="blog._id">
@@ -82,9 +76,7 @@
         </div>
       </div>
       <MoreLink> See All </MoreLink>
-      <header class="pt-16 max-w-xl">
-        <h2>Some things I've helped make.</h2>
-      </header>
+      <H2Header>Some things I've helped make.</H2Header>
       <div class="flex flex-row">
         <div
           class="grid grid-row xs:grid-cols-1 sm:grid-cols-2 md:grid-cols-3 w-full gap-4"
@@ -96,9 +88,7 @@
           </div>
         </div>
       </div>
-      <header class="pt-16 max-w-xl">
-        <h2>Some things I'm currently enjoying.</h2>
-      </header>
+      <H2Header>Some things I'm currently enjoying.</H2Header>
       <div class="flex flex-row">
         <div
           class="grid grid-row xs:grid-cols-1 sm:grid-cols-2 md:grid-cols-3 w-full gap-4"
@@ -110,9 +100,7 @@
           </div>
         </div>
       </div>
-      <header class="pt-16 max-w-xl">
-        <h2>Music I've written.</h2>
-      </header>
+      <H2Header>Music I've written.</H2Header>
       <div class="flex flex-row">
         <div
           class="grid grid-row xs:grid-cols-1 sm:grid-cols-2 md:grid-cols-3 w-full gap-4"
@@ -124,12 +112,8 @@
           </div>
         </div>
       </div>
-      <header id="GET_IN_TOUCH" class="pt-16 max-w-xl">
-        <h2>How to reach me.</h2>
-      </header>
-      <div>
-        <GetInTouch />
-      </div>
+      <H2Header id="GET_IN_TOUCH">How to reach me.</H2Header>
+      <GetInTouch />
     </div>
   </div>
 </template>
@@ -207,7 +191,7 @@ export default {
           limit: 1,
           type: "blogs",
           props: "_id,slug,title,content,metadata,modified_at",
-          sort: "-modified_at"
+          sort: "-modified_at",
         })
         .then((data) => {
           const blogs = data.objects;
@@ -223,7 +207,7 @@ export default {
           limit: 1,
           type: "links",
           props: "_id,slug,title,content,metadata,created_at",
-          sort: "-created_at"
+          sort: "-created_at",
         })
         .then((data) => {
           const links = data.objects;
