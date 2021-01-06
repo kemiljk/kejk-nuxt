@@ -23,7 +23,7 @@
             </div>
           </NuxtLink>
         </div>
-        <keep-alive>  
+        <keep-alive>
           <Blog v-if="page" :blog="page" />
         </keep-alive>
         <div
@@ -32,7 +32,7 @@
         <header>
           <h2>How to follow along.</h2>
         </header>
-        <Subscribe />
+        <SubscribeCard />
         <header class="mt-4">
           <h2>How to reach me.</h2>
         </header>

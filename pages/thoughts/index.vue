@@ -15,7 +15,7 @@
           Thoughts about design, development and the intersection of the two.
         </template>
         <template #buttons>
-          <Subscribe class="max-w-3xl px-8" />
+          <SubscribeCard class="max-w-3xl px-8" />
         </template>
       </Subheader>
       <div class="flex flex-row mt-8 overflow-x-auto scrollbar-hidden">

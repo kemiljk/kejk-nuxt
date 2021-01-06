@@ -32,9 +32,9 @@
               >Open source</span
             >
             <span
-              class="flex w-max justify-center font-mono text-gray-100 dark:text-gray-900 border-2 border-gray-100 dark:border-gray-900 rounded-full px-3 py-1 text-xs"
-              v-else
-              >Empty</span
+              class="flex w-max justify-center font-mono text-red-700 dark:text-red-400 border-2 border-red-700 dark:border-red-400 rounded-full px-3 py-1 text-xs"
+              v-if="tool.metadata.company"
+              >{{ tool.metadata.company }}</span
             >
           </div>
           <h4 class="pt-4 font-bold text-sm text-gray-900 dark:text-gray-100">
