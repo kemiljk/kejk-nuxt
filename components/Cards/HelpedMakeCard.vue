@@ -26,21 +26,18 @@
         </header>
         <div class="divide-y divide-solid divide-gray-300 dark:divide-gray-800">
           <div class="flex space-x-2 mb-4">
-            <span
-              class="flex justify-center w-max font-mono text-yellow-700 dark:text-yellow-400 border-2 border-yellow-700 dark:border-yellow-400 rounded-full px-3 py-1 text-xs"
+            <Tag color="yellow"
               v-if="helpedMake.metadata.design"
-              >Design</span
-            >
-            <span
-              class="flex w-max justify-center font-mono text-purple-700 dark:text-purple-400 border-2 border-purple-700 dark:border-purple-400 rounded-full px-3 py-1 text-xs"
+              >Design
+            </Tag>
+            <Tag color="purple"
               v-if="helpedMake.metadata.development"
-              >Development</span
-            >
-            <span
-              class="flex w-max justify-center font-mono text-pink-700 dark:text-pink-400 border-2 border-pink-700 dark:border-pink-400 rounded-full px-3 py-1 text-xs"
+              >Development
+            </Tag>
+            <Tag color="pink"
               v-if="helpedMake.metadata.consultancy"
-              >Consultancy</span
-            >
+              >Consultancy
+            </Tag>
           </div>
           <h4 class="pt-4 font-bold text-sm text-gray-900 dark:text-gray-100">
             {{ helpedMake.title }}

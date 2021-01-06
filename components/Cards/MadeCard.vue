@@ -26,38 +26,32 @@
         </header>
         <div class="divide-y divide-solid divide-gray-300 dark:divide-gray-800">
           <div class="flex space-x-2 mb-4">
-            <span
-              class="flex justify-center w-max font-mono text-yellow-700 dark:text-yellow-400 border-2 border-yellow-700 dark:border-yellow-400 rounded-full px-3 py-1 text-xs"
+            <Tag color="yellow"
               v-if="made.metadata.ios"
-              >iOS</span
-            >
-            <span
-              class="flex w-max justify-center font-mono text-purple-700 dark:text-purple-400 border-2 border-purple-700 dark:border-purple-400 rounded-full px-3 py-1 text-xs"
+              >iOS
+            </Tag>
+            <Tag color="purple"
               v-if="made.metadata.macos"
-              >macOS</span
-            >
-            <span
-              class="flex w-max justify-center font-mono text-pink-700 dark:text-pink-400 border-2 border-pink-700 dark:border-pink-400 rounded-full px-3 py-1 text-xs"
+              >macOS
+            </Tag>
+            <Tag color="pink"
               v-if="made.metadata.figma"
-              >Figma</span
-            >
-            <span
-              class="flex w-max justify-center font-mono text-green-700 dark:text-green-400 border-2 border-green-700 dark:border-green-400 rounded-full px-3 py-1 text-xs"
+              >Figma
+            </Tag>
+            <Tag color="green"
               v-if="made.metadata.installcount"
               ><span :id="made.metadata.installcount"
                 >&nbsp;installs</span
-              ></span
-            >
-            <span
-              class="flex w-max justify-center font-mono text-blue-700 dark:text-blue-400 border-2 border-blue-700 dark:border-blue-400 rounded-full px-3 py-1 text-xs"
+              >
+            </Tag>
+            <Tag color="blue"
               v-if="made.metadata.drafts"
-              >Drafts</span
-            >
-            <span
-              class="flex w-max justify-center font-mono text-red-700 dark:text-red-400 border-2 border-red-700 dark:border-red-400 rounded-full px-3 py-1 text-xs"
+              >Drafts
+            </Tag>
+            <Tag color="red"
               v-if="made.metadata.shortcuts"
-              >Shortcuts</span
-            >
+              >Shortcuts
+            </Tag>
           </div>
           <h4 class="pt-4 font-bold text-sm text-gray-900 dark:text-gray-100">
             {{ made.title }}

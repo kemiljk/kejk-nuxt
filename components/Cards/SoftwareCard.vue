@@ -21,13 +21,13 @@
         </header>
         <div class="divide-y divide-solid divide-gray-300 dark:divide-gray-800">
           <div class="flex space-x-2 mb-4">
-            <Tag v-if="software.metadata.indie" kind="yellow">
+            <Tag v-if="software.metadata.indie" color="yellow">
               Indie
             </Tag>
-            <Tag  v-if="software.metadata.open_source" kind="purple">
+            <Tag  v-if="software.metadata.open_source" color="purple">
               Open source
             </Tag>
-            <Tag v-if="software.metadata.company" kind="red">
+            <Tag v-if="software.metadata.company" color="red">
               {{ software.metadata.company }}
            </Tag>
           </div>
