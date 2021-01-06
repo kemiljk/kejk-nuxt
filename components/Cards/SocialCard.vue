@@ -1,6 +1,6 @@
 <template>
   <div
-    class="flex flex-cols-6 sm:flex-cols-3 p-4 bg-gray-100 dark:bg-gray-900 hover:shadow-md rounded-xl hover:bg-gray-50 dark:hover:bg-gray-800 transition ease-in-out duration-300"
+    class="flex flex-cols-6 sm:flex-cols-3 p-4 bg-gray-100 dark:bg-gray-900 hover:shadow-md transform hover:-rotate-2 rounded-xl hover:bg-gray-50 dark:hover:bg-gray-800 transition ease-in-out duration-300"
   >
     <a :href="social.href" target="_blank" rel="noreferrer">
       <twitter-icon
