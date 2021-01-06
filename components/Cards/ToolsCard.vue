@@ -21,21 +21,13 @@
         </header>
         <div class="divide-y divide-solid divide-gray-300 dark:divide-gray-800">
           <div class="flex space-x-2 mb-4">
-            <span
-              class="flex w-max justify-center font-mono text-yellow-700 dark:text-yellow-400 border-2 border-yellow-700 dark:border-yellow-400 rounded-full px-3 py-1 text-xs"
-              v-if="tool.metadata.indie"
-              >Indie</span
-            >
-            <span
-              class="flex w-max justify-center font-mono text-purple-700 dark:text-purple-400 border-2 border-purple-700 dark:border-purple-400 rounded-full px-3 py-1 text-xs"
-              v-if="tool.metadata.open_source"
-              >Open source</span
-            >
-            <span
-              class="flex w-max justify-center font-mono text-red-700 dark:text-red-400 border-2 border-red-700 dark:border-red-400 rounded-full px-3 py-1 text-xs"
-              v-if="tool.metadata.company"
-              >{{ tool.metadata.company }}</span
-            >
+            <Tag v-if="tool.metadata.indie" kind="yellow"> Indie </Tag>
+            <Tag v-if="tool.metadata.open_source" kind="purple">
+              Open source
+            </Tag>
+            <Tag v-if="tool.metadata.company" kind="red">
+              {{ tool.metadata.company }}
+            </Tag>
           </div>
           <h4 class="pt-4 font-bold text-sm text-gray-900 dark:text-gray-100">
             {{ tool.title }}

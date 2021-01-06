@@ -1,6 +1,6 @@
 <template>
   <div class="relative mx-auto">
-    <Nav class="overflow-x-auto">
+    <Nav>
       <NavItem to="/">Home</NavItem>
       <NavItem to="/about">About</NavItem>
       <NavItem to="/thoughts" isActive id="THOUGHTS" v-scroll-to="'#THOUGHTS'">
