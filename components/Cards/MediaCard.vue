@@ -22,6 +22,7 @@
         <div class="divide-y divide-solid divide-gray-300 dark:divide-gray-800">
           <div class="flex space-x-2 mb-4">
             <Tag color="yellow"
+              v-if="media.metadata.indie"
               >Indie
             </Tag>
             <Tag color="purple"
