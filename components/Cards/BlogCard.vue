@@ -1,7 +1,7 @@
 <template>
   <NuxtLink :to="`/thoughts/${blog.slug}`" class="cursor-pointer">
     <div
-      class="rounded-lg hover:shadow-lg transition duration-300"
+      class="rounded-lg"
       v-if="blog.metadata"
     >
       <header class="flex items-top justify-between pt-4 pb-2">

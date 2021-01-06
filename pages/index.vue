@@ -75,7 +75,7 @@
           </div>
         </div>
       </div>
-      <MoreLink> See All </MoreLink>
+      <MoreLink to="/thoughts"> See All </MoreLink>
       <H2Header class="pt-16">Some things I've helped make.</H2Header>
       <div class="flex flex-row">
         <div

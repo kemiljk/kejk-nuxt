@@ -5,7 +5,7 @@
     rel="noreferrer"
     class="cursor-pointer mb-0"
   >
-    <div class="rounded-lg hover:shadow-lg transition duration-300">
+    <div class="rounded-lg">
       <header class="flex items-top justify-between pt-4 pb-2">
         <h1
           class="text-yellow-600 dark:text-yellow-300 text-lg font-bold w-60 md:w-80"
