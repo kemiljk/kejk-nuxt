@@ -27,6 +27,7 @@
           </div>
         </div>
       </div>
+      <Divider />
       <H2Header>How this site works.</H2Header>
       <div class="flex flex-row">
         <div

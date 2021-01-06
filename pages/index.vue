@@ -48,7 +48,7 @@
           </a>
         </template>
       </Subheader>
-      <H2Header>Some things I've made.</H2Header>
+      <H2Header class="pt-16">Some things I've made.</H2Header>
       <div class="flex flex-row">
         <div
           class="grid grid-row xs:grid-cols-1 sm:grid-cols-2 md:grid-cols-3 w-full gap-4"
@@ -60,7 +60,7 @@
           </div>
         </div>
       </div>
-      <H2Header>Thoughts on Design and Development.</H2Header>
+      <H2Header class="pt-16">Thoughts on Design and Development.</H2Header>
       <div class="flex flex-row mt-4">
         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-8">
           <div v-for="blog in blogs" :key="blog._id">
@@ -76,7 +76,7 @@
         </div>
       </div>
       <MoreLink> See All </MoreLink>
-      <H2Header>Some things I've helped make.</H2Header>
+      <H2Header class="pt-16">Some things I've helped make.</H2Header>
       <div class="flex flex-row">
         <div
           class="grid grid-row xs:grid-cols-1 sm:grid-cols-2 md:grid-cols-3 w-full gap-4"
@@ -88,7 +88,7 @@
           </div>
         </div>
       </div>
-      <H2Header>Some things I'm currently enjoying.</H2Header>
+      <H2Header class="pt-16">Some things I'm currently enjoying.</H2Header>
       <div class="flex flex-row">
         <div
           class="grid grid-row xs:grid-cols-1 sm:grid-cols-2 md:grid-cols-3 w-full gap-4"
@@ -100,7 +100,7 @@
           </div>
         </div>
       </div>
-      <H2Header>Music I've written.</H2Header>
+      <H2Header class="pt-16">Music I've written.</H2Header>
       <div class="flex flex-row">
         <div
           class="grid grid-row xs:grid-cols-1 sm:grid-cols-2 md:grid-cols-3 w-full gap-4"
@@ -112,7 +112,7 @@
           </div>
         </div>
       </div>
-      <H2Header id="GET_IN_TOUCH">How to reach me.</H2Header>
+      <H2Header class="pt-16" id="GET_IN_TOUCH">How to reach me.</H2Header>
       <GetInTouch />
     </div>
   </div>

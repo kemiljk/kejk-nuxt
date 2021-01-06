@@ -1,5 +1,5 @@
 <template>
-  <header class="pt-16 max-w-xl">
+  <header class="max-w-xl">
     <h2>
       <slot />
     </h2>
