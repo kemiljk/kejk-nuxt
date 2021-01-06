@@ -13,7 +13,7 @@
 import { ArrowRightIcon } from "vue-feather-icons";
 
 export default {
-props: ['link']
+props: ['link'],
 components: {
     ArrowRightIcon,
   },
