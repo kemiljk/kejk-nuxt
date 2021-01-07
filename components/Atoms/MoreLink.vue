@@ -24,8 +24,8 @@ components: {
       about: "/about",
       thoughts: "/thoughts",
       uses: "/uses",
-      }
-    }
-  }
+      }[this.link]
+    },
+  },
 };
 </script>
