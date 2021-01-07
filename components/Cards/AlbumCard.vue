@@ -5,7 +5,7 @@
     rel="noreferrer"
     cursor="pointer"
   >
-    <button class="bg-gray-100 dark:bg-gray-900 hover:shadow-lg hover:bg-gray-50 dark:hover:bg-gray-800 transform hover:-rotate-2 transition ease-in-out duration-300 rounded-lg w-full focus:outline-none focus:ring-2 focus:ring-white">
+    <button class="bg-gray-100 dark:bg-gray-900 hover:shadow-lg hover:bg-gray-50 dark:hover:bg-gray-800 transform hover:-rotate-2 transition ease-in-out duration-300 rounded-lg w-full text-left focus:outline-none focus:ring-2 focus:ring-white">
       <div class="px-4 py-4">
         <div class="divide-y divide-solid divide-gray-300 dark:divide-gray-800">
           <header class="mb-4 flex justify-between">

@@ -1,7 +1,7 @@
 <template>
   <NuxtLink :to="`/thoughts/${blog.slug}`" class="cursor-pointer">
     <button
-      class="w-full focus:outline-none focus:ring-2 focus:ring-white"
+      class="text-left w-full focus:outline-none focus:ring-2 focus:ring-white"
       v-if="blog.metadata"
     >
       <header class="flex items-top justify-between pt-4 pb-2">

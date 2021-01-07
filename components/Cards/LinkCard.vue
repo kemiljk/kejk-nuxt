@@ -5,7 +5,7 @@
     rel="noreferrer"
     class="cursor-pointer mb-0"
   >
-    <button class="w-full focus:outline-none focus:ring-2 focus:ring-white">
+    <button class="text-left w-full focus:outline-none focus:ring-2 focus:ring-white">
       <header class="flex items-top justify-between pt-4 pb-2">
         <h1
           class="text-yellow-600 dark:text-yellow-300 text-lg font-bold w-60 md:w-80"
