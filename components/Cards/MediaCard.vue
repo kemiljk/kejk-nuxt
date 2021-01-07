@@ -1,12 +1,7 @@
 <template>
-  <a
-    :href="media.metadata.url"
-    target="`_blank"
-    rel="noreferrer"
-    cursor="pointer"
-  >
-    <div
-      class="bg-gray-100 dark:bg-gray-900 hover:shadow-lg hover:bg-gray-50 dark:hover:bg-gray-800 transform hover:-rotate-2 transition ease-in-out duration-300 rounded-lg"
+  <a :href="media.metadata.url" target="`_blank" rel="noreferrer">
+    <button
+      class="bg-gray-100 dark:bg-gray-900 hover:shadow-lg hover:bg-gray-50 dark:hover:bg-gray-800 transform hover:-rotate-2 transition ease-in-out duration-300 rounded-lg w-full focus:outline-none focus:ring-2 focus:ring-white"
     >
       <div class="px-4 py-4">
         <header class="mb-4 flex justify-between">
@@ -21,12 +16,8 @@
         </header>
         <div class="divide-y divide-solid divide-gray-300 dark:divide-gray-800">
           <div class="flex space-x-2 mb-4">
-            <Tag color="yellow"
-              v-if="media.metadata.indie"
-              >Indie
-            </Tag>
-            <Tag color="purple"
-              v-if="media.metadata.open_source"
+            <Tag color="yellow" v-if="media.metadata.indie">Indie </Tag>
+            <Tag color="purple" v-if="media.metadata.open_source"
               >Open source
             </Tag>
           </div>
@@ -40,7 +31,7 @@
           {{ media.metadata.subtitle }}
         </p>
       </div>
-    </div>
+    </button>
   </a>
 </template>
 

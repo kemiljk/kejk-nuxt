@@ -6,14 +6,14 @@
       >
         Subscribe to stay up-to-date.
       </h1>
-      <div class="flex flex-col md:flex-row md:space-x-2">
+      <div class="flex md:space-x-2">
         <a
           href="https://www.kejk.tech/feed.xml"
           target="_blank"
           rel="noreferrer"
         >
           <button
-            class="flex flex-row justify-center items-center text-center font-medium w-full md:w-max bg-gray-700 px-6 py-3 rounded-md text-gray-100 hover:bg-gray-600 transition duration-500 ease"
+            class="flex justify-center items-center text-center font-medium w-full bg-gray-700 px-6 py-3 rounded-md text-gray-100 hover:bg-gray-600 transition duration-500 ease"
           >
             <rss-icon
               size="1x"
@@ -28,7 +28,7 @@
           rel="noreferrer"
         >
           <button
-            class="flex flex-row justify-center items-center text-center font-medium mt-2 md:mt-0 w-full md:w-max bg-red-500 px-6 py-3 rounded-md text-red-50 hover:bg-red-600 transition duration-500 ease"
+            class="flex justify-center items-center text-center font-medium mt-2 md:mt-0 w-full bg-red-500 px-6 py-3 rounded-md text-red-50 hover:bg-red-600 transition duration-500 ease"
           >
             <coffee-icon
               size="1x"
@@ -62,7 +62,7 @@
               <input type="hidden" value="1" name="embed" />
               <button
                 type="submit"
-                class="flex flex-row justify-center items-center text-center font-medium my-2 w-full md:w-max bg-indigo-600 px-6 py-3 rounded-md text-indigo-50 hover:bg-indigo-700 transition duration-500 ease"
+                class="flex justify-center items-center text-center font-medium my-2 w-full md:w-max bg-indigo-600 px-6 py-3 rounded-md text-indigo-50 hover:bg-indigo-700 transition duration-500 ease"
               >
                 <mail-icon
                   size="1x"

@@ -1,7 +1,7 @@
 <template>
   <NuxtLink :to="`/thoughts/${blog.slug}`" class="cursor-pointer">
-    <div
-      class="rounded-lg"
+    <button
+      class="w-full focus:outline-none focus:ring-2 focus:ring-white"
       v-if="blog.metadata"
     >
       <header class="flex items-top justify-between pt-4 pb-2">
@@ -18,6 +18,7 @@
         Updated {{ blog.modified_at | moment("from", "now") }}
       </p>
       <div class="flex space-x-2 pb-4">
+        <Tag v-if="blogs[0]" color="green"> New </Tag>
         <Tag color="indigo">
           {{ blog.metadata.tag }}
         </Tag>
@@ -25,7 +26,7 @@
       <p class="text-gray-700 dark:text-gray-300 pt-2 pb-4 font-medium mb-0">
         {{ blog.metadata.snippet }}
       </p>
-    </div>
+    </button>
   </NuxtLink>
 </template>
 
@@ -43,6 +44,10 @@ export default {
       default: () => {
         "No posts are loaded";
       },
+    },
+    blogs: {
+      type: Array,
+      default: () => [],
     },
   },
 };

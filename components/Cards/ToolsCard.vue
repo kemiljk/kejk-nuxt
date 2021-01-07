@@ -1,12 +1,7 @@
 <template>
-  <a
-    :href="tool.metadata.url"
-    target="`_blank"
-    rel="noreferrer"
-    cursor="pointer"
-  >
-    <div
-      class="bg-gray-100 dark:bg-gray-900 hover:shadow-lg hover:bg-gray-50 dark:hover:bg-gray-800 transform hover:-rotate-2 transition ease-in-out duration-300 rounded-lg"
+  <a :href="tool.metadata.url" target="`_blank" rel="noreferrer">
+    <button
+      class="bg-gray-100 dark:bg-gray-900 hover:shadow-lg hover:bg-gray-50 dark:hover:bg-gray-800 transform hover:-rotate-2 transition ease-in-out duration-300 rounded-lg w-full focus:outline-none focus:ring-2 focus:ring-white"
     >
       <div class="px-4 py-4">
         <header class="mb-4 flex justify-between">
@@ -39,7 +34,7 @@
           {{ tool.metadata.subtitle }}
         </p>
       </div>
-    </div>
+    </button>
   </a>
 </template>
 

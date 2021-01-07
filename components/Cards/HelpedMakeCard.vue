@@ -1,12 +1,7 @@
 <template>
-  <a
-    :href="helpedMake.metadata.url"
-    target="`_blank"
-    rel="noreferrer"
-    cursor="pointer"
-  >
-    <div
-      class="bg-gray-100 dark:bg-gray-900 hover:shadow-lg hover:bg-gray-50 dark:hover:bg-gray-800 transform hover:-rotate-2 transition ease-in-out duration-300 rounded-lg max-w-full"
+  <a :href="helpedMake.metadata.url" target="`_blank" rel="noreferrer">
+    <button
+      class="bg-gray-100 dark:bg-gray-900 hover:shadow-lg hover:bg-gray-50 dark:hover:bg-gray-800 transform hover:-rotate-2 transition ease-in-out duration-300 rounded-lg w-full focus:outline-none focus:ring-2 focus:ring-white"
     >
       <div class="px-4 py-4">
         <header class="mb-4 flex justify-between">
@@ -26,16 +21,11 @@
         </header>
         <div class="divide-y divide-solid divide-gray-300 dark:divide-gray-800">
           <div class="flex space-x-2 mb-4">
-            <Tag color="yellow"
-              v-if="helpedMake.metadata.design"
-              >Design
-            </Tag>
-            <Tag color="purple"
-              v-if="helpedMake.metadata.development"
+            <Tag color="yellow" v-if="helpedMake.metadata.design">Design </Tag>
+            <Tag color="purple" v-if="helpedMake.metadata.development"
               >Development
             </Tag>
-            <Tag color="pink"
-              v-if="helpedMake.metadata.consultancy"
+            <Tag color="pink" v-if="helpedMake.metadata.consultancy"
               >Consultancy
             </Tag>
           </div>
@@ -49,7 +39,7 @@
           {{ helpedMake.metadata.subtitle }}
         </p>
       </div>
-    </div>
+    </button>
   </a>
 </template>
 

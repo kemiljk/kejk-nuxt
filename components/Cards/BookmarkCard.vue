@@ -5,7 +5,7 @@
     rel="noreferrer"
     class="cursor-pointer mb-0"
   >
-    <div class="rounded-lg">
+    <button class="w-full focus:outline-none focus:ring-2 focus:ring-white">
       <header class="flex items-top justify-between pt-4 pb-2">
         <h1
           class="text-red-600 dark:text-red-400 text-lg font-bold w-60 md:w-80"
@@ -25,7 +25,7 @@
       >
         {{ bookmark.metadata.snippet }}
       </p>
-    </div>
+    </button>
   </a>
 </template>
 
