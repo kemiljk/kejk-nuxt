@@ -6,7 +6,6 @@
     cursor="pointer"
   >
     <button
-    @click="installs += 1"
       class="bg-gray-100 dark:bg-gray-900 hover:shadow-lg hover:bg-gray-50 dark:hover:bg-gray-800 transform hover:-rotate-2 transition ease-in-out duration-300 rounded-lg text-left w-full focus:outline-none focus:ring-2 focus:ring-white"
     >
       <div class="px-4 py-4">
@@ -32,9 +31,6 @@
             <Tag color="pink" v-if="made.metadata.figma">Figma </Tag>
             <Tag color="green" v-if="made.metadata.installcount"
               ><span :id="made.metadata.installcount">&nbsp;installs</span>
-            </Tag>
-            <Tag color="green" v-if="made.metadata.installs"
-              >{{ installs }} installs</span>
             </Tag>
             <Tag color="indigo" v-if="made.metadata.likecount"
               ><span :id="made.metadata.likecount">&nbsp;likes</span>
@@ -72,7 +68,6 @@ export default {
         "No posts are loaded";
       },
     },
-    installs: 0,
   },
 };
 </script>

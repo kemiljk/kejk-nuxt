@@ -163,7 +163,6 @@ export default {
       links: {},
       blogs: {},
       slug: "",
-      installs: 0,
     };
   },
   created() {
