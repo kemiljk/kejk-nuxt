@@ -53,6 +53,7 @@
             <div class="flex flex-col md:flex-row md:space-x-2 w-full md:w-max">
               <input
                 type="email"
+                keyup.enter="submit"
                 name="email"
                 id="bd-email"
                 placeholder="e.g. sly@stallone.com"
