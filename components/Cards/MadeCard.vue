@@ -32,6 +32,9 @@
             <Tag color="green" v-if="made.metadata.installcount"
               ><span :id="made.metadata.installcount">&nbsp;installs</span>
             </Tag>
+            <Tag color="indigo" v-if="made.metadata.likecount"
+              ><span :id="made.metadata.likecount">&nbsp;likes</span>
+            </Tag>
             <Tag color="blue" v-if="made.metadata.drafts">Drafts </Tag>
             <Tag color="red" v-if="made.metadata.shortcuts">Shortcuts </Tag>
           </div>

@@ -178,6 +178,7 @@ export default {
       .then((data) => {
         console.log(data);
         document.getElementById("install-count").prepend(data.install_count);
+        document.getElementById("like-count").prepend(data.like_count);
       });
   },
   methods: {

@@ -18,7 +18,7 @@
         Updated {{ blog.modified_at | moment("from", "now") }}
       </p>
       <div class="flex space-x-2 pb-4">
-        <Tag v-if="blogs[0]" color="green"> New </Tag>
+        <Tag v-if="blog === blogs[0]" color="green"> New </Tag>
         <Tag color="indigo">
           {{ blog.metadata.tag }}
         </Tag>
