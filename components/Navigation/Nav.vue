@@ -29,14 +29,14 @@
             </button>
           </div>
         </div>
+        <div class="relative md:hidden" :class="{'relative': isOpen, 'hidden': !isOpen}">
+          <div class="bg-white dark:bg-black rounded-b-lg border-b-2 dark:border-gray-800 shadow absolute w-full px-2 py-3 space-y-1 sm:px-3">
+            <slot></slot>
+          </div>
+        </div>
       </div>
 
       <!-- NOTE: MOBILE MENU -->
-      <div class="relative md:hidden shadow  border-b-2 dark:border-gray-800" :class="{'relative': isOpen, 'hidden': !isOpen}">
-      <div class="bg-white dark:bg-black absolute w-full px-2 pt-2 pb-3 space-y-1 sm:px-3">
-        <slot></slot>
-      </div>
-      </div>
     </nav>
   </div>
 </template>

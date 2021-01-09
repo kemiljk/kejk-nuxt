@@ -1,5 +1,5 @@
 <template>
-  <li class="flex space-x-4 m-0 mt-16 md:mt-0">
+  <li class="flex space-x-4 m-0 mt-0">
     <NuxtLink
       :to="`${to}`"
       :class="[
