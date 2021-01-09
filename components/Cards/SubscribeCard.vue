@@ -16,9 +16,7 @@
             <template #icon>
               <rss-icon size="1x" class="inline-block mr-2 text-gray-100" />
             </template>
-            <template #label>
-              Subscribe via RSS
-            </template>
+            <template #label> Subscribe via RSS </template>
           </Button>
         </a>
         <a
@@ -26,13 +24,11 @@
           target="_blank"
           rel="noreferrer"
         >
-          <Button color="red">
+          <Button color="red" class="mt-2 md:mt-0">
             <template #icon>
               <coffee-icon size="1x" class="inline-block mr-2 text-red-100" />
             </template>
-            <template #label>
-              Subscribe via Mailbrew
-            </template>
+            <template #label> Subscribe via Mailbrew </template>
           </Button>
         </a>
       </div>
@@ -45,7 +41,9 @@
           class="embeddable-buttondown-form"
         >
           <div class="flex flex-col w-full md:w-max mt-4">
-            <label for="bd-email" class="font-medium text-black dark:text-white pb-2"
+            <label
+              for="bd-email"
+              class="font-medium text-black dark:text-white pb-2"
               >Enter your email</label
             >
             <div class="flex flex-col md:flex-row md:space-x-2 w-full md:w-max">
@@ -61,14 +59,10 @@
               <input type="hidden" value="1" name="embed" />
               <Button type="submit" color="indigo" class="mt-2 md:mt-0">
                 <template #icon>
-                <mail-icon
-                  size="1x"
-                  class="inline-block mr-2 text-white" />
+                  <mail-icon size="1x" class="inline-block mr-2 text-white" />
                 </template>
-                <template #label>
-                Subscribe for updates
-                </template>
-              </button>
+                <template #label> Subscribe for updates </template>
+              </Button>
             </div>
           </div>
         </form>
