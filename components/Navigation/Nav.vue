@@ -6,7 +6,6 @@
             <Logo />
           <div class="flex items-center">
             <div class="flex-shrink-0">
-                <Logo class="md:hidden" />
               <div class="hidden md:inline-flex">
                 <div class="flex items-center justify-between space-x-4">
                   <slot></slot>
