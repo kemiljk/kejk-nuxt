@@ -1,15 +1,15 @@
 <template>
-  <li class="flex space-x-4 m-0">
+  <li class="flex space-x-4 m-0 mt-16 md:mt-0">
     <NuxtLink
       :to="`${to}`"
       :class="[
-        'font-medium block px-4 py-2 rounded-md text-gray-900 hover:text-indigo-600 dark:text-gray-50 hover:bg-indigo-50 dark:hover:bg-indigo-800 dark:hover:text-indigo-200 transition ease-in-out duration-200',
+        'w-full md:w-max flex items-center justify-center font-medium md:block px-4 py-2 rounded-md text-gray-900 hover:text-indigo-600 dark:text-white hover:bg-indigo-50 dark:hover:bg-indigo-900 dark:hover:text-indigo-200 transition ease-in-out duration-200',
         {
-          'bg-indigo-100 dark:bg-indigo-900 text-indigo-700 dark:text-indigo-200 dark:hover:text-indigo-200 transition ease-in-out duration-200': isActive,
+          'bg-indigo-200 dark:bg-indigo-700 text-indigo-700 dark:text-indigo-200 dark:hover:text-indigo-200 transition ease-in-out duration-200': isActive,
         },
       ]"
     >
-      <slot></slot>
+      <slot />
     </NuxtLink>
   </li>
 </template>

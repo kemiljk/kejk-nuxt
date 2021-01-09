@@ -1,9 +1,64 @@
 <template>
-  <nav
-    class="fixed z-50 backgroundBlur w-full pt-4 border-b border-gray-100 dark:border-gray-900"
-  >
-    <ul class="flex space-x-4 justify-center mx-auto">
-      <slot></slot>
-    </ul>
-  </nav>
+  <div>
+    <nav class="bg-white dark:bg-black">
+      <div class="w-full fixed z-50 backgroundBlur mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between w-full h-16">
+            <Logo />
+          <div class="flex items-center">
+            <div class="flex-shrink-0">
+                <Logo class="md:hidden" />
+              <div class="hidden md:inline-flex">
+                <div class="flex items-center justify-between space-x-4">
+                  <slot></slot>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flex justify-end md:hidden w-full">
+            <!-- Mobile menu button -->
+            <button
+              @click="toggle"
+              class="bg-white dark:bg-black inline-flex items-center justify-center p-2 rounded-md text-indigo-400 hover:text-white dark:hover:bg-indigo-700 hover:bg-indigo-100 focus:outline-none focus:ring-2 focus:ring-white"
+            >
+              <span class="sr-only">Open main menu</span>
+              <menu-icon
+                v-if="!isOpen"
+                size="1x"
+                class="text-black dark:text-white h-6 w-6"
+              ></menu-icon>
+              <x-icon size="1x" class="text-black dark:text-white h-6 w-6" v-else></x-icon>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- NOTE: MOBILE MENU -->
+      <div class="block md:hidden shadow  border-b-2 dark:border-gray-800" :class="{'block': isOpen, 'hidden': !isOpen}">
+      <div class="w-full px-2 pt-2 pb-3 space-y-1 sm:px-3">
+        <slot></slot>
+      </div>
+      </div>
+    </nav>
+  </div>
 </template>
+
+<script>
+import { MenuIcon, XIcon } from "vue-feather-icons";
+
+export default {
+  components: {
+    MenuIcon,
+    XIcon,
+  },
+  data() {
+    return {
+      isOpen: false,
+    };
+  },
+  methods: {
+    toggle() {
+      this.isOpen = !this.isOpen;
+    },
+  },
+};
+</script>

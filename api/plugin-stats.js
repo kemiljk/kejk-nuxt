@@ -1,3 +1,5 @@
+/* eslint-disable */
+
 const https = require("https");
 
 module.exports = (req, res) => {
@@ -11,7 +13,7 @@ module.exports = (req, res) => {
     resp.on('end', () => {
       const pluginInfo = JSON.parse(data).meta.plugin;
       pluginInfo.versions = null;
-      
+
       res.json(pluginInfo);
     });
   });
