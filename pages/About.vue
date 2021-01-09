@@ -6,6 +6,7 @@
         >About</NavItem
       >
       <NavItem to="/thoughts">Thoughts</NavItem>
+      <NavItem to="/bookmarks">Bookmarks</NavItem>
       <NavItem to="/uses">Uses</NavItem>
     </Nav>
     <div class="max-w-3xl mx-auto px-4">

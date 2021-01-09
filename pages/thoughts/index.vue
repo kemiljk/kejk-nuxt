@@ -6,6 +6,7 @@
       <NavItem to="/thoughts" isActive id="THOUGHTS" v-scroll-to="'#THOUGHTS'">
         Thoughts
       </NavItem>
+      <NavItem to="/bookmarks">Bookmarks</NavItem>
       <NavItem to="/uses">Uses</NavItem>
     </Nav>
     <div class="max-w-3xl mx-auto px-4">
@@ -46,7 +47,6 @@ import Design from "../../components/Tabs/Design";
 import Development from "../../components/Tabs/Development";
 import Opinion from "../../components/Tabs/Opinion";
 import Links from "../../components/Tabs/External";
-import Bookmarks from "../../components/Tabs/Bookmarks";
 
 export default {
   components: {
@@ -55,7 +55,6 @@ export default {
     Development,
     Opinion,
     Links,
-    Bookmarks,
   },
   computed: {
     meta() {
@@ -96,7 +95,6 @@ export default {
         "Development",
         "Opinion",
         "Links",
-        "Bookmarks",
       ],
       selected: "Everything",
     };

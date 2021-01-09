@@ -4,6 +4,7 @@
       <NavItem to="/">Home</NavItem>
       <NavItem to="/about">About</NavItem>
       <NavItem to="/thoughts">Thoughts</NavItem>
+      <NavItem to="/bookmarks">Bookmarks</NavItem>
       <NavItem to="/uses" isActive id="USES" v-scroll-to="'#USES'"
         >Uses</NavItem
       >
