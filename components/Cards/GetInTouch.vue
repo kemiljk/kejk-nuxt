@@ -66,7 +66,7 @@
                 name="name"
                 id="name"
                 placeholder="e.g. Arnold Schwarzenegger"
-                class="w-100 mt-2 py-3 px-3 rounded-md bg-white dark:bg-gray-900 border-2 border-gray-200 dark:border-gray-700 text-gray-800 dark:text-gray-50 font-medium focus:border-indigo-500 focus:border-4 focus:outline-none"
+                class="w-100 mt-2 py-3 px-3 rounded-lg bg-white dark:bg-gray-900 border-2 border-gray-200 dark:border-gray-700 text-gray-800 dark:text-gray-50 font-medium focus:border-indigo-500 focus:border-4 focus:outline-none"
                 required
               />
             </div>
@@ -80,7 +80,7 @@
                 name="email"
                 id="email"
                 placeholder="e.g. arnold@schwarzenegger.com"
-                class="w-100 mt-2 py-3 px-3 rounded-md bg-white dark:bg-gray-900 border-2 border-gray-200 dark:border-gray-700 text-gray-800 dark:text-gray-50 font-medium focus:border-indigo-500 focus:border-4 focus:outline-none"
+                class="w-100 mt-2 py-3 px-3 rounded-lg bg-white dark:bg-gray-900 border-2 border-gray-200 dark:border-gray-700 text-gray-800 dark:text-gray-50 font-medium focus:border-indigo-500 focus:border-4 focus:outline-none"
                 required
               />
             </div>
@@ -97,7 +97,7 @@
                 id="message"
                 rows="4"
                 placeholder="Ask me anything"
-                class="w-100 mt-2 py-3 px-3 rounded-md bg-white dark:bg-gray-900 border-2 border-gray-200 dark:border-gray-700 text-gray-800 dark:text-gray-50 font-medium focus:border-indigo-500 focus:border-4 focus:outline-none"
+                class="w-100 mt-2 py-3 px-3 rounded-lg bg-white dark:bg-gray-900 border-2 border-gray-200 dark:border-gray-700 text-gray-800 dark:text-gray-50 font-medium focus:border-indigo-500 focus:border-4 focus:outline-none"
                 required
               />
             </div>
@@ -106,7 +106,7 @@
             <button
               id="submitbutton"
               type="submit"
-              class="mt-8 md:w-32 bg-indigo-500 hover:bg-indigo-600 dark:bg-indigo-700 text-white font-bold py-3 px-6 rounded-md transition ease-in-out duration-300"
+              class="mt-8 md:w-32 bg-indigo-500 hover:bg-indigo-600 dark:bg-indigo-700 text-white font-bold py-3 px-6 rounded-lg transition ease-in-out duration-300"
             >
               Submit
             </button>

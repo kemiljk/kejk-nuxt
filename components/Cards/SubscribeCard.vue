@@ -12,30 +12,28 @@
           target="_blank"
           rel="noreferrer"
         >
-          <button
-            class="flex justify-center items-center text-center font-medium w-full bg-gray-700 px-6 py-3 rounded-md text-gray-100 hover:bg-gray-600 transition duration-500 ease"
-          >
-            <rss-icon
-              size="1x"
-              class="inline-block mr-2 text-gray-100"
-            ></rss-icon>
-            Subscribe via RSS
-          </button>
+          <Button color="grey">
+            <template #icon>
+              <rss-icon size="1x" class="inline-block mr-2 text-gray-100" />
+            </template>
+            <template #label>
+              Subscribe via RSS
+            </template>
+          </Button>
         </a>
         <a
           href="https://share.mailbrew.com/_kejk/kejk-sXWcveOcS678?aff=_kejk"
           target="_blank"
           rel="noreferrer"
         >
-          <button
-            class="flex justify-center items-center text-center font-medium mt-2 md:mt-0 w-full bg-red-500 px-6 py-3 rounded-md text-red-50 hover:bg-red-600 transition duration-500 ease"
-          >
-            <coffee-icon
-              size="1x"
-              class="inline-block mr-2 text-red-100"
-            ></coffee-icon>
-            Subscribe via Mailbrew
-          </button>
+          <Button color="red">
+            <template #icon>
+              <coffee-icon size="1x" class="inline-block mr-2 text-red-100" />
+            </template>
+            <template #label>
+              Subscribe via Mailbrew
+            </template>
+          </Button>
         </a>
       </div>
       <div class="flex flex-col md:flex-row">
@@ -47,7 +45,7 @@
           class="embeddable-buttondown-form"
         >
           <div class="flex flex-col w-full md:w-max mt-4">
-            <label for="bd-email" class="font-medium text-black dark:text-white"
+            <label for="bd-email" class="font-medium text-black dark:text-white pb-2"
               >Enter your email</label
             >
             <div class="flex flex-col md:flex-row md:space-x-2 w-full md:w-max">
@@ -57,19 +55,19 @@
                 name="email"
                 id="bd-email"
                 placeholder="e.g. sly@stallone.com"
-                class="my-2 py-3 px-3 w-full md:w-max rounded-md bg-white dark:bg-black border-2 border-gray-200 dark:border-gray-700 text-gray-800 dark:text-gray-50 font-medium focus:border-indigo-500 focus:border-4 focus:outline-none"
+                class="py-3 px-3 w-full md:w-max rounded-lg bg-white dark:bg-black border-2 border-gray-200 dark:border-gray-700 text-gray-800 dark:text-gray-50 font-medium focus:border-indigo-500 focus:border-4 focus:outline-none"
                 required
               />
               <input type="hidden" value="1" name="embed" />
-              <button
-                type="submit"
-                class="flex justify-center items-center text-center font-medium my-2 w-full md:w-max bg-indigo-600 px-6 py-3 rounded-md text-indigo-50 hover:bg-indigo-700 transition duration-500 ease"
-              >
+              <Button type="submit" color="indigo" class="mt-2 md:mt-0">
+                <template #icon>
                 <mail-icon
                   size="1x"
-                  class="inline-block mr-2 text-white"
-                ></mail-icon>
+                  class="inline-block mr-2 text-white" />
+                </template>
+                <template #label>
                 Subscribe for updates
+                </template>
               </button>
             </div>
           </div>

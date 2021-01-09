@@ -24,26 +24,24 @@
         </template>
         <template #buttons>
           <a href="https://www.twitter.com/_kejk" class="mx-2">
-            <button
-              class="flex justify-center items-center text-center font-medium w-full bg-blue-500 text-white rounded-md px-6 py-3 transition duration-500 ease hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-white"
-            >
-              <twitter-icon
-                size="1x"
-                class="inline-block mr-2 text-white"
-              ></twitter-icon
-              >Follow me on Twitter
-            </button>
+            <Button color="blue">
+              <template #icon>
+                <twitter-icon size="1x" class="inline-block mr-2 text-white" />
+              </template>
+              <template #label>
+                Follow me on Twitter
+              </template>
+            </Button>
           </a>
           <a href="#" class="mx-2" v-scroll-to="'#GET_IN_TOUCH'">
-            <button
-              class="flex justify-center items-center text-center font-medium w-full mt-2 md:mt-0 bg-gray-300 dark:bg-gray-700 text-gray-800 dark:text-white rounded-md px-6 py-3 transition duration-500 ease hover:bg-gray-400 dark:hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-white"
-            >
-              <mail-icon
-                size="1x"
-                class="inline-block mr-2 text-gray-800 dark:text-white"
-              ></mail-icon
-              >Get in touch
-            </button>
+            <Button color="grey" class="mt-2 md:mt-0">
+              <template #icon>
+                <mail-icon size="1x" class="inline-block mr-2 text-gray-800 dark:text-white" />
+              </template>
+              <template #label>
+                Get in touch
+              </template>
+            </Button>
           </a>
         </template>
       </Subheader>
