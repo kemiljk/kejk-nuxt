@@ -43,10 +43,10 @@ export default {
   computed: {
     meta() {
       const metaData = {
-        title: "KEJK | Thoughts",
+        title: "KEJK | Bookmarks",
         description:
-          "Thoughts on Design and Development from here and around the web.",
-        url: "https://kejk.tech/thoughts",
+        "Bookmarks of interesting things I've found around the web, for me to keep and for you to enjoy.",
+        url: "https://kejk.tech/bookmarks",
         mainImage:
           "https://res.cloudinary.com/kejk/image/upload/q_auto,f_auto/v1607350722/og-image_bcs2c8.png",
       };
@@ -55,9 +55,9 @@ export default {
   },
   head() {
     return {
-      title: "KEJK | Thoughts",
+      title: "KEJK | Bookmarks",
       meta: [...this.meta],
-      link: [{ rel: "canonical", href: "https://kejk.tech/thoughts" }],
+      link: [{ rel: "canonical", href: "https://kejk.tech/bookmarks" }],
     };
   },
   data() {

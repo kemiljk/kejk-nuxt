@@ -19,7 +19,7 @@
           <SubscribeCard class="max-w-3xl px-8" />
         </template>
       </Subheader>
-      <div class="sticky bg-current top-16 flex flex-row py-4 space-x-2 overflow-x-auto scrollbar-hidden">
+      <div class="bg-current top-16 flex flex-row py-4 space-x-2 overflow-x-auto scrollbar-hidden">
         <button
           v-for="tab in tabs"
           :key="tab"

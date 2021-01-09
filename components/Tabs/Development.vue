@@ -20,7 +20,6 @@ export default {
     blogs() {
       let blogs = this.$store.getters.getBlog;
       let blogList = [];
-
       blogs.forEach(function (blog) {
         if (blog.metadata.tag === "Development") {
           blogList.push(blog);
@@ -28,7 +27,6 @@ export default {
           return;
         }
       });
-
       return { blogList: blogList };
     },
   },
