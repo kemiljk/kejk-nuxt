@@ -19,15 +19,13 @@
           <SubscribeCard class="max-w-3xl px-8" />
         </template>
       </Subheader>
-      <div class="flex flex-row mt-8 overflow-x-auto scrollbar-hidden">
+      <div class="sticky bg-current top-16 flex flex-row py-4 space-x-2 overflow-x-auto scrollbar-hidden">
         <button
           v-for="tab in tabs"
           :key="tab"
           @click="selected = tab"
-          :class="[
-            'font-medium block border-b-2 border-gray-200 dark:border-gray-700 px-4 py-2 text-gray-400 hover:text-indigo-800 dark:text-gray-500 dark:hover:text-indigo-50 hover:bg-indigo-100 rounded-t-md dark:hover:bg-indigo-800 whitespace-nowrap',
-            { active: selected === tab },
-          ]"
+          class="block font-medium bg-gray-100 dark:bg-gray-800 px-4 py-2 text-gray-400 hover:text-indigo-800 dark:text-gray-400 dark:hover:text-indigo-50 hover:bg-indigo-100 rounded-md dark:hover:bg-indigo-800"
+          :class="[{ active: selected === tab }]"
         >
           {{ tab }}
         </button>
@@ -42,7 +40,7 @@
 
 <script>
 import getSiteMeta from "~/utils/getSiteMeta.js";
-import Everything from "../../components/Tabs/All";
+import All from "../../components/Tabs/All";
 import Design from "../../components/Tabs/Design";
 import Development from "../../components/Tabs/Development";
 import Opinion from "../../components/Tabs/Opinion";
@@ -50,7 +48,7 @@ import Links from "../../components/Tabs/External";
 
 export default {
   components: {
-    Everything,
+    All,
     Design,
     Development,
     Opinion,
@@ -90,13 +88,13 @@ export default {
     return {
       loading: false,
       tabs: [
-        "Everything",
+        "All",
         "Design",
         "Development",
         "Opinion",
         "Links",
       ],
-      selected: "Everything",
+      selected: "All",
     };
   },
 };
