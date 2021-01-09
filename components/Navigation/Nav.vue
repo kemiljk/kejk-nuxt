@@ -31,7 +31,7 @@
         </div>
       <!-- NOTE: MOBILE MENU -->
         <div class="relative md:hidden shadow" :class="{'relative': isOpen, 'hidden': !isOpen}">
-          <div class="bg-white dark:bg-black rounded-lg border border-gray-100 dark:border-2 dark:border-gray-800 shadow-lg absolute w-full px-2 py-3 space-y-1 sm:px-3">
+          <div class="bg-white dark:bg-black rounded-xl border border-gray-100 dark:border-2 dark:border-gray-800 shadow-lg absolute w-full px-2 py-3 space-y-1 sm:px-3">
             <slot></slot>
           </div>
         </div>
