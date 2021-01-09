@@ -27,6 +27,7 @@
     "postcss": "^7",
     "prismjs": "^1.22.0",
     "tailwindcss": "npm:@tailwindcss/postcss7-compat",
+    "vue-clickaway": "^2.2.2",
     "vue-feather-icons": "^5.1.0",
     "vue-meta": "^2.4.0",
     "vue-moment": "^4.1.0",

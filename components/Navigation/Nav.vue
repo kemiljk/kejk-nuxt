@@ -1,6 +1,6 @@
 <template>
   <div>
-    <nav class="bg-white dark:bg-black">
+    <nav class="bg-white dark:bg-black" v-on-clickaway="away">
       <div class="w-full fixed z-50 backgroundBlur mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex items-center justify-between w-full h-16">
             <Logo />
@@ -32,8 +32,8 @@
       </div>
 
       <!-- NOTE: MOBILE MENU -->
-      <div class="block md:hidden shadow  border-b-2 dark:border-gray-800" :class="{'block': isOpen, 'hidden': !isOpen}">
-      <div class="w-full px-2 pt-2 pb-3 space-y-1 sm:px-3">
+      <div class="relative md:hidden shadow  border-b-2 dark:border-gray-800" :class="{'relative': isOpen, 'hidden': !isOpen}">
+      <div class="bg-white dark:bg-black absolute w-full px-2 pt-2 pb-3 space-y-1 sm:px-3">
         <slot></slot>
       </div>
       </div>
@@ -43,8 +43,10 @@
 
 <script>
 import { MenuIcon, XIcon } from "vue-feather-icons";
+import { mixin as clickaway } from 'vue-clickaway';
 
 export default {
+  mixins: [ clickaway ],
   components: {
     MenuIcon,
     XIcon,
@@ -54,9 +56,14 @@ export default {
       isOpen: false,
     };
   },
+
   methods: {
     toggle() {
       this.isOpen = !this.isOpen;
+    },
+    away: function() {
+      console.log('clicked away');
+      this.isOpen = false
     },
   },
 };
