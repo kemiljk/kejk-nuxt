@@ -23,26 +23,28 @@
           in London, UK.
         </template>
         <template #buttons>
-          <a href="https://www.twitter.com/_kejk" class="mx-2">
-            <Button color="blue">
-              <template #icon>
-                <twitter-icon size="1x" class="inline-block mr-2 text-white" />
-              </template>
-              <template #label>
-                Follow me on Twitter
-              </template>
-            </Button>
-          </a>
-          <a href="#" class="mx-2" v-scroll-to="'#GET_IN_TOUCH'">
-            <Button color="grey" class="mt-2 md:mt-0">
-              <template #icon>
-                <mail-icon size="1x" class="inline-block mr-2 text-gray-800 dark:text-white" />
-              </template>
-              <template #label>
-                Get in touch
-              </template>
-            </Button>
-          </a>
+          <div class="flex flex-col md:flex-row md:space-x-2">
+            <a href="https://www.twitter.com/_kejk">
+              <Button color="blue">
+                <template #icon>
+                  <twitter-icon size="1x" class="inline-block mr-2 text-white" />
+                </template>
+                <template #label>
+                  Follow me on Twitter
+                </template>
+              </Button>
+            </a>
+            <a href="#" v-scroll-to="'#GET_IN_TOUCH'">
+              <Button color="grey" class="mt-2 md:mt-0">
+                <template #icon>
+                  <mail-icon size="1x" class="inline-block mr-2 text-gray-800 dark:text-white" />
+                </template>
+                <template #label>
+                  Get in touch
+                </template>
+              </Button>
+            </a>
+          </div>
         </template>
       </Subheader>
       <H2Header class="pt-16">Some things I've made.</H2Header>
