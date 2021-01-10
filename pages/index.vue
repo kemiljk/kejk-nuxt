@@ -27,21 +27,23 @@
             <a href="https://www.twitter.com/_kejk">
               <Button color="blue">
                 <template #icon>
-                  <twitter-icon size="1x" class="inline-block mr-2 text-white" />
+                  <twitter-icon
+                    size="1x"
+                    class="inline-block mr-2 text-white"
+                  />
                 </template>
-                <template #label>
-                  Follow me on Twitter
-                </template>
+                <template #label> Follow me on Twitter </template>
               </Button>
             </a>
             <a href="#" v-scroll-to="'#GET_IN_TOUCH'">
               <Button color="grey" class="mt-2 md:mt-0">
                 <template #icon>
-                  <mail-icon size="1x" class="inline-block mr-2 text-gray-800 dark:text-white" />
+                  <mail-icon
+                    size="1x"
+                    class="inline-block mr-2 text-gray-800 dark:text-white"
+                  />
                 </template>
-                <template #label>
-                  Get in touch
-                </template>
+                <template #label> Get in touch </template>
               </Button>
             </a>
           </div>

@@ -4,7 +4,12 @@
       <NavItem to="/">Home</NavItem>
       <NavItem to="/about">About</NavItem>
       <NavItem to="/thoughts">Thoughts</NavItem>
-      <NavItem to="/bookmarks" isActive id="BOOKMARKS" v-scroll-to="'#BOOKMARKS'">
+      <NavItem
+        to="/bookmarks"
+        isActive
+        id="BOOKMARKS"
+        v-scroll-to="'#BOOKMARKS'"
+      >
         Bookmarks
       </NavItem>
       <NavItem to="/uses">Uses</NavItem>
@@ -13,16 +18,17 @@
       <Header>/bookmarks</Header>
       <Subheader>
         <template #text>
-          Bookmarks of interesting things I've found around the web, for me to keep and for you to enjoy.
+          Bookmarks of interesting things I've found around the web, for me to
+          keep and for you to enjoy.
         </template>
       </Subheader>
       <div class="grid grid-row xs:grid-cols-1 sm:grid-cols-2 gap-8">
-      <div v-for="bookmark in bookmarks" :key="bookmark._id">
-        <keep-alive>
-          <BookmarkCard :bookmark="bookmark" />
-        </keep-alive>
+        <div v-for="bookmark in bookmarks" :key="bookmark._id">
+          <keep-alive>
+            <BookmarkCard :bookmark="bookmark" />
+          </keep-alive>
+        </div>
       </div>
-    </div>
       <Divider />
       <H2Header id="GET_IN_TOUCH">How to reach me.</H2Header>
       <GetInTouch />
@@ -45,7 +51,7 @@ export default {
       const metaData = {
         title: "KEJK | Bookmarks",
         description:
-        "Bookmarks of interesting things I've found around the web, for me to keep and for you to enjoy.",
+          "Bookmarks of interesting things I've found around the web, for me to keep and for you to enjoy.",
         url: "https://kejk.tech/bookmarks",
         mainImage:
           "https://res.cloudinary.com/kejk/image/upload/q_auto,f_auto/v1607350722/og-image_bcs2c8.png",
@@ -75,7 +81,7 @@ export default {
         .getObjects({
           type: "bookmarks",
           props: "_id,title,metadata,created_at",
-          sort: "-created_at"
+          sort: "-created_at",
         })
         .then((data) => {
           const bookmarks = data.objects;
