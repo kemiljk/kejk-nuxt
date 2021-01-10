@@ -11,17 +11,9 @@
     <div class="mx-auto px-4">
       <div class="container pt-10 pb-2 max-w-3xl mx-auto">
         <div class="flex flex-row pt-16 pb-8">
-          <NuxtLink
-            to="/thoughts"
-            class="text-black hover:bg-gray-50 dark:hover:bg-gray-900 dark:text-white border-2 border-gray-500 rounded-xl px-4 py-2 btn btn-primary transition ease-in-out duration-200"
-          >
-            <div class="flex items-center justify-between font-medium">
-              <arrow-left-icon
-                class="text-gray-700 dark:text-gray-300 mr-2"
-              ></arrow-left-icon>
-              Back to all posts
-            </div>
-          </NuxtLink>
+          <BackLink link="thoughts">
+             Back to all posts
+          </BackLink>
         </div>
         <keep-alive>
           <Blog v-if="page" :blog="page" />
@@ -45,16 +37,12 @@
 </template>
 
 <script>
-import { ArrowLeftIcon } from "vue-feather-icons";
 import getSiteMeta from "~/utils/getSiteMeta.js";
 import getBlog from "../../queries/getBlog";
 import Prism from "~/plugins/prism";
 
 export default {
   name: "BlogView",
-  components: {
-    ArrowLeftIcon,
-  },
   async asyncData({ app, route, redirect }) {
     let data = {};
     try {
