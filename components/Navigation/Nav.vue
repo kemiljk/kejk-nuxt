@@ -1,6 +1,6 @@
 <template>
   <div>
-    <nav class="bg-white dark:bg-black" v-on-clickaway="away">
+    <nav class="bg-white dark:bg-black" v-on-clickaway="close">
       <div class="w-full fixed z-50 backgroundBlur mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex items-center justify-between w-full h-16">
             <Logo />
@@ -17,7 +17,7 @@
             <!-- Mobile menu button -->
             <button
               @click="toggle"
-              class="bg-white dark:bg-black inline-flex items-center justify-center p-2 rounded-md text-indigo-400 hover:text-white dark:hover:bg-indigo-700 hover:bg-indigo-100 focus:outline-none focus:ring-2 focus:ring-white"
+              class="inline-flex items-center justify-center p-2 rounded-md text-indigo-400 hover:text-white dark:hover:bg-indigo-700 hover:bg-indigo-100 focus:outline-none focus:ring-2 focus:ring-white"
             >
               <span class="sr-only">Open main menu</span>
               <menu-icon
@@ -60,7 +60,7 @@ export default {
     toggle() {
       this.isOpen = !this.isOpen;
     },
-    away: function() {
+    close: function() {
       console.log('clicked away');
       this.isOpen = false
     },
