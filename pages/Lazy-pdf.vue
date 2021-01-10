@@ -64,7 +64,7 @@
                   throw them together into a PDF.
                 </p>
                 <img
-                  class="rounded-2xl pt-4"
+                  class="rounded-2xl dark:ring-2 dark:ring-gray-800 pt-4"
                   src="https://res.cloudinary.com/kejk/image/upload/v1585993877/Picking_selection_ckdioy.png"
                 />
               </div>
@@ -79,7 +79,7 @@
                   afterwards in any PDF viewer.
                 </p>
                 <img
-                  class="rounded-2xl pt-4"
+                  class="rounded-2xl dark:ring-2 dark:ring-gray-800 pt-4"
                   src="https://res.cloudinary.com/kejk/image/upload/v1587570775/Frame_10_zub1ud.png"
                 />
               </div>
@@ -94,7 +94,7 @@
                   teammates and management.
                 </p>
                 <img
-                  class="rounded-2xl pt-4"
+                  class="rounded-2xl dark:ring-2 dark:ring-gray-800 pt-4"
                   src="https://res.cloudinary.com/kejk/image/upload/v1585993878/Rendered_PDF_zpdrza.png"
                 />
               </div>
@@ -110,7 +110,7 @@
                   ultrawide files when visualising a 21:9 video concept.
                 </p>
                 <img
-                  class="rounded-2xl pt-4"
+                  class="rounded-2xl dark:ring-2 dark:ring-gray-800 pt-4"
                   src="https://res.cloudinary.com/kejk/image/upload/v1586353512/Apple_versus_Lazy_mhp5ey.png"
                 />
               </div>
