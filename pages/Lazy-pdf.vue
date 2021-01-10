@@ -40,15 +40,17 @@
                 class="flex flex-col md:flex-row justify-center md:justify-start"
               >
                 <a :href="`${download.url}`">
-                  <button
-                    class="flex justify-center items-center text-center font-medium w-full md:w-min rounded-lg px-6 py-3 transition duration-500 ease focus:outline-none focus:ring-2 focus:ring-white bg-purple-900 hover:bg-purple-700 text-purple-100"
-                  >
+                  <Button color="purple">
+                    <template #icon>
                     <download-icon
                       size="1x"
-                      class="inline-block mr-4 text-purple-100"
+                      class="inline-block mr-2 text-purple-100"
                     />
+                    </template>
+                    <template #label>
                     {{ download.text }}
-                  </button>
+                    </template>
+                  </Button>
                 </a>
               </div>
               <Divider />
