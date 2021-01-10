@@ -192,7 +192,7 @@ export default {
         .getObjects({
           limit: 1,
           type: "blogs",
-          props: "_id,slug,title,content,metadata,created_at",
+          props: "_id,slug,title,content,metadata,created_at,modified_at",
           sort: "-created_at",
         })
         .then((data) => {
