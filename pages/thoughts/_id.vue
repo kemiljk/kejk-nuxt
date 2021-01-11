@@ -11,9 +11,7 @@
     <div class="mx-auto px-4">
       <div class="container pt-10 pb-2 max-w-3xl mx-auto">
         <div class="flex flex-row pt-16 pb-8">
-          <BackLink link="thoughts">
-             Back to all posts
-          </BackLink>
+          <BackLink link="thoughts"> Back to all posts </BackLink>
         </div>
         <keep-alive>
           <Blog v-if="page" :blog="page" />

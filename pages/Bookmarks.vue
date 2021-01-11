@@ -54,7 +54,7 @@ export default {
           "Bookmarks of interesting things I've found around the web, for me to keep and for you to enjoy.",
         url: "https://kejk.tech/bookmarks",
         mainImage:
-          "https://res.cloudinary.com/kejk/image/upload/q_auto,f_auto/v1607350722/og-image_bcs2c8.png",
+          "https://res.cloudinary.com/kejk/image/upload/q_auto,f_auto/v1610305389/OG_Image_wlile7.png",
       };
       return getSiteMeta(metaData);
     },
