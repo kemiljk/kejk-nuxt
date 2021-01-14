@@ -15,7 +15,7 @@
           <div class="pt-8
 justify-start text-left">
           <p class="text-sm tracking-wider leading-5 uppercase text-gray-400 pb-0">Currently</p>
-          <p class="text-md leading-8">Designing
+          <p class="text-sm leading-8">Designing
           and defining the Home as a Service at
           <a
             href="https://www.homehero.co.uk"
