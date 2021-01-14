@@ -12,14 +12,14 @@
       <Subheader>
         <template #text>
           I design and build software, write about the intersection of design and development and create music.
-          <div class="pt-4
+          <div class="pt-8
 justify-start text-left">
           <p class="text-sm tracking-wider leading-5 uppercase text-gray-400 pb-0">Currently</p>
-          <p class="text-base leading-5">Designing
+          <p class="text-md leading-8">Designing
           and defining the Home as a Service at
           <a
             href="https://www.homehero.co.uk"
-            class="text-indigo-600 dark:text-indigo-500 font-bold"
+            class="text-indigo-600 dark:text-indigo-400 font-bold"
             target="_blank"
             rel="noreferrer"
             >HomeHero</a
@@ -54,7 +54,7 @@ justify-start text-left">
           </div>
         </template>
       </Subheader>
-      <H2Header class="sticky bg-white dark:bg-black py-6 mt-16">Some things I've made.</H2Header>
+      <H2Header class="pt-16">Some things I've made.</H2Header>
       <div class="flex flex-row">
         <div
           class="grid w-full sm:grid-cols-2 md:grid-cols-3 gap-4"
