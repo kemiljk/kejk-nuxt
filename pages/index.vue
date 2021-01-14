@@ -14,7 +14,7 @@
           I design and build software, write about the intersection of design and development and create music.
           <div class="pt-4
 justify-start text-left">
-          <p class="text-sm tracking-wider leading-5 uppercase text-gray-500">Currently</p>
+          <p class="text-sm tracking-wider leading-5 uppercase text-gray-400 pb-0">Currently</p>
           <p class="text-base leading-5">Designing
           and defining the Home as a Service at
           <a
@@ -57,7 +57,7 @@ justify-start text-left">
       <H2Header class="pt-16">Some things I've made.</H2Header>
       <div class="flex flex-row">
         <div
-          class="grid grid-row xs:grid-cols-1 sm:grid-cols-2 md:grid-cols-3 w-full gap-4"
+          class="grid grid-row overflow-x-auto scrollbar-hidden sm:grid-cols-2 md:grid-cols-3 w-full gap-4"
         >
           <div v-for="made in mades" :key="made.title">
             <keep-alive>
