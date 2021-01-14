@@ -13,15 +13,19 @@
         <template #text>
           I design and build software, write about the intersection of design
           and development and create music.
-          <div class="pt-8 justify-start text-left">
+          <div
+            class="flex flex-col md:w-3/4 pt-8 justify-center mx-auto text-left"
+          >
             <div
-              class="text-sm tracking-wider leading-normal uppercase text-gray-400"
+              class="flex text-sm tracking-wider leading-normal uppercase text-gray-400"
             >
               Currently
             </div>
-            <div class="flex py-4">
-              <HomeHeroIcon class="pr-4" />
-              <div class="text-base leading-6">
+            <IconText class="flex pt-4 items-center">
+              <template #icon>
+                <HomeHeroIcon class="pr-4" />
+              </template>
+              <template #text>
                 Designing and defining the Home as a Service at
                 <a
                   href="https://www.homehero.co.uk"
@@ -31,8 +35,14 @@
                   >HomeHero</a
                 >
                 in London, UK.
-              </div>
-            </div>
+              </template>
+            </IconText>
+            <IconText class="flex items-center">
+              <template #icon>
+                <MapIcon class="pr-4" />
+              </template>
+              <template #text> London, UK </template>
+            </IconText>
           </div>
         </template>
         <template #buttons>
