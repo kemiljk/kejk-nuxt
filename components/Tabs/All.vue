@@ -34,23 +34,6 @@
         </div>
       </div>
     </div>
-    <Divider />
-    <div>
-      <header>
-        <h2
-          class="inline-block border-b-2 border-gray-100 dark:border-gray-800 max-w-max"
-        >
-          Bookmarks.
-        </h2>
-      </header>
-      <div class="grid grid-row xs:grid-cols-1 sm:grid-cols-2 gap-8">
-        <div v-for="bookmark in bookmarks" :key="bookmark._id">
-          <keep-alive>
-            <BookmarkCard :bookmark="bookmark" />
-          </keep-alive>
-        </div>
-      </div>
-    </div>
   </div>
 </template>
 
