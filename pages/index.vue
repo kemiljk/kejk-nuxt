@@ -11,20 +11,28 @@
       <Header>Hej, I'm Karl</Header>
       <Subheader>
         <template #text>
-          I design and build software, write about the intersection of design and development and create music.
-          <div class="pt-8
-justify-start text-left">
-          <p class="text-sm tracking-wider leading-5 uppercase text-gray-400 pb-0">Currently</p>
-          <p class="text-base leading-6">Designing
-          and defining the Home as a Service at
-          <a
-            href="https://www.homehero.co.uk"
-            class="text-indigo-600 dark:text-indigo-400 font-bold"
-            target="_blank"
-            rel="noreferrer"
-            >HomeHero</a
-          >
-          in London, UK.</p>
+          I design and build software, write about the intersection of design
+          and development and create music.
+          <div class="pt-8 justify-start text-left">
+            <div
+              class="text-sm tracking-wider leading-normal uppercase text-gray-400"
+            >
+              Currently
+            </div>
+            <div class="flex py-4">
+              <HomeHeroIcon class="pr-4" />
+              <div class="text-base leading-6">
+                Designing and defining the Home as a Service at
+                <a
+                  href="https://www.homehero.co.uk"
+                  class="text-indigo-600 dark:text-indigo-400 font-bold"
+                  target="_blank"
+                  rel="noreferrer"
+                  >HomeHero</a
+                >
+                in London, UK.
+              </div>
+            </div>
           </div>
         </template>
         <template #buttons>
@@ -32,10 +40,7 @@ justify-start text-left">
             <NuxtLink to="/about">
               <Button color="indigo">
                 <template #icon>
-                  <info-icon
-                    size="1x"
-                    class="inline-block mr-2 text-white"
-                  />
+                  <info-icon size="1x" class="inline-block mr-2 text-white" />
                 </template>
                 <template #label> More about me </template>
               </Button>
@@ -56,9 +61,7 @@ justify-start text-left">
       </Subheader>
       <H2Header class="pt-16">Some things I've made.</H2Header>
       <div class="flex flex-row">
-        <div
-          class="grid w-full sm:grid-cols-2 md:grid-cols-3 gap-4"
-        >
+        <div class="grid w-full sm:grid-cols-2 md:grid-cols-3 gap-4">
           <div v-for="made in mades" :key="made.title">
             <keep-alive>
               <MadeCard :made="made" />
