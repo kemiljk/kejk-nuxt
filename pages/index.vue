@@ -12,9 +12,10 @@
       <Subheader>
         <template #text>
           I design and build software, write about the intersection of design and development and create music.
-          <div class="flex justify-start text-left">
-          <p class="text-sm tracking-wider leading-5 uppercase text-gray-400 dark:text-gray-600">Currently</p>
-          Designing
+          <div class="
+justify-start text-left">
+          <p class="text-sm tracking-wider leading-5 uppercase text-gray-500">Currently</p>
+          <p class="text-base leading-5">Designing
           and defining the Home as a Service at
           <a
             href="https://www.homehero.co.uk"
@@ -23,12 +24,12 @@
             rel="noreferrer"
             >HomeHero</a
           >
-          in London, UK.
+          in London, UK.</p>
           </div>
         </template>
         <template #buttons>
           <div class="flex flex-col md:flex-row md:space-x-2">
-            <MoreLink link="about">
+            <NuxtLink to="/about">
               <Button color="indigo">
                 <template #icon>
                   <info-icon
@@ -38,7 +39,7 @@
                 </template>
                 <template #label> More about me </template>
               </Button>
-            </MoreLink>
+            </NuxtLink>
             <a href="#" v-scroll-to="'#GET_IN_TOUCH'">
               <Button color="grey" class="mt-2 md:mt-0">
                 <template #icon>
