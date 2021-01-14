@@ -57,7 +57,7 @@ justify-start text-left">
       <H2Header class="sticky bg-white dark:bg-black py-6 mt-16">Some things I've made.</H2Header>
       <div class="flex flex-row">
         <div
-          class="flex flex-row overflow-x-auto scrollbar-hidden sm:grid sm:grid-row sm:grid-cols-2 md:grid-cols-3 w-full gap-4"
+          class="flex flex-row w-full space-x-4 overflow-x-auto scrollbar-hidden sm:grid sm:grid-row sm:grid-cols-2 md:grid-cols-3 gap-4"
         >
           <div v-for="made in mades" :key="made.title">
             <keep-alive>
