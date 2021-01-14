@@ -12,7 +12,7 @@
       <Subheader>
         <template #text>
           I design and build software, write about the intersection of design and development and create music.
-          <div class="
+          <div class="pt-4
 justify-start text-left">
           <p class="text-sm tracking-wider leading-5 uppercase text-gray-500">Currently</p>
           <p class="text-base leading-5">Designing
