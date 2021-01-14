@@ -54,7 +54,7 @@ justify-start text-left">
           </div>
         </template>
       </Subheader>
-      <H2Header class="pt-16">Some things I've made.</H2Header>
+      <H2Header class="sticky bg-white dark:bg-black py-6 mt-16">Some things I've made.</H2Header>
       <div class="flex flex-row">
         <div
           class="flex flex-row overflow-x-auto scrollbar-hidden sm:grid sm:grid-row sm:grid-cols-2 md:grid-cols-3 w-full gap-4"

@@ -1,5 +1,5 @@
 <template>
-  <header class="sticky max-w-xl bg-white dark:bg-black py-2">
+  <header class="max-w-xl">
     <h2>
       <slot />
     </h2>
