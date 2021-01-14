@@ -11,7 +11,10 @@
       <Header>Hej, I'm Karl</Header>
       <Subheader>
         <template #text>
-          I'm a Product Designer and "sometimes" Frontend Developer, designing
+          I design and build software, write about the intersection of design and development and create music.
+          <div class="flex justify-start text-left">
+          <p class="text-sm tracking-wider leading-5 uppercase text-gray-400 dark:text-gray-600">Currently</p>
+          Designing
           and defining the Home as a Service at
           <a
             href="https://www.homehero.co.uk"
@@ -21,20 +24,21 @@
             >HomeHero</a
           >
           in London, UK.
+          </div>
         </template>
         <template #buttons>
           <div class="flex flex-col md:flex-row md:space-x-2">
-            <a href="https://www.twitter.com/_kejk">
-              <Button color="blue">
+            <MoreLink link="about">
+              <Button color="indigo">
                 <template #icon>
-                  <twitter-icon
+                  <info-icon
                     size="1x"
                     class="inline-block mr-2 text-white"
                   />
                 </template>
-                <template #label> Follow me on Twitter </template>
+                <template #label> More about me </template>
               </Button>
-            </a>
+            </MoreLink>
             <a href="#" v-scroll-to="'#GET_IN_TOUCH'">
               <Button color="grey" class="mt-2 md:mt-0">
                 <template #icon>
@@ -120,7 +124,7 @@
 </template>
 
 <script>
-import { TwitterIcon, MailIcon, ArrowRightIcon } from "vue-feather-icons";
+import { InfoIcon, MailIcon, ArrowRightIcon } from "vue-feather-icons";
 import getSiteMeta from "~/utils/getSiteMeta.js";
 
 const Cosmic = require("cosmicjs");
@@ -152,7 +156,7 @@ export default {
     };
   },
   components: {
-    TwitterIcon,
+    InfoIcon,
     MailIcon,
     ArrowRightIcon,
   },
