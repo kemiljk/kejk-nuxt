@@ -29,12 +29,10 @@
                 Designing and defining the Home as a Service at
                 <a
                   href="https://www.homehero.co.uk"
-                  class="text-indigo-600 dark:text-indigo-400 font-bold"
                   target="_blank"
                   rel="noreferrer"
                   >HomeHero</a
-                >
-                in London, UK.
+                >.
               </template>
             </IconText>
             <IconText class="flex items-center">
