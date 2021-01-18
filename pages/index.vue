@@ -19,7 +19,7 @@
             <div
               class="flex text-sm tracking-wider leading-normal uppercase text-gray-400"
             >
-              Currently
+              Currently 
             </div>
             <IconText class="flex pt-4 items-center">
               <template #icon>
@@ -37,7 +37,7 @@
             </IconText>
             <IconText class="flex items-center">
               <template #icon>
-                <MapIcon class="pr-4" />
+                <MapIcon class="mr-4" />
               </template>
               <template #text> London, UK </template>
             </IconText>

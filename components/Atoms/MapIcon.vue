@@ -1,30 +1,16 @@
 <template>
-  <div>
-    <svg
-      width="48"
-      height="48"
-      viewBox="0 0 48 48"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <rect x="0.5" y="0.5" width="47" height="47" rx="23.5" fill="#FAFAFC" />
-      <g clip-path="url(#clip0)">
-        <path
-          d="M12.6797 22.6875C10.8867 23.5078 11.2617 26.0156 13.3125 26.0273L22.0312 26.0625C22.207 26.0625 22.2656 26.1328 22.2656 26.3086L22.2891 34.9688C22.2891 36.9844 24.8086 37.4414 25.6992 35.4961L34.5703 16.3008C35.5195 14.25 33.9258 12.8906 31.9688 13.793L12.6797 22.6875ZM15.4688 23.918C15.375 23.918 15.3398 23.8125 15.4453 23.7539L31.9688 16.1953C32.1094 16.1367 32.1914 16.2188 32.1211 16.3594L24.5508 32.8359C24.5039 32.9531 24.3867 32.9297 24.3867 32.8242L24.4336 24.9375C24.4336 24.2227 24.0938 23.8711 23.3555 23.8711L15.4688 23.918Z"
-          fill="#374151"
-        />
-      </g>
-      <rect x="0.5" y="0.5" width="47" height="47" rx="23.5" stroke="#D6D4D9" />
-      <defs>
-        <clipPath id="clip0">
-          <rect
-            width="24"
-            height="24"
-            fill="white"
-            transform="translate(12 12)"
-          />
-        </clipPath>
-      </defs>
-    </svg>
+  <div class="flex items-center justify-center bg-gray-100 rounded-full h-12 w-12">
+    <map-pin-icon size="1x" class="text-gray-800"></map-pin-icon>
   </div>
 </template>
+
+<script>
+  import { MapPinIcon } from 'vue-feather-icons'
+
+  export default {
+    components: {
+      MapPinIcon,
+    }
+  }
+
+</script>
