@@ -142,7 +142,7 @@
 </template>
 
 <script>
-import { InfoIcon, MailIcon, ArrowRightIcon, GlobeIcon } from "vue-feather-icons";
+import { InfoIcon, MailIcon, ArrowRightIcon } from "vue-feather-icons";
 import getSiteMeta from "~/utils/getSiteMeta.js";
 
 const Cosmic = require("cosmicjs");
@@ -176,8 +176,7 @@ export default {
   components: {
     InfoIcon,
     MailIcon,
-    ArrowRightIcon,
-    GlobeIcon
+    ArrowRightIcon
   },
   data() {
     return {
