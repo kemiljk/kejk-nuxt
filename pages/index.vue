@@ -35,20 +35,18 @@
                 >.
               </template>
             </IconText>
-            <div class="flex justify-between items-center">
-              <IconText class="flex items-center">
-                <template #icon>
-                  <MapIcon class="mr-4" />
-                </template>
-                <template #text> London, UK </template>
-              </IconText>
-              <IconText class="flex items-center">
-                <template #icon>
-                  <GlobeIcon class="mr-4" />
-                </template>
-                <template #text> 🇬🇧🇩🇰 </template>
-              </IconText>
-            </div>
+            <IconText class="flex items-center">
+              <template #icon>
+                <MapIcon class="mr-4" />
+              </template>
+              <template #text> London, UK </template>
+            </IconText>
+            <IconText class="flex items-center">
+              <template #icon>
+                <GlobeIcon class="mr-4" />
+              </template>
+              <template #text> 🇬🇧🇩🇰 </template>
+            </IconText>
           </div>
         </template>
         <template #buttons>
