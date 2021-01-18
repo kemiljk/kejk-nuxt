@@ -41,6 +41,12 @@
               </template>
               <template #text> London, UK </template>
             </IconText>
+            <IconText class="flex items-center">
+              <template #icon>
+                <GlobeIcon class="mr-4" />
+              </template>
+              <template #text> 🇬🇧🇩🇰 </template>
+            </IconText>
           </div>
         </template>
         <template #buttons>
@@ -136,7 +142,7 @@
 </template>
 
 <script>
-import { InfoIcon, MailIcon, ArrowRightIcon } from "vue-feather-icons";
+import { InfoIcon, MailIcon, ArrowRightIcon, GlobeIcon } from "vue-feather-icons";
 import getSiteMeta from "~/utils/getSiteMeta.js";
 
 const Cosmic = require("cosmicjs");
@@ -171,6 +177,7 @@ export default {
     InfoIcon,
     MailIcon,
     ArrowRightIcon,
+    GlobeIcon
   },
   data() {
     return {
