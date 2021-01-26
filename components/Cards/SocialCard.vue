@@ -28,11 +28,11 @@
         size="2x"
         class="text-pink-400 pb-4"
       ></dribbble-icon>
-      <music-icon
-        v-if="social.music"
+      <coffee-icon
+        v-if="social.coffee"
         size="2x"
         class="text-red-600 pb-4"
-      ></music-icon>
+      ></coffee-icon>
       <div class="text-md text-gray-900 dark:text-gray-50 font-bold">
         {{ social.title }}
       </div>
@@ -47,7 +47,7 @@ import {
   LinkedinIcon,
   GithubIcon,
   DribbbleIcon,
-  MusicIcon,
+  CoffeeIcon,
 } from "vue-feather-icons";
 
 export default {
@@ -58,7 +58,7 @@ export default {
     LinkedinIcon,
     GithubIcon,
     DribbbleIcon,
-    MusicIcon,
+    CoffeeIcon,
   },
   props: {
     social: {

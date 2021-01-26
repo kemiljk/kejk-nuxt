@@ -96,9 +96,9 @@ export default {
           title: "Dribbble",
         },
         {
-          href: "https://music.apple.com/gb/album/cornerstone/1300802348",
-          music: true,
-          title: "Music",
+          href: "https://www.ko-fi.com/kemiljk",
+          coffee: true,
+          title: "Ko-Fi",
         },
       ],
     };

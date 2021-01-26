@@ -19,7 +19,7 @@
             <div
               class="flex text-sm tracking-wider leading-normal uppercase text-gray-400"
             >
-              Currently 
+              Currently
             </div>
             <IconText class="flex pt-4 items-center">
               <template #icon>
@@ -176,7 +176,7 @@ export default {
   components: {
     InfoIcon,
     MailIcon,
-    ArrowRightIcon
+    ArrowRightIcon,
   },
   data() {
     return {
@@ -244,7 +244,6 @@ export default {
       this.loading = true;
       await bucket
         .getObjects({
-          limit: 6,
           type: "mades",
           props: "_id,title,metadata",
         })
