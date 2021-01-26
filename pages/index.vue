@@ -198,12 +198,32 @@ export default {
     this.getHelpedMakesData();
     this.getMediasData();
     this.getAlbumsData();
-    fetch("../../api/plugin-stats.js")
+    fetch("../../api/handover-plugin-stats.js")
       .then((response) => response.json())
       .then((data) => {
         console.log(data);
-        document.getElementById("install-count").prepend(data.install_count);
-        document.getElementById("like-count").prepend(data.like_count);
+        document
+          .getElementById("handover-install-count")
+          .prepend(data.install_count);
+        document.getElementById("handover-like-count").prepend(data.like_count);
+      });
+    fetch("../../api/randadd-plugin-stats.js")
+      .then((response) => response.json())
+      .then((data) => {
+        console.log(data);
+        document
+          .getElementById("randadd-install-count")
+          .prepend(data.install_count);
+        document.getElementById("randadd-like-count").prepend(data.like_count);
+      });
+    fetch("../../api/randname-plugin-stats.js")
+      .then((response) => response.json())
+      .then((data) => {
+        console.log(data);
+        document
+          .getElementById("randname-install-count")
+          .prepend(data.install_count);
+        document.getElementById("randname-like-count").prepend(data.like_count);
       });
   },
   methods: {
