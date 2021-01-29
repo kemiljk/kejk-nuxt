@@ -207,23 +207,16 @@ export default {
           .prepend(data.install_count);
         document.getElementById("handover-like-count").prepend(data.like_count);
       });
-    fetch("../../api/randadd-plugin-stats.js")
+    fetch("../../api/placeholder-plugin-stats.js")
       .then((response) => response.json())
       .then((data) => {
         console.log(data);
         document
-          .getElementById("randadd-install-count")
+          .getElementById("placeholder-install-count")
           .prepend(data.install_count);
-        document.getElementById("randadd-like-count").prepend(data.like_count);
-      });
-    fetch("../../api/randname-plugin-stats.js")
-      .then((response) => response.json())
-      .then((data) => {
-        console.log(data);
         document
-          .getElementById("randname-install-count")
-          .prepend(data.install_count);
-        document.getElementById("randname-like-count").prepend(data.like_count);
+          .getElementById("placeholder-like-count")
+          .prepend(data.like_count);
       });
   },
   methods: {
