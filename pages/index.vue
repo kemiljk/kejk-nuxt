@@ -218,6 +218,26 @@ export default {
           .getElementById("placeholder-like-count")
           .prepend(data.like_count);
       });
+    fetch("../../api/roundall-plugin-stats.js")
+      .then((response) => response.json())
+      .then((data) => {
+        console.log(data);
+        document
+          .getElementById("roundall-install-count")
+          .prepend(data.install_count);
+        document.getElementById("roundall-like-count").prepend(data.like_count);
+      });
+    fetch("../../api/default-export-plugin-stats.js")
+      .then((response) => response.json())
+      .then((data) => {
+        console.log(data);
+        document
+          .getElementById("default-export-install-count")
+          .prepend(data.install_count);
+        document
+          .getElementById("default-export-like-count")
+          .prepend(data.like_count);
+      });
   },
   methods: {
     async getBlogsData() {
