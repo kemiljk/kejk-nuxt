@@ -33,10 +33,14 @@
               <Tag color="purple" v-if="made.metadata.macos">macOS </Tag>
               <Tag color="pink" v-if="made.metadata.figma">Figma </Tag>
               <Tag color="green" v-if="made.metadata.installcount"
-                ><span :id="made.metadata.installcount">&nbsp;installs</span>
+                ><span :id="made.metadata.installcount" class="flex items-center">&nbsp;<download-icon
+              class="text-green-700 dark:text-green-400" size="12"
+            ></download-icon></span>
               </Tag>
               <Tag color="indigo" v-if="made.metadata.likecount"
-                ><span :id="made.metadata.likecount">&nbsp;likes</span>
+                ><span :id="made.metadata.likecount" class="flex items-center">&nbsp;<heart-icon
+              class="text-indigo-700 dark:text-indigo-400" size="12"
+            ></heart-icon></span>
               </Tag>
               <Tag color="blue" v-if="made.metadata.drafts">Drafts </Tag>
               <Tag color="red" v-if="made.metadata.shortcuts">Shortcuts </Tag>
@@ -79,10 +83,14 @@
               <Tag color="purple" v-if="made.metadata.macos">macOS </Tag>
               <Tag color="pink" v-if="made.metadata.figma">Figma </Tag>
               <Tag color="green" v-if="made.metadata.installcount"
-                ><span :id="made.metadata.installcount">&nbsp;installs</span>
+                ><span :id="made.metadata.installcount" class="flex items-center">&nbsp;<download-icon
+              class="text-green-700 dark:text-green-400" size="12"
+            ></download-icon></span>
               </Tag>
               <Tag color="indigo" v-if="made.metadata.likecount"
-                ><span :id="made.metadata.likecount">&nbsp;likes</span>
+                ><span :id="made.metadata.likecount" class="flex items-center">&nbsp;<heart-icon
+              class="text-indigo-700 dark:text-indigo-400" size="12"
+            ></heart-icon></span>
               </Tag>
               <Tag color="blue" v-if="made.metadata.drafts">Drafts </Tag>
               <Tag color="red" v-if="made.metadata.shortcuts">Shortcuts </Tag>
@@ -103,7 +111,7 @@
 </template>
 
 <script>
-import { ArrowRightIcon, CompassIcon, DownloadIcon } from "vue-feather-icons";
+import { ArrowRightIcon, CompassIcon, DownloadIcon, HeartIcon } from "vue-feather-icons";
 
 export default {
   name: "Made",
@@ -111,6 +119,7 @@ export default {
     ArrowRightIcon,
     CompassIcon,
     DownloadIcon,
+    HeartIcon
   },
   props: {
     made: {
