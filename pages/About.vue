@@ -71,6 +71,11 @@ export default {
       about: {},
       socials: [
         {
+          href: "https://www.figma.com/@_kejk",
+          figma: true,
+          title: "Figma",
+        },
+        {
           href: "https://www.twitter.com/_kejk",
           twitter: true,
           title: "Twitter",
@@ -79,11 +84,6 @@ export default {
           href: "https://www.Linkedin.com/kejk",
           linkedin: true,
           title: "LinkedIn",
-        },
-        {
-          href: "https://www.figma.com/@_kejk",
-          figma: true,
-          title: "Figma",
         },
         {
           href: "https://www.github.com/kemiljk/",
