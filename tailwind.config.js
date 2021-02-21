@@ -11,6 +11,9 @@ module.exports = {
   darkMode: "media", // or 'media' or 'class'
   theme: {
     extend: {
+      colors: {
+        gray: colors.coolGray,
+      }
       fontFamily: {
         sans: ["Inter", ...defaultTheme.fontFamily.sans],
       },
