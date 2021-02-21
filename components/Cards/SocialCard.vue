@@ -33,7 +33,7 @@
         size="2x"
         class="text-red-600 pb-4"
       ></coffee-icon>
-      <div class="text-md text-gray-900 dark:text-gray-50 font-bold">
+      <div class="block text-md text-gray-900 dark:text-gray-50 font-bold">
         {{ social.title }}
       </div>
   </button>
