@@ -1,6 +1,6 @@
 <template>
   <button
-    class="flex justify-center items-center text-center font-medium w-full rounded-lg px-6 py-3 transition duration-500 ease focus:outline-none focus:ring-2 focus:ring-white"
+    class="flex justify-center items-center text-center font-medium w-full rounded-lg px-6 py-3 transition duration-500 ease focus:outline-none focus:ring-2 focus:ring-white no-underline"
     :class="colorClasses"
   >
     <slot name="icon" />

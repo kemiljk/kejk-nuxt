@@ -1,6 +1,6 @@
 <template>
     <NuxtLink :to="linkLocation"
-        class="flex flex-row justify-start w-max mt-4 text-black hover:bg-gray-100 dark:hover:bg-gray-800 bg-gray-50 dark:bg-gray-900 dark:text-white rounded-xl px-4 py-2"
+        class="flex flex-row justify-start w-max mt-4 text-black hover:bg-gray-100 dark:hover:bg-gray-800 bg-gray-50 dark:bg-gray-900 dark:text-white rounded-xl px-4 py-2 no-underline"
       >
         <slot></slot>
         <arrow-right-icon
