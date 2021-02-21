@@ -57,9 +57,9 @@
                 required
               />
               <input type="hidden" value="1" name="embed" />
-              <Button type="submit" color="indigo" class="mt-2 md:mt-0">
+              <Button type="submit" color="white" class="mt-2 md:mt-0">
                 <template #icon>
-                  <mail-icon size="1x" class="inline-block mr-2 text-white" />
+                  <mail-icon size="1x" class="inline-block mr-2 text-gray-900 dark:text-gray-50" />
                 </template>
                 <template #label> Subscribe for updates </template>
               </Button>
