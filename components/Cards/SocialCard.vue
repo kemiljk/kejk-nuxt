@@ -1,8 +1,8 @@
 <template>
+    <a :href="social.href" target="_blank" rel="noreferrer">
   <button
     class="flex flex-cols-6 sm:flex-cols-3 p-4 bg-gray-100 dark:bg-gray-900 hover:shadow-md transform hover:-rotate-2 rounded-xl hover:bg-gray-50 dark:hover:bg-gray-800 transition ease-in-out duration-300 w-full focus:outline-none focus:ring-2 focus:ring-white"
   >
-    <a :href="social.href" target="_blank" rel="noreferrer">
       <twitter-icon
         v-if="social.twitter"
         size="2x"
@@ -36,8 +36,8 @@
       <div class="text-md text-gray-900 dark:text-gray-50 font-bold">
         {{ social.title }}
       </div>
-    </a>
   </button>
+  </a>
 </template>
 
 <script>
