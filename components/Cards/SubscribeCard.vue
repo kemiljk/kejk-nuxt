@@ -14,7 +14,7 @@
         >
           <Button color="grey">
             <template #icon>
-              <rss-icon size="1x" class="inline-block mr-2 text-gray-100" />
+              <rss-icon size="1x" class="inline-block mr-2 text-gray-900 dark:text-gray-50" />
             </template>
             <template #label> Subscribe via RSS </template>
           </Button>
