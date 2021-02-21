@@ -4,7 +4,7 @@
 
 @layer base {
   a {
-    @apply text-indigo-500 dark:text-indigo-300 font-bold;
+    @apply text-black dark:text-white font-medium underline;
   }
 
   h1 {
