@@ -6,36 +6,36 @@
       <twitter-icon
         v-if="social.twitter"
         size="2x"
-        class="text-blue-400 pb-4"
+        class="text-blue-400"
       ></twitter-icon>
       <linkedin-icon
         v-if="social.linkedin"
         size="2x"
-        class="text-blue-600 dark:text-blue-500 pb-4"
+        class="text-blue-600 dark:text-blue-500"
       ></linkedin-icon>
       <figma-icon
         v-if="social.figma"
         size="2x"
-        class="text-green-600 dark:text-green-400 pb-4"
+        class="text-green-600 dark:text-green-400"
       ></figma-icon>
       <github-icon
         v-if="social.github"
         size="2x"
-        class="dark:text-white text-black pb-4"
+        class="dark:text-white text-black"
       ></github-icon>
       <dribbble-icon
         v-if="social.dribbble"
         size="2x"
-        class="text-pink-400 pb-4"
+        class="text-pink-400"
       ></dribbble-icon>
       <coffee-icon
         v-if="social.coffee"
         size="2x"
-        class="text-red-600 pb-4"
+        class="text-red-600"
       ></coffee-icon>
-      <div class="flex text-md text-gray-900 dark:text-gray-50 font-bold">
+      <span class="ml-2 text-md text-gray-900 dark:text-gray-50 font-bold">
         {{ social.title }}
-      </div>
+      </span>
   </button>
   </a>
 </template>
