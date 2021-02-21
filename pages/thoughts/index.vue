@@ -26,7 +26,7 @@
           v-for="tab in tabs"
           :key="tab"
           @click="selected = tab"
-          class="block font-medium bg-gray-100 dark:bg-gray-800 px-4 py-2 text-gray-400 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-50 hover:bg-gray-100 rounded-md dark:hover:bg-gray-800"
+          class="block font-medium bg-gray-100 dark:bg-gray-800 px-4 py-2 text-gray-600 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-50 hover:bg-gray-100 rounded-md dark:hover:bg-gray-800"
           :class="[{ active: selected === tab }]"
         >
           {{ tab }}
