@@ -106,7 +106,7 @@
             <button
               id="submitbutton"
               type="submit"
-              class="mt-8 md:w-32 bg-indigo-500 hover:bg-indigo-600 dark:bg-indigo-700 text-white font-bold py-3 px-6 rounded-lg transition ease-in-out duration-300"
+              class="mt-8 md:w-32 bg-black hover:bg-gray-900 dark:bg-white text-white dark:text-gray-900 dark:hover:bg-gray-100 font-bold py-3 px-6 rounded-lg transition ease-in-out duration-300"
             >
               Submit
             </button>

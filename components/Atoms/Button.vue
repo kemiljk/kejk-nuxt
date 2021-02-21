@@ -19,6 +19,7 @@ export default {
         purple: "bg-purple-900 hover:bg-purple-700 text-purple-100",
         indigo: "text-indigo-50 bg-indigo-600 hover:bg-indigo-700",
         grey: "bg-gray-300 dark:bg-gray-700 hover:bg-gray-400 dark:hover:bg-gray-600 text-gray-800 dark:text-white",
+        white: "bg-black hover:bg-gray-900 dark:bg-white text-white dark:text-gray-900 dark:hover:bg-gray-100",
       }[this.color];
     },
   },

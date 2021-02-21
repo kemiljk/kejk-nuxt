@@ -52,9 +52,9 @@
         <template #buttons>
           <div class="flex flex-col md:flex-row md:space-x-2">
             <NuxtLink to="/about">
-              <Button color="indigo">
+              <Button color="white">
                 <template #icon>
-                  <info-icon size="1x" class="inline-block mr-2 text-white" />
+                  <info-icon size="1x" class="inline-block mr-2 text-gray-900" />
                 </template>
                 <template #label> More about me </template>
               </Button>
