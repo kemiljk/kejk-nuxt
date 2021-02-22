@@ -1,8 +1,8 @@
 <template>
-    <a :href="social.href" target="_blank" rel="noreferrer">
-  <button
-    class="flex items-center justify-center p-4 bg-gray-100 dark:bg-gray-900 hover:shadow-md transform hover:-rotate-2 rounded-xl hover:bg-gray-50 dark:hover:bg-gray-800 transition ease-in-out duration-300 w-full focus:outline-none focus:ring-2 focus:ring-white"
-  >
+  <a :href="social.href" target="_blank" rel="noreferrer" class="no-underline">
+    <button
+      class="flex items-center justify-center p-4 bg-gray-100 dark:bg-gray-900 hover:shadow-md transform hover:-rotate-2 rounded-xl hover:bg-gray-50 dark:hover:bg-gray-800 transition ease-in-out duration-300 w-full focus:outline-none focus:ring-2 focus:ring-white"
+    >
       <twitter-icon
         v-if="social.twitter"
         size="1x"
@@ -33,10 +33,12 @@
         size="1x"
         class="text-red-600"
       ></coffee-icon>
-      <span class="ml-2 text-md text-gray-900 dark:text-gray-50 font-bold">
+      <span
+        class="ml-2 text-md text-gray-900 dark:text-gray-50 font-medium text-xs"
+      >
         {{ social.title }}
       </span>
-  </button>
+    </button>
   </a>
 </template>
 
