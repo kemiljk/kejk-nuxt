@@ -54,7 +54,10 @@
             <NuxtLink to="/about">
               <Button color="white">
                 <template #icon>
-                  <info-icon size="1x" class="inline-block mr-2 text-gray-50 dark:text-gray-900" />
+                  <info-icon
+                    size="1x"
+                    class="inline-block mr-2 text-gray-50 dark:text-gray-900"
+                  />
                 </template>
                 <template #label> More about me </template>
               </Button>
