@@ -59,7 +59,7 @@
                 <template #label> More about me </template>
               </Button>
             </NuxtLink>
-            <a href="#" v-scroll-to="'#GET_IN_TOUCH'">
+            <a href="#" v-scroll-to="'#GET_IN_TOUCH'" class="no-underline">
               <Button color="grey" class="mt-2 md:mt-0">
                 <template #icon>
                   <mail-icon
