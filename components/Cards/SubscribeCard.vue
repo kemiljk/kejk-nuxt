@@ -11,6 +11,7 @@
           href="https://www.kejk.tech/feed.xml"
           target="_blank"
           rel="noreferrer"
+          class="no-underline"
         >
           <Button color="grey">
             <template #icon>
@@ -23,6 +24,7 @@
           href="https://share.mailbrew.com/_kejk/kejk-sXWcveOcS678?aff=_kejk"
           target="_blank"
           rel="noreferrer"
+          class="no-underline"
         >
           <Button color="red" class="mt-2 md:mt-0">
             <template #icon>
