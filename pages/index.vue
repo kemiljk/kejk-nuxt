@@ -46,7 +46,7 @@
               <template #icon>
                 <GlobeIcon class="mr-4" />
               </template>
-              <template #text> 🇬🇧🇩🇰 </template>
+              <template #text><span class="text-lg"> 🇬🇧🇩🇰 </span></template>
             </IconText>
             </div>
           </div>
