@@ -46,9 +46,11 @@
               <template #icon>
                 <GlobeIcon class="mr-4" />
               </template>
-              <template #text class="inline-flex w-8">
-        <GbIcon />
+              <template #text>
+          <div class="inline-flex w-8">
+        <GbIcon class="mr-4" />
         <DkIcon />
+        </div>
 </template>
             </IconText>
             </div>
