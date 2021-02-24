@@ -25,7 +25,7 @@
               <template #icon>
                 <HomeHeroIcon class="pr-4" />
               </template>
-              <template #text>
+              <template #text class=text-base">
                 Designing and defining the Home as a Service at
                 <a
                   href="https://www.homehero.co.uk"
@@ -40,13 +40,16 @@
               <template #icon>
                 <MapIcon class="mr-4" />
               </template>
-              <template #text> London, UK </template>
+              <template #text class="text-base">London, UK</template>
             </IconText>
             <IconText class="flex items-center">
               <template #icon>
                 <GlobeIcon class="mr-4" />
               </template>
-              <template #text class="text-lg">🇬🇧🇩🇰</template>
+              <template #text class="inline-flex w-8">
+        <GbIcon />
+        <DkIcon />
+</template>
             </IconText>
             </div>
           </div>
