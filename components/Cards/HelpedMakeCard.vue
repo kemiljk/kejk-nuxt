@@ -25,8 +25,8 @@
             <Tag color="purple" v-if="helpedMake.metadata.development"
               >Development
             </Tag>
-            <Tag color="pink" v-if="helpedMake.metadata.consultancy"
-              >Consultancy
+            <Tag color="pink" v-if="helpedMake.metadata.brand"
+              >Brand
             </Tag>
           </div>
           <h4 class="pt-4 font-bold text-sm text-gray-900 dark:text-gray-100">
