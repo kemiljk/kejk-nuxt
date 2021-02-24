@@ -35,7 +35,7 @@
                 >.
               </template>
             </IconText>
-            <div class="flex inline-flex items-center space-x-4">
+            <div class="flex inline-flex items-center space-x-8">
             <IconText class="flex items-center">
               <template #icon>
                 <MapIcon class="mr-4" />
@@ -46,7 +46,7 @@
               <template #icon>
                 <GlobeIcon class="mr-4" />
               </template>
-              <template #text><span class="text-lg"> 🇬🇧🇩🇰 </span></template>
+              <template #text class="text-lg">🇬🇧🇩🇰</template>
             </IconText>
             </div>
           </div>
