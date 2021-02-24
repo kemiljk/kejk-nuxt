@@ -46,11 +46,7 @@
               <template #icon>
                 <GlobeIcon class="mr-4" />
               </template>
-              <template #text>
-          <div class="inline-flex w-8">
-🇬🇧 🇩🇰
-        </div>
-</template>
+              <template #text>🇬🇧🇩🇰</template>
             </IconText>
             </div>
           </div>
