@@ -40,7 +40,9 @@
               <template #icon>
                 <MapIcon class="mr-4" />
               </template>
-              <template #text class="text-base">London, UK</template>
+              <template #text class="text-base">
+               London, UK
+              </template>
             </IconText>
             <IconText class="flex items-center mr-2">
               <template #icon>
@@ -51,6 +53,7 @@
       </template>
             </IconText>
           </div>
+        </template>
         <template #buttons>
           <div class="flex flex-col md:flex-row md:space-x-2">
             <NuxtLink to="/about">
