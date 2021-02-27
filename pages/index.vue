@@ -36,7 +36,7 @@
               </template>
             </IconText>
             <div class="flex inline-flex items-center space-x-8">
-            <IconText class="flex items-center">
+            <IconText class="flex items-center mr-2">
               <template #icon>
                 <MapIcon class="mr-4" />
               </template>
