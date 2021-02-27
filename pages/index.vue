@@ -243,6 +243,17 @@ export default {
           .getElementById("default-export-like-count")
           .prepend(data.like_count);
       });
+    fetch("../../api/perfect-radius-plugin-stats.js")
+      .then((response) => response.json())
+      .then((data) => {
+        console.log(data);
+        document
+          .getElementById("perfect-radius-install-count")
+          .prepend(data.install_count);
+        document
+          .getElementById("perfect-radius-like-count")
+          .prepend(data.like_count);
+      });
   },
   methods: {
     async getBlogsData() {
