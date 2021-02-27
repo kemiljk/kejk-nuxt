@@ -16,16 +16,16 @@
           <div
             class="flex flex-col md:w-3/4 pt-8 justify-center mx-auto text-left"
           >
-            <span
+            <div
               class="flex text-sm tracking-wider leading-normal uppercase text-gray-400"
             >
               Currently
-            </span>
+            </div>
             <IconText class="flex pt-4 items-center">
               <template #icon>
                 <HomeHeroIcon class="pr-4" />
               </template>
-              <template #text class=text-base">
+              <template #text>
                 Designing and defining the Home as a Service at
                 <a
                   href="https://www.homehero.co.uk"
@@ -40,18 +40,15 @@
               <template #icon>
                 <MapIcon class="mr-4" />
               </template>
-              <template #text class="text-base">
-               London, UK
-              </template>
+              <template #text> London, UK </template>
             </IconText>
-            <IconText class="flex items-center mr-2">
+            <IconText class="flex items-center">
               <template #icon>
-                <GlobeIcon class="ml-4 mr-4" />
+                <GlobeIcon class="mr-4" />
               </template>
-              <template #text>
-                🇬🇧🇩🇰
-      </template>
+              <template #text> 🇬🇧🇩🇰 </template>
             </IconText>
+            </div>
           </div>
         </template>
         <template #buttons>
