@@ -42,7 +42,7 @@
               </template>
               <template #text class="text-base">London, UK</template>
             </IconText>
-            <IconText class="flex items-center">
+            <IconText class="flex items-center mr-2">
               <template #icon>
                 <GlobeIcon class="mr-4" />
               </template>
