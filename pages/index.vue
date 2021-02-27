@@ -16,11 +16,11 @@
           <div
             class="flex flex-col md:w-3/4 pt-8 justify-center mx-auto text-left"
           >
-            <div
+            <span
               class="flex text-sm tracking-wider leading-normal uppercase text-gray-400"
             >
               Currently
-            </div>
+            </span>
             <IconText class="flex pt-4 items-center">
               <template #icon>
                 <HomeHeroIcon class="pr-4" />
@@ -51,7 +51,6 @@
       </template>
             </IconText>
           </div>
-        </template>
         <template #buttons>
           <div class="flex flex-col md:flex-row md:space-x-2">
             <NuxtLink to="/about">
