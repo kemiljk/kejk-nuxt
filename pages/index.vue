@@ -44,7 +44,7 @@
             </IconText>
             <IconText class="flex items-center mr-2">
               <template #icon>
-                <GlobeIcon class="mr-4" />
+                <GlobeIcon class="ml-4 mr-4" />
               </template>
               <template #text>🇬🇧🇩🇰</template>
             </IconText>
