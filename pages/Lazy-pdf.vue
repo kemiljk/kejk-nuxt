@@ -39,7 +39,7 @@
             <div
               class="flex flex-col md:flex-row justify-center md:justify-start"
             >
-              <a :href="`${download.url}`">
+              <a :href="`${download.url}`" class="no-underline">
                 <Button color="purple">
                   <template #icon>
                     <download-icon
