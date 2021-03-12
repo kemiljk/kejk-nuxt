@@ -80,7 +80,7 @@
       </Subheader>
       <H2Header class="pt-16">Some things I've made.</H2Header>
       <div class="flex flex-row">
-        <div class="grid w-full sm:grid-cols-2 md:grid-cols-4 gap-4">
+        <div class="grid w-full sm:grid-cols-2 md:grid-cols-3 gap-4">
           <div v-for="made in mades" :key="made.title">
             <keep-alive>
               <MadeCard :made="made" />
