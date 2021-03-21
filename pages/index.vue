@@ -17,11 +17,16 @@
             class="flex flex-col md:w-3/4 pt-8 justify-center mx-auto text-left"
           >
             <div
-              class="flex text-sm tracking-wider leading-normal uppercase text-gray-400"
+              class="flex text-sm tracking-wider leading-normal uppercase text-gray-600 dark:text-gray-400"
             >
               Currently
             </div>
-            <IconText class="flex pt-4 items-center">
+            <div
+              class="flex text-sm font-bold pt-4 text-gray-800 dark:text-gray-200"
+            >
+              Full-time <span class="ml-2 text-indigo-500">———</span>
+            </div>
+            <IconText class="flex items-center">
               <template #icon>
                 <HomeHeroIcon class="pr-4" />
               </template>
@@ -35,37 +40,40 @@
                 >.
               </template>
             </IconText>
-            <div class="flex items-center space-x-16">
-              <IconText class="flex items-center">
-                <template #icon>
-                  <CosmicIcon class="pr-4" />
-                </template>
-                <template #text>
-                  Design at
-                  <a
-                    href="https://www.cosmicjs.com"
-                    target="_blank"
-                    rel="noreferrer"
-                    >Cosmic</a
-                  >.
-                </template>
-              </IconText>
-              <IconText class="flex items-center">
-                <template #icon>
-                  <MmacIcon class="pr-4" />
-                </template>
-                <template #text>
-                  Design at
-                  <a
-                    href="https://www.makemeacocktail.com"
-                    target="_blank"
-                    rel="noreferrer"
-                    >Make Me A Cocktail</a
-                  >.
-                </template>
-              </IconText>
+            <div
+              class="flex text-sm font-bold pt-8 text-gray-800 dark:text-gray-200"
+            >
+              Part-time <span class="ml-2 text-indigo-500">———</span>
             </div>
-            <div class="flex items-center space-x-14">
+            <IconText class="flex items-center">
+              <template #icon>
+                <CosmicIcon class="pr-4" />
+              </template>
+              <template #text>
+                Designing the best API-first headless CMS out there at
+                <a
+                  href="https://www.cosmicjs.com"
+                  target="_blank"
+                  rel="noreferrer"
+                  >Cosmic</a
+                >.
+              </template>
+            </IconText>
+            <IconText class="flex items-center">
+              <template #icon>
+                <MmacIcon class="pr-4" />
+              </template>
+              <template #text>
+                Designing the world's best cocktail resource at
+                <a
+                  href="https://www.makemeacocktail.com"
+                  target="_blank"
+                  rel="noreferrer"
+                  >Make Me A Cocktail</a
+                >.
+              </template>
+            </IconText>
+            <div class="flex items-center pt-8 justify-between">
               <IconText class="flex items-center mr-2">
                 <template #icon>
                   <MapIcon class="mr-4" />
