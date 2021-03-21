@@ -35,19 +35,49 @@
                 >.
               </template>
             </IconText>
-            <div class="flex inline-flex items-center space-x-8">
-            <IconText class="flex items-center mr-2">
-              <template #icon>
-                <MapIcon class="mr-4" />
-              </template>
-              <template #text> London, UK </template>
-            </IconText>
-            <IconText class="flex items-center">
-              <template #icon>
-                <GlobeIcon class="mr-4" />
-              </template>
-              <template #text> 🇬🇧🇩🇰 </template>
-            </IconText>
+            <div class="flex items-center space-x-16">
+              <IconText class="flex items-center">
+                <template #icon>
+                  <CosmicIcon class="pr-4" />
+                </template>
+                <template #text>
+                  Design at
+                  <a
+                    href="https://www.cosmicjs.com"
+                    target="_blank"
+                    rel="noreferrer"
+                    >Cosmic</a
+                  >.
+                </template>
+              </IconText>
+              <IconText class="flex items-center">
+                <template #icon>
+                  <MmacIcon class="pr-4" />
+                </template>
+                <template #text>
+                  Design at
+                  <a
+                    href="https://www.makemeacocktail.com"
+                    target="_blank"
+                    rel="noreferrer"
+                    >Make Me A Cocktail</a
+                  >.
+                </template>
+              </IconText>
+            </div>
+            <div class="flex items-center space-x-14">
+              <IconText class="flex items-center mr-2">
+                <template #icon>
+                  <MapIcon class="mr-4" />
+                </template>
+                <template #text> London, UK </template>
+              </IconText>
+              <IconText class="flex items-center">
+                <template #icon>
+                  <GlobeIcon class="mr-4" />
+                </template>
+                <template #text> 🇬🇧🇩🇰 </template>
+              </IconText>
             </div>
           </div>
         </template>
