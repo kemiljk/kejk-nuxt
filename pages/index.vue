@@ -244,7 +244,6 @@ export default {
     fetch("../../api/handover-plugin-stats.js")
       .then((response) => response.json())
       .then((data) => {
-        console.log(data);
         document
           .getElementById("handover-install-count")
           .prepend(data.install_count);
@@ -253,7 +252,6 @@ export default {
     fetch("../../api/placeholder-plugin-stats.js")
       .then((response) => response.json())
       .then((data) => {
-        console.log(data);
         document
           .getElementById("placeholder-install-count")
           .prepend(data.install_count);
@@ -264,7 +262,6 @@ export default {
     fetch("../../api/roundall-plugin-stats.js")
       .then((response) => response.json())
       .then((data) => {
-        console.log(data);
         document
           .getElementById("roundall-install-count")
           .prepend(data.install_count);
@@ -273,7 +270,6 @@ export default {
     fetch("../../api/default-export-plugin-stats.js")
       .then((response) => response.json())
       .then((data) => {
-        console.log(data);
         document
           .getElementById("default-export-install-count")
           .prepend(data.install_count);
@@ -284,12 +280,21 @@ export default {
     fetch("../../api/perfect-radius-plugin-stats.js")
       .then((response) => response.json())
       .then((data) => {
-        console.log(data);
         document
           .getElementById("perfect-radius-install-count")
           .prepend(data.install_count);
         document
           .getElementById("perfect-radius-like-count")
+          .prepend(data.like_count);
+      });
+    fetch("../../api/shape-to-frame-stats.js")
+      .then((response) => response.json())
+      .then((data) => {
+        document
+          .getElementById("shape-to-frame-install-count")
+          .prepend(data.install_count);
+        document
+          .getElementById("shape-to-frame-like-count")
           .prepend(data.like_count);
       });
   },
