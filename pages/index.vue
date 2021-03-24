@@ -287,7 +287,7 @@ export default {
           .getElementById("perfect-radius-like-count")
           .prepend(data.like_count);
       });
-    fetch("../../api/shape-to-frame-stats.js")
+    fetch("../../api/shape-to-frame-plugin-stats.js")
       .then((response) => response.json())
       .then((data) => {
         document
