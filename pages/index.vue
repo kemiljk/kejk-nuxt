@@ -117,18 +117,43 @@
         </template>
       </Subheader>
       <H2Header class="pt-16">Some things I've made.</H2Header>
-      <div class="flex flex-row">
-        <div class="grid w-full sm:grid-cols-2 md:grid-cols-3 gap-4">
+      <!-- <div class="flex flex-row">
+        <div class="grid w-full sm:grid-cols-2 gap-4">
           <div v-for="made in mades" :key="made.title">
             <keep-alive>
               <MadeCard :made="made" />
             </keep-alive>
           </div>
         </div>
+      </div> -->
+      <div class="flex w-full">
+        <div class="grid w-full">
+          <keep-alive>
+            <Plugin :plugin="plugin" />
+          </keep-alive>
+        </div>
+      </div>
+      <div class="flex flex-row pt-4">
+        <div class="grid w-full sm:grid-cols-2 gap-4">
+          <div v-for="app in apps" :key="app.title">
+            <keep-alive>
+              <AppCard :app="app" />
+            </keep-alive>
+          </div>
+        </div>
+      </div>
+      <div class="flex flex-row pt-4">
+        <div class="grid w-full sm:grid-cols-2 gap-4">
+          <div v-for="utility in utilities" :key="utility.title">
+            <keep-alive>
+              <UtilityCard :utility="utility" />
+            </keep-alive>
+          </div>
+        </div>
       </div>
       <H2Header class="pt-16">Thoughts on Design and Development.</H2Header>
       <div class="flex flex-row mt-4">
-        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-8">
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
           <div v-for="blog in blogs" :key="blog._id">
             <keep-alive>
               <BlogCard :blog="blog" />
@@ -224,23 +249,29 @@ export default {
   data() {
     return {
       loading: false,
+      apps: {},
       medias: {},
       albums: {},
       mades: {},
+      utilities: {},
       helpedMakes: {},
       links: {},
       blogs: {},
+      plugin: {},
       slug: "",
     };
   },
   created() {
     this.slug = this.$route.params.slug;
+    this.getAppsData();
     this.getBlogsData();
     this.getLinksData();
     this.getMadesData();
+    this.getUtilitiesData();
     this.getHelpedMakesData();
     this.getMediasData();
     this.getAlbumsData();
+    this.fetchPluginData();
     fetch("../../api/handover-plugin-stats.js")
       .then((response) => response.json())
       .then((data) => {
@@ -299,6 +330,21 @@ export default {
       });
   },
   methods: {
+    async getAppsData() {
+      this.error = this.app = null;
+      this.loading = true;
+      await bucket
+        .getObjects({
+          type: "apps",
+          props: "_id,slug,title,content,metadata,created_at,modified_at",
+          sort: "-created_at",
+        })
+        .then((data) => {
+          const apps = data.objects;
+          this.loading = false;
+          this.apps = apps;
+        });
+    },
     async getBlogsData() {
       this.error = this.blog = null;
       this.loading = true;
@@ -345,6 +391,20 @@ export default {
           this.mades = mades;
         });
     },
+    async getUtilitiesData() {
+      this.error = this.utility = null;
+      this.loading = true;
+      await bucket
+        .getObjects({
+          type: "utilities",
+          props: "_id,title,metadata",
+        })
+        .then((data) => {
+          const utilities = data.objects;
+          this.loading = false;
+          this.utilities = utilities;
+        });
+    },
     async getHelpedMakesData() {
       this.error = this.helpedMake = null;
       this.loading = true;
@@ -387,6 +447,18 @@ export default {
           const albums = data.objects;
           this.loading = false;
           this.albums = albums;
+        });
+    },
+    async fetchPluginData() {
+      this.loading = true;
+      await bucket
+        .getObject({
+          slug: "plugin",
+          props: "slug,title,content,metadata",
+        })
+        .then((data) => {
+          this.plugin = data.object;
+          this.loading = false;
         });
     },
   },
