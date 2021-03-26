@@ -4,6 +4,15 @@
       <NavItem to="/" isActive id="HOME" v-scroll-to="'#HOME'">Home</NavItem>
       <NavItem to="/about">About</NavItem>
       <NavItem to="/thoughts">Thoughts</NavItem>
+      <NavItem href="https://www.plugins.run" extLink>
+        <span class="flex items-center">
+          Plugins
+          <external-link-icon
+            size="1x"
+            class="ml-2 text-gray-700 dark:text-gray-300"
+          ></external-link-icon>
+        </span>
+      </NavItem>
       <NavItem to="/bookmarks">Bookmarks</NavItem>
       <NavItem to="/uses">Uses</NavItem>
     </Nav>
@@ -117,15 +126,6 @@
         </template>
       </Subheader>
       <H2Header class="pt-16">Some things I've made.</H2Header>
-      <!-- <div class="flex flex-row">
-        <div class="grid w-full sm:grid-cols-2 gap-4">
-          <div v-for="made in mades" :key="made.title">
-            <keep-alive>
-              <MadeCard :made="made" />
-            </keep-alive>
-          </div>
-        </div>
-      </div> -->
       <div class="flex w-full">
         <div class="grid w-full">
           <keep-alive>
@@ -210,7 +210,12 @@
 </template>
 
 <script>
-import { InfoIcon, MailIcon, ArrowRightIcon } from "vue-feather-icons";
+import {
+  InfoIcon,
+  MailIcon,
+  ArrowRightIcon,
+  ExternalLinkIcon,
+} from "vue-feather-icons";
 import getSiteMeta from "~/utils/getSiteMeta.js";
 
 const Cosmic = require("cosmicjs");
@@ -245,6 +250,7 @@ export default {
     InfoIcon,
     MailIcon,
     ArrowRightIcon,
+    ExternalLinkIcon,
   },
   data() {
     return {

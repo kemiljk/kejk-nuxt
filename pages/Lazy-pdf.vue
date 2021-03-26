@@ -4,6 +4,18 @@
       <NavItem to="/">Home</NavItem>
       <NavItem to="/about">About</NavItem>
       <NavItem to="/thoughts">Thoughts</NavItem>
+      <NavItem href="https://www.plugins.run" extLink>
+        <span class="flex items-center">
+          Plugins
+          <external-link-icon
+            size="1x"
+            class="ml-2 text-gray-700 dark:text-gray-300"
+          ></external-link-icon>
+        </span>
+        <external-link-icon
+          class="text-gray-700 dark:text-gray-300"
+        ></external-link-icon>
+      </NavItem>
       <NavItem to="/bookmarks">Bookmarks</NavItem>
       <NavItem to="/uses">Uses</NavItem>
     </Nav>
@@ -126,12 +138,13 @@
 
 <script>
 import getSiteMeta from "~/utils/getSiteMeta.js";
-import { DownloadIcon } from "vue-feather-icons";
+import { DownloadIcon, ExternalLinkIcon } from "vue-feather-icons";
 
 export default {
   name: "Lazy-PDF",
   components: {
     DownloadIcon,
+    ExternalLinkIcon,
   },
   computed: {
     meta() {

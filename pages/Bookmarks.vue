@@ -4,6 +4,15 @@
       <NavItem to="/">Home</NavItem>
       <NavItem to="/about">About</NavItem>
       <NavItem to="/thoughts">Thoughts</NavItem>
+      <NavItem href="https://www.plugins.run" extLink>
+        <span class="flex items-center">
+          Plugins
+          <external-link-icon
+            size="1x"
+            class="ml-2 text-gray-700 dark:text-gray-300"
+          ></external-link-icon>
+        </span>
+      </NavItem>
       <NavItem
         to="/bookmarks"
         isActive
@@ -37,6 +46,7 @@
 </template>
 
 <script>
+import { ExternalLinkIcon } from "vue-feather-icons";
 import getSiteMeta from "~/utils/getSiteMeta.js";
 import Cosmic from "cosmicjs";
 const api = Cosmic();
@@ -65,6 +75,9 @@ export default {
       meta: [...this.meta],
       link: [{ rel: "canonical", href: "https://kejk.tech/bookmarks" }],
     };
+  },
+  components: {
+    ExternalLinkIcon,
   },
   data() {
     return {

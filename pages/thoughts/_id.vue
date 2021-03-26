@@ -6,6 +6,16 @@
       <NavItem to="/thoughts" isActive id="THOUGHTS" v-scroll-to="'#THOUGHTS'"
         >Thoughts</NavItem
       >
+      <NavItem href="https://www.plugins.run" extLink>
+        <span class="flex items-center">
+          Plugins
+          <external-link-icon
+            size="1x"
+            class="ml-2 text-gray-700 dark:text-gray-300"
+          ></external-link-icon>
+        </span>
+      </NavItem>
+      <NavItem to="/bookmarks">Bookmarks</NavItem>
       <NavItem to="/uses">Uses</NavItem>
     </Nav>
     <div class="mx-auto px-4">
@@ -36,11 +46,15 @@
 
 <script>
 import getSiteMeta from "~/utils/getSiteMeta.js";
+import { ExternalLinkIcon } from "vue-feather-icons";
 import getBlog from "../../queries/getBlog";
 import Prism from "~/plugins/prism";
 
 export default {
   name: "BlogView",
+  components: {
+    ExternalLinkIcon,
+  },
   async asyncData({ app, route, redirect }) {
     let data = {};
     try {

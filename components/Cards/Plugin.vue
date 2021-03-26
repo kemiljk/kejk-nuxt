@@ -32,9 +32,9 @@
                 ></p>
               </div>
             </div>
-            <compass-icon
+            <external-link-icon
               class="text-gray-700 dark:text-gray-300"
-            ></compass-icon>
+            ></external-link-icon>
           </header>
           <hr
             class="border border-solid border-gray-300 dark:border-gray-800"
@@ -57,12 +57,12 @@
 </template>
 
 <script>
-import { CompassIcon } from "vue-feather-icons";
+import { ExternalLinkIcon } from "vue-feather-icons";
 
 export default {
   name: "Plugin",
   components: {
-    CompassIcon,
+    ExternalLinkIcon,
   },
   data() {
     return {

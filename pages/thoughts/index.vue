@@ -6,6 +6,15 @@
       <NavItem to="/thoughts" isActive id="THOUGHTS" v-scroll-to="'#THOUGHTS'">
         Thoughts
       </NavItem>
+      <NavItem href="https://www.plugins.run" extLink>
+        <span class="flex items-center">
+          Plugins
+          <external-link-icon
+            size="1x"
+            class="ml-2 text-gray-700 dark:text-gray-300"
+          ></external-link-icon>
+        </span>
+      </NavItem>
       <NavItem to="/bookmarks">Bookmarks</NavItem>
       <NavItem to="/uses">Uses</NavItem>
     </Nav>
@@ -41,6 +50,7 @@
 </template>
 
 <script>
+import { ExternalLinkIcon } from "vue-feather-icons";
 import getSiteMeta from "~/utils/getSiteMeta.js";
 import All from "../../components/Tabs/All";
 import Design from "../../components/Tabs/Design";
@@ -55,6 +65,7 @@ export default {
     Development,
     Opinion,
     Links,
+    ExternalLinkIcon,
   },
   computed: {
     meta() {
@@ -72,7 +83,7 @@ export default {
       let blogs = this.$store.getters.getBlog;
       let blogList = [];
 
-      blogs.forEach(function (blog) {
+      blogs.forEach(function(blog) {
         blogList.push(blog);
       });
 
