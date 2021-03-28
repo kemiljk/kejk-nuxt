@@ -5,13 +5,13 @@
       <NavItem to="/about">About</NavItem>
       <NavItem to="/thoughts">Thoughts</NavItem>
       <NavItem href="https://www.plugins.run" extLink>
-        <span class="flex items-center">
+        <div class="w-full flex justify-center items-center">
           Plugins
           <external-link-icon
             size="1x"
             class="ml-2 text-gray-700 dark:text-gray-300"
           ></external-link-icon>
-        </span>
+        </div>
       </NavItem>
       <NavItem to="/bookmarks">Bookmarks</NavItem>
       <NavItem to="/uses">Uses</NavItem>

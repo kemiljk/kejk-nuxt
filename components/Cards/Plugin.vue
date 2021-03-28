@@ -33,7 +33,7 @@
               </div>
             </div>
             <external-link-icon
-              class="text-gray-700 dark:text-gray-300 -mt-2 sm:mt-0 h-9 w-9 sm:h-6"
+              class="text-gray-700 dark:text-gray-300 -mt-2 sm:mt-0 h-10 w-10 sm:h-6"
             ></external-link-icon>
           </header>
           <hr
