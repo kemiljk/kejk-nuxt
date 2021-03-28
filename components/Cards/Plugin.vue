@@ -14,7 +14,7 @@
             <div class="flex max-w-xl">
               <img
                 :src="plugin.metadata.hero.imgix_url"
-                class="rounded-md max-h-32 mr-8"
+                class="rounded-md max-h-24 sm:max-h-32 mr-4 sm:mr-8"
                 alt="Image of media"
               />
               <div>
@@ -27,13 +27,13 @@
                   {{ plugin.metadata.subtitle }}
                 </p>
                 <p
-                  class="mb-0 pt-1 text-gray-500 dark:text-gray-400 font-normal text-sm"
+                  class="mb-0 pt-1 text-gray-500 dark:text-gray-400 text-sm"
                   v-html="plugin.metadata.body"
                 ></p>
               </div>
             </div>
             <external-link-icon
-              class="text-gray-700 dark:text-gray-300"
+              class="text-gray-700 dark:text-gray-300 -mt-2 sm:mt-0 h-9 w-9 sm:h-6"
             ></external-link-icon>
           </header>
           <hr
@@ -45,7 +45,7 @@
               <span
                 v-for="plugin in plugins"
                 :key="plugin"
-                class="py-1 text-md"
+                class="py-1 text-md hidden sm:flex"
                 >{{ plugin }}</span
               >
             </div>
