@@ -1,3 +1,5 @@
+import axios from "axios";
+
 export default {
   ssr: true,
 
@@ -211,13 +213,48 @@ export default {
   },
 
   feed: [
-    // {
-    // 	path: "/feed.xml",
-    // 	create, // outside the default export at the top of the config file
-    // 	cacheTime: 1000 * 60 * 15,
-    // 	type: "rss2",
-    // 	data: ["blog", "xml"],
-    // },
+    {
+      path: "/feed.xml",
+      async create(feed) {
+        feed.options = {
+          title: "KEJK | Thoughts",
+          link: "https://kejk.tech/feed.xml",
+          description:
+            "Thoughts on design, development and the intersection of the two",
+        };
+
+        let all_blogs = [];
+
+        await axios
+          .get(
+            `https://api.cosmicjs.com/v2/buckets/kemiljk/objects?pretty=true&query=%7B%22type%22%3A%22blogs%22%7D&read_key=uNXYQDbNTCWQyEaFjq44PUolieGKBuzePTaEdnDl0CHLcnJtPK&limit=20&props=slug,title,content,metadata,modified_at`
+          )
+          .then((res) => {
+            res.data.objects.forEach((blog) => {
+              all_blogs.push(blog);
+            });
+          });
+
+        all_blogs.forEach((blog) => {
+          const url = `https://kejk.tech/thoughts/${blog.slug}`;
+          feed.addItem({
+            title: blog.title,
+            id: url,
+            link: url,
+            description: blog.metadata.snippet,
+            published: new Date(blog.modified_at),
+            author: [
+              {
+                name: "Karl Koch",
+                email: "karl@kejk.tech",
+              },
+            ],
+          });
+        });
+      },
+      cacheTime: 1000 * 60 * 15,
+      type: "rss2",
+    },
   ],
 
   build: {},

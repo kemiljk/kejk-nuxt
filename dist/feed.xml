@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+    <channel>
+        <title>KEJK | Thoughts</title>
+        <link>https://kejk.tech/feed.xml</link>
+        <description>Thoughts on design, development and the intersection of the two</description>
+        <lastBuildDate>Mon, 29 Mar 2021 10:42:46 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>https://github.com/nuxt-community/feed-module</generator>
+        <item>
+            <title><![CDATA[Getting DRY with Figma plugins]]></title>
+            <link>https://kejk.tech/thoughts/getting-dry-with-figma-plugins</link>
+            <guid>https://kejk.tech/thoughts/getting-dry-with-figma-plugins</guid>
+            <pubDate>Mon, 15 Mar 2021 08:17:56 GMT</pubDate>
+            <description><![CDATA[There's a concept it DRY in development. It means Don't Repeat Yourself and is all about code reduct…]]></description>
+            <author>karl@kejk.tech (Karl Koch)</author>
+        </item>
+        <item>
+            <title><![CDATA[What a cult taught me about 'limiting beliefs']]></title>
+            <link>https://kejk.tech/thoughts/what-a-cult-taught-me-about-limiting-beliefs</link>
+            <guid>https://kejk.tech/thoughts/what-a-cult-taught-me-about-limiting-beliefs</guid>
+            <pubDate>Fri, 08 Jan 2021 23:26:07 GMT</pubDate>
+            <description><![CDATA[I've long been fascinated by cults from a psychological perspective. Knowing that particular individ…]]></description>
+            <author>karl@kejk.tech (Karl Koch)</author>
+        </item>
+        <item>
+            <title><![CDATA[How music, design and code are all the same]]></title>
+            <link>https://kejk.tech/thoughts/how-music-design-and-development-are-all-the-same</link>
+            <guid>https://kejk.tech/thoughts/how-music-design-and-development-are-all-the-same</guid>
+            <pubDate>Sat, 09 Jan 2021 09:50:46 GMT</pubDate>
+            <description><![CDATA[I wouldn't say I believe creativity is a gift we're born with. I don't believe my abilities are.]]></description>
+            <author>karl@kejk.tech (Karl Koch)</author>
+        </item>
+        <item>
+            <title><![CDATA[Thinking in design-code]]></title>
+            <link>https://kejk.tech/thoughts/thinking-in-design-code</link>
+            <guid>https://kejk.tech/thoughts/thinking-in-design-code</guid>
+            <pubDate>Mon, 21 Dec 2020 16:42:48 GMT</pubDate>
+            <description><![CDATA[My personal approach on how to think about code from a design perspective and how to implement those changes.]]></description>
+            <author>karl@kejk.tech (Karl Koch)</author>
+        </item>
+        <item>
+            <title><![CDATA[Don’t let your role define you]]></title>
+            <link>https://kejk.tech/thoughts/dont-let-your-role-define-you</link>
+            <guid>https://kejk.tech/thoughts/dont-let-your-role-define-you</guid>
+            <pubDate>Sat, 19 Dec 2020 23:12:11 GMT</pubDate>
+            <description><![CDATA[A practical guide on how to navigate your career when the path you're heading down isn't the one you truly want.]]></description>
+            <author>karl@kejk.tech (Karl Koch)</author>
+        </item>
+        <item>
+            <title><![CDATA[Code as Design]]></title>
+            <link>https://kejk.tech/thoughts/code-as-design</link>
+            <guid>https://kejk.tech/thoughts/code-as-design</guid>
+            <pubDate>Sat, 19 Dec 2020 23:11:41 GMT</pubDate>
+            <description><![CDATA[How development can be learned through a design lens (and how I've managed to do it). ]]></description>
+            <author>karl@kejk.tech (Karl Koch)</author>
+        </item>
+        <item>
+            <title><![CDATA[Designing in the open]]></title>
+            <link>https://kejk.tech/thoughts/designing-in-the-open</link>
+            <guid>https://kejk.tech/thoughts/designing-in-the-open</guid>
+            <pubDate>Sat, 19 Dec 2020 23:10:07 GMT</pubDate>
+            <description><![CDATA[What I’ve learnt about sharing constantly and live designing with my team.]]></description>
+            <author>karl@kejk.tech (Karl Koch)</author>
+        </item>
+        <item>
+            <title><![CDATA[From problem to plugin]]></title>
+            <link>https://kejk.tech/thoughts/from-problem-to-plugin</link>
+            <guid>https://kejk.tech/thoughts/from-problem-to-plugin</guid>
+            <pubDate>Fri, 25 Dec 2020 20:28:56 GMT</pubDate>
+            <description><![CDATA[Learning Typescript, the Figma API and solving a real personal problem.]]></description>
+            <author>karl@kejk.tech (Karl Koch)</author>
+        </item>
+        <item>
+            <title><![CDATA[Ten Principles for Good Design]]></title>
+            <link>https://kejk.tech/thoughts/ten-principles-for-good-design</link>
+            <guid>https://kejk.tech/thoughts/ten-principles-for-good-design</guid>
+            <pubDate>Sat, 19 Dec 2020 23:08:36 GMT</pubDate>
+            <description><![CDATA[I decided to put together a free, multi-device, minimal wallpaper of Ram's ten principles. ]]></description>
+            <author>karl@kejk.tech (Karl Koch)</author>
+        </item>
+        <item>
+            <title><![CDATA[Design as Code]]></title>
+            <link>https://kejk.tech/thoughts/designing-in-code</link>
+            <guid>https://kejk.tech/thoughts/designing-in-code</guid>
+            <pubDate>Sat, 19 Dec 2020 23:08:06 GMT</pubDate>
+            <description><![CDATA[What learning Vue has taught me about the future of design, development and the modern web.]]></description>
+            <author>karl@kejk.tech (Karl Koch)</author>
+        </item>
+        <item>
+            <title><![CDATA[Getting to yes]]></title>
+            <link>https://kejk.tech/thoughts/getting-to-yes</link>
+            <guid>https://kejk.tech/thoughts/getting-to-yes</guid>
+            <pubDate>Sat, 19 Dec 2020 23:07:43 GMT</pubDate>
+            <description><![CDATA[Why I think designers and developers should learn the basics of sales. ]]></description>
+            <author>karl@kejk.tech (Karl Koch)</author>
+        </item>
+        <item>
+            <title><![CDATA[Why ‘users’ are humans]]></title>
+            <link>https://kejk.tech/thoughts/why-users-are-humans</link>
+            <guid>https://kejk.tech/thoughts/why-users-are-humans</guid>
+            <pubDate>Sat, 19 Dec 2020 23:06:48 GMT</pubDate>
+            <description><![CDATA[Design is about people, and I've been thinking a lot about the problem of the term 'user'.]]></description>
+            <author>karl@kejk.tech (Karl Koch)</author>
+        </item>
+    </channel>
+</rss>
