@@ -42,7 +42,7 @@ import Cosmic from "cosmicjs";
 const api = Cosmic();
 const bucket = api.bucket({
   slug: "kemiljk",
-  read_key: "uNXYQDbNTCWQyEaFjq44PUolieGKBuzePTaEdnDl0CHLcnJtPK",
+  read_key: process.env.COSMIC_READ_KEY,
 });
 
 export default {
@@ -52,7 +52,7 @@ export default {
       let blogs = this.$store.getters.getBlog;
       let blogList = [];
 
-      blogs.forEach(function (blog) {
+      blogs.forEach(function(blog) {
         blogList.push(blog);
       });
 

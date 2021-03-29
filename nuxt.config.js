@@ -161,11 +161,7 @@ export default {
 
   components: true,
 
-  buildModules: [
-    // "@nuxt/typescript-build",
-    "@nuxtjs/tailwindcss",
-    "@nuxtjs/moment",
-  ],
+  buildModules: ["@nuxtjs/tailwindcss", "@nuxtjs/moment", "@nuxtjs/dotenv"],
 
   sitemap: {
     path: "/sitemap.xml",

@@ -50,7 +50,7 @@ const Cosmic = require("cosmicjs");
 const api = Cosmic();
 const bucket = api.bucket({
   slug: "kemiljk",
-  read_key: "uNXYQDbNTCWQyEaFjq44PUolieGKBuzePTaEdnDl0CHLcnJtPK",
+  read_key: process.env.COSMIC_READ_KEY,
 });
 
 export default {
