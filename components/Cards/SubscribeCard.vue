@@ -15,13 +15,16 @@
         >
           <Button color="grey">
             <template #icon>
-              <rss-icon size="1x" class="inline-block mr-2 text-gray-900 dark:text-gray-50" />
+              <rss-icon
+                size="1x"
+                class="inline-block mr-2 text-gray-900 dark:text-gray-50"
+              />
             </template>
             <template #label> Subscribe via RSS </template>
           </Button>
         </a>
         <a
-          href="https://share.mailbrew.com/_kejk/kejk-sXWcveOcS678?aff=_kejk"
+          href="https://app.mailbrew.com/_kejk/kejk-thoughts-QQU8XZ7Y1S4b?aff=_kejk"
           target="_blank"
           rel="noreferrer"
           class="no-underline"
@@ -61,7 +64,10 @@
               <input type="hidden" value="1" name="embed" />
               <Button type="submit" color="white" class="mt-2 md:mt-0">
                 <template #icon>
-                  <mail-icon size="1x" class="inline-block mr-2 text-gray-50 dark:text-gray-900" />
+                  <mail-icon
+                    size="1x"
+                    class="inline-block mr-2 text-gray-50 dark:text-gray-900"
+                  />
                 </template>
                 <template #label> Subscribe for updates </template>
               </Button>
