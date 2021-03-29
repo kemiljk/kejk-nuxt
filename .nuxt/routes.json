@@ -1,0 +1,55 @@
+[
+  {
+    "name": "_tailwind",
+    "path": "/_tailwind",
+    "component": "/Users/karlkoch/GitHub/kejk-nuxt/node_modules/@nuxtjs/tailwindcss/lib/ui/pages/index.vue"
+  },
+  {
+    "name": "About",
+    "path": "/About",
+    "component": "/Users/karlkoch/GitHub/kejk-nuxt/pages/About.vue",
+    "chunkName": "pages/About",
+    "url": "/About"
+  },
+  {
+    "name": "Bookmarks",
+    "path": "/Bookmarks",
+    "component": "/Users/karlkoch/GitHub/kejk-nuxt/pages/Bookmarks.vue",
+    "chunkName": "pages/Bookmarks",
+    "url": "/Bookmarks"
+  },
+  {
+    "name": "Lazy-pdf",
+    "path": "/Lazy-pdf",
+    "component": "/Users/karlkoch/GitHub/kejk-nuxt/pages/Lazy-pdf.vue",
+    "chunkName": "pages/Lazy-pdf",
+    "url": "/Lazy-pdf"
+  },
+  {
+    "name": "thoughts",
+    "path": "/thoughts",
+    "component": "/Users/karlkoch/GitHub/kejk-nuxt/pages/thoughts/index.vue",
+    "chunkName": "pages/thoughts/index",
+    "url": "/thoughts"
+  },
+  {
+    "name": "Uses",
+    "path": "/Uses",
+    "component": "/Users/karlkoch/GitHub/kejk-nuxt/pages/Uses.vue",
+    "chunkName": "pages/Uses",
+    "url": "/Uses"
+  },
+  {
+    "name": "thoughts-id",
+    "path": "/thoughts/:id",
+    "component": "/Users/karlkoch/GitHub/kejk-nuxt/pages/thoughts/_id.vue",
+    "chunkName": "pages/thoughts/_id"
+  },
+  {
+    "name": "index",
+    "path": "/",
+    "component": "/Users/karlkoch/GitHub/kejk-nuxt/pages/index.vue",
+    "chunkName": "pages/index",
+    "url": "/"
+  }
+]
