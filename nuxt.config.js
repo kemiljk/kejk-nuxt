@@ -160,7 +160,7 @@ export default {
   components: true,
 
   buildModules: [
-    "@nuxt/typescript-build",
+    // "@nuxt/typescript-build",
     "@nuxtjs/tailwindcss",
     "@nuxtjs/moment",
   ],
@@ -188,15 +188,15 @@ export default {
     "vue-scrollto/nuxt",
   ],
 
-  extends: ["@nuxtjs/eslint-config-typescript"],
+  // extends: ["@nuxtjs/eslint-config-typescript"],
 
-  typescript: {
-    typeCheck: {
-      eslint: {
-        files: "./**/*.{ts,js,vue}",
-      },
-    },
-  },
+  // typescript: {
+  //   typeCheck: {
+  //     eslint: {
+  //       files: "./**/*.{ts,js,vue}",
+  //     },
+  //   },
+  // },
 
   apollo: {
     clientConfigs: {
