@@ -214,11 +214,11 @@ export default {
 
   feed: [
     {
-      path: "/feed.xml",
+      path: "/rss.xml",
       async create(feed) {
         feed.options = {
           title: "KEJK | Thoughts",
-          link: "https://kejk.tech/feed.xml",
+          link: "https://kejk.tech/rss",
           description:
             "Thoughts on design, development and the intersection of the two",
         };
@@ -242,6 +242,7 @@ export default {
             id: url,
             link: url,
             description: blog.metadata.snippet,
+            content: blog.content,
             published: new Date(blog.modified_at),
             author: [
               {
