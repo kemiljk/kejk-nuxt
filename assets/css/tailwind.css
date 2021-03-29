@@ -42,6 +42,10 @@
   blockquote p {
     @apply ml-4 text-gray-500 dark:text-gray-300;
   }
+  
+  pre {
+    @apply rounded-xl bg-gray-50 dark:bg-gray-900 w-full overflow-x-scroll whitespace-pre;
+  }
 
   input {
     -webkit-appearance: none;
