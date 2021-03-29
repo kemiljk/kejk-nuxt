@@ -168,7 +168,7 @@ export async function setContext (app, context) {
       payload: context.payload,
       error: context.error,
       base: '/',
-      env: {"NUXT_PUBLIC_COSMIC_READ_KEY":"uNXYQDbNTCWQyEaFjq44PUolieGKBuzePTaEdnDl0CHLcnJtPK","NUXT_PUBLIC_COSMIC_SLUG":"kemiljk"}
+      env: {"NUXT_ENV_COSMIC_READ_KEY":"uNXYQDbNTCWQyEaFjq44PUolieGKBuzePTaEdnDl0CHLcnJtPK","NUXT_ENV_COSMIC_SLUG":"kemiljk"}
     }
     // Only set once
     if (!process.static && context.req) {

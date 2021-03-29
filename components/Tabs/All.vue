@@ -41,8 +41,8 @@
 import Cosmic from "cosmicjs";
 const api = Cosmic();
 const bucket = api.bucket({
-  slug: process.env.NUXT_PUBLIC_COSMIC_SLUG,
-  read_key: process.env.NUXT_PUBLIC_COSMIC_READ_KEY,
+  slug: process.env.NUXT_ENV_COSMIC_SLUG,
+  read_key: process.env.NUXT_ENV_COSMIC_READ_KEY,
 });
 
 export default {
