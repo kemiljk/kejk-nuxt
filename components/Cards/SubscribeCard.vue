@@ -8,7 +8,7 @@
       </h1>
       <div class="flex flex-col md:flex-row md:space-x-2">
         <a
-          href="https://www.kejk.tech/feed.xml"
+          href="https://www.kejk.tech/rss.xml"
           target="_blank"
           rel="noreferrer"
           class="no-underline"
