@@ -45,7 +45,6 @@
 </template>
 
 <script>
-import getSiteMeta from "~/utils/getSiteMeta.js";
 import { ExternalLinkIcon } from "vue-feather-icons";
 import getBlog from "../../queries/getBlog";
 import Prism from "~/plugins/prism";

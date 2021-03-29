@@ -242,6 +242,7 @@ export default {
             id: url,
             link: url,
             description: blog.metadata.snippet,
+            image: blog.metadata.hero.imgix_url,
             content: blog.content,
             published: new Date(blog.modified_at),
             author: [
