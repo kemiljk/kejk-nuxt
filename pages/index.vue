@@ -221,8 +221,8 @@ import getSiteMeta from "~/utils/getSiteMeta.js";
 const Cosmic = require("cosmicjs");
 const api = Cosmic();
 const bucket = api.bucket({
-  slug: process.env.COSMIC_SLUG,
-  read_key: process.env.COSMIC_READ_KEY,
+  slug: process.env.NUXT_PUBLIC_COSMIC_SLUG,
+  read_key: process.env.NUXT_PUBLIC_COSMIC_READ_KEY,
 });
 
 export default {
