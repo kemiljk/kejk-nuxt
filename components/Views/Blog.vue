@@ -15,7 +15,7 @@
         </p>
       </div>
     </div>
-    <div class="pt-4">
+    <div>
       <section v-html="blog.content" class="text-black dark:text-gray-300" />
     </div>
   </div>
