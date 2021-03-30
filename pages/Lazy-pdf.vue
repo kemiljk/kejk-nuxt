@@ -12,9 +12,6 @@
             class="ml-2 text-gray-700 dark:text-gray-300"
           ></external-link-icon>
         </span>
-        <external-link-icon
-          class="text-gray-700 dark:text-gray-300"
-        ></external-link-icon>
       </NavItem>
       <NavItem to="/bookmarks">Bookmarks</NavItem>
       <NavItem to="/uses">Uses</NavItem>
