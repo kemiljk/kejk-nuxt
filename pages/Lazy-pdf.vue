@@ -169,7 +169,7 @@ export default {
     return {
       download: {
         url:
-          "https://res.cloudinary.com/kejk/raw/upload/v1587568180/Lazy%20PDF%20-%20V1.1.zip",
+          "https://res.cloudinary.com/kejk/raw/upload/v1617095071/Lazy_PDF_v1.1.dmg",
         text: "Download",
       },
       hero:

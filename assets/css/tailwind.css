@@ -43,6 +43,10 @@
     @apply ml-4 text-gray-500 dark:text-gray-300;
   }
 
+  pre {
+    @apply w-full bg-gray-50 dark:bg-gray-900 rounded-xl whitespace-pre overflow-x-auto p-8;
+  }
+
   input {
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -78,13 +82,13 @@
 
 @layer utilities {
   .active {
-    @apply  text-black dark:text-white bg-gray-300 dark:bg-gray-600;
+    @apply text-black dark:text-white bg-gray-300 dark:bg-gray-600;
   }
   .scrollbar-hidden::-webkit-scrollbar {
-  display: none;
+    display: none;
   }
-.scrollbar-hidden {
-  -ms-overflow-style: none;
-  scrollbar-width: none;
+  .scrollbar-hidden {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
   }
 }

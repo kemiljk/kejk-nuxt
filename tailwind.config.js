@@ -1,4 +1,4 @@
-const colors = require('tailwindcss/colors');
+const colors = require("tailwindcss/colors");
 const defaultTheme = require("tailwindcss/defaultTheme");
 
 module.exports = {
@@ -25,5 +25,5 @@ module.exports = {
       borderWidth: ["hover"],
     },
   },
-  plugins: [],
+  plugins: [require("@tailwindcss/typography")],
 };
