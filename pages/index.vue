@@ -100,7 +100,7 @@
         </template>
         <template #buttons>
           <div class="flex flex-col md:flex-row md:space-x-2">
-            <NuxtLink to="/about" "no-underline">
+            <NuxtLink to="/about" class="no-underline">
               <Button color="white">
                 <template #icon>
                   <info-icon
