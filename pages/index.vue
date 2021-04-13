@@ -52,7 +52,7 @@
             <div
               class="flex text-sm font-bold pt-8 text-gray-800 dark:text-gray-200"
             >
-              Part-time <span class="ml-2 text-indigo-500">———</span>
+              On the side <span class="ml-2 text-indigo-500">———</span>
             </div>
             <IconText class="flex items-center">
               <template #icon>
