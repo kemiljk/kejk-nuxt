@@ -37,7 +37,7 @@
             ></external-link-icon>
           </header>
           <hr
-            class="border border-solid border-gray-300 dark:border-gray-800"
+            class="border border-gray-300 dark:border-gray-800"
           />
           <div class="flex items-center space-x-4 mt-2">
             <Tag color="pink">Figma</Tag>
