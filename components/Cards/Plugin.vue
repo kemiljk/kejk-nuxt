@@ -14,7 +14,7 @@
             <div class="flex max-w-xl">
               <img
                 :src="plugin.metadata.hero.imgix_url"
-                class="rounded-md max-h-24 sm:max-h-32 mr-4 sm:mr-8 border border-gray-300 dark:border-none dark:border-gray-900"
+                class="bg-gray-100 rounded-md max-h-24 sm:max-h-32 mr-4 sm:mr-8 border border-gray-300 dark:border-none dark:border-gray-900"
                 alt="Image of media"
               />
               <div>
