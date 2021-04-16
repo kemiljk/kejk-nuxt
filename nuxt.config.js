@@ -214,7 +214,7 @@ export default {
       async create(feed) {
         feed.options = {
           title: "KEJK | Thoughts",
-          link: "https://kejk.tech/rss",
+          link: "https://kejk.tech/thoughts",
           description:
             "Thoughts on design, development and the intersection of the two",
         };
