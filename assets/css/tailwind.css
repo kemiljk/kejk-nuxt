@@ -42,7 +42,7 @@
   blockquote p {
     @apply ml-4 text-gray-500 dark:text-gray-300;
   }
-  
+
   pre {
     @apply rounded-xl bg-gray-50 dark:bg-gray-900 w-full overflow-x-scroll whitespace-pre;
   }
@@ -59,28 +59,6 @@
   textarea {
     -webkit-appearance: none;
     -moz-appearance: none;
-  }
-
-  .backgroundBlur {
-    background-color: rgba(255, 255, 255, 1);
-  }
-
-  @media (prefers-color-scheme: dark) {
-    .backgroundBlur {
-      background-color: rgba(0, 0, 0, 1);
-    }
-  }
-
-  @supports (-webkit-backdrop-filter: none) {
-    .backgroundBlur {
-      background: rgba(255, 255, 255, 0.5);
-      -webkit-backdrop-filter: blur(40px);
-    }
-    @media (prefers-color-scheme: dark) {
-      .backgroundBlur {
-        background: rgba(0, 0, 0, 0.5);
-      }
-    }
   }
 }
 
