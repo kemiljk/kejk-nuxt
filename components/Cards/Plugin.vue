@@ -41,14 +41,6 @@
           />
           <div class="flex items-center space-x-4 mt-2">
             <Tag color="pink">Figma</Tag>
-            <div class="flex pl-4 space-x-4">
-              <span
-                v-for="plugin in plugins"
-                :key="plugin"
-                class="py-1 text-md hidden sm:flex"
-                >{{ plugin }}</span
-              >
-            </div>
           </div>
         </div>
       </button>
@@ -63,18 +55,6 @@ export default {
   name: "Plugin",
   components: {
     ExternalLinkIcon,
-  },
-  data() {
-    return {
-      plugins: [
-        "Shape››frame",
-        "Perfect››radius",
-        "Default››export",
-        "Round››all",
-        "Place››holder",
-        "Hand››over",
-      ],
-    };
   },
   props: {
     plugin: {
