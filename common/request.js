@@ -7,11 +7,15 @@ const bucket = api.bucket({
 
 function getBlogs() {
   const params = {
-    type_slug: "blogs",
+    query: {
+      type: "blogs",
+    },
+    // type_slug: "blogs",
     props: "slug,title,content,metadata,modified_at,order",
     limit: "20",
   };
-  return bucket.getObjectsByType(params);
+  // return bucket.getObjectsByType(params);
+  return bucket.getObjects(params);
 }
 
 export default { getBlogs };
