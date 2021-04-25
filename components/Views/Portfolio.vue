@@ -10,7 +10,7 @@
     <div>
       <section
         v-html="portfolio.content"
-        class="text-black dark:text-gray-300"
+        class="text-black dark:text-gray-300 mt-8"
       />
     </div>
   </div>
