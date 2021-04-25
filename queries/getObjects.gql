@@ -3,11 +3,11 @@
     bucket_slug: "kemiljk"
     input: {
       read_key: "uNXYQDbNTCWQyEaFjq44PUolieGKBuzePTaEdnDl0CHLcnJtPK"
-      type: "blogs"
+      query: { type: "blogs" }
     }
   ) {
     objects {
-      _id
+      id
       slug
       title
       content

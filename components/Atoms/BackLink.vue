@@ -28,6 +28,7 @@ export default {
         thoughts: "/thoughts",
         bookmarks: "/bookmarks",
         uses: "/uses",
+        portfolio: "/portfolio",
       }[this.link];
     },
   },

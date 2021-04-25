@@ -112,7 +112,9 @@ export default {
       this.loading = true;
       await bucket
         .getObjects({
-          type: "softwares",
+          query: {
+            type: "softwares",
+          },
           props: "_id,title,metadata",
         })
         .then((data) => {
@@ -125,7 +127,9 @@ export default {
       this.loading = true;
       await bucket
         .getObjects({
-          type: "tools",
+          query: {
+            type: "tools",
+          },
           props: "_id,title,metadata,modified_at",
           sort: "created_at",
         })
@@ -139,7 +143,7 @@ export default {
       this.loading = true;
       await bucket
         .getObject({
-          slug: "uses",
+          id: "5fd0a43f831dc500070c39ea",
           props: "slug,title,content",
         })
         .then((data) => {

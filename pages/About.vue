@@ -124,7 +124,7 @@ export default {
       this.loading = true;
       await bucket
         .getObject({
-          slug: "about",
+          id: "5fdb8a89a42cd10007b3cb29",
           props: "slug,title,content",
         })
         .then((data) => {

@@ -18,7 +18,7 @@
     "autoprefixer": "^10.2.5",
     "axios": "^0.21.1",
     "core-js": "^3.6.5",
-    "cosmicjs": "^3.3.2",
+    "cosmicjs": "^4.1.0",
     "feed": "^4.2.1",
     "fontsource-inter": "^3.1.7",
     "graphql": "^15.4.0",

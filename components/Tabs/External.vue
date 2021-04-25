@@ -33,7 +33,9 @@ export default {
       this.loading = true;
       await bucket
         .getObjects({
-          type: "links",
+          query: {
+            type: "links",
+          },
           props: "_id,slug,title,content,metadata,created_at",
           sort: "-created_at",
         })

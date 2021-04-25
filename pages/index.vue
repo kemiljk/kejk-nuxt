@@ -284,7 +284,9 @@ export default {
       this.loading = true;
       await bucket
         .getObjects({
-          type: "apps",
+          query: {
+            type: "apps",
+          },
           props: "_id,slug,title,content,metadata,created_at,modified_at",
           sort: "-created_at",
         })
@@ -300,7 +302,9 @@ export default {
       await bucket
         .getObjects({
           limit: 1,
-          type: "blogs",
+          query: {
+            type: "blogs",
+          },
           props: "_id,slug,title,content,metadata,created_at,modified_at",
           sort: "-created_at",
         })
@@ -316,7 +320,9 @@ export default {
       await bucket
         .getObjects({
           limit: 1,
-          type: "links",
+          query: {
+            type: "links",
+          },
           props: "_id,slug,title,content,metadata,created_at",
           sort: "-created_at",
         })
@@ -326,26 +332,14 @@ export default {
           this.links = links;
         });
     },
-    async getMadesData() {
-      this.error = this.made = null;
-      this.loading = true;
-      await bucket
-        .getObjects({
-          type: "mades",
-          props: "_id,title,metadata",
-        })
-        .then((data) => {
-          const mades = data.objects;
-          this.loading = false;
-          this.mades = mades;
-        });
-    },
     async getUtilitiesData() {
       this.error = this.utility = null;
       this.loading = true;
       await bucket
         .getObjects({
-          type: "utilities",
+          query: {
+            type: "utilities",
+          },
           props: "_id,title,metadata",
         })
         .then((data) => {
@@ -360,7 +354,9 @@ export default {
       await bucket
         .getObjects({
           limit: 6,
-          type: "helpedmakes",
+          query: {
+            type: "helpedmakes",
+          },
           props: "_id,title,metadata",
         })
         .then((data) => {
@@ -375,7 +371,9 @@ export default {
       await bucket
         .getObjects({
           limit: 6,
-          type: "medias",
+          query: {
+            type: "medias",
+          },
           props: "_id,title,metadata",
         })
         .then((data) => {
@@ -389,7 +387,9 @@ export default {
       this.loading = true;
       await bucket
         .getObjects({
-          type: "albums",
+          query: {
+            type: "albums",
+          },
           props: "_id,title,metadata",
         })
         .then((data) => {
@@ -402,7 +402,7 @@ export default {
       this.loading = true;
       await bucket
         .getObject({
-          slug: "plugin",
+          id: "605cc05178306b0007588909",
           props: "slug,title,content,metadata",
         })
         .then((data) => {
