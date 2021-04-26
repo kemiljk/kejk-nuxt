@@ -2,6 +2,10 @@
   <div class="mt-0 pt-4">
     <div class="flex flex-row text-left">
       <div class="flex flex-col col-span-full md:col-span-6">
+        <img
+          :src="`${portfolio.metadata.featured.imgix_url}`"
+          class="w-full rounded-xl"
+        />
         <h1>
           {{ portfolio.title }}
         </h1>
