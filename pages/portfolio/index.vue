@@ -31,6 +31,7 @@
         </div>
       </div>
       <Header>Live projects</Header>
+      <H2Header class="pt-16">Things I've built.</H2Header>
       <div class="flex w-full">
         <div class="grid w-full">
           <keep-alive>
@@ -56,6 +57,7 @@
           </div>
         </div>
       </div>
+      <H2Header class="pt-16">Things I've helped to make.</H2Header>
       <div
         class="mt-4 grid grid-row xs:grid-cols-1 sm:grid-cols-2 md:grid-cols-3 w-full gap-4"
       >
