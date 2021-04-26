@@ -22,81 +22,6 @@
         <template #text>
           I design and build software, write about the intersection of design
           and development and create music.
-          <div
-            class="flex flex-col md:w-3/4 pt-8 justify-center mx-auto text-left"
-          >
-            <div
-              class="flex text-sm tracking-wider leading-normal uppercase text-gray-600 dark:text-gray-400"
-            >
-              Currently
-            </div>
-            <div
-              class="flex text-sm font-bold pt-4 text-gray-800 dark:text-gray-200"
-            >
-              Full-time <span class="ml-2 text-indigo-500">———</span>
-            </div>
-            <IconText class="flex items-center">
-              <template #icon>
-                <HomeHeroIcon class="pr-4" />
-              </template>
-              <template #text>
-                Designing and defining the Home as a Service at
-                <a
-                  href="https://www.homehero.co.uk"
-                  target="_blank"
-                  rel="noreferrer"
-                  >HomeHero</a
-                >.
-              </template>
-            </IconText>
-            <div
-              class="flex text-sm font-bold pt-8 text-gray-800 dark:text-gray-200"
-            >
-              On the side <span class="ml-2 text-indigo-500">———</span>
-            </div>
-            <IconText class="flex items-center">
-              <template #icon>
-                <CosmicIcon class="pr-4" />
-              </template>
-              <template #text>
-                Designing the best API-first headless CMS out there at
-                <a
-                  href="https://www.cosmicjs.com"
-                  target="_blank"
-                  rel="noreferrer"
-                  >Cosmic</a
-                >.
-              </template>
-            </IconText>
-            <IconText class="flex items-center">
-              <template #icon>
-                <MmacIcon class="pr-4" />
-              </template>
-              <template #text>
-                Designing the world's best cocktail resource at
-                <a
-                  href="https://www.makemeacocktail.com"
-                  target="_blank"
-                  rel="noreferrer"
-                  >Make Me A Cocktail</a
-                >.
-              </template>
-            </IconText>
-            <div class="flex items-center pt-8 justify-between">
-              <IconText class="flex items-center mr-2">
-                <template #icon>
-                  <MapIcon class="mr-4" />
-                </template>
-                <template #text> London, UK </template>
-              </IconText>
-              <IconText class="flex items-center">
-                <template #icon>
-                  <GlobeIcon class="mr-4" />
-                </template>
-                <template #text> 🇬🇧🇩🇰 </template>
-              </IconText>
-            </div>
-          </div>
         </template>
         <template #buttons>
           <div class="flex flex-col md:flex-row md:space-x-2">
@@ -125,6 +50,85 @@
           </div>
         </template>
       </Subheader>
+      <div
+        class="pt-8 text-sm tracking-wider leading-normal uppercase text-gray-600 dark:text-gray-400"
+      >
+        Currently
+      </div>
+      <div
+        class="flex flex-col md:flex-row md:space-x-12 justify-center items-start mx-auto text-left text-black dark:text-white"
+      >
+        <div>
+          <div
+            class="flex text-sm font-bold pt-4 text-gray-800 dark:text-gray-200"
+          >
+            Full-time <span class="ml-2 text-indigo-500">———</span>
+          </div>
+          <IconText class="flex items-center">
+            <template #icon>
+              <HomeHeroIcon class="pr-4" />
+            </template>
+            <template #text>
+              Designing and defining the Home as a Service at
+              <a
+                href="https://www.homehero.co.uk"
+                target="_blank"
+                rel="noreferrer"
+                >HomeHero</a
+              >.
+            </template>
+          </IconText>
+          <div class="flex items-center justify-between">
+            <IconText class="flex items-center mr-2">
+              <template #icon>
+                <MapIcon class="mr-4" />
+              </template>
+              <template #text> London, UK </template>
+            </IconText>
+            <IconText class="flex items-center">
+              <template #icon>
+                <GlobeIcon class="mr-4" />
+              </template>
+              <template #text> 🇬🇧🇩🇰 </template>
+            </IconText>
+          </div>
+        </div>
+        <div>
+          <div
+            class="flex text-sm pt-8 md:pt-4 font-bold text-gray-800 dark:text-gray-200"
+          >
+            On the side <span class="ml-2 text-indigo-500">———</span>
+          </div>
+          <IconText class="flex items-center">
+            <template #icon>
+              <CosmicIcon class="pr-4" />
+            </template>
+            <template #text>
+              Designing the best API-first headless CMS out there at
+              <a
+                href="https://www.cosmicjs.com"
+                target="_blank"
+                rel="noreferrer"
+                >Cosmic</a
+              >.
+            </template>
+          </IconText>
+          <IconText class="flex items-center">
+            <template #icon>
+              <MmacIcon class="pr-4" />
+            </template>
+            <template #text>
+              Designing the world's best cocktail resource at
+              <a
+                href="https://www.makemeacocktail.com"
+                target="_blank"
+                rel="noreferrer"
+                >Make Me A Cocktail</a
+              >.
+            </template>
+          </IconText>
+        </div>
+      </div>
       <H2Header class="pt-16">Some things I've made.</H2Header>
       <div class="flex w-full">
         <div class="grid w-full">
