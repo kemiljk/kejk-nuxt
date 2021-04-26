@@ -4,11 +4,12 @@
       <div class="flex flex-col col-span-full md:col-span-6">
         <img
           :src="`${portfolio.metadata.featured.imgix_url}`"
-          class="w-full rounded-xl"
+          class="w-full rounded-xl mb-4"
         />
         <h1>
           {{ portfolio.title }}
         </h1>
+        <h3>{{ portfolio.metadata.description }}</h3>
       </div>
     </div>
     <div>
@@ -21,7 +22,7 @@
 </template>
 
 <script>
-import getSiteMeta from "~/utils/getSiteMeta.js";
+// import getSiteMeta from "~/utils/getSiteMeta.js";
 
 export default {
   name: "Portfolio",
