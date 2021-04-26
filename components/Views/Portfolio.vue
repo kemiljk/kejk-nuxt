@@ -30,10 +30,12 @@ export default {
   // computed: {
   //   meta() {
   //     const metaData = {
-  //       type: "portfolio",
+  //       query: {
+  //         type: "portfolios",
+  //       },
   //       title: this.portfolio.title,
   //       description: this.portfolio.metadata.description,
-  //       url: "https://kejk.tech/portfolio/" + `${this.$route.params.id}`,
+  //       url: "https://kejk.tech/portfolio/" + `${this.$route.query.id}`,
   //       mainImage: this.portfolio.metadata.hero.imgix_url,
   //     };
   //     return getSiteMeta(metaData);
@@ -46,7 +48,7 @@ export default {
   //     link: [
   //       {
   //         rel: "canonical",
-  //         href: `https://kejk.tech/portfolio/${this.$route.params.id}`,
+  //         href: `https://kejk.tech/portfolio/${this.$route.query.id}`,
   //       },
   //     ],
   //   };
