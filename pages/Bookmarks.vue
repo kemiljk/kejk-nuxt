@@ -13,6 +13,7 @@
           ></external-link-icon>
         </span>
       </NavItem>
+      <NavItem to="/portfolio">Projects</NavItem>
       <NavItem
         to="/bookmarks"
         isActive

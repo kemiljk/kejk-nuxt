@@ -13,6 +13,9 @@
           ></external-link-icon>
         </span>
       </NavItem>
+      <NavItem to="/portfolio" isActive id="PROJECTS" v-scroll-to="'#PROJECTS'"
+        >Projects</NavItem
+      >
       <NavItem to="/bookmarks">Bookmarks</NavItem>
       <NavItem to="/uses">Uses</NavItem>
     </Nav>
