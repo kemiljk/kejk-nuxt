@@ -3,8 +3,9 @@
     <div class="flex flex-row text-left">
       <div class="flex flex-col col-span-full md:col-span-6">
         <img
-          :src="`${portfolio.metadata.featured.imgix_url}`"
+          :src="portfolio.metadata.featured.imgix_url"
           class="w-full rounded-xl mb-4"
+          v-if="portfolio.metadata.featured"
         />
         <h1>
           {{ portfolio.title }}
