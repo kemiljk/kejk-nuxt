@@ -35,6 +35,24 @@
           </keep-alive>
         </div>
       </div>
+      <div class="flex flex-row pt-4">
+        <div class="grid w-full sm:grid-cols-2 gap-4">
+          <div v-for="app in apps" :key="app.title">
+            <keep-alive>
+              <AppCard :app="app" />
+            </keep-alive>
+          </div>
+        </div>
+      </div>
+      <div class="flex flex-row pt-4">
+        <div class="grid w-full sm:grid-cols-2 gap-4">
+          <div v-for="utility in utilities" :key="utility.title">
+            <keep-alive>
+              <UtilityCard :utility="utility" />
+            </keep-alive>
+          </div>
+        </div>
+      </div>
       <div
         class="mt-4 grid grid-row xs:grid-cols-1 sm:grid-cols-2 md:grid-cols-3 w-full gap-4"
       >
@@ -97,20 +115,21 @@ export default {
       loading: false,
       portfolios: {},
       plugin: {},
+      apps: {},
+      utilities: {},
       helpedMakes: {},
       slug: "",
       id: "",
     };
   },
-  // fetch({ redirect }) {
-  //   redirect("/portfolio");
-  // },
   created() {
     this.slug = this.$route.params.slug;
     this.id = this.$route.params.id;
     this.getPortfoliosData();
-    this.getHelpedMakesData();
     this.fetchPluginData();
+    this.getAppsData();
+    this.getUtilitiesData();
+    this.getHelpedMakesData();
   },
   methods: {
     async getPortfoliosData() {
@@ -140,6 +159,39 @@ export default {
         .then((data) => {
           this.plugin = data.object;
           this.loading = false;
+        });
+    },
+    async getAppsData() {
+      this.error = this.app = null;
+      this.loading = true;
+      await bucket
+        .getObjects({
+          query: {
+            type: "apps",
+          },
+          props: "_id,slug,title,content,metadata,created_at,modified_at",
+          sort: "-created_at",
+        })
+        .then((data) => {
+          const apps = data.objects;
+          this.loading = false;
+          this.apps = apps;
+        });
+    },
+    async getUtilitiesData() {
+      this.error = this.utility = null;
+      this.loading = true;
+      await bucket
+        .getObjects({
+          query: {
+            type: "utilities",
+          },
+          props: "_id,title,metadata",
+        })
+        .then((data) => {
+          const utilities = data.objects;
+          this.loading = false;
+          this.utilities = utilities;
         });
     },
     async getHelpedMakesData() {
