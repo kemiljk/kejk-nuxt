@@ -27,8 +27,8 @@
         <Portfolio :portfolio="portfolio" />
         <div class="grid w-full sm:grid-cols-2 gap-4">
           <div v-for="portfolio in portfolios.slice(
-             getRandomInt(0, portfolios.length), 
-             getRandomInt(0, portfolios.length))" 
+             getRandomInt(0, 4), 
+             getRandomInt(0, 4))" 
              :key="portfolio.id">
             <keep-alive>
               <PortfolioCard :portfolio="portfolio" />
@@ -84,6 +84,8 @@ export default {
   },
   methods: {
     getRandomInt(min, max) {
+      min = Math.ceil(min);
+      max = Math.floor(max);
       return Math.floor(Math.random() * (max - min) + min);
     },
     async getPortfoliosData() {
