@@ -28,7 +28,7 @@
         <div class="grid w-full sm:grid-cols-2 gap-4">
           <div v-for="portfolio in portfolios.slice(
              getRandomInt(portfolios.length), 
-             getRandomInt(portfolios.length)" 
+             getRandomInt(portfolios.length))" 
              :key="portfolio.id">
             <keep-alive>
               <PortfolioCard :portfolio="portfolio" />
