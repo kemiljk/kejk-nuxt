@@ -25,16 +25,13 @@
           <BackLink link="portfolio"> Back to all</BackLink>
         </div>
         <Portfolio :portfolio="portfolio" />
-        <div class="grid w-full sm:grid-cols-2 gap-4">
-          <div v-for="portfolio in portfolios.slice(
-             getRandomInt(0, 4), 
-             getRandomInt(0, 4))" 
-             :key="portfolio.id">
+        <!-- <div class="grid w-full sm:grid-cols-2 gap-4">
+          <div v-for="portfolio in portfolios" :key="portfolio.id">
             <keep-alive>
               <PortfolioCard :portfolio="portfolio" />
             </keep-alive>
           </div>
-        </div>
+        </div> -->
         <div class="flex flex-row pt-16">
           <BackLink link="portfolio"> Back to all</BackLink>
         </div>
@@ -71,16 +68,16 @@ export default {
     return {
       loading: false,
       portfolio: {},
-      portfolios: {},
       id: "",
-      slug: ""
+      portfolios: {},
+      slug: "",
     };
   },
   created() {
     this.id = this.$route.query.id;
-    this.slug = this.$route.params.slug;
     this.fetchPortfolioData();
-    this.getPortfoliosData();
+    // this.slug = this.$route.params.slug;
+    // this.getPortfoliosData();
   },
   methods: {
     getRandomInt(min, max) {
@@ -88,23 +85,23 @@ export default {
       max = Math.floor(max);
       return Math.floor(Math.random() * (max - min) + min);
     },
-    async getPortfoliosData() {
-      this.error = this.portfolio = null;
-      this.loading = true;
-      await bucket
-        .getObjects({
-          query: {
-            type: "portfolios",
-          },
-          props: "id,slug,content,title,metadata",
-          limit: 2
-        })
-        .then((data) => {
-          const portfolios = data.objects;
-          this.loading = false;
-          this.portfolios = portfolios;
-        });
-    },
+    // async getPortfoliosData() {
+    //   // this.error = this.portfolio = null;
+    //   this.loading = true;
+    //   await bucket
+    //     .getObjects({
+    //       query: {
+    //         type: "portfolios",
+    //       },
+    //       props: "id,slug,content,title,metadata",
+    //       limit: 2,
+    //     })
+    //     .then((data) => {
+    //       const portfolios = data.objects;
+    //       this.loading = false;
+    //       this.portfolios = portfolios;
+    //     });
+    // },
     async fetchPortfolioData() {
       this.loading = true;
       await bucket

@@ -5,7 +5,6 @@
         <img
           :src="portfolio.metadata.featured.imgix_url"
           class="w-full rounded-xl mb-4"
-          v-if="portfolio.metadata.featured"
         />
         <h1>
           {{ portfolio.title }}
