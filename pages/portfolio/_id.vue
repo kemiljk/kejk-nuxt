@@ -83,7 +83,7 @@ export default {
     this.getPortfoliosData();
   },
   methods: {
-    function getRandomInt(max) {
+    getRandomInt(max) {
       return Math.floor(Math.random() * max);
     },
     async getPortfoliosData() {
