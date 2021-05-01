@@ -25,6 +25,19 @@
           <BackLink link="portfolio"> Back to all</BackLink>
         </div>
         <Portfolio :portfolio="portfolio" />
+        <div class="grid w-full sm:grid-cols-2 gap-4">
+          <div v-for="portfolio in portfolios.slice(
+             getRandomInt(portfolios.length), 
+             getRandomInt(portfolios.length)" 
+             :key="portfolio.id">
+            <keep-alive>
+              <PortfolioCard :portfolio="portfolio" />
+            </keep-alive>
+          </div>
+        </div>
+        <div class="flex flex-row pt-16">
+          <BackLink link="portfolio"> Back to all</BackLink>
+        </div>
         <div
           class="mt-16 pb-16 border-t-2 border-gray-200 dark:border-gray-800"
         />
@@ -58,14 +71,38 @@ export default {
     return {
       loading: false,
       portfolio: {},
+      portfolios: {},
       id: "",
+      slug: ""
     };
   },
   created() {
     this.id = this.$route.query.id;
+    this.slug = this.$route.params.slug;
     this.fetchPortfolioData();
+    this.getPortfoliosData();
   },
   methods: {
+    function getRandomInt(max) {
+      return Math.floor(Math.random() * max);
+    }
+    async getPortfoliosData() {
+      this.error = this.portfolio = null;
+      this.loading = true;
+      await bucket
+        .getObjects({
+          query: {
+            type: "portfolios",
+          },
+          props: "id,slug,content,title,metadata",
+          limit: 2,
+        })
+        .then((data) => {
+          const portfolios = data.objects;
+          this.loading = false;
+          this.portfolios = portfolios;
+        });
+    },
     async fetchPortfolioData() {
       this.loading = true;
       await bucket
