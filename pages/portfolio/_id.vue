@@ -85,7 +85,7 @@ export default {
   methods: {
     function getRandomInt(max) {
       return Math.floor(Math.random() * max);
-    }
+    },
     async getPortfoliosData() {
       this.error = this.portfolio = null;
       this.loading = true;
