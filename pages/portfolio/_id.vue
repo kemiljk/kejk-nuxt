@@ -95,7 +95,6 @@ export default {
             type: "portfolios",
           },
           props: "id,slug,content,title,metadata",
-          limit: 2,
         })
         .then((data) => {
           const portfolios = data.objects;
