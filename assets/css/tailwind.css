@@ -51,6 +51,10 @@
     @apply w-full bg-gray-50 dark:bg-gray-900 rounded-xl whitespace-pre overflow-x-auto p-8;
   }
 
+  code {
+    @apply w-max bg-gray-100 dark:bg-gray-800 rounded-md py-1 px-2;
+  }
+
   input {
     -webkit-appearance: none;
     -moz-appearance: none;
