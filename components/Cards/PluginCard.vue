@@ -9,12 +9,12 @@
       <button
         class="bg-gray-100 dark:bg-gray-900 hover:shadow-lg hover:bg-gray-50 dark:hover:bg-gray-800   transition ease-in-out duration-300 rounded-xl text-left w-full focus:outline-none focus:ring-2 focus:ring-white"
       >
-        <div class="px-4 py-4">
-          <header class="mb-4 flex items-start justify-between">
+        <div class="p-4">
+          <header class="flex items-start justify-between">
             <div class="flex max-w-xl">
               <img
                 :src="plugin.metadata.hero.imgix_url"
-                class="bg-gray-100 rounded-md max-h-32 sm:max-h-32 mr-4 sm:mr-8 border border-gray-300 dark:border-none dark:border-gray-900"
+                class="bg-gray-100 rounded-md max-h-24 sm:max-h-40 mr-4 sm:mr-8 border border-gray-300 dark:border-none dark:border-gray-900"
                 alt="Image of media"
               />
               <div>
