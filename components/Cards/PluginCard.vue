@@ -17,9 +17,12 @@
                 class="bg-gray-100 rounded-md max-h-32 sm:max-h-40 mr-4 sm:mr-8 border border-gray-300 dark:border-none dark:border-gray-900"
                 alt="Image of media"
               />
+
               <div>
                 <Tag color="pink">Figma</Tag>
-                <h4 class="pt-1 font-bold text-lg text-gray-900 dark:text-gray-100">
+                <h4
+                  class="pt-1 font-bold text-lg text-gray-900 dark:text-gray-100"
+                >
                   {{ plugin.title }}
                 </h4>
                 <p
