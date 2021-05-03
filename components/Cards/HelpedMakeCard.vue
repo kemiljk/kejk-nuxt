@@ -20,7 +20,7 @@
           ></download-icon>
         </header>
         <div class="divide-y divide-solid divide-gray-300 dark:divide-gray-800">
-          <div class="flex space-x-2 mb-4">
+          <div class="flex space-x-2 mb-4 overflow-x-scroll">
             <Tag color="yellow" v-if="helpedMake.metadata.design">Design </Tag>
             <Tag color="purple" v-if="helpedMake.metadata.development"
               >Development
