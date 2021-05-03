@@ -14,11 +14,12 @@
             <div class="flex max-w-xl">
               <img
                 :src="plugin.metadata.hero.imgix_url"
-                class="bg-gray-100 rounded-md max-h-24 sm:max-h-32 mr-4 sm:mr-8 border border-gray-300 dark:border-none dark:border-gray-900"
+                class="bg-gray-100 rounded-md max-h-32 sm:max-h-32 mr-4 sm:mr-8 border border-gray-300 dark:border-none dark:border-gray-900"
                 alt="Image of media"
               />
               <div>
-                <h4 class="font-bold text-lg text-gray-900 dark:text-gray-100">
+                <Tag color="pink">Figma</Tag>
+                <h4 class="pt-1 font-bold text-lg text-gray-900 dark:text-gray-100">
                   {{ plugin.title }}
                 </h4>
                 <p
@@ -36,12 +37,6 @@
               class="text-gray-700 dark:text-gray-300 -mt-2 sm:mt-0 h-10 w-10 sm:h-6"
             ></external-link-icon>
           </header>
-          <hr
-            class="border border-gray-300 dark:border-gray-800"
-          />
-          <div class="flex items-center space-x-4 mt-2">
-            <Tag color="pink">Figma</Tag>
-          </div>
         </div>
       </button>
     </a>

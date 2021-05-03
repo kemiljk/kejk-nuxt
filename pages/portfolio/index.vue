@@ -35,7 +35,7 @@
       <div class="flex w-full">
         <div class="grid w-full">
           <keep-alive>
-            <Plugin :plugin="plugin" />
+            <PluginCard :plugin="plugin" />
           </keep-alive>
         </div>
       </div>
