@@ -51,6 +51,18 @@
           </div>
         </div>
       </div>
+      <H2Header class="pt-16">Some things I'm currently enjoying.</H2Header>
+      <div class="flex flex-row">
+        <div
+          class="grid grid-row xs:grid-cols-1 sm:grid-cols-2 md:grid-cols-3 w-full gap-4"
+        >
+          <div v-for="media in medias" :key="media._id">
+            <keep-alive>
+              <MediaCard :media="media" />
+            </keep-alive>
+          </div>
+        </div>
+      </div>
       <Divider />
       <header>
         <h2>How to reach me.</h2>
@@ -101,12 +113,14 @@ export default {
       uses: {},
       tools: {},
       softwares: {},
+      medias: {},
     };
   },
   created() {
     this.fetchSoftwareData();
     this.fetchToolsData();
     this.fetchUsesData();
+    this.getMediasData();
   },
   methods: {
     async fetchSoftwareData() {
@@ -150,6 +164,23 @@ export default {
         .then((data) => {
           this.uses = data.object;
           this.loading = false;
+        });
+    },
+    async getMediasData() {
+      this.error = this.media = null;
+      this.loading = true;
+      await bucket
+        .getObjects({
+          limit: 6,
+          query: {
+            type: "medias",
+          },
+          props: "_id,title,metadata",
+        })
+        .then((data) => {
+          const medias = data.objects;
+          this.loading = false;
+          this.medias = medias;
         });
     },
   },

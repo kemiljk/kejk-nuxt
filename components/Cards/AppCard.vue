@@ -7,20 +7,32 @@
       cursor="pointer"
     >
       <button
-        class="bg-gray-100 dark:bg-gray-900 hover:shadow-lg hover:bg-gray-50 dark:hover:bg-gray-800   transition ease-in-out duration-300 rounded-xl text-left max-w-5/6 w-full focus:outline-none focus:ring-2 focus:ring-white"
+        class="bg-gray-100 dark:bg-gray-900 hover:shadow-lg hover:bg-gray-50 dark:hover:bg-gray-800 transition ease-in-out duration-300 rounded-xl text-left max-w-5/6 w-full focus:outline-none focus:ring-2 focus:ring-white"
       >
         <div class="p-4">
           <header class="flex justify-between">
-            <div class="flex max-w-xl">
+            <div class="flex w-full">
               <img
                 :src="app.metadata.cover.imgix_url"
-                class="rounded-md max-h-24 sm:max-h-28 mr-4"
+                class="rounded-md max-h-32 sm:max-h-28 mr-4"
                 alt="Image of media"
               />
-              <div>
-                <div class="flex space-x-2 mb-4">
-                  <Tag color="yellow" v-if="app.metadata.ios">iOS </Tag>
-                  <Tag color="purple" v-if="app.metadata.macos">macOS </Tag>
+              <div class="w-full">
+                <div class="flex justify-between items-center mb-4">
+                  <div class="flex space-x-1">
+                    <Tag color="yellow" v-if="app.metadata.ios">iOS </Tag>
+                    <Tag color="purple" v-if="app.metadata.macos">macOS </Tag>
+                  </div>
+                  <compass-icon
+                    v-if="app.metadata.website"
+                    class="text-gray-700 dark:text-gray-300"
+                    size="1x"
+                  ></compass-icon>
+                  <download-icon
+                    v-if="app.metadata.download"
+                    class="text-gray-700 dark:text-gray-300"
+                    size="1x"
+                  ></download-icon>
                 </div>
                 <h4
                   class="pt-4 font-bold text-sm text-gray-900 dark:text-gray-100"
@@ -34,14 +46,6 @@
                 </p>
               </div>
             </div>
-            <compass-icon
-              v-if="app.metadata.website"
-              class="text-gray-700 dark:text-gray-300"
-            ></compass-icon>
-            <download-icon
-              v-if="app.metadata.download"
-              class="text-gray-700 dark:text-gray-300"
-            ></download-icon>
           </header>
         </div>
       </button>
@@ -50,20 +54,27 @@
   <div v-else>
     <nuxt-link :to="app.metadata.to" rel="noreferrer" cursor="pointer">
       <button
-        class="bg-gray-100 dark:bg-gray-900 hover:shadow-lg hover:bg-gray-50 dark:hover:bg-gray-800   transition ease-in-out duration-300 rounded-xl text-left w-full focus:outline-none focus:ring-2 focus:ring-white"
+        class="bg-gray-100 dark:bg-gray-900 hover:shadow-lg hover:bg-gray-50 dark:hover:bg-gray-800 transition ease-in-out duration-300 rounded-xl text-left w-full focus:outline-none focus:ring-2 focus:ring-white"
       >
         <div class="p-4">
           <header class="flex justify-between">
-            <div class="flex max-w-xl">
+            <div class="flex w-full">
               <img
                 :src="app.metadata.cover.imgix_url"
-                class="rounded-md max-h-24 sm:max-h-28 mr-4"
+                class="rounded-md max-h-32 sm:max-h-28 mr-4"
                 alt="Image of media"
               />
-              <div>
-                <div class="flex space-x-2 mb-4">
-                  <Tag color="yellow" v-if="app.metadata.ios">iOS </Tag>
-                  <Tag color="purple" v-if="app.metadata.macos">macOS </Tag>
+              <div class="w-full">
+                <div class="flex justify-between items-center mb-4">
+                  <div class="flex space-x-2">
+                    <Tag color="yellow" v-if="app.metadata.ios">iOS </Tag>
+                    <Tag color="purple" v-if="app.metadata.macos">macOS </Tag>
+                  </div>
+                  <arrow-right-icon
+                    v-if="app.metadata.internal"
+                    class="text-gray-700 dark:text-gray-300"
+                    size="1x"
+                  ></arrow-right-icon>
                 </div>
                 <h4
                   class="pt-4 font-bold text-sm text-gray-900 dark:text-gray-100"
@@ -77,10 +88,6 @@
                 </p>
               </div>
             </div>
-            <arrow-right-icon
-              v-if="app.metadata.internal"
-              class="text-gray-700 dark:text-gray-300"
-            ></arrow-right-icon>
           </header>
         </div>
       </button>

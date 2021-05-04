@@ -7,19 +7,24 @@
       cursor="pointer"
     >
       <button
-        class="bg-gray-100 dark:bg-gray-900 hover:shadow-lg hover:bg-gray-50 dark:hover:bg-gray-800   transition ease-in-out duration-300 rounded-xl text-left w-full focus:outline-none focus:ring-2 focus:ring-white"
+        class="bg-gray-100 dark:bg-gray-900 hover:shadow-lg hover:bg-gray-50 dark:hover:bg-gray-800 transition ease-in-out duration-300 rounded-xl text-left w-full focus:outline-none focus:ring-2 focus:ring-white"
       >
         <div class="p-4">
-          <header class="flex items-start justify-between">
-            <div class="flex max-w-xl">
+          <header class="flex justify-between">
+            <div class="flex w-full">
               <img
                 :src="plugin.metadata.hero.imgix_url"
                 class="bg-gray-100 rounded-md max-h-32 sm:max-h-40 mr-4 sm:mr-8 border border-gray-300 dark:border-none dark:border-gray-900"
                 alt="Image of media"
               />
-
               <div>
-                <Tag color="pink">Figma</Tag>
+                <div class="flex justify-between items-center mb-4">
+                  <Tag color="pink">Figma</Tag>
+                  <external-link-icon
+                    class="text-gray-700 dark:text-gray-300"
+                    size="1x"
+                  ></external-link-icon>
+                </div>
                 <h4
                   class="pt-1 font-bold text-lg text-gray-900 dark:text-gray-100"
                 >
@@ -36,9 +41,6 @@
                 ></p>
               </div>
             </div>
-            <external-link-icon
-              class="text-gray-700 dark:text-gray-300 -mt-2 sm:mt-0 h-10 w-10 sm:h-6"
-            ></external-link-icon>
           </header>
         </div>
       </button>

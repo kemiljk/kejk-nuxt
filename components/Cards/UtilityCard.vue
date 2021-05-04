@@ -14,7 +14,7 @@
             <div class="flex max-w-xl">
               <img
                 :src="utility.metadata.cover.imgix_url"
-                class="rounded-md max-h-24 sm:max-h-28 mr-4"
+                class="rounded-md max-h-32 sm:max-h-28 mr-4"
                 alt="Image of media"
               />
               <div>
@@ -41,6 +41,7 @@
             <download-icon
               v-if="utility.metadata.download"
               class="text-gray-700 dark:text-gray-300"
+              size="1x"
             ></download-icon>
           </header>
         </div>

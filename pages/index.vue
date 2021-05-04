@@ -184,18 +184,6 @@
           </div>
         </div>
       </div>
-      <H2Header class="pt-16">Some things I'm currently enjoying.</H2Header>
-      <div class="flex flex-row">
-        <div
-          class="grid grid-row xs:grid-cols-1 sm:grid-cols-2 md:grid-cols-3 w-full gap-4"
-        >
-          <div v-for="media in medias" :key="media._id">
-            <keep-alive>
-              <MediaCard :media="media" />
-            </keep-alive>
-          </div>
-        </div>
-      </div>
       <H2Header class="pt-16">Music I've written.</H2Header>
       <div class="flex flex-row">
         <div
@@ -261,7 +249,6 @@ export default {
     return {
       loading: false,
       apps: {},
-      medias: {},
       albums: {},
       mades: {},
       utilities: {},
@@ -279,7 +266,6 @@ export default {
     this.getLinksData();
     this.getUtilitiesData();
     this.getHelpedMakesData();
-    this.getMediasData();
     this.getAlbumsData();
     this.fetchPluginData();
   },
@@ -368,23 +354,6 @@ export default {
           const helpedMakes = data.objects;
           this.loading = false;
           this.helpedMakes = helpedMakes;
-        });
-    },
-    async getMediasData() {
-      this.error = this.media = null;
-      this.loading = true;
-      await bucket
-        .getObjects({
-          limit: 6,
-          query: {
-            type: "medias",
-          },
-          props: "_id,title,metadata",
-        })
-        .then((data) => {
-          const medias = data.objects;
-          this.loading = false;
-          this.medias = medias;
         });
     },
     async getAlbumsData() {
