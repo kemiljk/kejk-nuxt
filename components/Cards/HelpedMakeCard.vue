@@ -8,7 +8,7 @@
           <div class="flex w-full">
             <img
               :src="helpedMake.metadata.cover.imgix_url"
-              class="rounded-md max-h-32 sm:max-h-16 mr-4"
+              class="rounded-md max-h-20 sm:max-h-16 mr-4"
               alt="Image of media"
             />
             <div class="w-full">
