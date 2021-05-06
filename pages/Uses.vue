@@ -51,6 +51,7 @@
           </div>
         </div>
       </div>
+      <Divider />
       <H2Header class="pt-16">Some things I'm currently enjoying.</H2Header>
       <div class="flex flex-row">
         <div

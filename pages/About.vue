@@ -21,6 +21,23 @@
     </Nav>
     <div class="max-w-3xl mx-auto px-4">
       <Header>/about</Header>
+      <a
+        class="py-4 no-underline"
+        href="https://changelog.kejk.tech"
+        target="_blank"
+      >
+        <Button color="indigo" class="w-full sm:w-max mx-auto">
+          <template #icon>
+            <external-link-icon
+              size="1x"
+              class="inline-block mr-2 text-indigo-50"
+            />
+          </template>
+          <template #label>
+            My personal changelog
+          </template>
+        </Button>
+      </a>
       <div class="flex flex-row pt-8">
         <keep-alive>
           <About :about="about" />
