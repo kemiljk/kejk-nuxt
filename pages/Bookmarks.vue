@@ -2,7 +2,6 @@
   <div class="relative mx-auto">
     <Nav>
       <NavItem to="/">Home</NavItem>
-      <NavItem to="/about">About</NavItem>
       <NavItem to="/thoughts">Thoughts</NavItem>
       <NavItem href="https://www.plugins.run" extLink>
         <span class="flex items-center">
@@ -14,15 +13,6 @@
         </span>
       </NavItem>
       <NavItem to="/portfolio">Projects</NavItem>
-      <NavItem
-        to="/bookmarks"
-        isActive
-        id="BOOKMARKS"
-        v-scroll-to="'#BOOKMARKS'"
-      >
-        Bookmarks
-      </NavItem>
-      <NavItem to="/uses">Uses</NavItem>
     </Nav>
     <div class="max-w-3xl mx-auto px-4">
       <Header>/bookmarks</Header>

@@ -2,7 +2,6 @@
   <div class="relative mx-auto">
     <Nav>
       <NavItem to="/">Home</NavItem>
-      <NavItem to="/about">About</NavItem>
       <NavItem to="/thoughts">Thoughts</NavItem>
       <NavItem href="https://www.plugins.run" extLink>
         <span class="flex items-center">
@@ -16,8 +15,6 @@
       <NavItem to="/portfolio" isActive id="PROJECTS" v-scroll-to="'#PROJECTS'"
         >Projects</NavItem
       >
-      <NavItem to="/bookmarks">Bookmarks</NavItem>
-      <NavItem to="/uses">Uses</NavItem>
     </Nav>
     <div class="mx-auto px-4">
       <div class="container pt-10 pb-2 max-w-3xl mx-auto">

@@ -2,9 +2,6 @@
   <div class="relative mx-auto">
     <Nav>
       <NavItem to="/">Home</NavItem>
-      <NavItem to="/about" isActive id="ABOUT" v-scroll-to="'#ABOUT'"
-        >About</NavItem
-      >
       <NavItem to="/thoughts">Thoughts</NavItem>
       <NavItem href="https://www.plugins.run" extLink>
         <span class="flex items-center">
@@ -16,34 +13,48 @@
         </span>
       </NavItem>
       <NavItem to="/portfolio">Projects</NavItem>
-      <NavItem to="/bookmarks">Bookmarks</NavItem>
-      <NavItem to="/uses">Uses</NavItem>
     </Nav>
     <div class="max-w-3xl mx-auto px-4">
       <Header>/about</Header>
-      <a
-        class="py-4 no-underline"
-        href="https://changelog.kejk.tech"
-        target="_blank"
-      >
-        <Button color="indigo" class="w-full sm:w-max mx-auto">
-          <template #icon>
-            <external-link-icon
-              size="1x"
-              class="inline-block mr-2 text-indigo-50"
-            />
-          </template>
-          <template #label>
-            My personal changelog
-          </template>
-        </Button>
-      </a>
+
       <div class="flex flex-row pt-8">
         <keep-alive>
           <About :about="about" />
         </keep-alive>
       </div>
-      <H2Header>Where to find me.</H2Header>
+      <div class="flex flex-col sm:flex-row sm:space-x-2">
+        <a
+          class="py-2 sm:py-4 no-underline"
+          href="https://changelog.kejk.tech"
+          target="_blank"
+        >
+          <Button color="indigo" class="w-full sm:w-max">
+            <template #icon>
+              <external-link-icon
+                size="1x"
+                class="inline-block mr-2 text-indigo-50"
+              />
+            </template>
+            <template #label>
+              My personal changelog
+            </template>
+          </Button>
+        </a>
+        <NuxtLink class="sm:py-4 no-underline" to="/uses">
+          <Button color="white" class="w-full sm:w-max">
+            <template #icon>
+              <arrow-right-icon
+                size="1x"
+                class="inline-block mr-2 text-indigo-50 dark:text-gray-900"
+              />
+            </template>
+            <template #label>
+              What I use to get work done
+            </template>
+          </Button>
+        </NuxtLink>
+      </div>
+      <H2Header class="pt-16">Where to find me.</H2Header>
       <div class="flex flex-row">
         <div class="grid grid-row grid-cols-2 md:grid-cols-6 w-full gap-4">
           <div v-for="social in socials" :key="social._id">
@@ -61,7 +72,7 @@
 </template>
 
 <script>
-import { ExternalLinkIcon } from "vue-feather-icons";
+import { ExternalLinkIcon, ArrowRightIcon } from "vue-feather-icons";
 import getSiteMeta from "~/utils/getSiteMeta.js";
 
 const Cosmic = require("cosmicjs");
@@ -94,6 +105,7 @@ export default {
   },
   components: {
     ExternalLinkIcon,
+    ArrowRightIcon,
   },
   data() {
     return {
