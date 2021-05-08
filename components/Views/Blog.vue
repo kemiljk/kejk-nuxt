@@ -9,13 +9,13 @@
           Updated {{ blog.modified_at | moment("from", "now") }}
         </p>
         <p
-          class="w-max font-mono text-indigo-700 dark:text-indigo-400 border-2 border-indigo-700 dark:border-indigo-400 rounded-full px-3 py-1 text-xs mb-4"
+          class="w-max font-mono text-indigo-700 dark:text-indigo-400 border-2 border-indigo-700 dark:border-indigo-400 rounded-full px-3 py-1 text-xs"
         >
           {{ blog.metadata.tag }}
         </p>
       </div>
     </div>
-    <div>
+    <div class="pt-4">
       <section v-html="blog.content" class="text-black dark:text-gray-300" />
     </div>
   </div>
