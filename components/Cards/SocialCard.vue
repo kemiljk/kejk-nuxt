@@ -1,7 +1,7 @@
 <template>
   <a :href="social.href" target="_blank" rel="noreferrer" class="no-underline">
     <button
-      class="flex items-center justify-center p-4 bg-gray-100 dark:bg-gray-900 hover:shadow-md   rounded-xl hover:bg-gray-50 dark:hover:bg-gray-800 transition ease-in-out duration-300 w-full focus:outline-none focus:ring-2 focus:ring-white"
+      class="flex items-center justify-center p-4 bg-gray-50 dark:bg-gray-900 hover:shadow-md   rounded-xl hover:bg-gray-50 dark:hover:bg-gray-800 transition ease-in-out duration-300 w-full focus:outline-none focus:ring-2 focus:ring-white"
     >
       <twitter-icon
         v-if="social.twitter"

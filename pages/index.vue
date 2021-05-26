@@ -172,7 +172,7 @@
       <H2Header class="pt-16">Some things I've helped make.</H2Header>
       <div class="flex flex-row">
         <div
-          class="grid grid-row xs:grid-cols-1 sm:grid-cols-2 md:grid-cols-3 w-full gap-4"
+          class="grid grid-row xs:grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 w-full gap-4"
         >
           <div v-for="helpedMake in helpedMakes" :key="helpedMake.title">
             <keep-alive>

@@ -124,7 +124,7 @@ export default {
           title: "Twitter",
         },
         {
-          href: "https://www.Linkedin.com/kejk",
+          href: "https://www.Linkedin.com/in/kejk",
           linkedin: true,
           title: "LinkedIn",
         },

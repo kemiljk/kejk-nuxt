@@ -14,7 +14,7 @@
       </div>
     </div>
     <div>
-      <section v-html="blog.content" class="text-black dark:text-gray-300" />
+      <section v-html="blog.content" class="mt-4 text-black dark:text-gray-300" />
     </div>
   </div>
 </template>

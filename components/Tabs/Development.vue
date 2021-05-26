@@ -6,7 +6,7 @@
     >
       <div v-for="blog in blogs.blogList" :key="blog.metadata.tag">
         <keep-alive>
-          <BlogCard :blog="blog" v-show="blog.metadata.tag === 'Development'" />
+          <BlogCard :blog="blog" v-show="blog.metadata.tag === 'development'" />
         </keep-alive>
       </div>
     </div>
@@ -21,7 +21,7 @@ export default {
       let blogs = this.$store.getters.getBlog;
       let blogList = [];
       blogs.forEach(function (blog) {
-        if (blog.metadata.tag === "Development") {
+        if (blog.metadata.tag === "development") {
           blogList.push(blog);
         } else {
           return;
