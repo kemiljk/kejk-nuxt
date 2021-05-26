@@ -54,7 +54,7 @@
   <div v-else>
     <nuxt-link :to="app.metadata.to" rel="noreferrer" cursor="pointer">
       <button
-        class="bg-gray-100 dark:bg-gray-900 hover:shadow-lg hover:bg-gray-50 dark:hover:bg-gray-800 transition ease-in-out duration-300 rounded-xl text-left w-full focus:outline-none focus:ring-2 focus:ring-white"
+        class="bg-gray-50 dark:bg-gray-900 hover:shadow-lg hover:bg-gray-50 dark:hover:bg-gray-800 transition ease-in-out duration-300 rounded-xl text-left w-full focus:outline-none focus:ring-2 focus:ring-white"
       >
         <div class="p-4">
           <header class="flex justify-between">
