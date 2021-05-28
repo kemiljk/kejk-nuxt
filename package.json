@@ -9,6 +9,7 @@
     "generate": "nuxt generate"
   },
   "dependencies": {
+    "@fontsource/ibm-plex-sans": "^4.4.0",
     "@nuxtjs/apollo": "^4.0.1-rc.5",
     "@nuxtjs/axios": "^5.12.3",
     "@nuxtjs/dotenv": "^1.4.1",

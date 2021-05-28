@@ -1,5 +1,5 @@
 <template>
-  <header class="pt-4 pb-4 max-w-xl mx-auto">
+  <header class="pt-4 pb-4 max-w-lg mx-auto">
     <p class="text-2xl text-center">
       <slot name="text" />
     </p>
