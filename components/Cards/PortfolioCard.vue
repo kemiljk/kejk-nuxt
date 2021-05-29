@@ -19,10 +19,6 @@
               alt="Image of media"
             />
           </header>
-          <!-- <div class="flex space-x-2 mb-4">
-              <Tag color="yellow" v-if="portfolio.metadata.ios">iOS </Tag>
-              <Tag color="purple" v-if="portfolio.metadata.macos">macOS </Tag>
-            </div> -->
           <div class="p-4">
             <div class="w-full flex justify-between items-center">
               <h4 class="font-bold text-sm text-gray-900 dark:text-gray-100">
