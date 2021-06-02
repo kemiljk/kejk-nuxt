@@ -169,18 +169,6 @@
         </div>
       </div>
       <MoreLink link="thoughts"> See All </MoreLink>
-      <H2Header class="pt-16">Some things I've helped make.</H2Header>
-      <div class="flex flex-row">
-        <div
-          class="grid grid-row xs:grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 w-full gap-4"
-        >
-          <div v-for="helpedMake in helpedMakes" :key="helpedMake.title">
-            <keep-alive>
-              <HelpedMakeCard :helpedMake="helpedMake" />
-            </keep-alive>
-          </div>
-        </div>
-      </div>
       <H2Header class="pt-16">Music I've written.</H2Header>
       <div class="flex flex-row">
         <div
@@ -249,7 +237,6 @@ export default {
       albums: {},
       mades: {},
       utilities: {},
-      helpedMakes: {},
       links: {},
       blogs: {},
       plugin: {},
@@ -262,7 +249,6 @@ export default {
     this.getBlogsData();
     this.getLinksData();
     this.getUtilitiesData();
-    this.getHelpedMakesData();
     this.getAlbumsData();
     this.fetchPluginData();
   },
@@ -334,23 +320,6 @@ export default {
           const utilities = data.objects;
           this.loading = false;
           this.utilities = utilities;
-        });
-    },
-    async getHelpedMakesData() {
-      this.error = this.helpedMake = null;
-      this.loading = true;
-      await bucket
-        .getObjects({
-          limit: 6,
-          query: {
-            type: "helpedmakes",
-          },
-          props: "_id,title,metadata",
-        })
-        .then((data) => {
-          const helpedMakes = data.objects;
-          this.loading = false;
-          this.helpedMakes = helpedMakes;
         });
     },
     async getAlbumsData() {

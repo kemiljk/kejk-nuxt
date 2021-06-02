@@ -32,14 +32,18 @@
         <button
           v-for="tab in tabs"
           :key="tab"
-          @click="selected = tab"
+          @click="(selected = tab), (active = true)"
           class="block font-medium bg-gray-100 dark:bg-gray-800 px-4 py-2 text-gray-600 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-50 hover:bg-gray-100 rounded-md dark:hover:bg-gray-800"
-          :class="[{ active: selected === tab }]"
+          :class="[
+            {
+              active: selected === tab,
+            },
+          ]"
         >
           {{ tab }}
         </button>
       </div>
-      <component :is="selected" class="tab mt-8"></component>
+      <component :is="selected" class="mt-8"></component>
       <Divider />
       <H2Header id="GET_IN_TOUCH">How to reach me.</H2Header>
       <GetInTouch />
@@ -97,6 +101,7 @@ export default {
   },
   data() {
     return {
+      active: false,
       loading: false,
       tabs: ["All", "Design", "Development", "Opinion", "Links"],
       selected: "All",
