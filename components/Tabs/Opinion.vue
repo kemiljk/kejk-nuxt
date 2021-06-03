@@ -1,5 +1,12 @@
 <template>
   <div>
+    <header>
+      <h2
+        class="inline-block border-b-2 border-gray-100 dark:border-gray-800 max-w-max"
+      >
+        Opinion.
+      </h2>
+    </header>
     <div
       class="grid grid-row xs:grid-cols-1 sm:grid-cols-2 gap-8"
       v-if="blogs.blogList"
@@ -20,7 +27,7 @@ export default {
     blogs() {
       let blogs = this.$store.getters.getBlog;
       let blogList = [];
-      blogs.forEach(function (blog) {
+      blogs.forEach(function(blog) {
         if (blog.metadata.tag === "opinion") {
           blogList.push(blog);
         } else {
