@@ -85,7 +85,7 @@ export default {
   computed: {
     meta() {
       const metaData = {
-        title: "KEJK | Uses",
+        title: "Uses | KEJK",
         description: "Karl's Product Design and Development EDC and equipment",
         url: "https://kejk.tech/uses",
         mainImage:
@@ -96,7 +96,7 @@ export default {
   },
   head() {
     return {
-      title: "KEJK | Uses",
+      title: "Uses | KEJK",
       meta: [...this.meta],
       link: [{ rel: "canonical", href: "https://kejk.tech/uses" }],
     };

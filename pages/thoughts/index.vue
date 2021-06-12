@@ -72,7 +72,7 @@ export default {
   computed: {
     meta() {
       const metaData = {
-        title: "KEJK | Thoughts",
+        title: "Thoughts | KEJK",
         description:
           "Thoughts on Design and Development from here and around the web.",
         url: "https://kejk.tech/thoughts",
@@ -94,7 +94,7 @@ export default {
   },
   head() {
     return {
-      title: "KEJK | Thoughts",
+      title: "Thoughts | KEJK",
       meta: [...this.meta],
       link: [{ rel: "canonical", href: "https://kejk.tech/thoughts" }],
     };

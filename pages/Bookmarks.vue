@@ -50,7 +50,7 @@ export default {
   computed: {
     meta() {
       const metaData = {
-        title: "KEJK | Bookmarks",
+        title: "Bookmarks | KEJK",
         description:
           "Bookmarks of interesting things I've found around the web, for me to keep and for you to enjoy.",
         url: "https://kejk.tech/bookmarks",
@@ -62,7 +62,7 @@ export default {
   },
   head() {
     return {
-      title: "KEJK | Bookmarks",
+      title: "KBookmarks | KEJK",
       meta: [...this.meta],
       link: [{ rel: "canonical", href: "https://kejk.tech/bookmarks" }],
     };

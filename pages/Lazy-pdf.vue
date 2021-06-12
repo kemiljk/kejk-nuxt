@@ -144,7 +144,7 @@ export default {
   computed: {
     meta() {
       const metaData = {
-        title: "KEJK | Lazy PDF",
+        title: "Lazy PDF | KEJK",
         description: "Effortless and interfaceless PDF creation.",
         url: "https://kejk.tech/lazy-pdf",
         mainImage:
@@ -155,7 +155,7 @@ export default {
   },
   head() {
     return {
-      title: "KEJK | Lazy PDF",
+      title: "Lazy PDF | KEJK",
       meta: [...this.meta],
       link: [{ rel: "canonical", href: "https://kejk.tech/lazy-pdf" }],
     };

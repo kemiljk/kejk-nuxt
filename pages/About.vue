@@ -86,7 +86,7 @@ export default {
   computed: {
     meta() {
       const metaData = {
-        title: "KEJK | About",
+        title: "About | KEJK",
         description:
           "Karl is a Product Designer, crafting intelligent interfaces for the web, mobile and meta services.",
         url: "https://kejk.tech/about",
@@ -98,7 +98,7 @@ export default {
   },
   head() {
     return {
-      title: "KEJK | About",
+      title: "About | KEJK",
       meta: [...this.meta],
       link: [{ rel: "canonical", href: "https://kejk.tech/about" }],
     };
