@@ -65,15 +65,15 @@
           </div>
           <IconText class="flex items-center">
             <template #icon>
-              <HomeHeroIcon class="pr-4" />
+              <MoneyboxIcon class="pr-4" />
             </template>
             <template #text>
-              Designing and defining the Home as a Service at
+              Designing the future of long-term investing at
               <a
-                href="https://www.homehero.co.uk"
+                href="https://www.moneyboxapp.com"
                 target="_blank"
                 rel="noreferrer"
-                >HomeHero</a
+                >Moneybox</a
               >.
             </template>
           </IconText>
