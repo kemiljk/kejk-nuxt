@@ -13,13 +13,13 @@ export default {
   computed: {
     colorClasses() {
       return {
-          yellow: "text-yellow-700 dark:text-yellow-400 border-2 border-yellow-700 dark:border-yellow-400",
-          purple: "text-purple-700 dark:text-purple-400 border-2 border-purple-700 dark:border-purple-400",
-          red: "text-red-700 dark:text-red-400 border-2 border-red-700 dark:border-red-400",
-          pink: "text-pink-700 dark:text-pink-400 border-2 border-pink-700 dark:border-pink-400",
-          green: "text-green-700 dark:text-green-400 border-2 border-green-700 dark:border-green-400",
-          indigo: "text-indigo-700 dark:text-indigo-400 border-2 border-indigo-700 dark:border-indigo-400",
-          blue: "text-blue-700 dark:text-blue-400 border-2 border-blue-700 dark:border-blue-400",
+          yellow: "text-yellow-700 dark:text-yellow-400 bg-yellow-50 dark:bg-yellow-700",
+          purple: "text-purple-700 dark:text-purple-400 bg-purple-50 dark:bg-purple-700",
+          red: "text-red-700 dark:text-red-400 bg-red-50 dark:bg-red-700",
+          pink: "text-pink-700 dark:text-pink-400 bg-pink-50 dark:bg-pink-700",
+          green: "text-green-700 dark:text-green-400 bg-green-50 dark:bg-green-700",
+          indigo: "text-indigo-700 dark:text-indigo-400 bg-indigo-50 dark:bg-indigo-700",
+          blue: "text-blue-700 dark:text-blue-400 bg-blue-50 dark:bg-blue-700",
       }[this.color]
     },
   },
