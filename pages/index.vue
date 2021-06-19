@@ -65,7 +65,7 @@
           </div>
           <IconText class="flex items-center">
             <template #icon>
-              <MoneyboxIcon class="mr-4" />
+              <MoneyboxIcon class="mr-4 border border-gray-200 dark:border-none" />
             </template>
             <template #text>
               Designing the future of long-term investing at
