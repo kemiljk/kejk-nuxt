@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="flex rounded-full h-12 w-12">
     <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
     <rect width="48" height="48" rx="24" fill="white"/>
     <circle cx="23.9736" cy="24.1445" r="10.6498" fill="#00C2B5"/>
