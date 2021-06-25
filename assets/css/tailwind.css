@@ -67,9 +67,11 @@
 }
 
 @layer utilities {
+/*
   .active {
-    @apply text-gray-900 dark:text-gray-50 bg-gray-200 dark:bg-gray-700;
+    @apply text-gray-800 dark:text-gray-50 bg-gray-200 dark:bg-gray-700;
   }
+*/
   .scrollbar-hidden::-webkit-scrollbar {
     display: none;
   }
