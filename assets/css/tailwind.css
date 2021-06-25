@@ -68,7 +68,7 @@
 
 @layer utilities {
   .active {
-    @apply text-black dark:text-white bg-gray-300 dark:bg-gray-600;
+    @apply text-gray-900 dark:text-gray-50 bg-gray-200 dark:bg-gray-700;
   }
   .scrollbar-hidden::-webkit-scrollbar {
     display: none;
