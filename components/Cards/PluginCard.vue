@@ -14,7 +14,7 @@
             <div class="flex w-full">
               <img
                 :src="plugin.metadata.hero.imgix_url"
-                class="bg-gray-100 rounded-md max-h-32 sm:max-h-40 mr-4 sm:mr-8 border border-gray-300 dark:border-none dark:border-gray-900"
+                class="rounded-md max-h-32 sm:max-h-40 mr-4 sm:mr-8 border border-gray-300 dark:border-none"
                 alt="Image of media"
               />
               <div>
