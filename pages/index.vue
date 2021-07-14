@@ -65,7 +65,9 @@
           </div>
           <IconText class="flex items-center">
             <template #icon>
-              <MoneyboxIcon class="mr-4 border border-gray-200 dark:border-none" />
+              <MoneyboxIcon
+                class="mr-4 border border-gray-200 dark:border-none"
+              />
             </template>
             <template #text>
               Designing the future of long-term investing at
@@ -77,7 +79,7 @@
               >.
             </template>
           </IconText>
-          <div class="flex items-center justify-between">
+          <div class="flex items-center space-x-12">
             <IconText class="flex items-center mr-2">
               <template #icon>
                 <MapIcon class="mr-4" />
