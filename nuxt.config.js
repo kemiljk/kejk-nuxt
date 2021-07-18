@@ -219,36 +219,30 @@ export default {
             "Thoughts on design, development and the intersection of the two",
         };
 
-        let all_blogs = [];
-
         await axios
           .get(
             `https://api.cosmicjs.com/v2/buckets/kemiljk/objects?pretty=true&query=%7B%22type%22%3A%22blogs%22%7D&read_key=uNXYQDbNTCWQyEaFjq44PUolieGKBuzePTaEdnDl0CHLcnJtPK&limit=20&props=slug,title,content,metadata,modified_at`
           )
           .then((res) => {
             res.data.objects.forEach((blog) => {
-              all_blogs.push(blog);
+              const url = `https://kejk.tech/thoughts/${blog.slug}`;
+              feed.addItem({
+                title: blog.title,
+                id: url,
+                link: url,
+                description: blog.metadata.snippet,
+                image: blog.metadata.hero.imgix_url,
+                content: blog.content,
+                published: new Date(blog.modified_at),
+                author: [
+                  {
+                    name: "Karl Koch",
+                    email: "karl@kejk.tech",
+                  },
+                ],
+              });
             });
           });
-
-        all_blogs.forEach((blog) => {
-          const url = `https://kejk.tech/thoughts/${blog.slug}`;
-          feed.addItem({
-            title: blog.title,
-            id: url,
-            link: url,
-            description: blog.metadata.snippet,
-            image: blog.metadata.hero.imgix_url,
-            content: blog.content,
-            published: new Date(blog.modified_at),
-            author: [
-              {
-                name: "Karl Koch",
-                email: "karl@kejk.tech",
-              },
-            ],
-          });
-        });
       },
       cacheTime: 1000 * 60 * 15,
       type: "rss2",
