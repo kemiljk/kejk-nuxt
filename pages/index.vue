@@ -14,7 +14,7 @@
       </NavItem>
       <NavItem to="/portfolio">Projects</NavItem>
     </Nav>
-    <div class="max-w-5xl mx-auto px-4">
+    <div class="max-w-3xl mx-auto px-4">
       <div>
         <Header>Hej, I'm Karl</Header>
         <Subheader>

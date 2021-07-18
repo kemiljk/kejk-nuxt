@@ -6,7 +6,7 @@
       <div class="overflow-hidden">
         <div class="grid grid-cols-1 md:grid-cols-2">
           <div
-            class="p-6 sm:mr-2 bg-gray-100 dark:bg-gray-900 rounded-tl-lg rounded-tr-lg sm:rounded-tr-none sm:rounded-bl-lg"
+            class="p-6 sm:mr-2 rounded-tl-lg rounded-tr-lg sm:rounded-tr-none sm:rounded-bl-lg"
           >
             <h1
               class="text-xl sm:text-2xl text-gray-800 dark:text-white font-bold tracking-tight"
@@ -18,35 +18,13 @@
             >
               Fill in the form to start a conversation
             </p>
-
             <div
-              class="flex items-center mt-8 text-gray-600 dark:text-gray-400"
+              class="grid grid-row grid-cols-2 md:grid-cols-2 w-full gap-4 pt-4"
             >
-              <check-icon size="1.5x" class="text-indigo-500"></check-icon>
-              <div class="ml-4 text-md font-medium w-100">Ask me anything</div>
-            </div>
-            <div
-              class="flex items-center mt-4 text-gray-600 dark:text-gray-400"
-            >
-              <check-icon size="1.5x" class="text-indigo-500"></check-icon>
-              <div class="ml-4 text-md font-medium w-100">
-                Enquire about design or development work
-              </div>
-            </div>
-            <div
-              class="flex items-center mt-4 text-gray-600 dark:text-gray-400"
-            >
-              <check-icon size="1.5x" class="text-indigo-500"></check-icon>
-              <div class="ml-4 text-md font-medium w-100">
-                Ask a specific question about this site
-              </div>
-            </div>
-            <div
-              class="flex items-center mt-4 text-gray-600 dark:text-gray-400"
-            >
-              <check-icon size="1.5x" class="text-indigo-500"></check-icon>
-              <div class="ml-4 text-md font-medium w-100">
-                Report an error/issue
+              <div v-for="social in socials" :key="social._id">
+                <keep-alive>
+                  <SocialCard :social="social" />
+                </keep-alive>
               </div>
             </div>
           </div>
@@ -57,20 +35,6 @@
             method="POST"
             accept-charset="UTF-8"
           >
-            <div class="flex flex-col">
-              <label for="name" class="font-medium text-black dark:text-white"
-                >Name</label
-              >
-              <input
-                type="name"
-                name="name"
-                id="name"
-                placeholder="e.g. Arnold Schwarzenegger"
-                class="w-100 mt-2 py-3 px-3 rounded-lg bg-white dark:bg-gray-900 border-2 border-gray-200 dark:border-gray-700 text-gray-800 dark:text-gray-50 font-medium focus:border-indigo-500 focus:border-2 focus:outline-none"
-                required
-              />
-            </div>
-
             <div class="flex flex-col mt-2">
               <label for="email" class="font-medium text-black dark:text-white"
                 >Email</label
@@ -124,6 +88,42 @@ export default {
   name: "GetInTouch",
   components: {
     CheckIcon,
+  },
+  data() {
+    return {
+      socials: [
+        {
+          href: "https://www.figma.com/@_kejk",
+          figma: true,
+          title: "Figma",
+        },
+        {
+          href: "https://www.twitter.com/_kejk",
+          twitter: true,
+          title: "Twitter",
+        },
+        {
+          href: "https://www.Linkedin.com/in/kejk",
+          linkedin: true,
+          title: "LinkedIn",
+        },
+        {
+          href: "https://www.github.com/kemiljk/",
+          github: true,
+          title: "Github",
+        },
+        {
+          href: "https://dribbble.com/_kejk",
+          dribbble: true,
+          title: "Dribbble",
+        },
+        {
+          href: "https://www.ko-fi.com/kemiljk",
+          coffee: true,
+          title: "Ko-Fi",
+        },
+      ],
+    };
   },
 };
 </script>
