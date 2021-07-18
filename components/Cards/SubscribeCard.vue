@@ -2,42 +2,11 @@
   <div class="flex justify-center bg-gray-50 dark:bg-gray-900 rounded-xl">
     <div class="max-w-5xl mx-auto py-8">
       <h1
-        class="text-xl sm:text-2xl text-gray-800 dark:text-white font-bold pb-4"
+        class="text-xl sm:text-2xl text-gray-800 dark:text-white font-bold pb-2"
       >
         Subscribe to stay up-to-date.
       </h1>
-      <div class="flex flex-col md:flex-row md:space-x-2">
-        <a
-          href="https://www.kejk.tech/rss.xml"
-          target="_blank"
-          rel="noreferrer"
-          class="no-underline"
-        >
-          <Button color="grey">
-            <template #icon>
-              <rss-icon
-                size="1x"
-                class="inline-block mr-2 text-gray-900 dark:text-gray-50"
-              />
-            </template>
-            <template #label> Subscribe via RSS </template>
-          </Button>
-        </a>
-        <a
-          href="https://app.mailbrew.com/_kejk/kejk-thoughts-QQU8XZ7Y1S4b?aff=_kejk"
-          target="_blank"
-          rel="noreferrer"
-          class="no-underline"
-        >
-          <Button color="red" class="mt-2 md:mt-0">
-            <template #icon>
-              <coffee-icon size="1x" class="inline-block mr-2 text-red-100" />
-            </template>
-            <template #label> Subscribe via Mailbrew </template>
-          </Button>
-        </a>
-      </div>
-      <div class="flex flex-col md:flex-row">
+      <div class="flex flex-col md:flex-row pb-4">
         <form
           action="https://buttondown.email/api/emails/embed-subscribe/karl"
           method="post"
@@ -69,11 +38,42 @@
                     class="inline-block mr-2 text-gray-50 dark:text-gray-900"
                   />
                 </template>
-                <template #label> Subscribe for updates </template>
+                <template #label> Newsletter </template>
               </Button>
             </div>
           </div>
         </form>
+      </div>
+      <div class="flex flex-col md:flex-row md:space-x-2">
+        <a
+          href="https://www.kejk.tech/rss.xml"
+          target="_blank"
+          rel="noreferrer"
+          class="no-underline"
+        >
+          <Button color="grey" class="rounded-full">
+            <template #icon>
+              <rss-icon
+                size="1x"
+                class="inline-block mr-2 text-gray-900 dark:text-gray-50"
+              />
+            </template>
+            <template #label> RSS </template>
+          </Button>
+        </a>
+        <a
+          href="https://app.mailbrew.com/_kejk/kejk-thoughts-QQU8XZ7Y1S4b?aff=_kejk"
+          target="_blank"
+          rel="noreferrer"
+          class="no-underline"
+        >
+          <Button color="red" class="mt-2 md:mt-0 rounded-full">
+            <template #icon>
+              <coffee-icon size="1x" class="inline-block mr-2 text-red-100" />
+            </template>
+            <template #label> Mailbrew </template>
+          </Button>
+        </a>
       </div>
     </div>
   </div>

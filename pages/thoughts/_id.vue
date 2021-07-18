@@ -31,12 +31,6 @@
           <h2>How to follow along.</h2>
         </header>
         <SubscribeCard />
-        <header class="mt-4">
-          <h2>How to reach me.</h2>
-        </header>
-        <div>
-          <GetInTouch />
-        </div>
       </div>
     </div>
   </div>
