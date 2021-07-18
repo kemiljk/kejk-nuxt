@@ -22,21 +22,24 @@
         <template #text>
           Thoughts about design, development and the intersection of the two.
         </template>
-        <template #buttons>
-          <SubscribeCard class="max-w-3xl px-8" />
-        </template>
       </Subheader>
+      <SubscribeCard />
       <div
-        class="bg-white dark:bg-black top-16 flex flex-row py-4 space-x-2 overflow-x-auto scrollbar-hidden"
+        class="bg-white dark:bg-black mt-8 top-16 flex flex-row py-4 space-x-2 overflow-x-auto scrollbar-hidden"
       >
         <button
           v-for="tab in tabs"
           :key="tab"
-          @click="(selected = tab), (active = true)"
+          @click="
+            selected = tab;
+            active = true;
+          "
           class="block font-medium rounded-md bg-gray-100 dark:bg-gray-800 px-4 py-2 text-gray-600 hover:text-gray-800 active:text-gray-800 dark:text-gray-400 dark:hover:text-gray-50 dark:active:text-gray-50 hover:bg-gray-200 dark:hover:bg-gray-700 active:bg-gray-200 dark:active:bg-gray-700"
           :class="[
             {
-              selected: 'text-gray-800 dark:text-gray-50 bg-gray-200 dark:bg-gray-700', active: selected === tab,
+              selected:
+                'text-gray-800 dark:text-gray-50 bg-gray-200 dark:bg-gray-700 ',
+              active: selected === tab,
             },
           ]"
         >
@@ -50,6 +53,12 @@
     </div>
   </div>
 </template>
+
+<style scoped>
+.active {
+  @apply text-gray-800 dark:text-gray-50 bg-gray-200 dark:bg-gray-700;
+}
+</style>
 
 <script>
 import { ExternalLinkIcon } from "vue-feather-icons";

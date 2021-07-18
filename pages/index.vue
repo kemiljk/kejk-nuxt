@@ -15,40 +15,41 @@
       <NavItem to="/portfolio">Projects</NavItem>
     </Nav>
     <div class="max-w-5xl mx-auto px-4">
-      <Header>Hej, I'm Karl</Header>
-      <Subheader>
-        <template #text>
-          I design and build software, write about the intersection of design
-          and development, care deeply about building effective systems and
-          create music.
-        </template>
-        <template #buttons>
-          <div class="flex flex-col md:flex-row md:space-x-2">
-            <NuxtLink to="/about" class="no-underline">
-              <Button color="white">
-                <template #icon>
-                  <info-icon
-                    size="1x"
-                    class="inline-block mr-2 text-gray-50 dark:text-gray-900"
-                  />
-                </template>
-                <template #label> More about me </template>
-              </Button>
-            </NuxtLink>
-            <a href="#" v-scroll-to="'#GET_IN_TOUCH'" class="no-underline">
-              <Button color="grey" class="mt-2 md:mt-0">
-                <template #icon>
-                  <mail-icon
-                    size="1x"
-                    class="inline-block mr-2 text-gray-800 dark:text-white"
-                  />
-                </template>
-                <template #label> Get in touch </template>
-              </Button>
-            </a>
-          </div>
-        </template>
-      </Subheader>
+      <div>
+        <Header>Hej, I'm Karl</Header>
+        <Subheader>
+          <template #text>
+            I design and build software, write about the intersection of design
+            and development, and create music.
+          </template>
+          <template #buttons>
+            <div class="flex flex-col md:flex-row md:space-x-2">
+              <NuxtLink to="/about" class="no-underline">
+                <Button color="white">
+                  <template #icon>
+                    <info-icon
+                      size="1x"
+                      class="inline-block mr-2 text-gray-50 dark:text-gray-900"
+                    />
+                  </template>
+                  <template #label> More about me </template>
+                </Button>
+              </NuxtLink>
+              <a href="#" v-scroll-to="'#GET_IN_TOUCH'" class="no-underline">
+                <Button color="grey" class="mt-2 md:mt-0">
+                  <template #icon>
+                    <mail-icon
+                      size="1x"
+                      class="inline-block mr-2 text-gray-800 dark:text-white"
+                    />
+                  </template>
+                  <template #label> Get in touch </template>
+                </Button>
+              </a>
+            </div>
+          </template>
+        </Subheader>
+      </div>
       <div
         class="pt-8 text-sm tracking-wider leading-normal uppercase text-gray-600 dark:text-gray-400"
       >

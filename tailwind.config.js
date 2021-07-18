@@ -19,6 +19,7 @@ module.exports = {
       fontFamily: {
         sans: ["IBM Plex Sans", ...defaultTheme.fontFamily.sans],
       },
+      backgroundColor: ["active"],
     },
   },
   variants: {

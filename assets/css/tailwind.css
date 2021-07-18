@@ -3,8 +3,11 @@
 @tailwind utilities;
 
 @layer base {
-  a {
+  /* a {
     @apply text-indigo-600 dark:text-indigo-300 font-semibold underline;
+  } */
+  a {
+    @apply text-black dark:text-white font-semibold underline;
   }
 
   h1 {
@@ -67,7 +70,7 @@
 }
 
 @layer utilities {
-/*
+  /*
   .active {
     @apply text-gray-800 dark:text-gray-50 bg-gray-200 dark:bg-gray-700;
   }
