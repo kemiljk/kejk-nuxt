@@ -47,7 +47,7 @@ export default {
     ExternalLinkIcon,
   },
   async asyncData({ app, route, redirect }) {
-    let data = {};
+    // let data = {};
     try {
       const d = await app.apolloProvider.defaultClient.query({
         query: getBlog,
