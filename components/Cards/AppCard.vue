@@ -35,7 +35,7 @@
                   ></download-icon>
                 </div>
                 <h4
-                  class="pt-4 font-bold text-sm text-gray-900 dark:text-gray-100"
+                  class="pt-4 md:pt-2 font-bold text-sm text-gray-900 dark:text-gray-100"
                 >
                   {{ app.title }}
                 </h4>
@@ -77,7 +77,7 @@
                   ></arrow-right-icon>
                 </div>
                 <h4
-                  class="pt-4 font-bold text-sm text-gray-900 dark:text-gray-100"
+                  class="pt-4 md:pt-2 font-bold text-sm text-gray-900 dark:text-gray-100"
                 >
                   {{ app.title }}
                 </h4>

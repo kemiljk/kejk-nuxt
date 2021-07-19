@@ -14,7 +14,7 @@
       </NavItem>
       <NavItem to="/portfolio">Projects</NavItem>
     </Nav>
-    <div class="max-w-3xl mx-auto px-4">
+    <div class="max-w-5xl mx-auto px-4">
       <div>
         <Header>Hej, I'm Karl</Header>
         <Subheader>
@@ -131,33 +131,23 @@
           </IconText>
         </div>
       </div>
-      <!-- <H2Header class="pt-16">Some things I've made.</H2Header> -->
-      <div class="flex w-full mt-16">
-        <div class="grid w-full">
-          <keep-alive>
-            <PluginCard :plugin="plugin" />
-          </keep-alive>
-        </div>
-      </div>
-      <div class="flex flex-row mt-4">
+      <div class="flex flex-row mt-16">
         <div class="grid w-full sm:grid-cols-2 gap-4">
+          <PluginCard :plugin="plugin" />
           <div v-for="app in apps" :key="app.title">
             <keep-alive>
               <AppCard :app="app" />
             </keep-alive>
           </div>
-        </div>
-      </div>
-      <div class="flex flex-row mt-4">
-        <div class="grid w-full sm:grid-cols-2 gap-4">
-          <div v-for="utility in utilities" :key="utility.title">
-            <keep-alive>
-              <UtilityCard :utility="utility" />
-            </keep-alive>
+          <div class="grid grid-cols-2 gap-4">
+            <div v-for="utility in utilities" :key="utility.title">
+              <keep-alive>
+                <UtilityCard :utility="utility" />
+              </keep-alive>
+            </div>
           </div>
         </div>
       </div>
-      <!-- <H2Header class="pt-16">Thoughts on Design and Development.</H2Header> -->
       <div class="flex flex-row mt-16">
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
           <div v-for="blog in blogs" :key="blog._id">
@@ -173,7 +163,6 @@
         </div>
       </div>
       <MoreLink link="thoughts"> See All </MoreLink>
-      <!-- <H2Header class="pt-16">Music I've written.</H2Header> -->
       <div class="flex flex-row mt-16">
         <div
           class="grid grid-row xs:grid-cols-1 sm:grid-cols-2 md:grid-cols-3 w-full gap-4"
@@ -185,7 +174,6 @@
           </div>
         </div>
       </div>
-      <!-- <H2Header class="pt-16" id="GET_IN_TOUCH">How to reach me.</H2Header> -->
       <GetInTouch class="mt-16" id="GET_IN_TOUCH" />
     </div>
   </div>
@@ -266,7 +254,7 @@ export default {
             type: "apps",
           },
           props: "_id,slug,title,content,metadata,created_at,modified_at",
-          sort: "-created_at",
+          sort: "created_at",
         })
         .then((data) => {
           const apps = data.objects;

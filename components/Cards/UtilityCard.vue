@@ -10,20 +10,29 @@
         class="bg-gray-50 dark:bg-gray-900 hover:shadow-lg hover:bg-gray-50 dark:hover:bg-gray-800   transition ease-in-out duration-300 rounded-xl text-left max-w-5/6 w-full focus:outline-none focus:ring-2 focus:ring-white"
       >
         <div class="p-4">
-          <header class="flex justify-between">
-            <div class="flex max-w-xl">
-              <img
-                :src="utility.metadata.cover.imgix_url"
-                class="rounded-md max-h-32 sm:max-h-28 mr-4"
-                alt="Image of media"
-              />
+          <header class="flex w-full justify-between">
+            <div class="flex w-full max-w-xl">
               <div>
-                <div class="flex space-x-2 mb-4">
-                  <Tag color="yellow" v-if="utility.metadata.ios">iOS </Tag>
-                  <Tag color="purple" v-if="utility.metadata.macos">macOS </Tag>
+                <div class="flex justify-between items-center mb-4">
+                  <div class="flex  space-x-2">
+                    <Tag color="yellow" v-if="utility.metadata.ios">iOS </Tag>
+                    <Tag color="purple" v-if="utility.metadata.macos"
+                      >macOS
+                    </Tag>
+                  </div>
+                  <compass-icon
+                    v-if="utility.metadata.website"
+                    size="1x"
+                    class="text-gray-700 dark:text-gray-300 hidden sm:block flex-shrink-0 "
+                  ></compass-icon>
+                  <download-icon
+                    v-if="utility.metadata.download"
+                    class="text-gray-700 dark:text-gray-300 hidden sm:block flex-shrink-0 "
+                    size="1x"
+                  ></download-icon>
                 </div>
                 <h4
-                  class="pt-4 font-bold text-sm text-gray-900 dark:text-gray-100"
+                  class="pt-4 md:pt-2 font-bold text-sm text-gray-900 dark:text-gray-100"
                 >
                   {{ utility.title }}
                 </h4>
@@ -34,15 +43,6 @@
                 </p>
               </div>
             </div>
-            <compass-icon
-              v-if="utility.metadata.website"
-              class="text-gray-700 dark:text-gray-300"
-            ></compass-icon>
-            <download-icon
-              v-if="utility.metadata.download"
-              class="text-gray-700 dark:text-gray-300"
-              size="1x"
-            ></download-icon>
           </header>
         </div>
       </button>

@@ -14,7 +14,7 @@
             <div class="flex w-full">
               <img
                 :src="plugin.metadata.hero.imgix_url"
-                class="rounded-md max-h-32 sm:max-h-40 mr-4 sm:mr-8 border border-gray-300 dark:border-none"
+                class="rounded-md max-h-32 sm:max-h-28 mr-4 border border-gray-300 dark:border-none"
                 alt="Image of media"
               />
               <div>
@@ -26,19 +26,15 @@
                   ></external-link-icon>
                 </div>
                 <h4
-                  class="pt-1 font-bold text-lg text-gray-900 dark:text-gray-100"
+                  class="pt-4 md:pt-2 font-bold text-sm text-gray-900 dark:text-gray-100"
                 >
                   {{ plugin.title }}
                 </h4>
                 <p
-                  class="mb-0 pt-2 text-gray-700 dark:text-gray-200 font-mono text-sm"
+                  class="mb-0 pt-1 text-gray-500 dark:text-gray-400 font-normal text-sm"
                 >
                   {{ plugin.metadata.subtitle }}
                 </p>
-                <p
-                  class="hidden sm:block mb-0 pt-1 text-gray-500 dark:text-gray-400 text-sm"
-                  v-html="plugin.metadata.body"
-                ></p>
               </div>
             </div>
           </header>

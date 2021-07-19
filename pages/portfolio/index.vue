@@ -29,28 +29,20 @@
       </div>
       <Header>Live projects</Header>
       <H2Header class="pt-16">Things I've built.</H2Header>
-      <div class="flex w-full mt-4">
-        <div class="grid w-full">
-          <keep-alive>
-            <PluginCard :plugin="plugin" />
-          </keep-alive>
-        </div>
-      </div>
-      <div class="flex flex-row mt-4">
+      <div class="flex flex-row mt-16">
         <div class="grid w-full sm:grid-cols-2 gap-4">
+          <PluginCard :plugin="plugin" />
           <div v-for="app in apps" :key="app.title">
             <keep-alive>
               <AppCard :app="app" />
             </keep-alive>
           </div>
-        </div>
-      </div>
-      <div class="flex flex-row mt-4">
-        <div class="grid w-full sm:grid-cols-2 gap-4">
-          <div v-for="utility in utilities" :key="utility.title">
-            <keep-alive>
-              <UtilityCard :utility="utility" />
-            </keep-alive>
+          <div class="grid grid-cols-2 gap-4">
+            <div v-for="utility in utilities" :key="utility.title">
+              <keep-alive>
+                <UtilityCard :utility="utility" />
+              </keep-alive>
+            </div>
           </div>
         </div>
       </div>
@@ -171,7 +163,7 @@ export default {
             type: "apps",
           },
           props: "_id,slug,title,content,metadata,created_at,modified_at",
-          sort: "-created_at",
+          sort: "created_at",
         })
         .then((data) => {
           const apps = data.objects;
