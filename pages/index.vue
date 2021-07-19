@@ -106,7 +106,7 @@
               <CosmicIcon class="pr-4" />
             </template>
             <template #text>
-              Designing the best API-first headless CMS out there at
+              Leading design for the best API-first headless CMS out there at
               <a
                 href="https://www.cosmicjs.com"
                 target="_blank"
