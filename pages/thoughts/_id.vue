@@ -10,7 +10,7 @@
           Plugins
           <external-link-icon
             size="1x"
-            class="ml-2 text-indigo-700 dark:text-gray-300"
+            class="ml-2 text-gray-700 dark:text-gray-300"
           ></external-link-icon>
         </span>
       </NavItem>

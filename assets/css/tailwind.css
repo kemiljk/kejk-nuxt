@@ -3,27 +3,24 @@
 @tailwind utilities;
 
 @layer base {
-  /* a {
-    @apply text-indigo-600 dark:text-indigo-300 font-semibold underline;
-  } */
   a {
     @apply text-black dark:text-white font-semibold underline;
   }
 
   h1 {
-    @apply text-5xl font-black text-black dark:text-white;
+    @apply text-xl md:text-3xl font-black text-black dark:text-white;
   }
 
   h2 {
-    @apply text-2xl font-bold text-black dark:text-white mb-4;
+    @apply text-lg md:text-2xl font-bold text-black dark:text-white mb-4;
   }
 
   h3 {
-    @apply text-xl font-bold  mb-4 text-black dark:text-white;
+    @apply text-base md:text-xl font-bold  mb-4 text-black dark:text-white;
   }
 
   h4 {
-    @apply text-lg font-bold text-black dark:text-white;
+    @apply text-base md:text-xl font-bold text-black dark:text-white;
   }
 
   p {
@@ -47,15 +44,21 @@
   }
 
   pre {
-    @apply rounded-xl bg-gray-50 dark:bg-gray-900 w-full overflow-x-scroll whitespace-pre;
+    @apply font-mono rounded-xl bg-gray-50 dark:bg-gray-900 w-full overflow-x-scroll whitespace-pre;
+    font-family: "IBM Plex Mono" !important;
   }
 
-  pre {
-    @apply w-full bg-gray-50 dark:bg-gray-900 rounded-xl whitespace-pre overflow-x-auto p-8;
+  pre > code {
+    @apply font-mono;
   }
 
   code {
-    @apply w-max bg-gray-100 dark:bg-gray-800 rounded-md py-1 px-2;
+    @apply w-max font-mono bg-gray-100 dark:bg-gray-800 rounded-md py-1 px-2;
+    font-family: "IBM Plex Mono" !important;
+  }
+
+  code > span {
+    @apply font-mono;
   }
 
   input {
@@ -70,11 +73,6 @@
 }
 
 @layer utilities {
-  /*
-  .active {
-    @apply text-gray-800 dark:text-gray-50 bg-gray-200 dark:bg-gray-700;
-  }
-*/
   .scrollbar-hidden::-webkit-scrollbar {
     display: none;
   }

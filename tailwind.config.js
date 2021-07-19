@@ -18,6 +18,7 @@ module.exports = {
       },
       fontFamily: {
         sans: ["IBM Plex Sans", ...defaultTheme.fontFamily.sans],
+        mono: ["IBM Plex Mono", ...defaultTheme.fontFamily.mono],
       },
       backgroundColor: ["active"],
     },
