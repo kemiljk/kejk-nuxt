@@ -131,15 +131,15 @@
           </IconText>
         </div>
       </div>
-      <H2Header class="pt-16">Some things I've made.</H2Header>
-      <div class="flex w-full">
+      <!-- <H2Header class="pt-16">Some things I've made.</H2Header> -->
+      <div class="flex w-full mt-16">
         <div class="grid w-full">
           <keep-alive>
             <PluginCard :plugin="plugin" />
           </keep-alive>
         </div>
       </div>
-      <div class="flex flex-row pt-4">
+      <div class="flex flex-row mt-4">
         <div class="grid w-full sm:grid-cols-2 gap-4">
           <div v-for="app in apps" :key="app.title">
             <keep-alive>
@@ -148,7 +148,7 @@
           </div>
         </div>
       </div>
-      <div class="flex flex-row pt-4">
+      <div class="flex flex-row mt-4">
         <div class="grid w-full sm:grid-cols-2 gap-4">
           <div v-for="utility in utilities" :key="utility.title">
             <keep-alive>
@@ -157,8 +157,8 @@
           </div>
         </div>
       </div>
-      <H2Header class="pt-16">Thoughts on Design and Development.</H2Header>
-      <div class="flex flex-row mt-4">
+      <!-- <H2Header class="pt-16">Thoughts on Design and Development.</H2Header> -->
+      <div class="flex flex-row mt-16">
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
           <div v-for="blog in blogs" :key="blog._id">
             <keep-alive>
@@ -173,8 +173,8 @@
         </div>
       </div>
       <MoreLink link="thoughts"> See All </MoreLink>
-      <H2Header class="pt-16">Music I've written.</H2Header>
-      <div class="flex flex-row">
+      <!-- <H2Header class="pt-16">Music I've written.</H2Header> -->
+      <div class="flex flex-row mt-16">
         <div
           class="grid grid-row xs:grid-cols-1 sm:grid-cols-2 md:grid-cols-3 w-full gap-4"
         >
@@ -185,8 +185,8 @@
           </div>
         </div>
       </div>
-      <H2Header class="pt-16" id="GET_IN_TOUCH">How to reach me.</H2Header>
-      <GetInTouch />
+      <!-- <H2Header class="pt-16" id="GET_IN_TOUCH">How to reach me.</H2Header> -->
+      <GetInTouch class="mt-16" id="GET_IN_TOUCH" />
     </div>
   </div>
 </template>

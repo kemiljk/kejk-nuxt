@@ -18,7 +18,7 @@
     </Nav>
     <div class="max-w-5xl mx-auto px-4">
       <Header>Featured projects</Header>
-      <div class="flex flex-row pt-4">
+      <div class="flex flex-row mt-4">
         <div class="grid w-full sm:grid-cols-2 gap-4">
           <div v-for="portfolio in portfolios" :key="portfolio.id">
             <keep-alive>
@@ -29,14 +29,14 @@
       </div>
       <Header>Live projects</Header>
       <H2Header class="pt-16">Things I've built.</H2Header>
-      <div class="flex w-full">
+      <div class="flex w-full mt-4">
         <div class="grid w-full">
           <keep-alive>
             <PluginCard :plugin="plugin" />
           </keep-alive>
         </div>
       </div>
-      <div class="flex flex-row pt-4">
+      <div class="flex flex-row mt-4">
         <div class="grid w-full sm:grid-cols-2 gap-4">
           <div v-for="app in apps" :key="app.title">
             <keep-alive>
@@ -45,7 +45,7 @@
           </div>
         </div>
       </div>
-      <div class="flex flex-row pt-4">
+      <div class="flex flex-row mt-4">
         <div class="grid w-full sm:grid-cols-2 gap-4">
           <div v-for="utility in utilities" :key="utility.title">
             <keep-alive>
@@ -54,7 +54,7 @@
           </div>
         </div>
       </div>
-      <H2Header class="pt-16">Things I've helped to make.</H2Header>
+      <H2Header class="mt-16">Things I've helped to make.</H2Header>
       <div
         class="mt-4 grid grid-row xs:grid-cols-1 sm:grid-cols-2 md:grid-cols-3 w-full gap-4"
       >
