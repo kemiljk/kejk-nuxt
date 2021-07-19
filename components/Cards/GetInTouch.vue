@@ -13,11 +13,6 @@
             >
               Get in touch.
             </h1>
-            <p
-              class="text-medium text-lg sm:text-xl font-medium text-gray-500 dark:text-gray-400 mt-2"
-            >
-              Fill in the form to start a conversation
-            </p>
             <div
               class="grid grid-row grid-cols-2 md:grid-cols-2 w-full gap-4 pt-4"
             >
