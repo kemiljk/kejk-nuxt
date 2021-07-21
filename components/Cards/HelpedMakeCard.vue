@@ -1,7 +1,7 @@
 <template>
   <a :href="helpedMake.metadata.url" target="`_blank" rel="noreferrer">
     <button
-      class="text-left border-gray-100 dark:border-gray-900 hover:shadow-lg hover:bg-gray-50 dark:hover:bg-gray-800 transition ease-in-out duration-300 rounded-xl w-full focus:outline-none focus:ring-2 focus:ring-white"
+      class="text-left border border-gray-100 dark:border-gray-900 hover:shadow-lg hover:bg-gray-50 dark:hover:bg-gray-800 transition ease-in-out duration-300 rounded-xl w-full focus:outline-none focus:ring-2 focus:ring-white"
     >
       <div class="p-4">
         <header class="flex w-full justify-between">
