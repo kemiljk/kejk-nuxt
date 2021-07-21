@@ -38,7 +38,7 @@
         <div class="flex space-x-2 mt-4">
           <Tag color="yellow" v-if="helpedMake.metadata.design">Design </Tag>
           <Tag color="purple" v-if="helpedMake.metadata.development"
-            >Development
+            >Code
           </Tag>
           <Tag color="pink" v-if="helpedMake.metadata.brand">Brand</Tag>
         </div>
