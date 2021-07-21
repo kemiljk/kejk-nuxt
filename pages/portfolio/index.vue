@@ -48,7 +48,7 @@
       </div>
       <H2Header class="mt-16">Things I've helped to make.</H2Header>
       <div
-        class="mt-4 grid grid-row xs:grid-cols-1 sm:grid-cols-2 md:grid-cols-3 w-full gap-4"
+        class="mt-4 grid grid-row xs:grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 w-full gap-4"
       >
         <div v-for="helpedMake in helpedMakes" :key="helpedMake.title">
           <keep-alive>
