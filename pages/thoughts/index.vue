@@ -56,7 +56,7 @@
 
 <style scoped>
 .active {
-  @apply text-gray-800 dark:text-gray-50 bg-gray-200 dark:bg-gray-700;
+  @apply text-black dark:text-white bg-gray-300 dark:bg-gray-600;
 }
 </style>
 
