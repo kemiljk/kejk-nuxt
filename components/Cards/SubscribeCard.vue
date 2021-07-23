@@ -36,14 +36,14 @@
           <template #label> Newsletter </template>
         </Button>
       </form>
-      <div class="flex flex-row space-x-2 pt-2">
+      <div class="flex flex-row space-x-2 pt-2 items-center justify-start">
         <a
           href="https://www.kejk.tech/rss.xml"
           target="_blank"
           rel="noreferrer"
           class="no-underline"
         >
-          <Button color="grey" class="rounded-full">
+          <Button color="grey" class="rounded-full w-full md:w-max">
             <template #icon>
               <rss-icon
                 size="1x"
@@ -59,7 +59,7 @@
           rel="noreferrer"
           class="no-underline"
         >
-          <Button color="red" class="mt-2 md:mt-0 rounded-full">
+          <Button color="red" class=" rounded-full w-full md:w-max">
             <template #icon>
               <coffee-icon size="1x" class="inline-block mr-2 text-red-100" />
             </template>
