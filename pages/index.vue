@@ -103,7 +103,7 @@
           </div>
           <IconText class="flex items-center">
             <template #icon>
-              <CosmicIcon class="pr-4 border border-gray-200 dark:border-none" />
+              <CosmicIcon class="mr-4 rounded-full border border-gray-200 dark:border-none" />
             </template>
             <template #text>
               Leading design for the best API-first headless CMS out there at
