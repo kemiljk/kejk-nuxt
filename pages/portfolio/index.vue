@@ -17,16 +17,16 @@
       >
     </Nav>
     <div class="max-w-5xl mx-auto px-4">
-      // <Header>Featured projects</Header>
-      //<div class="flex flex-row mt-4">
-        //<div class="grid w-full sm:grid-cols-2 gap-4">
-          //<div v-for="portfolio in portfolios" :key="portfolio.id">
-            //<keep-alive>
-              //<PortfolioCard :portfolio="portfolio" />
-            //</keep-alive>
-          //</div>
-        //</div>
-      //</div>
+      <!--<Header>Featured projects</Header>
+      <div class="flex flex-row mt-4">
+      <div class="grid w-full sm:grid-cols-2 gap-4">
+      <div v-for="portfolio in portfolios" :key="portfolio.id">
+      <keep-alive>
+      <PortfolioCard :portfolio="portfolio" />
+      </keep-alive>
+      </div>
+      </div>
+      </div>-->
       <Header>Live projects</Header>
       <H2Header class="pt-16">Things I've built.</H2Header>
       <div class="flex flex-row mt-16">
