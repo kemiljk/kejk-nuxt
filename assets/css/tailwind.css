@@ -3,6 +3,10 @@
 @tailwind utilities;
 
 @layer base {
+  img {
+    @apply rounded-lg;
+  }
+
   a {
     @apply text-black dark:text-white font-semibold underline;
   }
