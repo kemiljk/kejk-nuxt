@@ -16,7 +16,14 @@
     </Nav>
     <div class="max-w-5xl mx-auto px-4">
       <div>
-        <Header>Hej, I'm Karl</Header>
+        <Header>
+        Hej, I'm Karl
+        <div
+        class="pt-2 text-sm tracking-wider leading-normal uppercase text-gray-600 dark:text-gray-400"
+      >
+        Product designer and UI developer
+      </div>
+        </Header>
         <Subheader>
           <template #text>
             <!--I design and build software, write about the intersection of design
