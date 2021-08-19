@@ -28,7 +28,7 @@
           <template #text>
             <!--I design and build software, write about the intersection of design
             and development, and create music.-->
-            I learnt to design by creating album art for my various bands in cracked Photoshop and learnt to code by hacking my MySpace page.
+            I learnt to design by creating album art for my various bands in cracked Photoshop. I learnt to code by hacking my MySpace page. AMA.
           </template>
           <template #buttons>
             <div class="flex flex-col md:flex-row md:space-x-2">
