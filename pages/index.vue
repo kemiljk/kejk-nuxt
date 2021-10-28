@@ -21,7 +21,7 @@
         <div
         class="pt-2 text-sm tracking-wider leading-normal uppercase text-gray-600 dark:text-gray-400"
       >
-        Product designer and UI developer
+        Designgineer
       </div>
         </Header>
         <Subheader>
@@ -79,7 +79,7 @@
               />
             </template>
             <template #text>
-              Designing the future of long-term investing at
+              Design and design systems lead at
               <a
                 href="https://www.moneyboxapp.com"
                 target="_blank"
@@ -353,3 +353,4 @@ export default {
   },
 };
 </script>
+`
