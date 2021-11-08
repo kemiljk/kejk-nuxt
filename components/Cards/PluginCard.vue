@@ -17,7 +17,7 @@
                 class="rounded-md max-h-32 sm:max-h-28 mr-4 border border-gray-300 dark:border-none"
                 alt="Image of media"
               />
-              <div>
+              <div class="w-full">
                 <div class="flex justify-between items-center mb-4">
                   <Tag color="pink">Figma</Tag>
                   <external-link-icon
