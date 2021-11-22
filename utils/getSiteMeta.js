@@ -1,10 +1,12 @@
 const type = "website";
 const url = "https://kejk.tech";
 const title = "Karl Emil James Koch";
-const description = "Karl is a Product Designer, crafting intelligent interfaces for the web, mobile and meta services.";
-const mainImage = "https://res.cloudinary.com/kejk/image/upload/v1610305389/OG_Image_wlile7.png";
+const description =
+  "Karl is a Product Designer, crafting intelligent interfaces for the web, mobile and meta services.";
+const mainImage =
+  "https://imgix.cosmicjs.com/17dbe8e0-4b69-11ec-9940-53a088b36636-meta.png";
 const twitterSite = "@_kejk";
-const twitterCard = "summary_large_image"
+const twitterCard = "summary_large_image";
 export default (meta) => {
   return [
     {
@@ -66,6 +68,6 @@ export default (meta) => {
       hid: "twitter:card",
       name: "twitter:card",
       content: (meta && meta.twitterCard) || twitterCard,
-    }
+    },
   ];
 };
