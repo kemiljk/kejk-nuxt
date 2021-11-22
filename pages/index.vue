@@ -18,14 +18,12 @@
       <div>
         <Header>
           Hej, I'm Karl
-        </Header>
-        <div class="container max-w-xl mx-auto">
           <span
             class="pt-2 text-center text-sm tracking-wider leading-normal uppercase text-gray-600 dark:text-gray-400"
           >
             Designgineer
           </span>
-        </div>
+        </Header>
         <Subheader>
           <template #text>
             <!--I design and build software, write about the intersection of design
