@@ -18,12 +18,12 @@
       <div>
         <Header>
           Hej, I'm Karl
-          <div
-            class="pt-2 text-sm tracking-wider leading-normal uppercase text-gray-600 dark:text-gray-400"
-          >
-            Designgineer
-          </div>
         </Header>
+        <div
+          class="pt-2 text-sm tracking-wider leading-normal uppercase text-gray-600 dark:text-gray-400"
+        >
+          Designgineer
+        </div>
         <Subheader>
           <template #text>
             <!--I design and build software, write about the intersection of design
