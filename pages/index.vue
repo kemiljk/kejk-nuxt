@@ -17,25 +17,19 @@
     <div class="max-w-5xl mx-auto px-4">
       <div>
         <Header>
-        Hej, I'm Karl
-        <div
-        class="pt-2 text-sm tracking-wider leading-normal uppercase text-gray-600 dark:text-gray-400"
-      >
-        Designgineer
-      </div>
+          Hej, I'm Karl
+          <div
+            class="pt-2 text-sm tracking-wider leading-normal uppercase text-gray-600 dark:text-gray-400"
+          >
+            Designgineer
+          </div>
         </Header>
         <Subheader>
           <template #text>
-<<<<<<< HEAD
-            <!-- I design and build software, write about the intersection of design
-            and development, and create music. -->
-            "You're becoming the Jordan Singer of utility plugins" – Luis
-            Ouriach, 2021
-=======
             <!--I design and build software, write about the intersection of design
             and development, and create music.-->
-            I learnt to design by creating album art for my various bands in cracked Photoshop. I learnt to code by hacking my MySpace page. AMA.
->>>>>>> 51bae58470f43836479e7804db33424033bb0083
+            I learnt to design by creating album art for my various bands in
+            cracked Photoshop. I learnt to code by hacking my MySpace page. AMA.
           </template>
           <template #buttons>
             <div class="flex flex-col md:flex-row md:space-x-2">
