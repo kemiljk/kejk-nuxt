@@ -18,11 +18,11 @@
       <div>
         <Header>
           Hej, I'm Karl
-          <span
+          <div
             class="pt-2 text-center text-sm tracking-wider leading-normal uppercase text-gray-600 dark:text-gray-400"
           >
             Designgineer
-          </span>
+          </div>
         </Header>
         <Subheader>
           <template #text>
