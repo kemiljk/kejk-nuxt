@@ -19,14 +19,12 @@
         <Header>
           Hej, I'm Karl
         </Header>
-        <div class="container pt-10 pb-2 max-w-xl mx-auto">
-          <div class="pt-16 pb-8 text-center text-4xl">
-            <div
-              class="pt-2 text-sm tracking-wider leading-normal uppercase text-gray-600 dark:text-gray-400"
-            >
-              Designgineer
-            </div>
-          </div>
+        <div class="container max-w-xl mx-auto">
+          <span
+            class="pt-2 text-center text-sm tracking-wider leading-normal uppercase text-gray-600 dark:text-gray-400"
+          >
+            Designgineer
+          </span>
         </div>
         <Subheader>
           <template #text>
