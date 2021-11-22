@@ -148,7 +148,7 @@ export default {
         description: "Effortless and interfaceless PDF creation.",
         url: "https://kejk.tech/lazy-pdf",
         mainImage:
-          "https://res.cloudinary.com/kejk/image/upload/q_auto,f_auto/v1610305389/OG_Image_wlile7.png",
+          "https://imgix.cosmicjs.com/17dbe8e0-4b69-11ec-9940-53a088b36636-meta.png",
       };
       return getSiteMeta(metaData);
     },

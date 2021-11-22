@@ -48,7 +48,7 @@ export default {
         hid: "og:image",
         property: "og:image",
         content:
-          "https://res.cloudinary.com/kejk/image/upload/q_auto,f_auto/v1610305389/OG_Image_wlile7.png",
+          "https://imgix.cosmicjs.com/17dbe8e0-4b69-11ec-9940-53a088b36636-meta.png",
       },
       { property: "og:image:width", content: "740" },
       { property: "og:image:height", content: "300" },
@@ -75,7 +75,7 @@ export default {
         hid: "twitter:image:src",
         name: "twitter:image:src",
         content:
-          "https://res.cloudinary.com/kejk/image/upload/q_auto,f_auto/v1610305390/Twitter_Image_ah1nne.png",
+          "https://imgix.cosmicjs.com/17dbe8e0-4b69-11ec-9940-53a088b36636-meta.png",
       },
     ],
     link: [
@@ -190,16 +190,6 @@ export default {
     "@nuxtjs/sitemap",
     "vue-scrollto/nuxt",
   ],
-
-  // extends: ["@nuxtjs/eslint-config-typescript"],
-
-  // typescript: {
-  //   typeCheck: {
-  //     eslint: {
-  //       files: "./**/*.{ts,js,vue}",
-  //     },
-  //   },
-  // },
 
   apollo: {
     clientConfigs: {

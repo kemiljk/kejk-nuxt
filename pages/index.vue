@@ -19,8 +19,10 @@
         <Header>Hej, I'm Karl</Header>
         <Subheader>
           <template #text>
-            I design and build software, write about the intersection of design
-            and development, and create music.
+            <!-- I design and build software, write about the intersection of design
+            and development, and create music. -->
+            "You're becoming the Jordan Singer of utility plugins" – Luis
+            Ouriach, 2021
           </template>
           <template #buttons>
             <div class="flex flex-col md:flex-row md:space-x-2">
@@ -103,7 +105,9 @@
           </div>
           <IconText class="flex items-center">
             <template #icon>
-              <CosmicIcon class="mr-4 rounded-full border border-gray-200 dark:border-none" />
+              <CosmicIcon
+                class="mr-4 rounded-full border border-gray-200 dark:border-none"
+              />
             </template>
             <template #text>
               Leading design for the best API-first headless CMS out there at
@@ -204,7 +208,7 @@ export default {
           "A Product and Frontend Designer, building for the web with Vue, Nuxt and Tailwind, building for mobile with SwiftUI.",
         url: "https://kejk.tech/",
         mainImage:
-          "https://res.cloudinary.com/kejk/image/upload/q_auto,f_auto/v1610305389/OG_Image_wlile7.png",
+          "https://imgix.cosmicjs.com/17dbe8e0-4b69-11ec-9940-53a088b36636-meta.png",
       };
       return getSiteMeta(metaData);
     },
