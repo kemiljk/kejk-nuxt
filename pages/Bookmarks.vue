@@ -55,7 +55,7 @@ export default {
           "Bookmarks of interesting things I've found around the web, for me to keep and for you to enjoy.",
         url: "https://kejk.tech/bookmarks",
         mainImage:
-          "https://imgix.cosmicjs.com/17dbe8e0-4b69-11ec-9940-53a088b36636-meta.png",
+          "https://imgix.cosmicjs.com/5e51a880-6d94-11ec-be72-1b6e4fde96ee-Twitter-Image.png",
       };
       return getSiteMeta(metaData);
     },
