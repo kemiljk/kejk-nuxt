@@ -10,7 +10,7 @@
           Plugins
           <external-link-icon
             size="1x"
-            class="ml-2 text-gray-700 dark:text-gray-300"
+            class="ml-2 text-neutral-700 dark:text-neutral-300"
           ></external-link-icon>
         </span>
       </NavItem>
@@ -25,7 +25,7 @@
           <Blog v-if="page" :blog="page" />
         </keep-alive>
         <div
-          class="mt-16 pb-4 border-t-2 border-gray-200 dark:border-gray-800"
+          class="mt-16 pb-4 border-t-2 border-neutral-200 dark:border-neutral-800"
         />
         <div class="flex flex-row py-8">
           <BackLink link="thoughts"> Back to all posts </BackLink>

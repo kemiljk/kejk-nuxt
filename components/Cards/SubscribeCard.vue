@@ -1,8 +1,8 @@
 <template>
-  <div class="flex bg-gray-50 dark:bg-gray-900 rounded-xl">
+  <div class="flex bg-neutral-50 dark:bg-neutral-900 rounded-xl">
     <div class="p-8 w-full">
       <h1
-        class="text-lg sm:text-xl text-gray-800 dark:text-white font-medium pb-2"
+        class="text-lg sm:text-xl text-neutral-800 dark:text-white font-medium pb-2"
       >
         Subscribe to stay up-to-date.
       </h1>
@@ -21,7 +21,7 @@
             name="email"
             id="bd-email"
             placeholder="e.g. sly@stallone.com"
-            class="py-3 px-3 w-full rounded-lg bg-white dark:bg-black border-2 border-gray-200 dark:border-gray-700 text-gray-800 dark:text-gray-50 font-medium focus:border-indigo-500 focus:border-2 focus:outline-none"
+            class="py-3 px-3 w-full rounded-lg bg-white dark:bg-black border-2 border-neutral-200 dark:border-neutral-700 text-neutral-800 dark:text-neutral-50 font-medium focus:border-indigo-500 focus:border-2 focus:outline-none"
             required
           />
         </label>
@@ -30,7 +30,7 @@
           <template #icon>
             <mail-icon
               size="1x"
-              class="inline-block mr-2 text-gray-50 dark:text-gray-900"
+              class="inline-block mr-2 text-neutral-50 dark:text-neutral-900"
             />
           </template>
           <template #label> Newsletter </template>
@@ -47,7 +47,7 @@
             <template #icon>
               <rss-icon
                 size="1x"
-                class="inline-block mr-2 text-gray-900 dark:text-gray-50"
+                class="inline-block mr-2 text-neutral-900 dark:text-neutral-50"
               />
             </template>
             <template #label> RSS </template>

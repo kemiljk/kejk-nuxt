@@ -8,7 +8,7 @@
           Plugins
           <external-link-icon
             size="1x"
-            class="ml-2 text-gray-700 dark:text-gray-300"
+            class="ml-2 text-neutral-700 dark:text-neutral-300"
           ></external-link-icon>
         </span>
       </NavItem>

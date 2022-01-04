@@ -7,7 +7,7 @@
       cursor="pointer"
     >
       <button
-        class="bg-gray-50 dark:bg-gray-900 hover:shadow-lg hover:bg-gray-50 dark:hover:bg-gray-800   transition ease-in-out duration-300 rounded-xl text-left max-w-5/6 w-full focus:outline-none focus:ring-2 focus:ring-white"
+        class="bg-neutral-50 dark:bg-neutral-900 hover:shadow-lg hover:bg-neutral-50 dark:hover:bg-neutral-800   transition ease-in-out duration-300 rounded-xl text-left max-w-5/6 w-full focus:outline-none focus:ring-2 focus:ring-white"
       >
         <div class="p-4">
           <header class="flex w-full justify-between">
@@ -23,21 +23,21 @@
                   <compass-icon
                     v-if="utility.metadata.website"
                     size="1x"
-                    class="text-gray-700 dark:text-gray-300 hidden sm:block flex-shrink-0 "
+                    class="text-neutral-700 dark:text-neutral-300 hidden sm:block flex-shrink-0 "
                   ></compass-icon>
                   <download-icon
                     v-if="utility.metadata.download"
-                    class="text-gray-700 dark:text-gray-300 hidden sm:block flex-shrink-0 "
+                    class="text-neutral-700 dark:text-neutral-300 hidden sm:block flex-shrink-0 "
                     size="1x"
                   ></download-icon>
                 </div>
                 <h4
-                  class="pt-4 md:pt-2 font-bold text-sm text-gray-900 dark:text-gray-100"
+                  class="pt-4 md:pt-2 font-bold text-sm text-neutral-900 dark:text-neutral-100"
                 >
                   {{ utility.title }}
                 </h4>
                 <p
-                  class="mb-0 pt-1 text-gray-500 dark:text-gray-400 font-normal text-sm"
+                  class="mb-0 pt-1 text-neutral-500 dark:text-neutral-400 font-normal text-sm"
                 >
                   {{ utility.metadata.subtitle }}
                 </p>
@@ -51,7 +51,7 @@
   <div v-else>
     <nuxt-link :to="utility.metadata.to" rel="noreferrer" cursor="pointer">
       <button
-        class="bg-gray-100 dark:bg-gray-900 hover:shadow-lg hover:bg-gray-50 dark:hover:bg-gray-800   transition ease-in-out duration-300 rounded-xl text-left w-full focus:outline-none focus:ring-2 focus:ring-white"
+        class="bg-neutral-100 dark:bg-neutral-900 hover:shadow-lg hover:bg-neutral-50 dark:hover:bg-neutral-800   transition ease-in-out duration-300 rounded-xl text-left w-full focus:outline-none focus:ring-2 focus:ring-white"
       >
         <div class="p-4">
           <header class="flex justify-between">
@@ -67,12 +67,12 @@
                   <Tag color="purple" v-if="utility.metadata.macos">macOS </Tag>
                 </div>
                 <h4
-                  class="pt-4 font-bold text-sm text-gray-900 dark:text-gray-100"
+                  class="pt-4 font-bold text-sm text-neutral-900 dark:text-neutral-100"
                 >
                   {{ utility.title }}
                 </h4>
                 <p
-                  class="mb-0 pt-1 text-gray-500 dark:text-gray-400 font-normal text-sm"
+                  class="mb-0 pt-1 text-neutral-500 dark:text-neutral-400 font-normal text-sm"
                 >
                   {{ utility.metadata.subtitle }}
                 </p>
@@ -80,7 +80,7 @@
             </div>
             <arrow-right-icon
               v-if="utility.metadata.internal"
-              class="text-gray-700 dark:text-gray-300"
+              class="text-neutral-700 dark:text-neutral-300"
             ></arrow-right-icon>
           </header>
         </div>

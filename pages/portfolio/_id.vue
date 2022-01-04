@@ -8,7 +8,7 @@
           Plugins
           <external-link-icon
             size="1x"
-            class="ml-2 text-gray-700 dark:text-gray-300"
+            class="ml-2 text-neutral-700 dark:text-neutral-300"
           ></external-link-icon>
         </span>
       </NavItem>
@@ -23,17 +23,17 @@
         </div>
         <div class="flex" v-if="this.loading === true">
           <svg
-            class="animate-spin -ml-1 mr-3 h-5 w-5 text-gray-600 dark:text-gray-400"
+            class="animate-spin -ml-1 mr-3 h-5 w-5 text-neutral-600 dark:text-neutral-400"
             style="z-index: -1;"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
           >
             <path
-              class="fill-current text-gray-600 dark:text-gray-400"
+              class="fill-current text-neutral-600 dark:text-neutral-400"
               d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
             ></path>
           </svg>
-          <h3 class="text-md font-md text-gray-600 dark:text-gray-400">
+          <h3 class="text-md font-md text-neutral-600 dark:text-neutral-400">
             Loading...
           </h3>
         </div>
@@ -42,7 +42,7 @@
           <BackLink link="portfolio"> Back to all</BackLink>
         </div>
         <div
-          class="mt-16 pb-16 border-t-2 border-gray-200 dark:border-gray-800"
+          class="mt-16 pb-16 border-t-2 border-neutral-200 dark:border-neutral-800"
         />
         <header class="mt-4">
           <h2>How to reach me.</h2>

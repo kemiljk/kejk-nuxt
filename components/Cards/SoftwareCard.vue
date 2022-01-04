@@ -1,7 +1,7 @@
 <template>
   <a :href="software.metadata.url" target="`_blank" rel="noreferrer">
     <button
-      class="bg-gray-50 dark:bg-gray-900 hover:shadow-lg hover:bg-gray-50 dark:hover:bg-gray-800   transition ease-in-out duration-300 rounded-xl text-left w-full focus:outline-none focus:ring-2 focus:ring-white"
+      class="bg-neutral-50 dark:bg-neutral-900 hover:shadow-lg hover:bg-neutral-50 dark:hover:bg-neutral-800   transition ease-in-out duration-300 rounded-xl text-left w-full focus:outline-none focus:ring-2 focus:ring-white"
     >
       <div class="px-4 py-4">
         <header class="mb-4 flex justify-between">
@@ -11,10 +11,12 @@
             alt="Image of software"
           />
           <external-link-icon
-            class="text-gray-700 dark:text-gray-300"
+            class="text-neutral-700 dark:text-neutral-300"
           ></external-link-icon>
         </header>
-        <div class="divide-y divide-solid divide-gray-300 dark:divide-gray-800">
+        <div
+          class="divide-y divide-solid divide-neutral-300 dark:divide-neutral-800"
+        >
           <div class="flex space-x-2 mb-4">
             <Tag v-if="software.metadata.indie" color="yellow"> Indie </Tag>
             <Tag v-if="software.metadata.open_source" color="purple">
@@ -24,12 +26,14 @@
               {{ software.metadata.company }}
             </Tag>
           </div>
-          <h4 class="pt-4 font-bold text-sm text-gray-900 dark:text-gray-100">
+          <h4
+            class="pt-4 font-bold text-sm text-neutral-900 dark:text-neutral-100"
+          >
             {{ software.title }}
           </h4>
         </div>
         <p
-          class="mb-0 pt-1 text-gray-500 dark:text-gray-400 font-normal text-sm"
+          class="mb-0 pt-1 text-neutral-500 dark:text-neutral-400 font-normal text-sm"
         >
           {{ software.metadata.subtitle }}
         </p>

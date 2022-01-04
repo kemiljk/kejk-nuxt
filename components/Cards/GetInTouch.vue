@@ -1,6 +1,6 @@
 <template>
   <div
-    class="justify-center bg-white dark:bg-black sm:pt-0 border-2 border-gray-100 dark:border-gray-900 rounded-xl"
+    class="justify-center bg-white dark:bg-black sm:pt-0 border-2 border-neutral-100 dark:border-neutral-900 rounded-xl"
   >
     <div class="max-w-5xl mx-auto">
       <div class="overflow-hidden">
@@ -9,7 +9,7 @@
             class="p-6 sm:mr-2 rounded-tl-lg rounded-tr-lg sm:rounded-tr-none sm:rounded-bl-lg"
           >
             <h1
-              class="text-xl sm:text-2xl text-gray-800 dark:text-white font-bold tracking-tight"
+              class="text-xl sm:text-2xl text-neutral-800 dark:text-white font-bold tracking-tight"
             >
               Get in touch.
             </h1>
@@ -39,7 +39,7 @@
                 name="email"
                 id="email"
                 placeholder="e.g. arnold@schwarzenegger.com"
-                class="w-100 mt-2 py-3 px-3 rounded-lg bg-white dark:bg-gray-900 border-2 border-gray-200 dark:border-gray-700 text-gray-800 dark:text-gray-50 font-medium focus:border-indigo-500 focus:border-2 focus:outline-none"
+                class="w-100 mt-2 py-3 px-3 rounded-lg bg-white dark:bg-neutral-900 border-2 border-neutral-200 dark:border-neutral-700 text-neutral-800 dark:text-neutral-50 font-medium focus:border-indigo-500 focus:border-2 focus:outline-none"
                 required
               />
             </div>
@@ -56,7 +56,7 @@
                 id="message"
                 rows="4"
                 placeholder="Ask me anything"
-                class="w-100 mt-2 py-3 px-3 rounded-lg bg-white dark:bg-gray-900 border-2 border-gray-200 dark:border-gray-700 text-gray-800 dark:text-gray-50 font-medium focus:border-indigo-500 focus:border-2 focus:outline-none"
+                class="w-100 mt-2 py-3 px-3 rounded-lg bg-white dark:bg-neutral-900 border-2 border-neutral-200 dark:border-neutral-700 text-neutral-800 dark:text-neutral-50 font-medium focus:border-indigo-500 focus:border-2 focus:outline-none"
                 required
               />
             </div>
@@ -65,7 +65,7 @@
             <button
               id="submitbutton"
               type="submit"
-              class="mt-8 md:w-32 bg-black hover:bg-gray-900 dark:bg-white text-white dark:text-gray-900 dark:hover:bg-gray-100 font-medium py-3 px-6 rounded-lg transition ease-in-out duration-300"
+              class="mt-8 md:w-32 bg-black hover:bg-neutral-900 dark:bg-white text-white dark:text-neutral-900 dark:hover:bg-neutral-100 font-medium py-3 px-6 rounded-lg transition ease-in-out duration-300"
             >
               Submit
             </button>

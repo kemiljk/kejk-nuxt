@@ -8,7 +8,7 @@
           Plugins
           <external-link-icon
             size="1x"
-            class="ml-2 text-gray-700 dark:text-gray-300"
+            class="ml-2 text-neutral-700 dark:text-neutral-300"
           ></external-link-icon>
         </span>
       </NavItem>
@@ -45,7 +45,7 @@
             <template #icon>
               <arrow-right-icon
                 size="1x"
-                class="inline-block mr-2 text-indigo-50 dark:text-gray-900"
+                class="inline-block mr-2 text-indigo-50 dark:text-neutral-900"
               />
             </template>
             <template #label>

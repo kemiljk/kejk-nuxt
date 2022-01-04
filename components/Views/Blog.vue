@@ -5,7 +5,7 @@
         <h1>
           {{ blog.title }}
         </h1>
-        <p class="font-mono text-gray-500 dark:text-gray-400 pt-2">
+        <p class="font-mono text-neutral-500 dark:text-neutral-400 pt-2">
           Updated {{ blog.modified_at | moment("from", "now") }}
         </p>
         <Tag color="indigo">
@@ -14,7 +14,10 @@
       </div>
     </div>
     <div>
-      <section v-html="blog.content" class="mt-4 text-black dark:text-gray-300" />
+      <section
+        v-html="blog.content"
+        class="mt-4 text-black dark:text-neutral-300"
+      />
     </div>
   </div>
 </template>

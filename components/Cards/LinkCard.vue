@@ -13,10 +13,12 @@
           {{ link.title }}
         </h1>
         <external-link-icon
-          class="text-gray-700 dark:text-gray-300"
+          class="text-neutral-700 dark:text-neutral-300"
         ></external-link-icon>
       </header>
-      <p class="font-mono text-gray-500 dark:text-gray-400 pt-0 font-medium">
+      <p
+        class="font-mono text-neutral-500 dark:text-neutral-400 pt-0 font-medium"
+      >
         {{ link.metadata.published | moment("from", "now") }}
       </p>
       <div class="pb-4">
@@ -25,7 +27,7 @@
         </Tag>
       </div>
       <p
-        class="text-gray-700 dark:text-gray-300 pt-2 pb-4 font-medium mb-0"
+        class="text-neutral-700 dark:text-neutral-300 pt-2 pb-4 font-medium mb-0"
         v-html="link.metadata.snippet"
       >
         {{ link.metadata.snippet }}

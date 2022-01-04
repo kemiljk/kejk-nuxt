@@ -2,7 +2,7 @@
   <div>
     <header>
       <h2
-        class="inline-block border-b-2 border-gray-100 dark:border-gray-800 max-w-max"
+        class="inline-block border-b-2 border-neutral-100 dark:border-neutral-800 max-w-max"
       >
         Development.
       </h2>
@@ -27,7 +27,7 @@ export default {
     blogs() {
       let blogs = this.$store.getters.getBlog;
       let blogList = [];
-      blogs.forEach(function (blog) {
+      blogs.forEach(function(blog) {
         if (blog.metadata.tag === "development") {
           blogList.push(blog);
         } else {

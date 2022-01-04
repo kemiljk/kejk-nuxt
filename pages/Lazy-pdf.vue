@@ -8,7 +8,7 @@
           Plugins
           <external-link-icon
             size="1x"
-            class="ml-2 text-gray-700 dark:text-gray-300"
+            class="ml-2 text-neutral-700 dark:text-neutral-300"
           ></external-link-icon>
         </span>
       </NavItem>
@@ -35,10 +35,12 @@
         <div class="py-4">
           <div>
             <div class="space-y-4 mt-8 mb-8">
-              <h3 class="text-2xl font-bold text-gray-900 dark:text-gray-50">
+              <h3
+                class="text-2xl font-bold text-neutral-900 dark:text-neutral-50"
+              >
                 Simple and invisible
               </h3>
-              <p class="text-gray-700 dark:text-gray-400">
+              <p class="text-neutral-700 dark:text-neutral-400">
                 Effortlessly create a PDF from a set of selected images through
                 an interfaceless system with only the Finder selection UI.
               </p>
@@ -62,62 +64,70 @@
             </div>
             <Divider />
             <div class="space-y-4 mb-8">
-              <h3 class="text-2xl font-bold text-gray-900 dark:text-gray-50">
+              <h3
+                class="text-2xl font-bold text-neutral-900 dark:text-neutral-50"
+              >
                 Grab and go
               </h3>
-              <p class="text-gray-700 dark:text-gray-400">
+              <p class="text-neutral-700 dark:text-neutral-400">
                 Lazy PDF is deliberately designed to be simple and have a low
                 overhead, to make it easier to grab a set of design files and
                 throw them together into a PDF.
               </p>
               <img
-                class="rounded-2xl dark:ring-2 dark:ring-gray-800 pt-4"
+                class="rounded-2xl dark:ring-2 dark:ring-neutral-800 pt-4"
                 src="https://res.cloudinary.com/kejk/image/upload/v1585993877/Picking_selection_ckdioy.png"
               />
             </div>
             <Divider />
             <div class="space-y-4 mb-8">
-              <h3 class="text-2xl font-bold text-gray-900 dark:text-gray-50">
+              <h3
+                class="text-2xl font-bold text-neutral-900 dark:text-neutral-50"
+              >
                 On your terms
               </h3>
-              <p class="text-gray-700 dark:text-gray-400">
+              <p class="text-neutral-700 dark:text-neutral-400">
                 Your logical file order is always respected, so number your
                 files if you want to order in sequence, otherwise, move them
                 around afterwards in any PDF viewer.
               </p>
               <img
-                class="rounded-2xl dark:ring-2 dark:ring-gray-800 pt-4"
+                class="rounded-2xl dark:ring-2 dark:ring-neutral-800 pt-4"
                 src="https://res.cloudinary.com/kejk/image/upload/v1587570775/Frame_10_zub1ud.png"
               />
             </div>
             <Divider />
             <div class="space-y-4 mb-8">
-              <h3 class="text-2xl font-bold text-gray-900 dark:text-gray-50">
+              <h3
+                class="text-2xl font-bold text-neutral-900 dark:text-neutral-50"
+              >
                 Lossless
               </h3>
-              <p class="text-gray-700 dark:text-gray-400">
+              <p class="text-neutral-700 dark:text-neutral-400">
                 Respecting your image sizes, Lazy PDF doesn't try to compress
                 everything to printable sizes, ideal for sharing work with
                 teammates and management.
               </p>
               <img
-                class="rounded-2xl dark:ring-2 dark:ring-gray-800 pt-4"
+                class="rounded-2xl dark:ring-2 dark:ring-neutral-800 pt-4"
                 src="https://res.cloudinary.com/kejk/image/upload/v1585993878/Rendered_PDF_zpdrza.png"
               />
             </div>
             <Divider />
             <div class="space-y-4 mb-8">
-              <h3 class="text-2xl font-bold text-gray-900 dark:text-gray-50">
+              <h3
+                class="text-2xl font-bold text-neutral-900 dark:text-neutral-50"
+              >
                 Better than native
               </h3>
-              <p class="text-gray-700 dark:text-gray-400">
+              <p class="text-neutral-700 dark:text-neutral-400">
                 macOS' native 1-click PDF creation (left) pushes all files into
                 a printable page collection, Lazy PDF (right) leaves your images
                 alone. Perfect for long design files such as mobile layouts, or
                 ultrawide files when visualising a 21:9 video concept.
               </p>
               <img
-                class="rounded-2xl dark:ring-2 dark:ring-gray-800 pt-4"
+                class="rounded-2xl dark:ring-2 dark:ring-neutral-800 pt-4"
                 src="https://res.cloudinary.com/kejk/image/upload/v1586353512/Apple_versus_Lazy_mhp5ey.png"
               />
             </div>
@@ -168,7 +178,7 @@ export default {
         text: "Download",
       },
       hero:
-        "https://res.cloudinary.com/kejk/image/upload/v1585992488/macbook-pro-space-gray-on-the-wooden-table_e6bu8w.jpg",
+        "https://res.cloudinary.com/kejk/image/upload/v1585992488/macbook-pro-space-neutral-on-the-wooden-table_e6bu8w.jpg",
     };
   },
 };

@@ -8,7 +8,7 @@
           Plugins
           <external-link-icon
             size="1x"
-            class="ml-2 text-gray-700 dark:text-gray-300"
+            class="ml-2 text-neutral-700 dark:text-neutral-300"
           ></external-link-icon>
         </div>
       </NavItem>
@@ -19,15 +19,13 @@
         <Header>
           Hej, I'm Karl
           <div
-            class="pt-2 text-center text-sm tracking-wider leading-normal uppercase text-gray-600 dark:text-gray-400"
+            class="pt-2 text-center text-sm tracking-wider leading-normal uppercase text-neutral-600 dark:text-neutral-400"
           >
             Designgineer
           </div>
         </Header>
         <Subheader>
           <template #text>
-            <!--I design and build software, write about the intersection of design
-            and development, and create music.-->
             I learnt to design by creating album art for my various bands in
             cracked Photoshop. I learnt to code by hacking my MySpace page. AMA.
           </template>
@@ -38,7 +36,7 @@
                   <template #icon>
                     <info-icon
                       size="1x"
-                      class="inline-block mr-2 text-gray-50 dark:text-gray-900"
+                      class="inline-block mr-2 text-neutral-50 dark:text-neutral-900"
                     />
                   </template>
                   <template #label> More about me </template>
@@ -49,7 +47,7 @@
                   <template #icon>
                     <mail-icon
                       size="1x"
-                      class="inline-block mr-2 text-gray-800 dark:text-white"
+                      class="inline-block mr-2 text-neutral-800 dark:text-white"
                     />
                   </template>
                   <template #label> Get in touch </template>
@@ -60,7 +58,7 @@
         </Subheader>
       </div>
       <div
-        class="pt-8 text-sm tracking-wider leading-normal uppercase text-gray-600 dark:text-gray-400"
+        class="pt-8 text-sm tracking-wider leading-normal uppercase text-neutral-600 dark:text-neutral-400"
       >
         Currently
       </div>
@@ -69,14 +67,14 @@
       >
         <div>
           <div
-            class="flex text-sm font-bold pt-4 text-gray-800 dark:text-gray-200"
+            class="flex text-sm font-bold pt-4 text-neutral-800 dark:text-neutral-200"
           >
             Full-time <span class="ml-2 text-indigo-500">———</span>
           </div>
           <IconText class="flex items-center">
             <template #icon>
               <MoneyboxIcon
-                class="mr-4 border border-gray-200 dark:border-none"
+                class="mr-4 border border-neutral-200 dark:border-none"
               />
             </template>
             <template #text>
@@ -106,14 +104,14 @@
         </div>
         <div>
           <div
-            class="flex text-sm pt-8 md:pt-4 font-bold text-gray-800 dark:text-gray-200"
+            class="flex text-sm pt-8 md:pt-4 font-bold text-neutral-800 dark:text-neutral-200"
           >
             On the side <span class="ml-2 text-indigo-500">———</span>
           </div>
           <IconText class="flex items-center">
             <template #icon>
               <CosmicIcon
-                class="mr-4 rounded-full border border-gray-200 dark:border-none"
+                class="mr-4 rounded-full border border-neutral-200 dark:border-none"
               />
             </template>
             <template #text>

@@ -9,10 +9,12 @@
           {{ blog.title }}
         </h1>
         <arrow-right-icon
-          class="text-gray-700 dark:text-gray-300"
+          class="text-neutral-700 dark:text-neutral-300"
         ></arrow-right-icon>
       </header>
-      <p class="font-mono text-gray-500 dark:text-gray-400 pt-0 font-medium">
+      <p
+        class="font-mono text-neutral-500 dark:text-neutral-400 pt-0 font-medium"
+      >
         Updated {{ blog.modified_at | moment("from", "now") }}
       </p>
       <div class="flex space-x-2 pb-4">
@@ -20,7 +22,9 @@
           {{ blog.metadata.tag }}
         </Tag>
       </div>
-      <p class="text-gray-700 dark:text-gray-300 pt-2 pb-4 font-medium mb-0">
+      <p
+        class="text-neutral-700 dark:text-neutral-300 pt-2 pb-4 font-medium mb-0"
+      >
         {{ blog.metadata.snippet }}
       </p>
     </button>
