@@ -13,6 +13,15 @@
         </span>
       </NavItem>
       <NavItem to="/portfolio">Projects</NavItem>
+      <NavItem href="https://bookmarks.kejk.tech" extLink>
+        <span class="flex items-center">
+          Bookmarks
+          <external-link-icon
+            size="1x"
+            class="ml-2 text-neutral-700 dark:text-neutral-300"
+          ></external-link-icon>
+        </span>
+      </NavItem>
     </Nav>
     <div class="mx-auto px-4">
       <div class="container pt-10 pb-2 max-w-3xl mx-auto">
@@ -178,7 +187,7 @@ export default {
         text: "Download",
       },
       hero:
-        "https://res.cloudinary.com/kejk/image/upload/v1585992488/macbook-pro-space-neutral-on-the-wooden-table_e6bu8w.jpg",
+        "https://imgix.cosmicjs.com/d2653530-77ca-11ec-bfef-718573fe8f91-mockuuups-black-macbook-mockup-on-a-white-table-with-black-textbooks-at-the-side.jpeg",
     };
   },
 };
