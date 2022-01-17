@@ -22,11 +22,6 @@ export default {
         name: "description",
         content: "Product Designer and Frontend Developer",
       },
-      {
-        hid: "description",
-        name: "description",
-        content: "Human-first Product Designer and Developer.",
-      },
       { property: "og:site_name", content: "KEJK" },
       { hid: "og:type", property: "og:type", content: "website" },
       {
@@ -148,11 +143,13 @@ export default {
       },
       {
         rel: "stylesheet",
-        href: "https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700;800;900&display=swap",
+        href:
+          "https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700;800;900&display=swap",
       },
       {
         rel: "stylesheet",
-        href: "https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap",
+        href:
+          "https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap",
       },
     ],
   },
