@@ -87,7 +87,7 @@
               />
             </template>
             <template #text>
-              Design and design systems lead at
+              Product Designer and Design Systems Lead at
               <a
                 href="https://www.moneyboxapp.com"
                 target="_blank"
