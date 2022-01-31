@@ -37,7 +37,7 @@
       </div>
       </div>-->
       <Header>Live projects</Header>
-      <H2Header class="pt-16">Things I've built.</H2Header>
+      <H2Header class="pt-4">Things I've built.</H2Header>
       <div class="flex flex-row">
         <div class="grid w-full sm:grid-cols-2 gap-4">
           <PluginCard :plugin="plugin" />

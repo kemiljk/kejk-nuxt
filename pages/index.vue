@@ -143,6 +143,14 @@
           </IconText>
         </div>
       </div>
+      <Header>
+      Built for myself
+      </header>
+      <Subheader>
+      <template #text>
+      And also everyone else
+      </template>
+      </Subheader>
       <div class="flex flex-row mt-16">
         <div class="grid w-full sm:grid-cols-2 gap-4">
           <PluginCard :plugin="plugin" />
@@ -160,6 +168,9 @@
           </div>
         </div>
       </div>
+      <Header>
+      Thoughts, musings and ideas
+      </header>
       <div class="flex flex-row mt-16">
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
           <div v-for="blog in blogs" :key="blog._id">
@@ -175,6 +186,9 @@
         </div>
       </div>
       <MoreLink link="thoughts"> See All </MoreLink>
+      <Header>
+      Making sounds
+      </header>
       <div class="flex flex-row mt-16">
         <div
           class="grid grid-row xs:grid-cols-1 sm:grid-cols-2 md:grid-cols-3 w-full gap-4"
