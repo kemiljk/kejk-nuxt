@@ -143,14 +143,9 @@
           </IconText>
         </div>
       </div>
-      <Header>
-      Built for myself
+      <H2Header>
+      Built for myself, and everyone else
       </header>
-      <Subheader>
-      <template #text>
-      And also everyone else
-      </template>
-      </Subheader>
       <div class="flex flex-row">
         <div class="grid w-full sm:grid-cols-2 gap-4">
           <PluginCard :plugin="plugin" />
@@ -168,7 +163,7 @@
           </div>
         </div>
       </div>
-      <Header>
+      <H2Header>
       Thoughts, musings and ideas
       </header>
       <div class="flex flex-row">
@@ -186,7 +181,7 @@
         </div>
       </div>
       <MoreLink link="thoughts"> See All </MoreLink>
-      <Header>
+      <H2Header>
       Making sounds
       </header>
       <div class="flex flex-row16">
