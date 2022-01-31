@@ -5,7 +5,7 @@
       v-if="blog.metadata"
     >
       <header class="flex items-top justify-between pt-4 pb-2">
-        <h3 class="text-black dark:text-white text-lg font-bold w-60 md:w-80">
+        <h3 class="text-black dark:text-white text-lg pb-0 mb-0 font-bold w-60 md:w-80">
           {{ blog.title }}
         </h3>
         <arrow-right-icon

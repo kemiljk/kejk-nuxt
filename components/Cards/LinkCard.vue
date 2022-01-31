@@ -9,15 +9,15 @@
       class="text-left w-full focus:outline-none focus:ring-2 focus:ring-white"
     >
       <header class="flex items-top justify-between pt-4 pb-2">
-        <h1 class="text-black dark:text-white text-lg font-bold w-60 md:w-80">
+        <h3 class="text-black dark:text-white text-lg pb-0 mb-0 font-bold w-60 md:w-80">
           {{ link.title }}
-        </h1>
+        </h3>
         <external-link-icon
           class="text-neutral-700 dark:text-neutral-300"
         ></external-link-icon>
       </header>
       <p
-        class="font-mono text-neutral-500 dark:text-neutral-400 pt-0 font-medium"
+        class="font-mono text-neutral-500 dark:text-neutral-400 pt-0 font-medium text-sm"
       >
         {{ link.metadata.published | moment("from", "now") }}
       </p>
@@ -27,7 +27,7 @@
         </Tag>
       </div>
       <p
-        class="text-neutral-700 dark:text-neutral-300 pt-2 pb-4 font-medium mb-0"
+        class="text-neutral-700 dark:text-neutral-300 pt-2 pb-4 font-medium mb-0 text-base"
         v-html="link.metadata.snippet"
       >
         {{ link.metadata.snippet }}
