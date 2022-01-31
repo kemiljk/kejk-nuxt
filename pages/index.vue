@@ -27,16 +27,10 @@
       <div>
         <Header>
           Hej, I'm Karl
-          <div
-            class="pt-2 text-center text-sm tracking-wider leading-normal uppercase text-neutral-600 dark:text-neutral-400"
-          >
-            Designgineer
-          </div>
         </Header>
         <Subheader>
           <template #text>
-            I learnt to design by creating album art for my various bands in
-            cracked Photoshop. I learnt to code by hacking my MySpace page. AMA.
+            I'm a software designer, developer, writer and musician. Right now I'm designing Payments at Moneybox and leading our Design Systems team.
           </template>
           <template #buttons>
             <div class="flex flex-col md:flex-row md:space-x-2">
