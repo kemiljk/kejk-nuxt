@@ -143,8 +143,8 @@
           </IconText>
         </div>
       </div>
-      <H2Header class="pt-8">
-      Built for myself, and everyone else
+      <H2Header class="pt-16">
+      Built for myself... and everyone else
       </header>
       <div class="flex flex-row pt-4">
         <div class="grid w-full sm:grid-cols-2 gap-4">
@@ -163,7 +163,7 @@
           </div>
         </div>
       </div>
-      <H2Header class="pt-8">
+      <H2Header class="pt-16">
       Thoughts, musings and ideas
       </header>
       <div class="flex flex-row pt-4">
@@ -181,7 +181,7 @@
         </div>
       </div>
       <MoreLink link="thoughts" class="text-base">See All</MoreLink>
-      <H2Header class="pt-8">
+      <H2Header class="pt-16">
       Making sounds
       </header>
       <div class="flex flex-row pt-4">
