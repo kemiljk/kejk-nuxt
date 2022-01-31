@@ -180,7 +180,7 @@
           </div>
         </div>
       </div>
-      <MoreLink link="thoughts"> <p>See All</p> </MoreLink>
+      <MoreLink link="thoughts" class="text-base">See All</MoreLink>
       <H2Header class="pt-8">
       Making sounds
       </header>
