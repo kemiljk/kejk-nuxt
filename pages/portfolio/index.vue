@@ -65,10 +65,10 @@
           </keep-alive>
         </div>
       </div>
-    </div>
-    <Divider />
+      <Divider />
       <H2Header id="GET_IN_TOUCH">How to reach me.</H2Header>
       <GetInTouch />
+    </div>
   </div>
 </template>
 
