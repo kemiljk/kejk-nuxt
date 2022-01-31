@@ -5,15 +5,15 @@
       v-if="blog.metadata"
     >
       <header class="flex items-top justify-between pt-4 pb-2">
-        <h1 class="text-black dark:text-white text-lg font-bold w-60 md:w-80">
+        <h3 class="text-black dark:text-white text-lg font-bold w-60 md:w-80">
           {{ blog.title }}
-        </h1>
+        </h3>
         <arrow-right-icon
           class="text-neutral-700 dark:text-neutral-300"
         ></arrow-right-icon>
       </header>
       <p
-        class="font-mono text-neutral-500 dark:text-neutral-400 pt-0 font-medium"
+        class="font-mono text-neutral-500 dark:text-neutral-400 pt-0 font-medium text-sm"
       >
         Updated {{ blog.modified_at | moment("from", "now") }}
       </p>
@@ -23,7 +23,7 @@
         </Tag>
       </div>
       <p
-        class="text-neutral-700 dark:text-neutral-300 pt-2 pb-4 font-medium mb-0"
+        class="text-neutral-700 dark:text-neutral-300 pt-2 pb-4 font-medium mb-0 text-base"
       >
         {{ blog.metadata.snippet }}
       </p>

@@ -143,10 +143,10 @@
           </IconText>
         </div>
       </div>
-      <H2Header class="pt-8 pb-4">
+      <H2Header class="pt-8">
       Built for myself, and everyone else
       </header>
-      <div class="flex flex-row">
+      <div class="flex flex-row pt-4">
         <div class="grid w-full sm:grid-cols-2 gap-4">
           <PluginCard :plugin="plugin" />
           <div v-for="app in apps" :key="app.title">
@@ -163,10 +163,10 @@
           </div>
         </div>
       </div>
-      <H2Header class="pt-8 pb-4">
+      <H2Header class="pt-8">
       Thoughts, musings and ideas
       </header>
-      <div class="flex flex-row">
+      <div class="flex flex-row pt-4">
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
           <div v-for="blog in blogs" :key="blog._id">
             <keep-alive>
@@ -180,11 +180,11 @@
           </div>
         </div>
       </div>
-      <MoreLink link="thoughts"> See All </MoreLink>
-      <H2Header class="pt-8 pb-4">
+      <MoreLink link="thoughts"> <p>See All</p> </MoreLink>
+      <H2Header class="pt-8">
       Making sounds
       </header>
-      <div class="flex flex-row16">
+      <div class="flex flex-row pt-4">
         <div
           class="grid grid-row xs:grid-cols-1 sm:grid-cols-2 md:grid-cols-3 w-full gap-4"
         >
