@@ -9,7 +9,9 @@
       class="text-left w-full focus:outline-none focus:ring-2 focus:ring-white"
     >
       <header class="flex items-top justify-between pt-4 pb-2">
-        <h3 class="text-black dark:text-white text-lg pb-0 mb-0 font-bold w-60 md:w-80">
+        <h3
+          class="text-black dark:text-white text-lg pt-0 mb-0 font-bold w-60 md:w-80"
+        >
           {{ link.title }}
         </h3>
         <external-link-icon

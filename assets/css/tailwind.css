@@ -20,7 +20,7 @@
   }
 
   h3 {
-    @apply text-xl font-bold  mb-4 text-black dark:text-white;
+    @apply text-xl font-bold pt-4  mb-4 text-black dark:text-white;
   }
 
   h4 {
@@ -28,7 +28,7 @@
   }
 
   p {
-    @apply text-black dark:text-white mb-4;
+    @apply text-black dark:text-white mb-4 leading-relaxed;
   }
 
   ul {
@@ -57,7 +57,7 @@
   }
 
   code {
-    @apply w-max font-mono bg-neutral-100 dark:bg-neutral-800 rounded-md py-1 px-2;
+    @apply w-max text-sm font-mono bg-neutral-100 dark:bg-neutral-800 rounded-md py-1 px-2;
     /* font-family: "JetBrains Mono" !important; */
   }
 
