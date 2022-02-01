@@ -1,8 +1,8 @@
 <template>
-  <div class="mt-0">
+  <div class="-mt-24">
     <div class="flex flex-row text-left" v-if="blog">
       <div class="flex flex-col col-span-full md:col-span-6">
-        <Header class="mt-0 pt-0 text-3xl">
+        <Header class="pt-0 text-3xl">
           {{ blog.title }}
         </Header>
         <p class="font-mono text-neutral-500 dark:text-neutral-400 pt-2">
