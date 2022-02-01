@@ -34,7 +34,7 @@
       </Subheader>
       <SubscribeCard />
       <div
-        class="bg-white dark:bg-black mt-8 top-16 flex flex-row py-4 space-x-2 overflow-x-auto scrollbar-hidden"
+        class="bg-white dark:bg-black mt-8 top-16 flex flex-row py-4 overflow-x-auto scrollbar-hidden"
       >
         <button
           v-for="tab in tabs"
@@ -43,7 +43,7 @@
             selected = tab;
             active = true;
           "
-          class="block font-medium rounded-md bg-neutral-100 dark:bg-neutral-800 px-4 py-2 text-neutral-600 hover:text-neutral-800 dark:text-neutral-200 dark:hover:text-neutral-50 hover:bg-neutral-200 dark:hover:bg-neutral-700"
+          class="block font-medium rounded-md px-4 py-2 text-neutral-600 hover:text-neutral-800 dark:text-neutral-200 dark:hover:text-neutral-50 hover:bg-neutral-200 dark:hover:bg-neutral-700"
           :class="[
             {
               'text-black dark:text-white bg-neutral-300 dark:bg-neutral-600':
