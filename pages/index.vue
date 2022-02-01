@@ -164,7 +164,7 @@
         </div>
       </div>
       <H2Header class="pt-16">
-      Thoughts, musings and ideas
+      Thoughts, ideas and features
       </header>
       <div class="flex flex-row pt-4">
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
