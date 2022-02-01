@@ -1134,16 +1134,6 @@
     ts-node "^8"
     tslib "^1"
 
-"@fontsource/ibm-plex-mono@^4.5.0":
-  version "4.5.0"
-  resolved "https://registry.yarnpkg.com/@fontsource/ibm-plex-mono/-/ibm-plex-mono-4.5.0.tgz#3f5965361a8190978369e798674a46551d33776c"
-  integrity sha512-c5+AWTzj0NlJr9OR2J5AqYVxPyqR4lPPytIXF1E78QqdA8N97/9tjorDYE6yu+D6fLEtsFv3tihp7yeCjXFj6A==
-
-"@fontsource/ibm-plex-sans@^4.4.0":
-  version "4.4.0"
-  resolved "https://registry.yarnpkg.com/@fontsource/ibm-plex-sans/-/ibm-plex-sans-4.4.0.tgz#a55a0c2a855caf5b660b50eab294303bb0024764"
-  integrity sha512-N8R2JrPS5BR9bJxWfx/WZcy2UoHbKm1xXV0ACV/uAtXrXFwU5RgyXCywznSJu9mGM2e+mRj7vaoW868gXWBehQ==
-
 "@fullhuman/postcss-purgecss@^2.1.2":
   version "2.3.0"
   resolved "https://registry.yarnpkg.com/@fullhuman/postcss-purgecss/-/postcss-purgecss-2.3.0.tgz#50a954757ec78696615d3e118e3fee2d9291882e"
@@ -5966,10 +5956,10 @@ fontsource-dm-serif-display@^4.0.0:
   resolved "https://registry.yarnpkg.com/fontsource-dm-serif-display/-/fontsource-dm-serif-display-4.0.0.tgz#35864f18f2e895f4effab96cdb9faf013ae16584"
   integrity sha512-TJ5Kjzd7J7fRhCTZIeIdFSdaAZgl53YIUpo+alV+MscDg016ZEqI31g6UTjeEWlYvWAKMQyLOjfzjMYUN3e8tw==
 
-fontsource-inter@^3.1.7:
-  version "3.1.7"
-  resolved "https://registry.yarnpkg.com/fontsource-inter/-/fontsource-inter-3.1.7.tgz#f174bfed86bfab9022d004f4fe0ba8de738ebdde"
-  integrity sha512-vH/DJSOgqKyCRic/LxLKyjWCzqvX88ypu2LLKjYSTlLbI/WvhR5G6Xlq3boNxkNyefdp+G2UMWq8oDBeqT9pyg==
+fontsource-jetbrains-mono@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/fontsource-jetbrains-mono/-/fontsource-jetbrains-mono-4.0.0.tgz#1abaf8a6842bafcc33350daafc6f3de3b30c6e4a"
+  integrity sha512-cjEIa7M3c9FqEt/WOQNWLUaVfWYZuHHqD+H1XgGUJa8gX6xMKCBo8c3CPqLmfcCFXtVgdS5IBtIVXvRRKemcaA==
 
 for-in@^1.0.2:
   version "1.0.2"
