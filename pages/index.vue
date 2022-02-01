@@ -30,9 +30,7 @@
         </Header>
         <Subheader>
           <template #text>
-            I'm a software designer, developer, writer and musician. Right now
-            I'm designing Payments at Moneybox and leading our Design Systems
-            team.
+            <span v-html="home.content" />
           </template>
           <template #buttons>
             <div class="flex flex-col md:flex-row md:space-x-2">
@@ -248,6 +246,7 @@ export default {
   data() {
     return {
       loading: false,
+      home: {},
       apps: {},
       albums: {},
       mades: {},
@@ -260,6 +259,7 @@ export default {
   },
   created() {
     this.slug = this.$route.params.slug;
+    this.getHomeData();
     this.getAppsData();
     this.getBlogsData();
     this.getLinksData();
@@ -268,6 +268,18 @@ export default {
     this.fetchPluginData();
   },
   methods: {
+    async getHomeData() {
+      this.loading = true;
+      await bucket
+        .getObject({
+          id: "61f98a81e6ceb800089b8e9a",
+          props: "id,title,content,metadata",
+        })
+        .then((data) => {
+          this.home = data.object;
+          this.loading = false;
+        });
+    },
     async getAppsData() {
       this.error = this.app = null;
       this.loading = true;
