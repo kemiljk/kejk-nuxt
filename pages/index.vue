@@ -195,7 +195,7 @@
           </div>
         </div>
       </div>
-      <GetInTouch class="mt-16" id="GET_IN_TOUCH" />
+      <GetInTouch class="mt-16 text-base" id="GET_IN_TOUCH" />
     </div>
   </div>
 </template>
