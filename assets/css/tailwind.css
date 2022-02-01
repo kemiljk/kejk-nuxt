@@ -12,15 +12,15 @@
   }
 
   h1 {
-    @apply font-display text-xl md:text-3xl font-black text-black dark:text-white;
+    @apply leading-snug font-display text-xl md:text-3xl font-black text-black dark:text-white;
   }
 
   h2 {
-    @apply font-display text-lg md:text-2xl font-bold text-black dark:text-white mb-4;
+    @apply leading-snug font-display text-lg md:text-2xl font-bold text-black dark:text-white mb-4;
   }
 
   h3 {
-    @apply text-xl font-bold pt-4  mb-4 text-black dark:text-white;
+    @apply leading-snug text-xl font-bold pt-4  mb-4 text-black dark:text-white;
   }
 
   h4 {

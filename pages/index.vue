@@ -30,7 +30,7 @@
         </Header>
         <Subheader>
           <template #text>
-            <span class="leading-tight" v-html="home.content" />
+            <span v-html="home.content" />
           </template>
           <template #buttons>
             <div class="flex flex-col md:flex-row md:space-x-2">
