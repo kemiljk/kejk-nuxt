@@ -1,5 +1,5 @@
 <template>
-  <div class="mt-0 pt-4">
+  <div class="mt-0">
     <div class="flex flex-row text-left" v-if="blog">
       <div class="flex flex-col col-span-full md:col-span-6">
         <Header class="mt-0 pt-0 text-3xl">
