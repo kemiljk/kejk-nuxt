@@ -2,9 +2,9 @@
   <div class="mt-0 pt-4">
     <div class="flex flex-row text-left" v-if="blog">
       <div class="flex flex-col col-span-full md:col-span-6">
-        <h1>
+        <Header class="text-4xl">
           {{ blog.title }}
-        </h1>
+        </Header>
         <p class="font-mono text-neutral-500 dark:text-neutral-400 pt-2">
           Updated {{ blog.modified_at | moment("from", "now") }}
         </p>
