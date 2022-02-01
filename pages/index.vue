@@ -25,12 +25,14 @@
     </Nav>
     <div class="max-w-5xl mx-auto px-4">
       <div>
-        <Header>
+        <Header class="text-left lg:text-center">
           Hej, I'm Karl
         </Header>
         <Subheader>
           <template #text>
-            I'm a software designer, developer, writer and musician. Right now I'm designing Payments at Moneybox and leading our Design Systems team.
+            I'm a software designer, developer, writer and musician. Right now
+            I'm designing Payments at Moneybox and leading our Design Systems
+            team.
           </template>
           <template #buttons>
             <div class="flex flex-col md:flex-row md:space-x-2">
@@ -144,8 +146,8 @@
         </div>
       </div>
       <H2Header class="pt-16">
-      Built for myself... and everyone else
-      </header>
+        Built for myself... and everyone else
+      </H2Header>
       <div class="flex flex-row pt-4">
         <div class="grid w-full sm:grid-cols-2 gap-4">
           <PluginCard :plugin="plugin" />
@@ -164,8 +166,8 @@
         </div>
       </div>
       <H2Header class="pt-16">
-      Thoughts, ideas and features
-      </header>
+        Thoughts, ideas and features
+      </H2Header>
       <div class="flex flex-row pt-4">
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
           <div v-for="blog in blogs" :key="blog._id">
@@ -182,8 +184,8 @@
       </div>
       <MoreLink link="thoughts" class="text-base">See All</MoreLink>
       <H2Header class="pt-16">
-      Making sounds
-      </header>
+        Making sounds
+      </H2Header>
       <div class="flex flex-row pt-4">
         <div
           class="grid grid-row xs:grid-cols-1 sm:grid-cols-2 md:grid-cols-3 w-full gap-4"

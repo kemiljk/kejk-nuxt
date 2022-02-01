@@ -28,7 +28,7 @@
         <div class="flex flex-row pt-16">
           <BackLink link="home"> Back home </BackLink>
         </div>
-        <Header>/lazy-pdf</Header>
+        <Header class="text-left lg:text-center">/lazy-pdf</Header>
         <Subheader>
           <template #text>
             Effortless and interfaceless PDF creation.

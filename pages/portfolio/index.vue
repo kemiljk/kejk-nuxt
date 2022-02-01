@@ -15,15 +15,15 @@
       <NavItem to="/portfolio" isActive id="PROJECTS" v-scroll-to="'#PROJECTS'"
         >Projects</NavItem
       >
-    <NavItem href="https://bookmarks.kejk.tech" extLink>
-      <span class="flex items-center">
-        Bookmarks
-        <external-link-icon
-          size="1x"
-          class="ml-2 text-neutral-700 dark:text-neutral-300"
-        ></external-link-icon>
-      </span>
-    </NavItem>
+      <NavItem href="https://bookmarks.kejk.tech" extLink>
+        <span class="flex items-center">
+          Bookmarks
+          <external-link-icon
+            size="1x"
+            class="ml-2 text-neutral-700 dark:text-neutral-300"
+          ></external-link-icon>
+        </span>
+      </NavItem>
     </Nav>
     <div class="max-w-5xl mx-auto px-4">
       <!--<Header>Featured projects</Header>
@@ -36,7 +36,7 @@
       </div>
       </div>
       </div>-->
-      <Header>Live projects</Header>
+      <Header class="text-left lg:text-center">Live projects</Header>
       <H2Header class="pt-4">Things I've built.</H2Header>
       <div class="flex flex-row">
         <div class="grid w-full sm:grid-cols-2 gap-4">

@@ -24,7 +24,7 @@
       </NavItem>
     </Nav>
     <div class="max-w-3xl mx-auto px-4">
-      <Header>/bookmarks</Header>
+      <Header class="text-left lg:text-center">/bookmarks</Header>
       <Subheader>
         <template #text>
           Bookmarks of interesting things I've found around the web, for me to
