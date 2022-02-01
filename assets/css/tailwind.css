@@ -12,15 +12,15 @@
   }
 
   h1 {
-    @apply text-xl md:text-3xl font-black text-black dark:text-white;
+    @apply font-display text-xl md:text-3xl font-black text-black dark:text-white;
   }
 
   h2 {
-    @apply text-lg md:text-2xl font-bold text-black dark:text-white mb-4;
+    @apply font-display text-lg md:text-2xl font-bold text-black dark:text-white mb-4;
   }
 
   h3 {
-    @apply text-base md:text-xl font-bold  mb-4 text-black dark:text-white;
+    @apply text-xl font-bold  mb-4 text-black dark:text-white;
   }
 
   h4 {

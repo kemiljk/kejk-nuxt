@@ -1,11 +1,11 @@
 <template>
   <div class="flex bg-neutral-50 dark:bg-neutral-900 rounded-xl">
     <div class="p-8 w-full">
-      <h1
-        class="text-lg sm:text-xl text-neutral-800 dark:text-white font-medium pb-2"
+      <h3
+        class="text-lg sm:text-xl text-neutral-800 dark:text-white font-bold mb-0"
       >
         Subscribe to stay up-to-date.
-      </h1>
+      </h3>
       <form
         action="https://buttondown.email/api/emails/embed-subscribe/karl"
         method="post"

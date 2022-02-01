@@ -8,11 +8,11 @@
           <div
             class="p-6 sm:mr-2 rounded-tl-lg rounded-tr-lg sm:rounded-tr-none sm:rounded-bl-lg"
           >
-            <h1
-              class="text-xl sm:text-2xl text-neutral-800 dark:text-white font-bold tracking-tight"
+            <h3
+              class="text-xl sm:text-2xl text-neutral-800 dark:text-white font-bold tracking-tight mb-0"
             >
               Get in touch.
-            </h1>
+            </h3>
             <div
               class="grid grid-row grid-cols-2 md:grid-cols-2 w-full gap-4 pt-4"
             >

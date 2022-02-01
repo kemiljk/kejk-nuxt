@@ -12,8 +12,9 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ["IBM Plex Sans", ...defaultTheme.fontFamily.sans],
-        mono: ["IBM Plex Mono", ...defaultTheme.fontFamily.mono],
+        sans: ["DM Sans", ...defaultTheme.fontFamily.sans],
+        display: "DM Serif Display",
+        mono: ["JetBrains Mono", ...defaultTheme.fontFamily.mono],
       },
       backgroundColor: ["active"],
     },
