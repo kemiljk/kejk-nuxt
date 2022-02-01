@@ -30,7 +30,7 @@
         </Header>
         <Subheader>
           <template #text>
-            <span v-html="home.content" />
+            <span class="leading-tight" v-html="home.content" />
           </template>
           <template #buttons>
             <div class="flex flex-col md:flex-row md:space-x-2">
@@ -72,7 +72,7 @@
           <div
             class="flex text-sm font-bold pt-4 text-neutral-800 dark:text-neutral-200"
           >
-            Full-time <span class="ml-2 text-indigo-500">———</span>
+            Full-time <span class="ml-2 text-indigo-500 font-mono">———</span>
           </div>
           <IconText class="flex items-center">
             <template #icon>
@@ -109,7 +109,7 @@
           <div
             class="flex text-sm pt-8 md:pt-4 font-bold text-neutral-800 dark:text-neutral-200"
           >
-            On the side <span class="ml-2 text-indigo-500">———</span>
+            On the side <span class="ml-2 text-indigo-500 font-mono">———</span>
           </div>
           <IconText class="flex items-center">
             <template #icon>
