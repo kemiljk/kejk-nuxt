@@ -143,7 +143,8 @@
           </IconText>
         </div>
       </div>
-      <H2Header class="pt-16">
+      <div class="w-full pt-16 border-t-4 border-neutral-100 dark:border-neutral-800" />
+      <H2Header>
         Built for myself... and everyone else
       </H2Header>
       <div class="flex flex-row pt-4">
@@ -163,7 +164,8 @@
           </div>
         </div>
       </div>
-      <H2Header class="pt-16">
+      <div class="w-full pt-16 border-t-4 border-neutral-100 dark:border-neutral-800" />
+      <H2Header>
         Thoughts, ideas and features
       </H2Header>
       <div class="flex flex-row pt-4">
@@ -181,7 +183,8 @@
         </div>
       </div>
       <MoreLink link="thoughts" class="text-base">See All</MoreLink>
-      <H2Header class="pt-16">
+      <div class="w-full pt-16 border-t-4 border-neutral-100 dark:border-neutral-800" />
+      <H2Header>
         Making sounds
       </H2Header>
       <div class="flex flex-row pt-4">
