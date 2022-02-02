@@ -41,11 +41,12 @@
           </button>
         </div>
         <div
-          class="w-full flex-col xl:hidden px-8 pb-8"
+          class="w-full flex-col md:hidden px-8 pb-8"
           :class="{ flex: isOpen, hidden: !isOpen }"
         >
           <div
-            class="w-full bg-[#05042F] shadow-lg p-2 space-y-1 rounded-xl text-center transition transform ease-linear duration-200"
+            class="w-full bg-white dark:bg-black shadow-lg p-2 space-y-1 rounded-xl text-center transition transform ease-linear duration-200"
+          @click="close"
           >
             <slot />
           </div>
