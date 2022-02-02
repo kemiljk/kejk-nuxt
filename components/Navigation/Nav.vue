@@ -41,7 +41,7 @@
           :class="{ relative: isOpen, hidden: !isOpen }"
         >
           <div
-            class="z-50 backdrop-filter backdrop-blur-3xl rounded-xl border border-neutral-100 dark:border-2 dark:border-neutral-800 shadow-lg absolute w-max px-2 py-2 mt-4 space-y-1"
+            class="z-50 backdrop-filter backdrop-blur-3xl rounded-xl border border-neutral-100 dark:border-2 dark:border-neutral-800 shadow-lg absolute right-0 w-max px-2 py-2 mt-4 space-y-1"
           >
             <slot></slot>
           </div>
