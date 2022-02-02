@@ -30,13 +30,16 @@
           <About :about="about" />
         </keep-alive>
       </div>
-      <!-- <div
-        class="grid grid-cols-1 md:grid-cols-4"
-        v-for="principle in principles"
-        :key="principle.title"
-      >
-        <PrinciplesCard :principle="principle" />
-      </div> -->
+      <H2Header class="pt-4">
+        My guiding principles
+      </H2Header>
+      <div class="flex flex-row py-4">
+        <div class="grid w-full sm:grid-cols-2 gap-4">
+          <div v-for="principle in principles" :key="principle.title">
+            <PrinciplesCard :principle="principle" />
+          </div>
+        </div>
+      </div>
       <div class="flex flex-col sm:flex-row sm:space-x-2">
         <a
           class="py-2 sm:py-4 no-underline"
