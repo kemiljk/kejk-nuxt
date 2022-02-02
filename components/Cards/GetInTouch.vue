@@ -9,7 +9,7 @@
             class="p-6 sm:mr-2 rounded-tl-lg rounded-tr-lg sm:rounded-tr-none sm:rounded-bl-lg"
           >
             <h3
-              class="text-xl sm:text-2xl text-neutral-800 dark:text-white font-bold tracking-tight mb-0"
+              class="text-xl sm:text-2xl text-neutral-800 dark:text-white font-bold tracking-tight pt-0 mb-0"
             >
               Get in touch.
             </h3>
