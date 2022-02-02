@@ -23,7 +23,7 @@
           <!-- Mobile menu button -->
           <button
             @click="toggle"
-            class="inline-flex items-center justify-center p-2 rounded-md hover:text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-white"
+            class="inline-flex items-center justify-center p-2 rounded-md hover:text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-white touch-none"
           >
             <span class="sr-only">Open main menu</span>
             <menu-icon
