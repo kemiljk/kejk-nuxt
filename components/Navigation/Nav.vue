@@ -37,11 +37,11 @@
         </div>
         <!-- NOTE: MOBILE MENU -->
         <div
-          class="w-full relative md:hidden shadow bg-white dark:bg-black"
+          class="w-max relative md:hidden shadow bg-white dark:bg-black"
           :class="{ relative: isOpen, hidden: !isOpen }"
         >
           <div
-            class="z-50 backdrop-filter backdrop-blur-3xl rounded-xl border border-neutral-100 dark:border-2 dark:border-neutral-800 shadow-lg absolute w-full px-2 py-2 mt-4 space-y-1"
+            class="z-50 backdrop-filter backdrop-blur-3xl rounded-xl border border-neutral-100 dark:border-2 dark:border-neutral-800 shadow-lg absolute w-max px-2 py-2 mt-4 space-y-1"
           >
             <slot></slot>
           </div>
