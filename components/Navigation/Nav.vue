@@ -15,14 +15,18 @@
               </div>
             </div>
           </div>
-          <div class="flex justify-end md:hidden w-full">
-            <!-- Mobile menu button -->
-            <button
-              @click="toggle"
-              class="inline-flex items-center justify-center p-2 rounded-md text-neutral-400 hover:text-white dark:hover:bg-neutral-700 hover:bg-neutral-100 focus:outline-none focus:ring-2 focus:ring-white touch-none"
-            >
-              <span class="sr-only">Open main menu</span>
-              <menu-icon
+        </nav>
+        <nav class="fixed w-full z-50" v-on-clickaway="close">
+      <div class="flex flex-col w-full">
+        <div class="flex w-full items-center justify-between xl:hidden p-3">
+        <Logo />
+          <!-- Mobile menu button -->
+          <button
+            @click="toggle"
+            class="inline-flex items-center justify-center p-2 rounded-md hover:text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-white"
+          >
+            <span class="sr-only">Open main menu</span>
+            <menu-icon
                 v-if="!isOpen"
                 size="1x"
                 class="text-black dark:text-white h-6 w-6"
@@ -32,18 +36,17 @@
                 class="text-black dark:text-white h-6 w-6"
                 v-else
               ></x-icon>
-            </button>
-          </div>
+          </button>
         </div>
-        <!-- NOTE: MOBILE MENU -->
         <div
-          class="w-max relative md:hidden shadow bg-white dark:bg-black"
-          :class="{ relative: isOpen, hidden: !isOpen }"
+          class="w-full flex-col xl:hidden px-8 pb-8"
+          :class="{ flex: isOpen, hidden: !isOpen }"
         >
           <div
-            class="z-50 backdrop-filter backdrop-blur-3xl rounded-xl border border-neutral-100 dark:border-2 dark:border-neutral-800 shadow-lg absolute right-0 w-max px-2 py-2 mt-4 space-y-1"
+            class="w-full bg-[#05042F] shadow-lg p-2 space-y-1 rounded-xl text-center transition transform ease-linear duration-200"
+            @click="close"
           >
-            <slot></slot>
+            <slot />
           </div>
         </div>
       </div>
