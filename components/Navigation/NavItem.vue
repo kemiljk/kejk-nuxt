@@ -1,5 +1,5 @@
 <template>
-  <li class="flex w-full items-center justify-center sm:space-x-4 m-0">
+  <li class="flex w-full items-center justify-end sm:space-x-4 m-0">
     <div v-if="extLink">
       <a
         :href="`${href}`"
