@@ -15,8 +15,10 @@
               </div>
             </div>
           </div>
-        </nav>
-        <nav class="fixed w-full z-50" v-on-clickaway="close">
+        </div>
+      </div>
+    </nav>
+    <nav class="fixed w-full z-50" v-on-clickaway="close">
       <div class="flex flex-col w-full">
         <div class="flex w-full items-center justify-between md:hidden p-3">
         <Logo />
