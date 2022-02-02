@@ -37,12 +37,6 @@
         </div>
         <!-- NOTE: MOBILE MENU -->
         <div
-          class="relative md:hidden"
-          :class="{ relative: isOpen, hidden: !isOpen }"
-        >
-          <div class="-z-1 bg-black w-full h-full opacity-50 m-0 p-0"></div>
-        </div>
-        <div
           class="w-full fixed md:hidden shadow bg-white dark:bg-black"
           :class="{ relative: isOpen, hidden: !isOpen }"
         >
