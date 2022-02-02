@@ -5,7 +5,7 @@
         class="w-full fixed z-50 backdrop-filter backdrop-blur-2xl mx-auto px-4 sm:px-6 lg:px-8"
       >
         <div class="flex items-center justify-between w-full h-16">
-          <Logo />
+          <Logo class="hidden md:block" />
           <div class="flex items-center">
             <div class="flex-shrink-0">
               <div class="hidden md:inline-flex">
@@ -18,7 +18,7 @@
         </nav>
         <nav class="fixed w-full z-50" v-on-clickaway="close">
       <div class="flex flex-col w-full">
-        <div class="flex w-full items-center justify-between xl:hidden p-3">
+        <div class="flex w-full items-center justify-between md:hidden p-3">
         <Logo />
           <!-- Mobile menu button -->
           <button
@@ -44,7 +44,6 @@
         >
           <div
             class="w-full bg-[#05042F] shadow-lg p-2 space-y-1 rounded-xl text-center transition transform ease-linear duration-200"
-            @click="close"
           >
             <slot />
           </div>
