@@ -129,21 +129,23 @@
           </IconText>
           <IconText class="flex items-center">
             <template #icon>
-              <MmacIcon class="pr-4" />
+              <LocallyIcon class="mr-4 dark:border dark:border-indigo-200" />
             </template>
             <template #text>
-              Designing the world's best cocktail resource at
+              Designing and building powerful business technologies with
               <a
-                href="https://www.makemeacocktail.com"
+                href="https://www.locallyuk.tech"
                 target="_blank"
                 rel="noreferrer"
-                >Make Me A Cocktail</a
+                >Locally UK</a
               >.
             </template>
           </IconText>
         </div>
       </div>
-      <div class="w-full mt-16 border-t-2 border-neutral-100 dark:border-neutral-800" />
+      <div
+        class="w-full mt-16 border-t-2 border-neutral-100 dark:border-neutral-800"
+      />
       <H2Header class="pt-4">
         Built for myself... and everyone else
       </H2Header>
@@ -164,7 +166,9 @@
           </div>
         </div>
       </div>
-      <div class="w-full mt-16 border-t-2 border-neutral-100 dark:border-neutral-800" />
+      <div
+        class="w-full mt-16 border-t-2 border-neutral-100 dark:border-neutral-800"
+      />
       <H2Header class="pt-4">
         Thoughts, ideas and features
       </H2Header>
@@ -183,7 +187,9 @@
         </div>
       </div>
       <MoreLink link="thoughts" class="text-base">See All</MoreLink>
-      <div class="w-full mt-16 border-t-2 border-neutral-100 dark:border-neutral-800" />
+      <div
+        class="w-full mt-16 border-t-2 border-neutral-100 dark:border-neutral-800"
+      />
       <H2Header class="pt-4">
         Making sounds
       </H2Header>

@@ -30,6 +30,13 @@
           <About :about="about" />
         </keep-alive>
       </div>
+      <!-- <div
+        class="grid grid-cols-1 md:grid-cols-4"
+        v-for="principle in principles"
+        :key="principle.title"
+      >
+        <PrinciplesCard :principle="principle" />
+      </div> -->
       <div class="flex flex-col sm:flex-row sm:space-x-2">
         <a
           class="py-2 sm:py-4 no-underline"
@@ -108,12 +115,13 @@ export default {
   data() {
     return {
       loading: false,
-      tech: {},
       about: {},
+      principles: {},
     };
   },
   created() {
     this.fetchAboutData();
+    this.fetchPrinciplesData();
   },
   methods: {
     async fetchAboutData() {
@@ -126,6 +134,23 @@ export default {
         .then((data) => {
           this.about = data.object;
           this.loading = false;
+        });
+    },
+    async fetchPrinciplesData() {
+      this.error = this.principle = null;
+      this.loading = true;
+      await bucket
+        .getObjects({
+          query: {
+            type: "principles",
+          },
+          props: "_id,slug,title,content",
+          sort: "created_at",
+        })
+        .then((data) => {
+          const principles = data.objects;
+          this.loading = false;
+          this.principles = principles;
         });
     },
   },
