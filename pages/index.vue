@@ -129,7 +129,7 @@
           </IconText>
           <IconText class="flex items-center">
             <template #icon>
-              <LocallyIcon class="mr-4 dark:border dark:border-indigo-200" />
+              <LocallyIcon class="mr-4" />
             </template>
             <template #text>
               Designing and building powerful business technologies with
