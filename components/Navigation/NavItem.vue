@@ -7,7 +7,7 @@
         :class="[
           'w-max flex items-center justify-center font-normal md:block px-4 py-2 text-neutral-900 dark:text-white bg-neutral-50 dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800 md:border-b-2 md:border-transparent md:hover:border-b-2 md:hover:border-neutral-500 md:dark:hover:border-neutral-600 hover:bg-neutral-400 hover:text-black dark:hover:text-white dark:hover:bg-neutral-500 md:bg-transparent md:hover:bg-transparent rounded-full md:rounded-none transition ease-in-out duration-200 no-underline',
           {
-            'w-max flex items-center justify-center font-normal md:block px-4 py-2 text-neutral-900 dark:text-white bg-neutral-50 dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800 md:border-b-2 md:border-transparent md:bg-transparent rounded-full md:rounded-none transition ease-in-out duration-200 no-underline': isActive,
+            'text-neutral-900 dark:text-white active:bg-neutral-300 dark:active:bg-neutral-700 border active:border-transparent dark:active:border-transparent': isActive,
           },
         ]"
       >
@@ -20,7 +20,7 @@
         :class="[
           'w-max flex items-center justify-center font-normal md:block px-4 py-2 text-neutral-900 dark:text-white bg-neutral-50 dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800 md:border-b-2 md:border-transparent md:hover:border-b-2 md:hover:border-neutral-500 md:dark:hover:border-neutral-600 hover:bg-neutral-400 hover:text-black dark:hover:text-white dark:hover:bg-neutral-500 md:bg-transparent md:hover:bg-transparent rounded-full md:rounded-none transition ease-in-out duration-200 no-underline',
           {
-            'w-max flex items-center justify-center font-normal md:block px-4 py-2 text-neutral-900 dark:text-white bg-neutral-50 dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800 md:border-b-2 md:border-transparent md:bg-transparent rounded-full md:rounded-none transition ease-in-out duration-200 no-underline': isActive,
+            'text-neutral-900 dark:text-white active:bg-neutral-300 dark:active:bg-neutral-700 border active:border-transparent dark:active:border-transparent': isActive,
           },
         ]"
       >
