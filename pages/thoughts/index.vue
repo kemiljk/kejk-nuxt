@@ -27,7 +27,7 @@
     </Nav>
     <div class="max-w-3xl mx-auto px-4">
       <Header class="text-left lg:text-center">/thoughts</Header>
-      <Subheader>
+      <Subheader class="text-left lg:text-center">
         <template #text>
           Thoughts about design, development and the intersection of the two.
         </template>
@@ -44,11 +44,12 @@
             active = true;
           "
           class="w-max flex items-center justify-center font-normal md:block px-4 py-2 text-neutral-900 dark:text-white bg-neutral-50 dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800 md:hover:bg-neutral-200 md:hover:text-black md:dark:hover:text-white md:dark:hover:bg-neutral-800 rounded-full transition ease-in-out duration-200 no-underline"
-        :class="[
-          {
-            'text-neutral-900 dark:text-white bg-neutral-300 dark:bg-neutral-700 border border-transparent dark:border-transparent': selected === tab,
-          },
-        ]"
+          :class="[
+            {
+              'text-neutral-900 dark:text-white bg-neutral-300 dark:bg-neutral-700 border border-transparent dark:border-transparent':
+                selected === tab,
+            },
+          ]"
         >
           {{ tab }}
         </button>
