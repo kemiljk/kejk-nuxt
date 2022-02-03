@@ -10,11 +10,9 @@ function getBlogs() {
     query: {
       type: "blogs",
     },
-    // type_slug: "blogs",
     props: "slug,title,content,metadata,modified_at,order",
     limit: "20",
   };
-  // return bucket.getObjectsByType(params);
   return bucket.getObjects(params);
 }
 
