@@ -11,10 +11,6 @@
     scrollbar-width: none;
   }
   
-  .blur {
-      -webkit-backdrop-filter: blur(2rem);
-  }
-  
   img {
     @apply rounded-lg;
   }
