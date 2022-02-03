@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <nav class="bg-white dark:bg-black">
+  <div class="bg-white dark:bg-black">
+    <nav>
       <div
         class="w-full fixed z-50 backdrop-filter backdrop-blur-2xl mx-auto pl-4 sm:pl-6 lg:px-8"
       >
