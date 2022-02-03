@@ -9,7 +9,7 @@
       cursor="pointer"
     >
       <button
-        class="bg-neutral-50 dark:bg-neutral-900 hover:shadow-lg hover:bg-neutral-50 dark:hover:bg-neutral-800 transition ease-in-out duration-300 rounded-xl text-left w-full focus:outline-none focus:ring-2 focus:ring-white"
+        class="bg-neutral-50 dark:bg-neutral-900 hover:shadow-lg hover:bg-neutral-50 dark:hover:bg-neutral-800 transition ease-in-out duration-300 rounded-3xl text-left w-full focus:outline-none focus:ring-2 focus:ring-white"
       >
         <div>
           <header class="flex justify-between">

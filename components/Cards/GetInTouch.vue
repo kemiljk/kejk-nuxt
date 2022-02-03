@@ -1,6 +1,6 @@
 <template>
   <div
-    class="justify-center bg-white dark:bg-black sm:pt-0 border-2 border-neutral-100 dark:border-neutral-900 rounded-xl"
+    class="justify-center bg-white dark:bg-black sm:pt-0 border-2 border-neutral-100 dark:border-neutral-900 rounded-3xl"
   >
     <div class="max-w-5xl mx-auto">
       <div class="overflow-hidden">
