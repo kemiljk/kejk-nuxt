@@ -43,13 +43,12 @@
             selected = tab;
             active = true;
           "
-          class="block font-medium rounded-md px-4 py-2 text-neutral-600 hover:text-neutral-800 dark:text-neutral-200 dark:hover:text-neutral-50 hover:bg-neutral-200 dark:hover:bg-neutral-700"
-          :class="[
-            {
-              'text-black dark:text-white bg-neutral-300 dark:bg-neutral-600':
-                selected === tab,
-            },
-          ]"
+          class="w-max flex items-center justify-center font-normal md:block px-4 py-2 text-neutral-900 dark:text-white bg-neutral-50 dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800 md:hover:bg-neutral-200 md:hover:text-black md:dark:hover:text-white md:dark:hover:bg-neutral-800 rounded-full transition ease-in-out duration-200 no-underline"
+        :class="[
+          {
+            'text-neutral-900 dark:text-white bg-neutral-300 dark:bg-neutral-700 border border-transparent dark:border-transparent': isActive,
+          },
+        ]"
         >
           {{ tab }}
         </button>
