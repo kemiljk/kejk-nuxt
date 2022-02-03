@@ -10,9 +10,9 @@
             class="rounded-md max-h-24"
             alt="Image of media"
           />
-          <external-link-icon
+          <arrow-up-right-icon
             class="text-neutral-700 dark:text-neutral-300"
-          ></external-link-icon>
+          ></arrow-up-right-icon>
         </header>
         <div
           class="divide-y divide-solid divide-neutral-300 dark:divide-neutral-800"
@@ -40,12 +40,12 @@
 </template>
 
 <script>
-import { ExternalLinkIcon } from "vue-feather-icons";
+import { ArrowUpRightIcon } from "vue-feather-icons";
 
 export default {
   name: "Media",
   components: {
-    ExternalLinkIcon,
+    ArrowUpRightIcon,
   },
   props: {
     media: {

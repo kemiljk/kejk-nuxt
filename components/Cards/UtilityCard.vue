@@ -23,11 +23,11 @@
                   <compass-icon
                     v-if="utility.metadata.website"
                     size="1x"
-                    class="text-neutral-700 dark:text-neutral-300 hidden sm:block flex-shrink-0 "
+                    class="text-neutral-700 dark:text-neutral-300 hidden sm:block shrink-0 "
                   ></compass-icon>
                   <download-icon
                     v-if="utility.metadata.download"
-                    class="text-neutral-700 dark:text-neutral-300 hidden sm:block flex-shrink-0 "
+                    class="text-neutral-700 dark:text-neutral-300 hidden sm:block shrink-0 "
                     size="1x"
                   ></download-icon>
                 </div>

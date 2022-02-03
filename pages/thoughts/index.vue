@@ -8,20 +8,20 @@
       <NavItem href="https://www.plugins.run" extLink>
         <span class="flex items-center">
           Plugins
-          <external-link-icon
+          <arrow-up-right-icon
             size="1x"
             class="ml-2 text-neutral-700 dark:text-neutral-300"
-          ></external-link-icon>
+          ></arrow-up-right-icon>
         </span>
       </NavItem>
       <NavItem to="/portfolio">Projects</NavItem>
       <NavItem href="https://bookmarks.kejk.tech" extLink>
         <span class="flex items-center">
           Bookmarks
-          <external-link-icon
+          <arrow-up-right-icon
             size="1x"
             class="ml-2 text-neutral-700 dark:text-neutral-300"
-          ></external-link-icon>
+          ></arrow-up-right-icon>
         </span>
       </NavItem>
     </Nav>
@@ -63,7 +63,7 @@
 </template>
 
 <script>
-import { ExternalLinkIcon } from "vue-feather-icons";
+import { ArrowUpRightIcon } from "vue-feather-icons";
 import getSiteMeta from "~/utils/getSiteMeta.js";
 import All from "../../components/Tabs/All";
 import Design from "../../components/Tabs/Design";
@@ -78,7 +78,7 @@ export default {
     Development,
     Opinion,
     Links,
-    ExternalLinkIcon,
+    ArrowUpRightIcon,
   },
   computed: {
     meta() {

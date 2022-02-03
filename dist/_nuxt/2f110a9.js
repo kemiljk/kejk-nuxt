@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[7],{392:function(t,e,n){"use strict";n.r(e);var l=n(55),component=Object(l.a)({},(function(){var t=this,e=t.$createElement,n=t._self._c||e;return n("div",{staticClass:"flex py-2"},[t._t("icon"),t._v(" "),n("div",{staticClass:"text-base leading-6"},[t._t("text")],2)],2)}),[],!1,null,null,null);e.default=component.exports}}]);

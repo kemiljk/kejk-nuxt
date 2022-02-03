@@ -11,7 +11,7 @@
           {{ blog.title }}
         </h3>
         <arrow-right-icon
-          class="flex-shrink-0 text-neutral-700 dark:text-neutral-300"
+          class="shrink-0 text-neutral-700 dark:text-neutral-300"
         ></arrow-right-icon>
       </header>
       <p

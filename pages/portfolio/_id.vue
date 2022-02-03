@@ -6,10 +6,10 @@
       <NavItem href="https://www.plugins.run" extLink>
         <span class="flex items-center">
           Plugins
-          <external-link-icon
+          <arrow-up-right-icon
             size="1x"
             class="ml-2 text-neutral-700 dark:text-neutral-300"
-          ></external-link-icon>
+          ></arrow-up-right-icon>
         </span>
       </NavItem>
       <NavItem to="/portfolio" isActive id="PROJECTS" v-scroll-to="'#PROJECTS'"
@@ -18,10 +18,10 @@
       <NavItem href="https://bookmarks.kejk.tech" extLink>
         <span class="flex items-center">
           Bookmarks
-          <external-link-icon
+          <arrow-up-right-icon
             size="1x"
             class="ml-2 text-neutral-700 dark:text-neutral-300"
-          ></external-link-icon>
+          ></arrow-up-right-icon>
         </span>
       </NavItem>
     </Nav>
@@ -65,7 +65,7 @@
 </template>
 
 <script>
-import { ExternalLinkIcon } from "vue-feather-icons";
+import { ArrowUpRightIcon } from "vue-feather-icons";
 
 const Cosmic = require("cosmicjs");
 const api = Cosmic();
@@ -77,7 +77,7 @@ const bucket = api.bucket({
 export default {
   name: "PortfolioView",
   components: {
-    ExternalLinkIcon,
+    ArrowUpRightIcon,
   },
   data() {
     return {

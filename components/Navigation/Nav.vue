@@ -9,7 +9,7 @@
         >
           <Logo class="mr-4 md:mr-0" />
           <div class="flex items-center">
-            <div class="flex-shrink-0">
+            <div class="shrink-0">
               <div class="inline-flex">
                 <div
                   class="flex items-center justify-between space-x-1 md:space-x-4"

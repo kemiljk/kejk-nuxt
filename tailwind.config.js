@@ -2,7 +2,8 @@ const defaultTheme = require("tailwindcss/defaultTheme");
 
 module.exports = {
   content: [
-    "./src/**/*.{html,js}",
+    "./public/**/*.html",
+    "./src/**/*.{js,jsx,ts,tsx,vue}",
     "./components/**/*.{vue,js}",
     "./layouts/**/*.vue",
     "./pages/**/*.vue",
@@ -17,11 +18,6 @@ module.exports = {
         mono: ["JetBrains Mono", ...defaultTheme.fontFamily.mono],
       },
       backgroundColor: ["active"],
-    },
-  },
-  variants: {
-    extend: {
-      borderWidth: ["hover"],
     },
   },
   plugins: [require("@tailwindcss/typography")],

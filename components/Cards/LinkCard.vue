@@ -14,9 +14,9 @@
         >
           {{ link.title }}
         </h3>
-        <external-link-icon
-          class="flex-shrink-0 text-neutral-700 dark:text-neutral-300"
-        ></external-link-icon>
+        <arrow-up-right-icon
+          class="shrink-0 text-neutral-700 dark:text-neutral-300"
+        ></arrow-up-right-icon>
       </header>
       <p
         class="font-mono text-neutral-500 dark:text-neutral-400 pt-0 font-medium text-sm"
@@ -39,12 +39,12 @@
 </template>
 
 <script>
-import { ExternalLinkIcon } from "vue-feather-icons";
+import { ArrowUpRightIcon } from "vue-feather-icons";
 
 export default {
   name: "Link",
   components: {
-    ExternalLinkIcon,
+    ArrowUpRightIcon,
   },
   props: {
     link: {

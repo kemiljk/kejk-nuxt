@@ -1,6 +1,6 @@
 <template>
   <div
-    class="p-4 bg-neutral-50 dark:bg-neutral-900 hover:shadow-md rounded-xl hover:bg-neutral-50 dark:hover:bg-neutral-800 transition ease-in-out duration-300 w-full focus:outline-none focus:ring-2 focus:ring-white"
+    class="w-full p-4 bg-neutral-50 dark:bg-neutral-900 hover:shadow-md rounded-xl"
   >
     <header class="flex items-top justify-start">
       <h3 class="text-black dark:text-white text-lg pt-0 mb-0 font-bold w-full">

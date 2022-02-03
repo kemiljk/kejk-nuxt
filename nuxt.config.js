@@ -239,5 +239,9 @@ export default {
     },
   ],
 
-  build: {},
+  build: {
+    extend(config) {
+      config.performance.hints = false;
+    },
+  },
 };

@@ -20,10 +20,10 @@
               <div class="w-full">
                 <div class="flex justify-between items-center mb-4">
                   <Tag color="pink">Figma</Tag>
-                  <external-link-icon
+                  <arrow-up-right-icon
                     class="text-neutral-700 dark:text-neutral-300"
                     size="1x"
-                  ></external-link-icon>
+                  ></arrow-up-right-icon>
                 </div>
                 <h4
                   class="pt-4 md:pt-2 font-bold text-sm text-neutral-900 dark:text-neutral-100"
@@ -45,12 +45,12 @@
 </template>
 
 <script>
-import { ExternalLinkIcon } from "vue-feather-icons";
+import { ArrowUpRightIcon } from "vue-feather-icons";
 
 export default {
   name: "Plugin",
   components: {
-    ExternalLinkIcon,
+    ArrowUpRightIcon,
   },
   props: {
     plugin: {
