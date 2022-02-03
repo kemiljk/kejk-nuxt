@@ -1,7 +1,7 @@
 <template>
   <div>
     <nav>
-      <div class="bg-white dark:bg-black">
+      <div class="w-full h-16 bg-white dark:bg-black">
         <div
           class="w-full fixed z-50 backdrop-blur-2xl mx-auto pl-4 sm:pl-6 lg:px-8"
         >
