@@ -55,7 +55,7 @@
           </div>
         </div>
       </div>
-      <H2Header class="mt-16">Things I've helped to make.</H2Header>
+      <H2Header class="mt-16">Things I've defined, designed and/or coded.</H2Header>
       <div
         class="mt-4 grid grid-row xs:grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 w-full gap-4"
       >
