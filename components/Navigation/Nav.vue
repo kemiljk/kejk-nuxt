@@ -7,12 +7,12 @@
         <div
           class="flex items-center justify-between w-full h-16 overflow-x-auto md:overflow-none scrollbar-hidden"
         >
-          <Logo class="mr-4 md:mr-0" />
+          <Logo class="mr-6 md:mr-0" />
           <div class="flex items-center">
             <div class="shrink-0">
               <div class="inline-flex">
                 <div
-                  class="flex items-center justify-between space-x-1 md:space-x-4"
+                  class="flex items-center justify-between space-x-2 md:space-x-4 mr-6"
                 >
                   <slot></slot>
                 </div>
