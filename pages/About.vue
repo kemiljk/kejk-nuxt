@@ -30,7 +30,7 @@
           <About :about="about" />
         </keep-alive>
       </div>
-      <H2Header class="pt-4">
+      <H2Header class="pt-8">
         My guiding principles
       </H2Header>
       <div class="flex flex-row py-4">
@@ -40,7 +40,7 @@
           </div>
         </div>
       </div>
-      <div class="flex flex-col sm:flex-row sm:space-x-2">
+      <div class="flex flex-col pt-8 sm:flex-row sm:space-x-2">
         <a
           class="py-2 sm:py-4 no-underline"
           href="https://changelog.kejk.tech"
