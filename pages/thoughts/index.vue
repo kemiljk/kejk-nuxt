@@ -88,7 +88,7 @@ export default {
           "Thoughts on Design and Development from here and around the web.",
         url: "https://kejk.tech/thoughts",
         mainImage:
-          "https://imgix.cosmicjs.com/5e51a880-6d94-11ec-be72-1b6e4fde96ee-Twitter-Image.png",
+          "https://imgix.cosmicjs.com/934a74d0-85c3-11ec-8e12-4f611a7927fa-meta.png",
       };
       return getSiteMeta(metaData);
     },
