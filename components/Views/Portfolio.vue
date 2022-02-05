@@ -6,9 +6,9 @@
           :src="portfolio.metadata.featured.imgix_url"
           class="w-full rounded-xl mb-4"
         />
-        <h1>
+        <Header class="pt-24">
           {{ portfolio.title }}
-        </h1>
+        </Header>
         <h3>{{ portfolio.metadata.description }}</h3>
       </div>
     </div>

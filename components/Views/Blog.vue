@@ -2,7 +2,7 @@
   <div class="-mt-24">
     <div class="flex flex-row text-left" v-if="blog">
       <div class="flex flex-col col-span-full md:col-span-6">
-        <Header>
+        <Header class="pt-24">
           {{ blog.title }}
         </Header>
         <p class="font-mono text-neutral-500 dark:text-neutral-400 pt-2">
