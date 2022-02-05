@@ -12,7 +12,7 @@
             <div class="shrink-0">
               <div class="inline-flex">
                 <div
-                  class="flex items-center justify-between space-x-2 md:space-x-4 mr-6"
+                  class="flex items-center justify-between space-x-2 md:space-x-4 mr-6 md:mr-0"
                 >
                   <slot></slot>
                 </div>
