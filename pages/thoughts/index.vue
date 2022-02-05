@@ -26,7 +26,7 @@
       </NavItem>
     </Nav>
     <div class="max-w-3xl mx-auto px-4">
-      <Header class="text-left lg:text-center">/thoughts</Header>
+      <Header class="pt-24 text-left lg:text-center">/thoughts</Header>
       <Subheader class="text-left lg:text-center">
         <template #text>
           Thoughts about design, development and the intersection of the two.

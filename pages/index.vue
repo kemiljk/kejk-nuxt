@@ -25,7 +25,7 @@
     </Nav>
     <div class="max-w-5xl mx-auto px-4">
       <div>
-        <Header class="text-left md:text-center">
+        <Header class="pt-24 text-left md:text-center">
           Hej, I'm Karl
         </Header>
         <Subheader>

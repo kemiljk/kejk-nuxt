@@ -24,7 +24,7 @@
       </NavItem>
     </Nav>
     <div class="max-w-3xl mx-auto px-4">
-      <Header class="text-left lg:text-center">/about</Header>
+      <Header class="pt-24 text-left lg:text-center">/about</Header>
       <div class="flex flex-row pt-8">
         <keep-alive>
           <About :about="about" />

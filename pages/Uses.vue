@@ -24,7 +24,7 @@
       </NavItem>
     </Nav>
     <div class="max-w-3xl mx-auto px-4">
-      <Header class="text-left lg:text-center">/uses</Header>
+      <Header class="pt-24 text-left lg:text-center">/uses</Header>
       <div class="flex flex-row pt-8">
         <keep-alive>
           <Uses :uses="uses" />
