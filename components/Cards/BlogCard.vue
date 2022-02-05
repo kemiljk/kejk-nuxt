@@ -1,12 +1,12 @@
 <template>
   <NuxtLink :to="`/thoughts/${blog.slug}`" class="cursor-pointer">
     <button
-      class="text-left w-full focus:outline-none focus:ring-2 focus:ring-white"
+      class="text-left w-full focus:outline-none focus:ring-2 focus:ring-white group"
       v-if="blog.metadata"
     >
-      <header class="flex items-top justify-between pt-4 pb-2">
+      <header class="flex items-center justify-between pt-4 pb-2">
         <h3
-          class="text-black dark:text-white text-lg pt-0 mb-0 font-bold w-full"
+          class="text-black dark:text-white text-lg pt-0 mb-0 font-bold w-full group-hover:underline group-hover:underline-offset-4 group-hover:decoration-indigo-500 group-hover:decoration-2"
         >
           {{ blog.title }}
         </h3>

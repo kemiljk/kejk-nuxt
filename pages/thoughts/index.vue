@@ -33,8 +33,10 @@
         </template>
       </Subheader>
       <SubscribeCard />
+    </div>
+    <div class="max-w-5xl mx-auto px-4">
       <div
-        class="bg-white dark:bg-black mt-8 top-16 flex flex-row py-4 space-x-2 overflow-x-auto scrollbar-hidden"
+        class="flex w-full items-center bg-transparent mt-8 py-4 space-x-2 overflow-x-auto scrollbar-hidden"
       >
         <button
           v-for="tab in tabs"
