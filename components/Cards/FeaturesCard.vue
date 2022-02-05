@@ -21,7 +21,7 @@
           ></arrow-up-right-icon>
         </header>
         <p class="font-mono text-neutral-700 dark:text-neutral-300 pt-2 mb-0 text-sm">
-          {{ feature.metadata.published }}
+          {{ feature.metadata.published | moment("DD/MM/YYYY") }}
         </p>
       </div>
     </button>
