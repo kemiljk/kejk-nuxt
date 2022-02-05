@@ -20,8 +20,8 @@
             size="16"
           ></arrow-up-right-icon>
         </header>
-        <p class="text-neutral-700 dark:text-neutral-300 pt-2 mb-0 text-sm">
-          {{ feature.metadata.snippet }}
+        <p class="font-mono text-neutral-700 dark:text-neutral-300 pt-2 mb-0 text-sm">
+          {{ feature.metadata.published }}
         </p>
       </div>
     </button>
