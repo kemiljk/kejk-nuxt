@@ -25,10 +25,10 @@
     </Nav>
     <div class="mx-auto px-4">
       <div class="container pt-10 pb-2 max-w-3xl mx-auto">
-        <div class="flex flex-row pt-16">
+        <div class="flex flex-row pt-16 pb-8">
           <BackLink link="home"> Back home </BackLink>
         </div>
-        <Header class="text-left lg:text-center pt-4">/lazy-pdf</Header>
+        <Header class="text-left lg:text-center">/lazy-pdf</Header>
         <Subheader>
           <template #text>
             Effortless and interfaceless PDF creation.
