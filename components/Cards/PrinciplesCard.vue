@@ -3,7 +3,7 @@
     class="w-full p-4 bg-neutral-50 dark:bg-neutral-900 hover:shadow-md rounded-3xl"
   >
     <header class="flex items-top justify-start">
-      <h3 class="text-black dark:text-white pt-0 mb-0 font-bold w-full">
+      <h3 class="text-black dark:text-white text-lg pt-0 mb-0 font-bold w-full">
         {{ principle.title }}
       </h3>
     </header>
