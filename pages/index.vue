@@ -170,7 +170,7 @@
         class="w-full mt-16 border-t-2 border-neutral-100 dark:border-neutral-800"
       />
       <H2Header class="pt-4">
-        Thoughts, ideas and features
+        Thoughts, ideas, and more
       </H2Header>
       <div class="flex flex-row pt-4">
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
@@ -187,6 +187,19 @@
         </div>
       </div>
       <MoreLink link="thoughts" class="text-base">See All</MoreLink>
+      <div
+        class="w-full mt-16 border-t-2 border-neutral-100 dark:border-neutral-800"
+      />
+      <H2Header class="pt-4">
+        Features and talks
+      </H2Header>
+      <div class="flex flex-row py-4">
+        <div class="grid w-full sm:grid-cols-2 gap-4">
+          <div v-for="feature in features" :key="feature.title">
+            <FeaturesCard :feature="feature" />
+          </div>
+        </div>
+      </div>
       <div
         class="w-full mt-16 border-t-2 border-neutral-100 dark:border-neutral-800"
       />
@@ -263,6 +276,7 @@ export default {
       links: {},
       blogs: {},
       plugin: {},
+      features: {},
       slug: "",
     };
   },
@@ -275,6 +289,7 @@ export default {
     this.getUtilitiesData();
     this.getAlbumsData();
     this.fetchPluginData();
+    this.getFeaturesData();
   },
   methods: {
     async getHomeData() {
@@ -384,6 +399,22 @@ export default {
         .then((data) => {
           this.plugin = data.object;
           this.loading = false;
+        });
+    },
+    async getFeaturesData() {
+      this.error = this.feature = null;
+      this.loading = true;
+      await bucket
+        .getObjects({
+          query: {
+            type: "features",
+          },
+          props: "_id,slug,title,metadata",
+        })
+        .then((data) => {
+          const features = data.objects;
+          this.loading = false;
+          this.features = features;
         });
     },
   },
