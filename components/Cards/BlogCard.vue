@@ -26,7 +26,7 @@
         </Tag>
       </div>
       <p
-        class="text-neutral-700 dark:text-neutral-300 pt-2 pb-4 font-medium mb-0 text-base"
+        class="text-neutral-700 dark:text-neutral-300 pt-2 pb-4 mb-0 text-base"
       >
         {{ blog.metadata.snippet }}
       </p>
