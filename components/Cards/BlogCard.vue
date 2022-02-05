@@ -12,6 +12,7 @@
         </h3>
         <arrow-right-icon
           class="shrink-0 text-neutral-700 dark:text-neutral-300"
+          size="16"
         ></arrow-right-icon>
       </header>
       <p
