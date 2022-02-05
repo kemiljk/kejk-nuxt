@@ -69,6 +69,7 @@ import All from "../../components/Tabs/All";
 import Design from "../../components/Tabs/Design";
 import Development from "../../components/Tabs/Development";
 import Opinion from "../../components/Tabs/Opinion";
+import Journal from "../../components/Tabs/Journal";
 import Links from "../../components/Tabs/External";
 
 export default {
@@ -77,6 +78,7 @@ export default {
     Design,
     Development,
     Opinion,
+    Journal,
     Links,
     ArrowUpRightIcon,
   },
@@ -114,7 +116,7 @@ export default {
     return {
       active: false,
       loading: false,
-      tabs: ["All", "Design", "Development", "Opinion", "Links"],
+      tabs: ["All", "Design", "Development", "Opinion", "Journal", "Links"],
       selected: "All",
     };
   },
