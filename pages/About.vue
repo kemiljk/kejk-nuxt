@@ -147,8 +147,7 @@ export default {
           query: {
             type: "principles",
           },
-          props: "_id,slug,title,content",
-          sort: "created_at",
+          props: "_id,title,content",
         })
         .then((data) => {
           const principles = data.objects;
