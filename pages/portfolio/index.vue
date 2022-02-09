@@ -36,7 +36,7 @@
       </div>
       </div>
       </div>-->
-      <Header class="pt-24 text-left lg:text-center">Live projects</Header>
+      <Header class="pt-24 text-left md:text-center">Live projects</Header>
       <H2Header class="pt-4">Things I've built.</H2Header>
       <div class="flex flex-row">
         <div class="grid w-full sm:grid-cols-2 gap-4">
