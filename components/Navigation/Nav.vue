@@ -1,9 +1,9 @@
 <template>
-  <div
-    class="supports-backdrop-blur:bg-white/95 supports-backdrop-blur:dark:bg-black/95 fixed mx-auto w-full bg-white dark:bg-black"
+  <nav
+    class="supports-backdrop-blur:bg-white/95 supports-backdrop-blur:dark:bg-black/95 absolute top-0 z-50 mx-auto h-16 w-full bg-white dark:bg-black"
   >
-    <nav
-      class="fixed z-50 mx-auto w-full flex-none pl-4 backdrop-blur transition-colors duration-500 sm:pl-6 lg:px-8"
+    <div
+      class="background-blur fixed z-50 mx-auto w-full flex-none pl-4 duration-500 sm:pl-6 lg:px-8"
     >
       <div
         class="md:overflow-none scrollbar-hidden flex h-16 w-full items-center justify-between overflow-x-auto"
@@ -15,6 +15,6 @@
           <slot></slot>
         </div>
       </div>
-    </nav>
-  </div>
+    </div>
+  </nav>
 </template>

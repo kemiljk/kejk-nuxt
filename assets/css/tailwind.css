@@ -3,52 +3,56 @@
 @tailwind utilities;
 
 @layer base {
-.scrollbar-hidden::-webkit-scrollbar {
+  .scrollbar-hidden::-webkit-scrollbar {
     display: none;
   }
   .scrollbar-hidden {
     -ms-overflow-style: none;
     scrollbar-width: none;
   }
-  
+
+  .background-blur {
+    backdrop-filter: blur(20px);
+  }
+
   img {
     @apply rounded-lg;
   }
 
   a {
-    @apply text-black dark:text-white font-semibold underline decoration-indigo-500 underline-offset-4 decoration-2;
+    @apply font-semibold text-black underline decoration-indigo-500 decoration-2 underline-offset-4 dark:text-white;
   }
 
   h1 {
-    @apply leading-snug font-display text-3xl font-black text-black dark:text-white;
+    @apply font-display text-3xl font-black leading-snug text-black dark:text-white;
   }
 
   h2 {
-    @apply leading-snug font-display text-2xl font-bold text-black dark:text-white mb-4;
+    @apply font-display mb-4 text-2xl font-bold leading-snug text-black dark:text-white;
   }
 
   h3 {
-    @apply leading-snug text-xl font-bold pt-4 mb-4 text-black dark:text-white;
+    @apply mb-4 pt-4 text-xl font-bold leading-snug text-black dark:text-white;
   }
 
   h4 {
-    @apply text-base md:text-xl font-bold text-black dark:text-white;
+    @apply text-base font-bold text-black dark:text-white md:text-xl;
   }
 
   p {
-    @apply text-gray-800 dark:text-gray-200 mb-4 leading-relaxed;
+    @apply mb-4 leading-relaxed text-gray-800 dark:text-gray-200;
   }
 
   ul {
-    @apply list-disc text-black dark:text-white ml-8 mb-4;
+    @apply ml-8 mb-4 list-disc text-black dark:text-white;
   }
 
   ol {
-    @apply list-decimal text-black dark:text-white  ml-8 mb-4;
+    @apply ml-8 mb-4 list-decimal  text-black dark:text-white;
   }
 
   blockquote {
-    @apply border-l-4 italic border-neutral-200 dark:border-neutral-800 ml-4 my-4;
+    @apply my-4 ml-4 border-l-4 border-neutral-200 italic dark:border-neutral-800;
   }
 
   blockquote p {
@@ -56,7 +60,7 @@
   }
 
   pre {
-    @apply font-mono rounded-xl bg-neutral-50 dark:bg-neutral-900 w-full overflow-x-scroll whitespace-pre;
+    @apply w-full overflow-x-scroll whitespace-pre rounded-xl bg-neutral-50 font-mono dark:bg-neutral-900;
   }
 
   pre > code {
@@ -64,7 +68,7 @@
   }
 
   code {
-    @apply w-max text-sm font-mono bg-neutral-100 dark:bg-neutral-800 rounded-md py-1 px-2;
+    @apply w-max rounded-md bg-neutral-100 py-1 px-2 font-mono text-sm dark:bg-neutral-800;
   }
 
   code > span {
