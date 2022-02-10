@@ -41,6 +41,8 @@
   },
   "devDependencies": {
     "@nuxtjs/moment": "^1.6.1",
-    "@nuxtjs/tailwindcss": "^3.3.3"
+    "@nuxtjs/tailwindcss": "^3.3.3",
+    "prettier": "^2.5.1",
+    "prettier-plugin-tailwindcss": "^0.1.7"
   }
 }
