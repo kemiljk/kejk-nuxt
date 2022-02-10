@@ -1,5 +1,5 @@
 <template>
-    <nav class="backdrop-blur-2xl bg-white dark:bg-black w-full fixed z-50 mx-auto pl-4 sm:pl-6 lg:px-8">
+    <nav class="backdrop-blur-2xl bg-white/90 dark:bg-black/90 w-full fixed z-50 mx-auto pl-4 sm:pl-6 lg:px-8">
         <div
           class="flex items-center justify-between w-full h-16 overflow-x-auto md:overflow-none scrollbar-hidden"
         >
