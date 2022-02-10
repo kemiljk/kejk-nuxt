@@ -1,6 +1,6 @@
 <template>
-  <nav class="bg-white dark:bg-black">
-    <div
+  <div class="bg-white dark:bg-black">
+    <nav
       class="fixed z-50 mx-auto w-full pl-4 backdrop-blur-2xl backdrop-filter sm:pl-6 lg:px-8"
     >
       <div
@@ -13,6 +13,6 @@
           <slot></slot>
         </div>
       </div>
-    </div>
-  </nav>
+    </nav>
+  </div>
 </template>
