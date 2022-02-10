@@ -1,7 +1,9 @@
 <template>
-  <div class="flex w-full bg-white dark:bg-black">
+  <div
+    class="supports-backdrop-blur:bg-white/95 supports-backdrop-blur:dark:bg-black/95 bg-white dark:bg-black"
+  >
     <nav
-      class="fixed z-50 mx-auto w-full pl-4 backdrop-blur-2xl sm:pl-6 lg:px-8"
+      class="fixed top-0 z-50 mx-auto w-full flex-none pl-4 backdrop-blur transition-colors duration-500 sm:pl-6 lg:px-8"
     >
       <div
         class="md:overflow-none scrollbar-hidden flex h-16 w-full items-center justify-between overflow-x-auto"
