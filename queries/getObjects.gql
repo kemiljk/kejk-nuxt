@@ -1,8 +1,10 @@
 {
   getObjects(
     bucket_slug: "kemiljk"
-    read_key: "uNXYQDbNTCWQyEaFjq44PUolieGKBuzePTaEdnDl0CHLcnJtPK"
-    input: { limit: 0, query: { type: "blogs" } }
+    input: {
+      read_key: "uNXYQDbNTCWQyEaFjq44PUolieGKBuzePTaEdnDl0CHLcnJtPK"
+      query: { type: "blogs" }
+    }
   ) {
     objects {
       id
@@ -13,5 +15,6 @@
       modified_at
       order
     }
+    total
   }
 }
