@@ -4,7 +4,7 @@
       <NavItem to="/" isActive id="HOME" v-scroll-to="'#HOME'">Home</NavItem>
       <NavItem to="/thoughts">Thoughts</NavItem>
       <NavItem href="https://www.plugins.run" extLink>
-        <div class="w-full flex justify-center items-center">
+        <div class="flex w-full items-center justify-center">
           Plugins
           <arrow-up-right-icon
             size="1x"
@@ -23,11 +23,9 @@
         </span>
       </NavItem>
     </Nav>
-    <div class="max-w-5xl mx-auto px-4">
+    <div class="mx-auto max-w-5xl px-4">
       <div>
-        <Header class="pt-24 text-left md:text-center">
-          Hej, I'm Karl
-        </Header>
+        <Header class="pt-24 text-left md:text-center"> Hej, I'm Karl </Header>
         <Subheader>
           <template #text>
             <span v-html="home.content" />
@@ -39,7 +37,7 @@
                   <template #icon>
                     <info-icon
                       size="1x"
-                      class="inline-block mr-2 text-neutral-50 dark:text-neutral-900"
+                      class="mr-2 inline-block text-neutral-50 dark:text-neutral-900"
                     />
                   </template>
                   <template #label> More about me </template>
@@ -50,7 +48,7 @@
                   <template #icon>
                     <mail-icon
                       size="1x"
-                      class="inline-block mr-2 text-neutral-800 dark:text-white"
+                      class="mr-2 inline-block text-neutral-800 dark:text-white"
                     />
                   </template>
                   <template #label> Get in touch </template>
@@ -61,18 +59,18 @@
         </Subheader>
       </div>
       <div
-        class="pt-8 text-sm tracking-wider leading-normal uppercase text-neutral-600 dark:text-neutral-400"
+        class="pt-8 text-sm uppercase leading-normal tracking-wider text-neutral-600 dark:text-neutral-400"
       >
         Currently
       </div>
       <div
-        class="flex flex-col md:flex-row md:space-x-12 justify-center items-start mx-auto text-left text-black dark:text-white"
+        class="mx-auto flex flex-col items-start justify-center text-left text-black dark:text-white md:flex-row md:space-x-12"
       >
         <div>
           <div
-            class="flex text-sm font-bold pt-4 text-neutral-800 dark:text-neutral-200"
+            class="flex pt-4 text-sm font-bold text-neutral-800 dark:text-neutral-200"
           >
-            Full-time <span class="ml-2 text-indigo-500 font-mono">———</span>
+            Full-time <span class="ml-2 font-mono text-indigo-500">———</span>
           </div>
           <IconText class="flex items-center">
             <template #icon>
@@ -91,7 +89,7 @@
             </template>
           </IconText>
           <div class="flex items-center space-x-12">
-            <IconText class="flex items-center mr-2">
+            <IconText class="mr-2 flex items-center">
               <template #icon>
                 <MapIcon class="mr-4" />
               </template>
@@ -107,9 +105,9 @@
         </div>
         <div>
           <div
-            class="flex text-sm pt-8 md:pt-4 font-bold text-neutral-800 dark:text-neutral-200"
+            class="flex pt-8 text-sm font-bold text-neutral-800 dark:text-neutral-200 md:pt-4"
           >
-            On the side <span class="ml-2 text-indigo-500 font-mono">———</span>
+            On the side <span class="ml-2 font-mono text-indigo-500">———</span>
           </div>
           <IconText class="flex items-center">
             <template #icon>
@@ -144,13 +142,11 @@
         </div>
       </div>
       <div
-        class="w-full mt-16 border-t-2 border-neutral-100 dark:border-neutral-800"
+        class="mt-16 w-full border-t-2 border-neutral-100 dark:border-neutral-800"
       />
-      <H2Header class="pt-4">
-        Built for myself... and everyone else
-      </H2Header>
+      <H2Header class="pt-4"> Built for myself... and everyone else </H2Header>
       <div class="flex flex-row pt-4">
-        <div class="grid w-full sm:grid-cols-2 gap-4">
+        <div class="grid w-full gap-4 sm:grid-cols-2">
           <PluginCard :plugin="plugin" />
           <div v-for="app in apps" :key="app.title">
             <keep-alive>
@@ -167,13 +163,11 @@
         </div>
       </div>
       <div
-        class="w-full mt-16 border-t-2 border-neutral-100 dark:border-neutral-800"
+        class="mt-16 w-full border-t-2 border-neutral-100 dark:border-neutral-800"
       />
-      <H2Header class="pt-4">
-        Thoughts, ideas, and more
-      </H2Header>
-      <div class="flex flex-row pt-4">
-        <div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
+      <H2Header class="pt-4"> Thoughts, ideas, and more </H2Header>
+      <div class="flex w-full pt-4">
+        <div class="grid-row xs:grid-cols-1 grid w-full gap-8 sm:grid-cols-2">
           <div v-for="blog in blogs" :key="blog._id">
             <keep-alive>
               <BlogCard :blog="blog" />
@@ -188,27 +182,23 @@
       </div>
       <MoreLink link="thoughts" class="text-base">See All</MoreLink>
       <div
-        class="w-full mt-16 border-t-2 border-neutral-100 dark:border-neutral-800"
+        class="mt-16 w-full border-t-2 border-neutral-100 dark:border-neutral-800"
       />
-      <H2Header class="pt-4">
-        Features and talks
-      </H2Header>
+      <H2Header class="pt-4"> Features and speaking</H2Header>
       <div class="flex flex-row py-4">
-        <div class="grid w-full sm:grid-cols-2 gap-4">
+        <div class="grid w-full gap-4 sm:grid-cols-2">
           <div v-for="feature in features" :key="feature.title">
             <FeaturesCard :feature="feature" />
           </div>
         </div>
       </div>
       <div
-        class="w-full mt-16 border-t-2 border-neutral-100 dark:border-neutral-800"
+        class="mt-16 w-full border-t-2 border-neutral-100 dark:border-neutral-800"
       />
-      <H2Header class="pt-4">
-        Making sounds
-      </H2Header>
+      <H2Header class="pt-4"> Making sounds </H2Header>
       <div class="flex flex-row pt-4">
         <div
-          class="grid grid-row xs:grid-cols-1 sm:grid-cols-2 md:grid-cols-3 w-full gap-4"
+          class="grid-row xs:grid-cols-1 grid w-full gap-4 sm:grid-cols-2 md:grid-cols-3"
         >
           <div v-for="album in albums" :key="album._id">
             <keep-alive>
