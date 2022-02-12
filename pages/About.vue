@@ -148,7 +148,6 @@ export default {
             type: "principles",
           },
           props: "_id,title,content",
-          sort: "-order"
         })
         .then((data) => {
           const principles = data.objects;
