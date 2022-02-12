@@ -11,7 +11,7 @@ function getBlogs() {
       type: "blogs",
     },
     props: "slug,title,content,metadata,modified_at,order",
-    limit: "20",
+    limit: "0",
   };
   return bucket.getObjects(params);
 }

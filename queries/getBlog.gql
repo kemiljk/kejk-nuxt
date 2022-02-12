@@ -1,10 +1,8 @@
 query getBlog($slug: String!) {
   getObject(
     bucket_slug: "kemiljk"
-    input: {
-      slug: $slug
-      read_key: "uNXYQDbNTCWQyEaFjq44PUolieGKBuzePTaEdnDl0CHLcnJtPK"
-    }
+    read_key: "uNXYQDbNTCWQyEaFjq44PUolieGKBuzePTaEdnDl0CHLcnJtPK"
+    input: { slug: $slug }
   ) {
     title
     content
