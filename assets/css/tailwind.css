@@ -19,7 +19,7 @@
     @apply rounded-lg;
   }
 
-  video {
+  .video {
     @apply flex aspect-video w-full rounded-2xl;
   }
 
@@ -97,9 +97,5 @@
   .scrollbar-hidden {
     -ms-overflow-style: none;
     scrollbar-width: none;
-  }
-
-  video {
-    @apply flex aspect-video w-full rounded-2xl;
   }
 }
