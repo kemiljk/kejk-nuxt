@@ -1,6 +1,6 @@
 <template>
-  <header class="max-w-xl">
-    <h2 class="text-black dark:text-white text-3xl">
+  <header class="w-full">
+    <h2 class="text-3xl text-black dark:text-white">
       <slot />
     </h2>
   </header>

@@ -1,6 +1,6 @@
 <template>
-  <header class="container max-w-xl mx-auto">
-    <h1 class="pb-6 text-5xl">
+  <header class="container mx-auto max-w-xl">
+    <h1 class="pb-6 text-5xl tracking-tight">
       <slot />
     </h1>
   </header>
