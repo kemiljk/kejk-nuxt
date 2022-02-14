@@ -17,7 +17,7 @@ export default {
       { name: "apple-mobile-web-app-capable", content: "yes" },
       {
         name: "apple-mobile-web-app-status-bar-style",
-        content: "black-translucent",
+        content: "black",
       },
       { name: "apple-mobile-web-app-title", content: "KEJK" },
       { name: "theme-color", content: "#000000" },
