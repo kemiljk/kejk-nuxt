@@ -25,10 +25,10 @@
         </span>
       </NavItem>
     </Nav>
-    <div class="max-w-5xl mx-auto px-4">
+    <div class="mx-auto max-w-5xl px-4">
       <Header class="pt-24 text-left md:text-center">Featured projects</Header>
-      <div class="flex flex-row mt-4">
-        <div class="grid w-full sm:grid-cols-2 gap-4">
+      <div class="mt-4 flex flex-row">
+        <div class="grid w-full gap-4 sm:grid-cols-2">
           <div v-for="portfolio in portfolios" :key="portfolio.id">
             <keep-alive>
               <PortfolioCard :portfolio="portfolio" />
@@ -39,7 +39,7 @@
       <Header class="pt-24 text-left md:text-center">Live projects</Header>
       <H2Header class="pt-4">Things I've built.</H2Header>
       <div class="flex flex-row">
-        <div class="grid w-full sm:grid-cols-2 gap-4">
+        <div class="grid w-full gap-4 sm:grid-cols-2">
           <PluginCard :plugin="plugin" />
           <div v-for="app in apps" :key="app.title">
             <keep-alive>
@@ -59,7 +59,7 @@
         >Things I've defined, designed and/or coded.</H2Header
       >
       <div
-        class="mt-4 grid grid-row xs:grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 w-full gap-4"
+        class="grid-row xs:grid-cols-1 mt-4 grid w-full gap-4 sm:grid-cols-2 lg:grid-cols-3"
       >
         <div v-for="helpedMake in helpedMakes" :key="helpedMake.title">
           <keep-alive>
@@ -206,7 +206,6 @@ export default {
       this.loading = true;
       await bucket
         .getObjects({
-          limit: 6,
           query: {
             type: "helpedmakes",
           },
