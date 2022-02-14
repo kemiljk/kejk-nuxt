@@ -20,6 +20,7 @@ export default {
         content: "black-translucent",
       },
       { name: "apple-mobile-web-app-title", content: "KEJK" },
+      { name: "theme-color", content: "#000000" },
       {
         hid: "description",
         name: "description",
