@@ -19,10 +19,6 @@
     @apply rounded-lg;
   }
 
-  .video {
-    @apply flex aspect-video w-full rounded-2xl;
-  }
-
   a {
     @apply font-semibold text-black underline decoration-indigo-500 decoration-2 underline-offset-4 dark:text-white;
   }
