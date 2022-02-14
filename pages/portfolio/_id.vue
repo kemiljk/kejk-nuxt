@@ -26,14 +26,14 @@
       </NavItem>
     </Nav>
     <div class="mx-auto px-4">
-      <div class="container pt-10 pb-2 max-w-3xl mx-auto">
+      <div class="container mx-auto max-w-3xl pt-10 pb-2">
         <div class="flex flex-row pt-16 pb-8">
           <BackLink link="portfolio"> Back to all</BackLink>
         </div>
         <div class="flex" v-if="this.loading === true">
           <svg
-            class="animate-spin -ml-1 mr-3 h-5 w-5 text-neutral-600 dark:text-neutral-400"
-            style="z-index: -1;"
+            class="-ml-1 mr-3 h-5 w-5 animate-spin text-neutral-600 dark:text-neutral-400"
+            style="z-index: -1"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
           >
@@ -51,7 +51,7 @@
           <BackLink link="portfolio"> Back to all</BackLink>
         </div>
         <div
-          class="mt-16 pb-16 border-t-2 border-neutral-200 dark:border-neutral-800"
+          class="mt-16 border-t-2 border-neutral-200 pb-16 dark:border-neutral-800"
         />
         <header class="mt-4">
           <h2>How to reach me.</h2>
