@@ -3,15 +3,15 @@
     :href="feature.metadata.url"
     target="`_blank"
     rel="noreferrer"
-    class="cursor-pointer mb-0"
+    class="mb-0 cursor-pointer"
   >
     <button
-      class="text-left w-full p-4 border border-neutral-200 dark:border-neutral-800 hover:shadow-lg hover:bg-neutral-50 dark:hover:bg-neutral-900 transition ease-out duration-300 rounded-3xl focus:outline-none focus:ring-2 focus:ring-white"
+      class="w-full rounded-3xl border border-neutral-200 p-4 text-left transition duration-300 ease-out hover:bg-neutral-50 hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-white dark:border-neutral-800 dark:hover:bg-neutral-900"
     >
       <div>
         <header class="flex items-center justify-between">
           <h3
-            class="text-black dark:text-white text-base pt-0 mb-0 font-bold w-full"
+            class="mb-0 w-full pt-0 text-base font-bold text-black dark:text-white"
           >
             {{ feature.title }}
           </h3>
@@ -20,9 +20,16 @@
             size="16"
           ></arrow-up-right-icon>
         </header>
-        <p class="font-mono text-neutral-700 dark:text-neutral-300 pt-2 mb-0 text-sm">
-          {{ feature.metadata.published | moment("DD/MM/YYYY") }}
-        </p>
+        <div class="flex justify-between pt-2">
+          <p
+            class="mb-0 font-mono text-sm text-neutral-700 dark:text-neutral-300"
+          >
+            {{ feature.metadata.published | moment("DD/MM/YYYY") }}
+          </p>
+          <p class="mb-0 font-mono text-sm text-indigo-500">
+            {{ feature.metadata.type }}
+          </p>
+        </div>
       </div>
     </button>
   </a>
