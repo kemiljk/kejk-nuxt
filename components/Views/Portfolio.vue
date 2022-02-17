@@ -2,7 +2,7 @@
   <div class="mt-0 pt-4">
     <div class="flex flex-row text-left">
       <div class="col-span-full flex flex-col md:col-span-6">
-        <Header class="pt-24 text-left md:text-center">
+        <Header class="pt-4 text-left md:text-center">
           {{ portfolio.title }}
         </Header>
         <h3 class="text-left md:text-center">
