@@ -44,11 +44,11 @@
   }
 
   ul {
-    @apply ml-8 mb-4 list-disc text-black dark:text-white;
+    @apply ml-8 mb-4 list-disc text-gray-700 dark:text-gray-300;
   }
 
   ol {
-    @apply ml-8 mb-4 list-decimal  text-black dark:text-white;
+    @apply ml-8 mb-4 list-decimal text-gray-700 dark:text-gray-300;
   }
 
   blockquote {
