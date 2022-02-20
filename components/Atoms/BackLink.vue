@@ -1,11 +1,11 @@
 <template>
   <NuxtLink
     :to="backLink"
-    class="z-10 text-black hover:bg-neutral-50 dark:hover:bg-neutral-900 dark:text-white border-2 border-neutral-500 rounded-xl px-4 py-2 no-underline transition ease-in-out duration-200"
+    class="z-10 rounded-xl border-2 border-neutral-500 px-4 py-2 text-black no-underline transition duration-200 ease-in-out hover:bg-neutral-50 dark:text-white dark:hover:bg-neutral-900"
   >
     <div class="flex items-center justify-between font-medium">
       <arrow-left-icon
-        class="text-neutral-700 dark:text-neutral-300 mr-2"
+        class="mr-2 text-neutral-700 dark:text-neutral-300"
       ></arrow-left-icon>
       <slot />
     </div>
@@ -28,7 +28,7 @@ export default {
         thoughts: "/thoughts",
         bookmarks: "/bookmarks",
         uses: "/uses",
-        portfolio: "/portfolio",
+        portfolio: "/projects",
       }[this.link];
     },
   },

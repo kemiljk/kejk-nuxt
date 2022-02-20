@@ -3,8 +3,8 @@
     <Nav>
       <NavItem to="/">Home</NavItem>
       <NavItem to="/thoughts">Thoughts</NavItem>
-      <NavItem to="/products">Creations</NavItem>
-      <NavItem to="/portfolio" isActive id="PROJECTS" v-scroll-to="'#PROJECTS'"
+      <NavItem to="/creations">Creations</NavItem>
+      <NavItem to="/projects" isActive id="PROJECTS" v-scroll-to="'#PROJECTS'"
         >Projects</NavItem
       >
       <NavItem href="https://bookmarks.kejk.tech" extLink>

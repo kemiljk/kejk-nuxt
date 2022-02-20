@@ -4,7 +4,7 @@
   >
     <nuxt-link
       :to="{
-        path: '/portfolio/' + portfolio.slug,
+        path: '/projects/' + portfolio.slug,
         query: { id: portfolio.id },
       }"
       rel="noreferrer"

@@ -3,8 +3,8 @@
     <Nav>
       <NavItem to="/">Home</NavItem>
       <NavItem to="/thoughts">Thoughts</NavItem>
-      <NavItem to="/products">Creations</NavItem>
-      <NavItem to="/portfolio">Projects</NavItem>
+      <NavItem to="/creations">Creations</NavItem>
+      <NavItem to="/projects">Projects</NavItem>
       <NavItem href="https://bookmarks.kejk.tech" extLink>
         <span class="flex items-center">
           Bookmarks

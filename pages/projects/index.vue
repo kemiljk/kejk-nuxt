@@ -3,8 +3,8 @@
     <Nav>
       <NavItem to="/">Home</NavItem>
       <NavItem to="/thoughts">Thoughts</NavItem>
-      <NavItem to="/products">Creations</NavItem>
-      <NavItem to="/portfolio" isActive id="PROJECTS" v-scroll-to="'#PROJECTS'"
+      <NavItem to="/creations">Creations</NavItem>
+      <NavItem to="/projects" isActive id="PROJECTS" v-scroll-to="'#PROJECTS'"
         >Projects</NavItem
       >
       <NavItem href="https://bookmarks.kejk.tech" extLink>
@@ -81,7 +81,7 @@ export default {
     return {
       title: "KEJK | Portfolio",
       meta: [...this.meta],
-      link: [{ rel: "canonical", href: "https://kejk.tech/portfolio" }],
+      link: [{ rel: "canonical", href: "https://kejk.tech/projects" }],
     };
   },
   components: {

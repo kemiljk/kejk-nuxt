@@ -3,10 +3,10 @@
     <Nav>
       <NavItem to="/">Home</NavItem>
       <NavItem to="/thoughts">Thoughts</NavItem>
-      <NavItem to="/products" isActive id="PRODUCTS" v-scroll-to="'#PRODUCTS'"
+      <NavItem to="/creations" isActive id="PRODUCTS" v-scroll-to="'#PRODUCTS'"
         >Creations</NavItem
       >
-      <NavItem to="/portfolio">Projects</NavItem>
+      <NavItem to="/projects">Projects</NavItem>
       <NavItem href="https://bookmarks.kejk.tech" extLink>
         <span class="flex items-center">
           Bookmarks
@@ -19,7 +19,7 @@
       <NavItem to="/uses">Uses</NavItem>
     </Nav>
     <div class="mx-auto max-w-5xl px-4">
-      <Header class="pt-24 text-left md:text-center">Creations</Header>
+      <Header class="pt-24 text-left md:text-center">/creations</Header>
       <Subheader class="text-left md:text-center">
         <template #text> Apps, plugins and tools I've built </template>
       </Subheader>
@@ -82,7 +82,7 @@ export default {
     return {
       title: "KEJK | Portfolio",
       meta: [...this.meta],
-      link: [{ rel: "canonical", href: "https://kejk.tech/portfolio" }],
+      link: [{ rel: "canonical", href: "https://kejk.tech/projects" }],
     };
   },
   components: {
