@@ -26,12 +26,10 @@
         <keep-alive>
           <Blog v-if="page" :blog="page" />
         </keep-alive>
-        <div
-          class="mt-16 border-t-2 border-neutral-200 pb-4 dark:border-neutral-800"
-        />
         <div class="flex flex-row py-8">
           <BackLink link="thoughts"> Back to all posts </BackLink>
         </div>
+        <Divider />
         <header>
           <h2>How to follow along</h2>
         </header>
