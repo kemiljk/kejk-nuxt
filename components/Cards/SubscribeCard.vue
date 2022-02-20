@@ -4,7 +4,7 @@
       <h3
         class="pt-0 text-lg sm:text-xl text-neutral-800 dark:text-white font-bold mb-0"
       >
-        Subscribe to stay up-to-date.
+        Subscribe to stay up-to-date
       </h3>
       <form
         action="https://buttondown.email/api/emails/embed-subscribe/karl"
