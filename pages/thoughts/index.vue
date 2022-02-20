@@ -5,15 +5,7 @@
       <NavItem to="/thoughts" isActive id="THOUGHTS" v-scroll-to="'#THOUGHTS'">
         Thoughts
       </NavItem>
-      <NavItem href="https://www.plugins.run" extLink>
-        <span class="flex items-center">
-          Plugins
-          <arrow-up-right-icon
-            size="1x"
-            class="ml-2 text-neutral-700 dark:text-neutral-300"
-          ></arrow-up-right-icon>
-        </span>
-      </NavItem>
+      <NavItem to="/products">Creations</NavItem>
       <NavItem to="/portfolio">Projects</NavItem>
       <NavItem href="https://bookmarks.kejk.tech" extLink>
         <span class="flex items-center">
@@ -24,8 +16,9 @@
           ></arrow-up-right-icon>
         </span>
       </NavItem>
+      <NavItem to="/uses">Uses</NavItem>
     </Nav>
-    <div class="max-w-3xl mx-auto px-4">
+    <div class="mx-auto max-w-3xl px-4">
       <Header class="pt-24 text-left md:text-center">/thoughts</Header>
       <Subheader class="text-left md:text-center">
         <template #text>
@@ -34,9 +27,9 @@
       </Subheader>
       <SubscribeCard />
     </div>
-    <div class="max-w-5xl mx-auto px-4">
+    <div class="mx-auto max-w-5xl px-4">
       <div
-        class="flex w-full items-center bg-transparent mt-8 py-4 space-x-2 overflow-x-auto scrollbar-hidden"
+        class="scrollbar-hidden mt-8 flex w-full items-center space-x-2 overflow-x-auto bg-transparent py-4"
       >
         <button
           v-for="tab in tabs"
@@ -45,10 +38,10 @@
             selected = tab;
             active = true;
           "
-          class="w-max flex items-center justify-center font-normal md:block px-4 py-2 text-neutral-900 dark:text-white bg-neutral-50 dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800 md:hover:bg-neutral-200 md:hover:text-black md:dark:hover:text-white md:dark:hover:bg-neutral-800 rounded-full transition ease-in-out duration-200 no-underline"
+          class="flex w-max items-center justify-center rounded-full border border-neutral-200 bg-neutral-50 px-4 py-2 font-normal text-neutral-900 no-underline transition duration-200 ease-in-out dark:border-neutral-800 dark:bg-neutral-900 dark:text-white md:block md:hover:bg-neutral-200 md:hover:text-black md:dark:hover:bg-neutral-800 md:dark:hover:text-white"
           :class="[
             {
-              'text-neutral-900 dark:text-white bg-neutral-300 dark:bg-neutral-700 border border-transparent dark:border-transparent md:hover:bg-neutral-300 md:dark:hover:bg-neutral-700':
+              'border border-transparent bg-neutral-300 text-neutral-900 dark:border-transparent dark:bg-neutral-700 dark:text-white md:hover:bg-neutral-300 md:dark:hover:bg-neutral-700':
                 selected === tab,
             },
           ]"
@@ -92,7 +85,7 @@ export default {
           "Thoughts on Design and Development from here and around the web.",
         url: "https://kejk.tech/thoughts",
         mainImage:
-          "https://imgix.cosmicjs.com/80d7a220-89a4-11ec-9eec-e3ad41451efc-meta.png",
+          "https://imgix.cosmicjs.com/067798c0-9221-11ec-9a4e-05fc85d83574-meta.png",
       };
       return getSiteMeta(metaData);
     },
@@ -100,7 +93,7 @@ export default {
       let blogs = this.$store.getters.getBlog;
       let blogList = [];
 
-      blogs.forEach(function(blog) {
+      blogs.forEach(function (blog) {
         blogList.push(blog);
       });
 

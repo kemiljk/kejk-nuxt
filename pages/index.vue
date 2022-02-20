@@ -3,15 +3,7 @@
     <Nav>
       <NavItem to="/" isActive id="HOME" v-scroll-to="'#HOME'">Home</NavItem>
       <NavItem to="/thoughts">Thoughts</NavItem>
-      <NavItem href="https://www.plugins.run" extLink>
-        <div class="flex w-full items-center justify-center">
-          Plugins
-          <arrow-up-right-icon
-            size="1x"
-            class="ml-2 text-neutral-700 dark:text-neutral-300"
-          ></arrow-up-right-icon>
-        </div>
-      </NavItem>
+      <NavItem to="/products">Creations</NavItem>
       <NavItem to="/portfolio">Projects</NavItem>
       <NavItem href="https://bookmarks.kejk.tech" extLink>
         <span class="flex items-center">
@@ -22,6 +14,7 @@
           ></arrow-up-right-icon>
         </span>
       </NavItem>
+      <NavItem to="/uses">Uses</NavItem>
     </Nav>
     <div class="mx-auto max-w-5xl px-4">
       <div>
@@ -239,7 +232,7 @@ export default {
           "A Product and Frontend Designer, building for the web with Vue, Nuxt and Tailwind, building for mobile with SwiftUI.",
         url: "https://kejk.tech/",
         mainImage:
-          "https://imgix.cosmicjs.com/80d7a220-89a4-11ec-9eec-e3ad41451efc-meta.png",
+          "https://imgix.cosmicjs.com/067798c0-9221-11ec-9a4e-05fc85d83574-meta.png",
       };
       return getSiteMeta(metaData);
     },

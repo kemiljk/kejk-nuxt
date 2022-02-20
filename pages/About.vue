@@ -1,17 +1,9 @@
 <template>
   <div class="relative mx-auto">
     <Nav>
-      <NavItem to="/">Home</NavItem>
+      <NavItem to="/" isActive>Home</NavItem>
       <NavItem to="/thoughts">Thoughts</NavItem>
-      <NavItem href="https://www.plugins.run" extLink>
-        <span class="flex items-center">
-          Plugins
-          <arrow-up-right-icon
-            size="1x"
-            class="ml-2 text-neutral-700 dark:text-neutral-300"
-          ></arrow-up-right-icon>
-        </span>
-      </NavItem>
+      <NavItem to="/products">Creations</NavItem>
       <NavItem to="/portfolio">Projects</NavItem>
       <NavItem href="https://bookmarks.kejk.tech" extLink>
         <span class="flex items-center">
@@ -22,19 +14,18 @@
           ></arrow-up-right-icon>
         </span>
       </NavItem>
+      <NavItem to="/uses">Uses</NavItem>
     </Nav>
-    <div class="max-w-3xl mx-auto px-4">
+    <div class="mx-auto max-w-3xl px-4">
       <Header class="pt-24 text-left md:text-center">/about</Header>
       <div class="flex flex-row pt-8">
         <keep-alive>
           <About :about="about" />
         </keep-alive>
       </div>
-      <H2Header class="pt-8">
-        My guiding principles
-      </H2Header>
+      <H2Header class="pt-8"> My guiding principles </H2Header>
       <div class="flex flex-row py-4">
-        <div class="grid w-full sm:grid-cols-2 gap-4">
+        <div class="grid w-full gap-4 sm:grid-cols-2">
           <div v-for="principle in principles" :key="principle.title">
             <PrinciplesCard :principle="principle" />
           </div>
@@ -42,7 +33,7 @@
       </div>
       <div class="flex flex-col pt-8 sm:flex-row sm:space-x-2">
         <a
-          class="py-2 sm:py-4 no-underline"
+          class="py-2 no-underline sm:py-4"
           href="https://changelog.kejk.tech"
           target="_blank"
         >
@@ -50,25 +41,21 @@
             <template #icon>
               <arrow-up-right-icon
                 size="1x"
-                class="inline-block mr-2 text-indigo-50"
+                class="mr-2 inline-block text-indigo-50"
               />
             </template>
-            <template #label>
-              My personal changelog
-            </template>
+            <template #label> My personal changelog </template>
           </Button>
         </a>
-        <NuxtLink class="sm:py-4 no-underline" to="/uses">
+        <NuxtLink class="no-underline sm:py-4" to="/uses">
           <Button color="white" class="w-full sm:w-max">
             <template #icon>
               <arrow-right-icon
                 size="1x"
-                class="inline-block mr-2 text-indigo-50 dark:text-neutral-900"
+                class="mr-2 inline-block text-indigo-50 dark:text-neutral-900"
               />
             </template>
-            <template #label>
-              What I use to get work done
-            </template>
+            <template #label> What I use to get work done </template>
           </Button>
         </NuxtLink>
       </div>
@@ -99,7 +86,7 @@ export default {
           "Karl is a Product Designer, crafting intelligent interfaces for the web, mobile and meta services.",
         url: "https://kejk.tech/about",
         mainImage:
-          "https://imgix.cosmicjs.com/80d7a220-89a4-11ec-9eec-e3ad41451efc-meta.png",
+          "https://imgix.cosmicjs.com/067798c0-9221-11ec-9a4e-05fc85d83574-meta.png",
       };
       return getSiteMeta(metaData);
     },

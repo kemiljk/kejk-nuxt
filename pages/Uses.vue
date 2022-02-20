@@ -3,15 +3,7 @@
     <Nav>
       <NavItem to="/">Home</NavItem>
       <NavItem to="/thoughts">Thoughts</NavItem>
-      <NavItem href="https://www.plugins.run" extLink>
-        <span class="flex items-center">
-          Plugins
-          <arrow-up-right-icon
-            size="1x"
-            class="ml-2 text-neutral-700 dark:text-neutral-300"
-          ></arrow-up-right-icon>
-        </span>
-      </NavItem>
+      <NavItem to="/products">Creations</NavItem>
       <NavItem to="/portfolio">Projects</NavItem>
       <NavItem href="https://bookmarks.kejk.tech" extLink>
         <span class="flex items-center">
@@ -22,6 +14,9 @@
           ></arrow-up-right-icon>
         </span>
       </NavItem>
+      <NavItem to="/uses" isActive id="USES" v-scroll-to="'#USES'"
+        >Uses</NavItem
+      >
     </Nav>
     <div class="mx-auto max-w-5xl px-4">
       <Header class="pt-24 text-left md:text-center">/uses</Header>
@@ -96,7 +91,7 @@ export default {
         description: "Karl's Product Design and Development EDC and equipment",
         url: "https://kejk.tech/uses",
         mainImage:
-          "https://imgix.cosmicjs.com/80d7a220-89a4-11ec-9eec-e3ad41451efc-meta.png",
+          "https://imgix.cosmicjs.com/067798c0-9221-11ec-9a4e-05fc85d83574-meta.png",
       };
       return getSiteMeta(metaData);
     },

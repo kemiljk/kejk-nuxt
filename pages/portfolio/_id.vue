@@ -3,15 +3,7 @@
     <Nav>
       <NavItem to="/">Home</NavItem>
       <NavItem to="/thoughts">Thoughts</NavItem>
-      <NavItem href="https://www.plugins.run" extLink>
-        <span class="flex items-center">
-          Plugins
-          <arrow-up-right-icon
-            size="1x"
-            class="ml-2 text-neutral-700 dark:text-neutral-300"
-          ></arrow-up-right-icon>
-        </span>
-      </NavItem>
+      <NavItem to="/products">Creations</NavItem>
       <NavItem to="/portfolio" isActive id="PROJECTS" v-scroll-to="'#PROJECTS'"
         >Projects</NavItem
       >
@@ -24,6 +16,7 @@
           ></arrow-up-right-icon>
         </span>
       </NavItem>
+      <NavItem to="/uses">Uses</NavItem>
     </Nav>
     <div class="mx-auto px-4">
       <div class="container mx-auto max-w-3xl pt-10 pb-2">

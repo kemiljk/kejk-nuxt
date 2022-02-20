@@ -5,15 +5,7 @@
       <NavItem to="/thoughts" isActive id="THOUGHTS" v-scroll-to="'#THOUGHTS'"
         >Thoughts</NavItem
       >
-      <NavItem href="https://www.plugins.run" extLink>
-        <span class="flex items-center">
-          Plugins
-          <arrow-up-right-icon
-            size="1x"
-            class="ml-2 text-neutral-700 dark:text-neutral-300"
-          ></arrow-up-right-icon>
-        </span>
-      </NavItem>
+      <NavItem to="/products">Creations</NavItem>
       <NavItem to="/portfolio">Projects</NavItem>
       <NavItem href="https://bookmarks.kejk.tech" extLink>
         <span class="flex items-center">
@@ -24,9 +16,10 @@
           ></arrow-up-right-icon>
         </span>
       </NavItem>
+      <NavItem to="/uses">Uses</NavItem>
     </Nav>
     <div class="mx-auto px-4">
-      <div class="container pt-10 pb-2 max-w-3xl mx-auto">
+      <div class="container mx-auto max-w-3xl pt-10 pb-2">
         <div class="flex flex-row pt-16 pb-8">
           <BackLink link="thoughts"> Back to all posts </BackLink>
         </div>
@@ -34,7 +27,7 @@
           <Blog v-if="page" :blog="page" />
         </keep-alive>
         <div
-          class="mt-16 pb-4 border-t-2 border-neutral-200 dark:border-neutral-800"
+          class="mt-16 border-t-2 border-neutral-200 pb-4 dark:border-neutral-800"
         />
         <div class="flex flex-row py-8">
           <BackLink link="thoughts"> Back to all posts </BackLink>

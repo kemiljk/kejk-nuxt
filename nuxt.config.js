@@ -9,7 +9,7 @@ export default {
     htmlAttrs: {
       lang: "en-GB",
     },
-    title: "KEJK – Product Designer and Developer",
+    title: "KEJK — Product Designer and Developer",
     meta: [
       { charset: "utf-8" },
       { name: "HandheldFriendly", content: "True" },
@@ -47,7 +47,7 @@ export default {
         hid: "og:image",
         property: "og:image",
         content:
-          "https://imgix.cosmicjs.com/80d7a220-89a4-11ec-9eec-e3ad41451efc-meta.png",
+          "https://imgix.cosmicjs.com/067798c0-9221-11ec-9a4e-05fc85d83574-meta.png",
       },
       { property: "og:image:width", content: "740" },
       { property: "og:image:height", content: "300" },
@@ -74,7 +74,7 @@ export default {
         hid: "twitter:image:src",
         name: "twitter:image:src",
         content:
-          "https://imgix.cosmicjs.com/80d7a220-89a4-11ec-9eec-e3ad41451efc-meta.png",
+          "https://imgix.cosmicjs.com/067798c0-9221-11ec-9a4e-05fc85d83574-meta.png",
       },
     ],
     link: [
@@ -147,7 +147,7 @@ export default {
       },
       {
         rel: "stylesheet",
-        href: "https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=DM+Serif+Display:ital@0;1&display=swap",
+        href: "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Newsreader:wght@800&display=swap",
       },
       {
         rel: "stylesheet",

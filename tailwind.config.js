@@ -13,9 +13,9 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ["DM Sans", ...defaultTheme.fontFamily.sans],
-        display: "DM Serif Display",
-        mono: ["JetBrains Mono", ...defaultTheme.fontFamily.mono],
+        sans: ['"Inter"', ...defaultTheme.fontFamily.sans],
+        display: "Newsreader",
+        mono: ['"JetBrains Mono"', ...defaultTheme.fontFamily.mono],
       },
       backgroundColor: ["active"],
     },

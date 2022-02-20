@@ -3,15 +3,7 @@
     <Nav>
       <NavItem to="/">Home</NavItem>
       <NavItem to="/thoughts">Thoughts</NavItem>
-      <NavItem href="https://www.plugins.run" extLink>
-        <span class="flex items-center">
-          Plugins
-          <arrow-up-right-icon
-            size="1x"
-            class="ml-2 text-neutral-700 dark:text-neutral-300"
-          ></arrow-up-right-icon>
-        </span>
-      </NavItem>
+      <NavItem to="/products">Creations</NavItem>
       <NavItem to="/portfolio">Projects</NavItem>
       <NavItem href="https://bookmarks.kejk.tech" extLink>
         <span class="flex items-center">
@@ -22,9 +14,10 @@
           ></arrow-up-right-icon>
         </span>
       </NavItem>
+      <NavItem to="/uses">Uses</NavItem>
     </Nav>
     <div class="mx-auto px-4">
-      <div class="container pt-10 pb-2 max-w-3xl mx-auto">
+      <div class="container mx-auto max-w-3xl pt-10 pb-2">
         <div class="flex flex-row pt-16 pb-8">
           <BackLink link="home"> Back home </BackLink>
         </div>
@@ -43,7 +36,7 @@
         </div>
         <div class="py-4">
           <div>
-            <div class="space-y-4 mt-8 mb-8">
+            <div class="mt-8 mb-8 space-y-4">
               <h3
                 class="text-2xl font-bold text-neutral-900 dark:text-neutral-50"
               >
@@ -55,14 +48,14 @@
               </p>
             </div>
             <div
-              class="flex flex-col md:flex-row justify-center md:justify-start"
+              class="flex flex-col justify-center md:flex-row md:justify-start"
             >
               <a :href="`${download.url}`" class="no-underline">
                 <Button color="purple">
                   <template #icon>
                     <download-icon
                       size="1x"
-                      class="inline-block mr-2 text-purple-100"
+                      class="mr-2 inline-block text-purple-100"
                     />
                   </template>
                   <template #label>
@@ -72,7 +65,7 @@
               </a>
             </div>
             <Divider />
-            <div class="space-y-4 mb-8">
+            <div class="mb-8 space-y-4">
               <h3
                 class="text-2xl font-bold text-neutral-900 dark:text-neutral-50"
               >
@@ -84,12 +77,12 @@
                 throw them together into a PDF.
               </p>
               <img
-                class="rounded-2xl dark:ring-2 dark:ring-neutral-800 pt-4"
+                class="rounded-2xl pt-4 dark:ring-2 dark:ring-neutral-800"
                 src="https://res.cloudinary.com/kejk/image/upload/v1585993877/Picking_selection_ckdioy.png"
               />
             </div>
             <Divider />
-            <div class="space-y-4 mb-8">
+            <div class="mb-8 space-y-4">
               <h3
                 class="text-2xl font-bold text-neutral-900 dark:text-neutral-50"
               >
@@ -101,12 +94,12 @@
                 around afterwards in any PDF viewer.
               </p>
               <img
-                class="rounded-2xl dark:ring-2 dark:ring-neutral-800 pt-4"
+                class="rounded-2xl pt-4 dark:ring-2 dark:ring-neutral-800"
                 src="https://res.cloudinary.com/kejk/image/upload/v1587570775/Frame_10_zub1ud.png"
               />
             </div>
             <Divider />
-            <div class="space-y-4 mb-8">
+            <div class="mb-8 space-y-4">
               <h3
                 class="text-2xl font-bold text-neutral-900 dark:text-neutral-50"
               >
@@ -118,12 +111,12 @@
                 teammates and management.
               </p>
               <img
-                class="rounded-2xl dark:ring-2 dark:ring-neutral-800 pt-4"
+                class="rounded-2xl pt-4 dark:ring-2 dark:ring-neutral-800"
                 src="https://res.cloudinary.com/kejk/image/upload/v1585993878/Rendered_PDF_zpdrza.png"
               />
             </div>
             <Divider />
-            <div class="space-y-4 mb-8">
+            <div class="mb-8 space-y-4">
               <h3
                 class="text-2xl font-bold text-neutral-900 dark:text-neutral-50"
               >
@@ -136,7 +129,7 @@
                 ultrawide files when visualising a 21:9 video concept.
               </p>
               <img
-                class="rounded-2xl dark:ring-2 dark:ring-neutral-800 pt-4"
+                class="rounded-2xl pt-4 dark:ring-2 dark:ring-neutral-800"
                 src="https://res.cloudinary.com/kejk/image/upload/v1586353512/Apple_versus_Lazy_mhp5ey.png"
               />
             </div>
@@ -167,7 +160,7 @@ export default {
         description: "Effortless and interfaceless PDF creation.",
         url: "https://kejk.tech/lazy-pdf",
         mainImage:
-          "https://imgix.cosmicjs.com/80d7a220-89a4-11ec-9eec-e3ad41451efc-meta.png",
+          "https://imgix.cosmicjs.com/067798c0-9221-11ec-9a4e-05fc85d83574-meta.png",
       };
       return getSiteMeta(metaData);
     },
@@ -182,12 +175,10 @@ export default {
   data() {
     return {
       download: {
-        url:
-          "https://res.cloudinary.com/kejk/raw/upload/v1617095071/Lazy_PDF_v1.1.dmg",
+        url: "https://res.cloudinary.com/kejk/raw/upload/v1617095071/Lazy_PDF_v1.1.dmg",
         text: "Download",
       },
-      hero:
-        "https://imgix.cosmicjs.com/d2653530-77ca-11ec-bfef-718573fe8f91-mockuuups-black-macbook-mockup-on-a-white-table-with-black-textbooks-at-the-side.jpeg",
+      hero: "https://imgix.cosmicjs.com/d2653530-77ca-11ec-bfef-718573fe8f91-mockuuups-black-macbook-mockup-on-a-white-table-with-black-textbooks-at-the-side.jpeg",
     };
   },
 };
