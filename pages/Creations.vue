@@ -64,7 +64,7 @@ const bucket = api.bucket({
 });
 
 export default {
-  name: "PortfolioGrid",
+  name: "CreationsGrid",
   computed: {
     meta() {
       const metaData = {
@@ -80,7 +80,7 @@ export default {
   },
   head() {
     return {
-      title: "KEJK | Portfolio",
+      title: "KEJK | Creations",
       meta: [...this.meta],
       link: [{ rel: "canonical", href: "https://kejk.tech/projects" }],
     };
