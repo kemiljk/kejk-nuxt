@@ -3,11 +3,8 @@
     :href="feature.metadata.url"
     target="`_blank"
     rel="noreferrer"
-    class="mb-0 w-full h-full cursor-pointer select-none"
+    class="w-full rounded-3xl border border-neutral-200 p-4 text-left transition duration-300 ease-out hover:bg-neutral-50 hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-white dark:border-neutral-800 dark:hover:bg-neutral-900 no-underline mb-0 cursor-pointer select-none"
   >
-    <button
-      class="w-full rounded-3xl border border-neutral-200 p-4 text-left transition duration-300 ease-out hover:bg-neutral-50 hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-white dark:border-neutral-800 dark:hover:bg-neutral-900 select-none"
-    >
       <div>
         <header class="flex items-center justify-between">
           <h3
@@ -31,7 +28,6 @@
           </p>
         </div>
       </div>
-    </button>
   </a>
 </template>
 
