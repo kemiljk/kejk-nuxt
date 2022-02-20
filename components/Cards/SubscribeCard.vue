@@ -2,7 +2,7 @@
   <div class="flex bg-neutral-50 dark:bg-neutral-900 rounded-3xl">
     <div class="p-8 w-full">
       <h3
-        class="text-lg sm:text-xl text-neutral-800 dark:text-white font-bold mb-0"
+        class="pt-0 text-lg sm:text-xl text-neutral-800 dark:text-white font-bold mb-0"
       >
         Subscribe to stay up-to-date.
       </h3>
