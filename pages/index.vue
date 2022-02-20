@@ -28,7 +28,9 @@
         <Header class="pt-24 text-left md:text-center"> Hej, I'm Karl </Header>
         <Subheader>
           <template #text>
-            <span v-html="home.content" />
+            <keep-alive>
+              <span v-html="home.content" />
+            </keep-alive>
           </template>
           <template #buttons>
             <div class="flex flex-col md:flex-row md:space-x-2">

@@ -1,12 +1,12 @@
 import Vuex from "vuex";
 import Request from "~/common/request";
 
-const state = {
+export const state = () => ({
   blogs: {},
   blog: {},
-};
+});
 
-const getters = {
+export const getters = {
   getBlogPage(state) {
     return state.pages.blog;
   },
@@ -18,7 +18,7 @@ const getters = {
   },
 };
 
-const mutations = {
+export const mutations = {
   SET_BLOG: (state, payload) => {
     state.pages.blog = payload;
   },
@@ -30,12 +30,12 @@ const mutations = {
   },
 };
 
-const actions = {
-  async nuxtServerInit(context, payload) {
+export const actions = {
+  async nuxtServerInit({ commit }) {
     const BlogsResponse = await Request.getBlogs();
     const Blogs = BlogsResponse.objects;
     if (Blogs) {
-      context.commit("SET_BLOGS", Blogs);
+      commit("SET_BLOGS", Blogs);
     }
   },
   getBlog(context, payload) {
@@ -49,7 +49,7 @@ const actions = {
   },
 };
 
-const createStore = () => {
+export const createStore = () => {
   return new Vuex.Store({
     state,
     getters,
@@ -57,5 +57,3 @@ const createStore = () => {
     actions,
   });
 };
-
-export default createStore;

@@ -1,12 +1,12 @@
 <template>
-  <NuxtLink :to="`/thoughts/${blog.slug}`" class="cursor-pointer">
-    <button
-      class="text-left w-full focus:outline-none focus:ring-2 focus:ring-white group"
-      v-if="blog.metadata"
+  <div class="group w-full text-left" v-if="blog.metadata">
+    <NuxtLink
+      :to="`/thoughts/${blog.slug}`"
+      class="cursor-pointer no-underline"
     >
       <header class="flex items-center justify-between pt-4 pb-2">
         <h3
-          class="text-black dark:text-white text-lg pt-0 mb-0 font-bold w-full group-hover:underline group-hover:underline-offset-4 group-hover:decoration-indigo-500 group-hover:decoration-2"
+          class="mb-0 w-full pt-0 text-lg font-bold text-black group-hover:underline group-hover:decoration-indigo-500 group-hover:decoration-2 group-hover:underline-offset-4 dark:text-white"
         >
           {{ blog.title }}
         </h3>
@@ -15,9 +15,7 @@
           size="16"
         ></arrow-right-icon>
       </header>
-      <p
-        class="font-mono text-neutral-500 dark:text-neutral-400 pt-0 font-medium text-sm"
-      >
+      <p class="pt-0 font-mono text-sm text-neutral-500 dark:text-neutral-400">
         Updated {{ blog.modified_at | moment("from", "now") }}
       </p>
       <div class="flex space-x-2 pb-4">
@@ -26,12 +24,12 @@
         </Tag>
       </div>
       <p
-        class="text-neutral-700 dark:text-neutral-300 pt-2 pb-4 mb-0 text-base"
+        class="mb-0 pt-2 pb-4 font-normal text-neutral-700 dark:text-neutral-300"
       >
         {{ blog.metadata.snippet }}
       </p>
-    </button>
-  </NuxtLink>
+    </NuxtLink>
+  </div>
 </template>
 
 <script>

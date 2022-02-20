@@ -1,16 +1,14 @@
 <template>
-  <a
-    :href="link.metadata.url"
-    target="`_blank"
-    rel="noreferrer"
-    class="cursor-pointer mb-0"
-  >
-    <button
-      class="text-left w-full focus:outline-none focus:ring-2 focus:ring-white group"
+  <div class="group w-full text-left">
+    <a
+      :href="link.metadata.url"
+      target="`_blank"
+      rel="noreferrer"
+      class="mb-0 cursor-pointer no-underline"
     >
       <header class="flex items-center justify-between pt-4 pb-2">
         <h3
-          class="text-black dark:text-white text-lg pt-0 mb-0 font-bold w-full group-hover:underline group-hover:underline-offset-4 group-hover:decoration-yellow-500 group-hover:decoration-2"
+          class="mb-0 w-full pt-0 text-lg font-bold text-black group-hover:underline group-hover:decoration-yellow-500 group-hover:decoration-2 group-hover:underline-offset-4 dark:text-white"
         >
           {{ link.title }}
         </h3>
@@ -19,24 +17,20 @@
           size="16"
         ></arrow-up-right-icon>
       </header>
-      <p
-        class="font-mono text-neutral-500 dark:text-neutral-400 pt-0 font-medium text-sm"
-      >
+      <p class="pt-0 font-mono text-sm text-neutral-500 dark:text-neutral-400">
         {{ link.metadata.published | moment("from", "now") }}
       </p>
       <div class="pb-4">
-        <Tag color="yellow">
-          Link
-        </Tag>
+        <Tag color="yellow"> Link </Tag>
       </div>
       <p
-        class="text-neutral-700 dark:text-neutral-300 pt-2 pb-4 mb-0 text-base"
+        class="mb-0 pt-2 pb-4 font-normal text-neutral-700 dark:text-neutral-300"
         v-html="link.metadata.snippet"
       >
         {{ link.metadata.snippet }}
       </p>
-    </button>
-  </a>
+    </a>
+  </div>
 </template>
 
 <script>

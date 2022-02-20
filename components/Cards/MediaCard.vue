@@ -1,42 +1,46 @@
 <template>
-  <a :href="media.metadata.url" target="`_blank" rel="noreferrer">
-    <button
-      class="bg-neutral-50 dark:bg-neutral-900 hover:shadow-lg hover:bg-neutral-50 dark:hover:bg-neutral-800 transition ease-in-out duration-300 rounded-3xl text-left w-full focus:outline-none focus:ring-2 focus:ring-white"
+  <div
+    class="w-full rounded-3xl bg-neutral-50 p-4 text-left transition duration-300 ease-in-out hover:bg-neutral-50 hover:shadow-lg dark:bg-neutral-900 dark:hover:bg-neutral-800"
+  >
+    <a
+      :href="media.metadata.url"
+      target="`_blank"
+      rel="noreferrer"
+      class="no-underline"
     >
-      <div class="px-4 py-4">
+      <div class="flex flex-col justify-between">
         <header class="mb-4 flex justify-between">
           <img
             :src="media.metadata.cover.imgix_url"
-            class="rounded-md max-h-24"
+            class="max-h-24 rounded-md"
             alt="Image of media"
           />
           <arrow-up-right-icon
-            class="text-neutral-700 dark:text-neutral-300"
+            class="shrink-0 text-neutral-700 dark:text-neutral-300"
+            size="1x"
           ></arrow-up-right-icon>
         </header>
         <div
           class="divide-y divide-solid divide-neutral-300 dark:divide-neutral-800"
         >
-          <div class="flex space-x-2 mb-4">
+          <div class="mb-4 flex space-x-2">
             <Tag color="yellow" v-if="media.metadata.indie">Indie </Tag>
             <Tag color="purple" v-if="media.metadata.open_source"
               >Open source
             </Tag>
           </div>
-          <h4
-            class="pt-4 font-bold text-sm text-neutral-900 dark:text-neutral-100"
-          >
+          <h4 class="text-sm font-bold text-neutral-900 dark:text-neutral-100">
             {{ media.title }}
           </h4>
         </div>
         <p
-          class="mb-0 pt-1 text-neutral-500 dark:text-neutral-400 font-normal text-sm"
+          class="mb-0 text-sm font-normal text-neutral-500 dark:text-neutral-400"
         >
           {{ media.metadata.subtitle }}
         </p>
       </div>
-    </button>
-  </a>
+    </a>
+  </div>
 </template>
 
 <script>
