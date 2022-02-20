@@ -46,7 +46,7 @@
         <div
           class="mt-16 border-t-2 border-neutral-200 pb-16 dark:border-neutral-800"
         />
-        <header class="mt-4">
+        <header>
           <h2>How to reach me</h2>
         </header>
         <div>

@@ -33,7 +33,7 @@
           <BackLink link="thoughts"> Back to all posts </BackLink>
         </div>
         <header>
-          <h2>How to follow along.</h2>
+          <h2>How to follow along</h2>
         </header>
         <SubscribeCard />
       </div>
