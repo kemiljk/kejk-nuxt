@@ -21,7 +21,7 @@
     <div class="mx-auto max-w-5xl px-4">
       <Header class="pt-24 text-left md:text-center">/creations</Header>
       <Subheader class="text-left md:text-center">
-        <template #text> Apps, plugins and tools I've built </template>
+        <template #text> Apps, plugins and tools I've built, available for free </template>
       </Subheader>
       <div class="flex flex-row">
         <div class="grid w-full gap-4 sm:grid-cols-2">
