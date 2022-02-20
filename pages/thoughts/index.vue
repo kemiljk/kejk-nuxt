@@ -66,6 +66,7 @@ import Development from "../../components/Tabs/Development";
 import Opinion from "../../components/Tabs/Opinion";
 import Journal from "../../components/Tabs/Journal";
 import Links from "../../components/Tabs/External";
+import algoliasearch from "algoliasearch/lite";
 
 export default {
   components: {
@@ -113,6 +114,10 @@ export default {
       loading: false,
       tabs: ["All", "Design", "Development", "Opinion", "Journal", "Links"],
       selected: "All",
+      searchClient: algoliasearch(
+        "NKZJE3K5TX",
+        "eab15a29907c5141aacba92ef2b8fd6b"
+      ),
     };
   },
 };

@@ -159,6 +159,7 @@ export default {
   plugins: [
     { src: "~/plugins/vue-moment.js", ssr: true },
     { src: "~/plugins/prism.js", ssr: true },
+    { src: "~/plugins/vue-instantsearch", ssr: true },
   ],
 
   components: true,

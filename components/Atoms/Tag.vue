@@ -1,6 +1,6 @@
 <template>
   <span
-    class="flex w-max justify-center rounded-full px-3 py-1 font-mono text-xs uppercase"
+    class="flex w-max justify-center rounded-lg px-3 py-1 font-mono text-xs uppercase"
     :class="colorClasses"
   >
     <slot />
