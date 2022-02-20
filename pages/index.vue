@@ -202,7 +202,8 @@
           </div>
         </div>
       </div>
-      <GetInTouch class="mt-16 text-base" id="GET_IN_TOUCH" />
+      <H2Header id="GET_IN_TOUCH" class="mt-16"> How to reach me</H2Header>
+      <GetInTouch class="text-base" />
     </div>
   </div>
 </template>

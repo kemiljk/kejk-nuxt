@@ -64,7 +64,7 @@
         </div>
       </div>
       <Divider />
-      <H2Header> How to reach me. </H2Header>
+      <H2Header> How to reach me </H2Header>
       <div>
         <GetInTouch />
       </div>
