@@ -67,7 +67,7 @@ export default {
   computed: {
     meta() {
       const metaData = {
-        title: "KEJK | Projects",
+        title: "Projects | KEJK",
         description:
           "A Product and Frontend Designer, building for the web with Vue, Nuxt and Tailwind, building for mobile with SwiftUI.",
         url: "https://kejk.tech/",
@@ -79,7 +79,7 @@ export default {
   },
   head() {
     return {
-      title: "KEJK | Projects",
+      title: "Projects | KEJK",
       meta: [...this.meta],
       link: [{ rel: "canonical", href: "https://kejk.tech/projects" }],
     };
