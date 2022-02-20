@@ -3,9 +3,8 @@
     :href="feature.metadata.url"
     target="`_blank"
     rel="noreferrer"
-    class="w-full rounded-3xl border border-neutral-200 p-4 text-left transition duration-300 ease-out hover:bg-neutral-50 hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-white dark:border-neutral-800 dark:hover:bg-neutral-900 no-underline mb-0 cursor-pointer select-none"
+    class="w-full rounded-3xl border border-neutral-200 p-4 text-left transition duration-300 ease-out hover:bg-neutral-50 hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-white dark:border-neutral-800 dark:hover:bg-neutral-900 no-underline cursor-pointer select-none"
   >
-      <div>
         <header class="flex items-center justify-between">
           <h3
             class="mb-0 w-full pt-0 text-base font-bold text-black dark:text-white"
@@ -27,7 +26,6 @@
             {{ feature.metadata.type }}
           </p>
         </div>
-      </div>
   </a>
 </template>
 
