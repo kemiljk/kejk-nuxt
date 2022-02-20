@@ -17,11 +17,13 @@
           size="16"
         ></arrow-up-right-icon>
       </header>
+      <div class="flex items-center justify-between">
+       <div class="pb-4">
+        <Tag color="yellow"> Link </Tag>
+      </div> 
       <p class="pt-0 font-mono text-sm text-neutral-500 dark:text-neutral-400">
         {{ link.metadata.published | moment("from", "now") }}
       </p>
-      <div class="pb-4">
-        <Tag color="yellow"> Link </Tag>
       </div>
       <p
         class="mb-0 pt-2 pb-4 font-normal text-neutral-700 dark:text-neutral-300"

@@ -16,13 +16,13 @@
         ></arrow-right-icon>
       </header>
       <div class="flex items-center justify-between">
-      <p class="pt-0 font-mono text-sm text-neutral-500 dark:text-neutral-400">
-        Updated {{ blog.modified_at | moment("from", "now") }}
-      </p>
       <div class="flex space-x-2 pb-4">
         <Tag color="indigo">
           {{ blog.metadata.tag }}
         </Tag>
+        <p class="pt-0 font-mono text-sm text-neutral-500 dark:text-neutral-400">
+        Updated {{ blog.modified_at | moment("from", "now") }}
+      </p>
         </div>
       </div>
       <p
