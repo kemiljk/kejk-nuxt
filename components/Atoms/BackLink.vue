@@ -28,7 +28,7 @@ export default {
         thoughts: "/thoughts",
         bookmarks: "/bookmarks",
         uses: "/uses",
-        portfolio: "/projects",
+        project: "/projects",
       }[this.link];
     },
   },

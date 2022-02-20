@@ -4,7 +4,7 @@ const title = "Karl Emil James Koch";
 const description =
   "Karl is a Product Designer, crafting intelligent interfaces for the web, mobile and meta services.";
 const mainImage =
-  "https://imgix.cosmicjs.com/067798c0-9221-11ec-9a4e-05fc85d83574-meta.png";
+  "https://imgix.cosmicjs.com/7cd58970-9279-11ec-9a4e-05fc85d83574-kmeta.png";
 const twitterSite = "@_kejk";
 const twitterCard = "summary_large_image";
 export default (meta) => {

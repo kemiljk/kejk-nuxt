@@ -21,7 +21,7 @@
     <div class="mx-auto px-4">
       <div class="container mx-auto max-w-3xl pt-10 pb-2">
         <div class="flex flex-row pt-16 pb-8">
-          <BackLink link="portfolio"> Back to all</BackLink>
+          <BackLink link="project"> Back to all</BackLink>
         </div>
         <div class="flex" v-if="this.loading === true">
           <svg

@@ -13,6 +13,7 @@
           class="mt-4 w-full rounded-xl"
         />
       </div>
+      <!-- <Tag color="blue">Test</Tag> -->
     </div>
     <div>
       <section
