@@ -1,22 +1,24 @@
 <template>
   <div class="-mt-24">
     <div class="flex flex-row text-left" v-if="blog">
-      <div class="flex flex-col col-span-full md:col-span-6">
+      <div class="col-span-full flex flex-col md:col-span-6">
         <Header class="pt-24">
           {{ blog.title }}
         </Header>
-        <p class="font-mono text-neutral-500 dark:text-neutral-400 pt-2">
-          Updated {{ blog.modified_at | moment("from", "now") }}
-        </p>
-        <Tag color="indigo">
-          {{ blog.metadata.tag }}
-        </Tag>
+        <div class="flex items-center justify-start space-x-2 pt-2">
+          <Tag color="indigo">
+            {{ blog.metadata.tag }}
+          </Tag>
+          <p class="mb-0 font-mono text-neutral-500 dark:text-neutral-400">
+            Updated {{ blog.modified_at | moment("from", "now") }}
+          </p>
+        </div>
       </div>
     </div>
     <div>
       <section
         v-html="blog.content"
-        class="mt-4 text-black dark:text-neutral-300"
+        class="mt-16 text-black dark:text-neutral-300"
       />
     </div>
   </div>
