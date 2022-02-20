@@ -13,7 +13,7 @@
           {{ link.title }}
         </h3>
         <arrow-up-right-icon
-          class="shrink-0 text-neutral-700 dark:text-neutral-300"
+          class="shrink-0 text-neutral-700 dark:text-neutral-300 pt-2"
           size="16"
         ></arrow-up-right-icon>
       </header>
