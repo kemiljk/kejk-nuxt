@@ -30,7 +30,7 @@
         </div>
       </div>
       <Divider />
-      <Header class="pt-24 text-left md:text-center">Other work</Header>
+      <Header class="text-left md:text-center">Other work</Header>
       <div
         class="grid-row xs:grid-cols-1 mt-4 grid w-full gap-4 sm:grid-cols-2 lg:grid-cols-3"
       >

@@ -137,7 +137,7 @@
         </div>
       </div>
       <Divider />
-      <H2Header class="pt-4"> Built for myself... and everyone else </H2Header>
+      <H2Header> Built for myself... and everyone else </H2Header>
       <div class="flex flex-row pt-4">
         <div class="grid w-full gap-4 sm:grid-cols-2">
           <PluginCard :plugin="plugin" />
@@ -156,7 +156,7 @@
         </div>
       </div>
       <Divider />
-      <H2Header class="pt-4"> Thoughts, ideas, and more </H2Header>
+      <H2Header> Thoughts, ideas, and more </H2Header>
       <div class="flex w-full pt-4">
         <div class="grid-row xs:grid-cols-1 grid w-full gap-8 sm:grid-cols-2">
           <div v-for="blog in blogs" :key="blog._id">
@@ -173,7 +173,7 @@
       </div>
       <MoreLink link="thoughts" class="text-base">See All</MoreLink>
       <Divider />
-      <H2Header class="pt-4"> Features and speaking</H2Header>
+      <H2Header> Features and speaking</H2Header>
       <div class="flex flex-row py-4">
         <div class="grid w-full gap-4 sm:grid-cols-2">
           <div v-for="feature in features" :key="feature.title">
@@ -182,7 +182,7 @@
         </div>
       </div>
       <Divider />
-      <H2Header class="pt-4"> Making sounds </H2Header>
+      <H2Header> Making sounds </H2Header>
       <div class="flex flex-row pt-4">
         <div
           class="grid-row xs:grid-cols-1 grid w-full gap-4 sm:grid-cols-2 md:grid-cols-3"
