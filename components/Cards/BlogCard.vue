@@ -19,7 +19,7 @@
         <Tag color="indigo">
           {{ blog.metadata.tag }}
         </Tag>
-        <p class="pt-0 font-mono text-sm text-neutral-500 dark:text-neutral-400">
+        <p class="py-0 font-mono text-sm text-neutral-500 dark:text-neutral-400">
         Updated {{ blog.modified_at | moment("from", "now") }}
       </p>
       </div>

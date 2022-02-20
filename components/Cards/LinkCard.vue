@@ -19,7 +19,7 @@
       </header>
       <div class="flex items-center justify-between">
         <Tag color="yellow"> Link </Tag>
-      <p class="pt-0 font-mono text-sm text-neutral-500 dark:text-neutral-400">
+      <p class="py-0 font-mono text-sm text-neutral-500 dark:text-neutral-400">
         {{ link.metadata.published | moment("from", "now") }}
       </p>
       </div>
