@@ -6,7 +6,7 @@
       rel="noreferrer"
       class="mb-0 cursor-pointer no-underline"
     >
-      <header class="flex items-center justify-between pt-4 pb-2">
+      <header class="flex items-top justify-between pt-4 pb-2">
         <h3
           class="mb-0 w-full pt-0 text-lg font-bold text-black group-hover:underline group-hover:decoration-yellow-500 group-hover:decoration-2 group-hover:underline-offset-4 dark:text-white"
         >
