@@ -18,7 +18,9 @@
     </Nav>
     <div class="mx-auto max-w-5xl px-4">
       <div>
-        <Header class="pt-24 text-left md:text-center"> Hej, I'm Karl </Header>
+        <Header class="pt-24 text-left leading-loose md:text-center">
+          {{ home.title }}
+        </Header>
         <Subheader>
           <template #text>
             <keep-alive>
