@@ -18,7 +18,7 @@
     </Nav>
     <div class="mx-auto max-w-5xl px-4">
       <div>
-        <Header class="pt-24 text-left leading-loose md:text-center">
+        <Header class="pt-24 text-left md:text-center">
           {{ home.title }}
         </Header>
         <Subheader>
