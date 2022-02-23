@@ -21,22 +21,26 @@
     <div class="mx-auto max-w-5xl px-4">
       <Header class="pt-24 text-left md:text-center">/creations</Header>
       <Subheader class="text-left md:text-center">
-        <template #text> Apps, plugins and tools I've built, available for free </template>
+        <template #text>
+          Apps, plugins and tools I've built, available for free
+        </template>
       </Subheader>
-      <div class="flex flex-row">
-        <div class="grid w-full gap-4 sm:grid-cols-2">
-          <PluginCard :plugin="plugin" />
+      <div class="flex">
+        <div class="grid w-full grid-cols-1 gap-4 md:grid-cols-3">
           <div v-for="app in apps" :key="app.title">
             <keep-alive>
-              <AppCard :app="app" />
+              <CreationsCard :app="app" />
             </keep-alive>
           </div>
-          <div class="grid grid-cols-2 gap-4">
-            <div v-for="utility in utilities" :key="utility.title">
-              <keep-alive>
-                <UtilityCard :utility="utility" />
-              </keep-alive>
-            </div>
+        </div>
+      </div>
+      <H2Header class="pt-16">Utilities</H2Header>
+      <div class="flex pt-2">
+        <div class="grid w-full grid-cols-2 gap-4 md:grid-cols-3">
+          <div v-for="utility in utilities" :key="utility.title">
+            <keep-alive>
+              <UtilityCard :utility="utility" />
+            </keep-alive>
           </div>
         </div>
       </div>
@@ -82,7 +86,7 @@ export default {
     return {
       title: "Creations | KEJK",
       meta: [...this.meta],
-      link: [{ rel: "canonical", href: "https://kejk.tech/projects" }],
+      link: [{ rel: "canonical", href: "https://kejk.tech/creations" }],
     };
   },
   components: {
@@ -94,7 +98,6 @@ export default {
   data() {
     return {
       loading: false,
-      plugin: {},
       apps: {},
       utilities: {},
       slug: "",
@@ -104,23 +107,10 @@ export default {
   created() {
     this.slug = this.$route.params.slug;
     this.id = this.$route.params.id;
-    this.fetchPluginData();
     this.getAppsData();
     this.getUtilitiesData();
   },
   methods: {
-    async fetchPluginData() {
-      this.loading = true;
-      await bucket
-        .getObject({
-          id: "605cc05178306b0007588909",
-          props: "slug,title,content,metadata",
-        })
-        .then((data) => {
-          this.plugin = data.object;
-          this.loading = false;
-        });
-    },
     async getAppsData() {
       this.error = this.app = null;
       this.loading = true;
@@ -130,7 +120,6 @@ export default {
             type: "apps",
           },
           props: "_id,slug,title,content,metadata,created_at,modified_at",
-          sort: "created_at",
         })
         .then((data) => {
           const apps = data.objects;

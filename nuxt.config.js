@@ -79,7 +79,7 @@ export default {
     ],
     link: [
       { rel: "icon", href: "/favicon.svg" },
-      { rel: "icon", href: "/favicon.ico" },
+      { rel: "icon", href: "/favicon.svg" },
       { rel: "mask-icon", href: "/mask-icon.svg", color: "#667EEA" },
       {
         rel: "apple-touch-icon",

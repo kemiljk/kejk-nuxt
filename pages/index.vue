@@ -269,7 +269,6 @@ export default {
     this.getLinksData();
     this.getUtilitiesData();
     this.getAlbumsData();
-    this.fetchPluginData();
     this.getFeaturesData();
   },
   methods: {
@@ -294,7 +293,6 @@ export default {
             type: "apps",
           },
           props: "_id,slug,title,content,metadata,created_at,modified_at",
-          sort: "created_at",
         })
         .then((data) => {
           const apps = data.objects;
@@ -368,18 +366,6 @@ export default {
           const albums = data.objects;
           this.loading = false;
           this.albums = albums;
-        });
-    },
-    async fetchPluginData() {
-      this.loading = true;
-      await bucket
-        .getObject({
-          id: "605cc05178306b0007588909",
-          props: "slug,title,content,metadata",
-        })
-        .then((data) => {
-          this.plugin = data.object;
-          this.loading = false;
         });
     },
     async getFeaturesData() {

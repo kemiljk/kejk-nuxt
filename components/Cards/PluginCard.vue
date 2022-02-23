@@ -45,7 +45,7 @@
 import { ArrowUpRightIcon } from "vue-feather-icons";
 
 export default {
-  name: "Plugin",
+  name: "PluginCard",
   components: {
     ArrowUpRightIcon,
   },
