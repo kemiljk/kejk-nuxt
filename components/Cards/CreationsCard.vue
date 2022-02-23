@@ -13,7 +13,7 @@
         <header class="flex justify-between">
           <img
             :src="app.metadata.cover.imgix_url"
-            class="h-full w-full rounded-tl-xl rounded-tr-xl"
+            class="h-full w-full rounded-tl-3xl rounded-tr-3xl rounded-bl-none rounded-br-none"
             alt="Image of media"
           />
         </header>
@@ -58,7 +58,7 @@
         <header class="flex justify-between">
           <img
             :src="app.metadata.cover.imgix_url"
-            class="h-full w-full rounded-tl-xl rounded-tr-xl"
+            class="h-full w-full rounded-bl-none rounded-br-none"
             alt="Image of media"
           />
         </header>
