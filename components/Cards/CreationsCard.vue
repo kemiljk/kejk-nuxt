@@ -18,7 +18,7 @@
           />
         </header>
         <div class="p-4">
-          <div class="flex w-full items-center justify-between">
+          <div class="flex w-full items-start justify-between">
             <h4
               class="text-md font-bold text-neutral-900 dark:text-neutral-100"
             >
@@ -26,12 +26,12 @@
             </h4>
             <compass-icon
               v-if="app.metadata.website"
-              class="text-neutral-700 dark:text-neutral-300"
+              class="text-neutral-700 dark:text-neutral-300 mt-1"
               size="1x"
             ></compass-icon>
             <download-icon
               v-if="app.metadata.download"
-              class="text-neutral-700 dark:text-neutral-300"
+              class="text-neutral-700 dark:text-neutral-300 mt-1"
               size="1x"
             ></download-icon>
           </div>
