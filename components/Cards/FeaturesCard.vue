@@ -8,7 +8,7 @@
       rel="noreferrer"
       class="no-underline"
     >
-      <header class="flex w-full items-center justify-between">
+      <header class="flex w-full items-start justify-between">
         <h3
           class="mb-0 w-full pt-0 text-base font-bold text-black dark:text-white"
         >
@@ -16,7 +16,7 @@
         </h3>
         <arrow-up-right-icon
           class="ml-2 shrink-0 text-neutral-700 dark:text-neutral-300"
-          size="16"
+          size="1x"
         ></arrow-up-right-icon>
       </header>
       <div class="flex w-full justify-between pt-2">
