@@ -29,7 +29,7 @@
               >Open source
             </Tag>
           </div>
-          <h4 class="text-sm font-bold text-neutral-900 dark:text-neutral-100">
+          <h4 class="pt-2 text-sm font-bold text-neutral-900 dark:text-neutral-100">
             {{ media.title }}
           </h4>
         </div>
