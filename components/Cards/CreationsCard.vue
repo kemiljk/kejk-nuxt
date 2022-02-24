@@ -20,7 +20,7 @@
         <div class="p-4">
           <div class="flex w-full items-center justify-between">
             <h4
-              class="text-sm font-bold text-neutral-900 dark:text-neutral-100"
+              class="text-md font-bold text-neutral-900 dark:text-neutral-100"
             >
               {{ app.title }}
             </h4>

@@ -21,12 +21,12 @@
         <div class="p-4">
           <div class="flex w-full items-center justify-between">
             <h4
-              class="text-sm font-bold text-neutral-900 dark:text-neutral-100"
+              class="text-md font-bold text-neutral-900 dark:text-neutral-100"
             >
               {{ portfolio.title }}
             </h4>
             <arrow-right-icon
-              class="text-neutral-700 dark:text-neutral-300"
+              class="text-neutral-700 dark:text-neutral-300" size="1x"
             ></arrow-right-icon>
           </div>
           <p

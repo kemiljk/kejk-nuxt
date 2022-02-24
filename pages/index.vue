@@ -197,7 +197,7 @@
         </div>
       </div>
       <Divider />
-      <H2Header id="GET_IN_TOUCH"> How to reach me</H2Header>
+      <H2Header id="GET_IN_TOUCH">How to reach me</H2Header>
       <GetInTouch class="text-base" />
     </div>
   </div>
