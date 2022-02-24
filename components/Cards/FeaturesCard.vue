@@ -15,7 +15,7 @@
           {{ feature.title }}
         </h3>
         <arrow-up-right-icon
-          class="ml-2 shrink-0 text-neutral-700 dark:text-neutral-300"
+          class="mt-2 ml-2 shrink-0 text-neutral-700 dark:text-neutral-300"
           size="1x"
         ></arrow-up-right-icon>
       </header>
