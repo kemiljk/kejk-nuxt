@@ -11,14 +11,18 @@
     >
       <header class="flex justify-between">
         <div class="flex w-full">
-          <img
-            :src="app.metadata.cover.imgix_url"
-            class="mr-4 max-h-32 rounded-md sm:max-h-28"
-            alt="Image of media"
-          />
-          <div class="flex w-full flex-col justify-between">
+          <div class="mr-4">
+            <img
+              :src="app.metadata.cover.imgix_url"
+              class="max-h-32 rounded-md"
+              alt="Image of media"
+            />
+          </div>
+          <div class="flex w-full flex-col justify-start">
             <div class="mb-4 flex items-center justify-between">
-              <div class="flex space-x-1">
+              <div class="flex space-x-2">
+                <Tag color="blue" v-if="app.metadata.figma">Figma</Tag>
+                <Tag color="pink" v-if="app.metadata.figjam">FigJam</Tag>
                 <Tag color="yellow" v-if="app.metadata.ios">iOS </Tag>
                 <Tag color="purple" v-if="app.metadata.macos">macOS </Tag>
               </div>
@@ -56,14 +60,18 @@
         <div class="p-4">
           <header class="flex justify-between">
             <div class="flex w-full">
-              <img
-                :src="app.metadata.cover.imgix_url"
-                class="mr-4 max-h-32 rounded-md sm:max-h-28"
-                alt="Image of media"
-              />
-              <div class="w-full">
+              <div class="mr-4">
+                <img
+                  :src="app.metadata.cover.imgix_url"
+                  class="max-h-32 rounded-md"
+                  alt="Image of media"
+                />
+              </div>
+              <div class="flex w-full flex-col justify-start">
                 <div class="mb-4 flex items-center justify-between">
                   <div class="flex space-x-2">
+                    <Tag color="blue" v-if="app.metadata.figma">Figma</Tag>
+                    <Tag color="pink" v-if="app.metadata.figjam">FigJam</Tag>
                     <Tag color="yellow" v-if="app.metadata.ios">iOS </Tag>
                     <Tag color="purple" v-if="app.metadata.macos">macOS </Tag>
                   </div>
@@ -74,12 +82,12 @@
                   ></arrow-right-icon>
                 </div>
                 <h4
-                  class="pt-4 text-sm font-bold text-neutral-900 dark:text-neutral-100 md:pt-2"
+                  class="text-sm font-bold text-neutral-900 dark:text-neutral-100"
                 >
                   {{ app.title }}
                 </h4>
                 <p
-                  class="mb-0 pt-1 text-sm font-normal text-neutral-500 dark:text-neutral-400"
+                  class="mb-0 text-sm font-normal text-neutral-500 dark:text-neutral-400"
                 >
                   {{ app.metadata.subtitle }}
                 </p>
