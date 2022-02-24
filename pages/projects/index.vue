@@ -19,7 +19,7 @@
       <NavItem to="/uses">Uses</NavItem>
     </Nav>
     <div class="mx-auto max-w-5xl px-4">
-      <Header class="pt-24 text-left md:text-center">Featured projects</Header>
+      <Header class="pt-24 text-left md:text-center">/projects</Header>
       <div class="mt-4 flex flex-row">
         <div class="grid w-full gap-4 sm:grid-cols-2">
           <div v-for="portfolio in portfolios" :key="portfolio.id">
