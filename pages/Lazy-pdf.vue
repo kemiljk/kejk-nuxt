@@ -30,7 +30,7 @@
         <div>
           <img
             :src="`${hero}`"
-            class="mt-10 rounded-2xl"
+            class="mt-10"
             alt="image of Lazy PDF app in use"
           />
         </div>
@@ -51,7 +51,11 @@
               class="flex flex-col justify-center md:flex-row md:justify-start"
             >
               <a :href="`${download.url}`" class="no-underline">
-                <Button color="purple">
+                <Button
+                  color="purple"
+                  id="DOWNLOAD"
+                  @click="plausible('Downloaded Lazy PDF')"
+                >
                   <template #icon>
                     <download-icon
                       size="1x"
@@ -77,7 +81,7 @@
                 throw them together into a PDF.
               </p>
               <img
-                class="rounded-2xl pt-4 dark:ring-2 dark:ring-neutral-800"
+                class="pt-4 dark:ring-2 dark:ring-neutral-800"
                 src="https://res.cloudinary.com/kejk/image/upload/v1585993877/Picking_selection_ckdioy.png"
               />
             </div>
@@ -94,7 +98,7 @@
                 around afterwards in any PDF viewer.
               </p>
               <img
-                class="rounded-2xl pt-4 dark:ring-2 dark:ring-neutral-800"
+                class="pt-4 dark:ring-2 dark:ring-neutral-800"
                 src="https://res.cloudinary.com/kejk/image/upload/v1587570775/Frame_10_zub1ud.png"
               />
             </div>
@@ -111,7 +115,7 @@
                 teammates and management.
               </p>
               <img
-                class="rounded-2xl pt-4 dark:ring-2 dark:ring-neutral-800"
+                class="pt-4 dark:ring-2 dark:ring-neutral-800"
                 src="https://res.cloudinary.com/kejk/image/upload/v1585993878/Rendered_PDF_zpdrza.png"
               />
             </div>
@@ -129,7 +133,7 @@
                 ultrawide files when visualising a 21:9 video concept.
               </p>
               <img
-                class="rounded-2xl pt-4 dark:ring-2 dark:ring-neutral-800"
+                class="pt-4 dark:ring-2 dark:ring-neutral-800"
                 src="https://res.cloudinary.com/kejk/image/upload/v1586353512/Apple_versus_Lazy_mhp5ey.png"
               />
             </div>
@@ -175,7 +179,7 @@ export default {
   data() {
     return {
       download: {
-        url: "https://res.cloudinary.com/kejk/raw/upload/v1617095071/Lazy_PDF_v1.1.dmg",
+        url: "https://cdn.cosmicjs.com/96c86440-9717-11ec-8bb7-91577e4f4933-Lazy-PDF.zip",
         text: "Download",
       },
       hero: "https://imgix.cosmicjs.com/d2653530-77ca-11ec-bfef-718573fe8f91-mockuuups-black-macbook-mockup-on-a-white-table-with-black-textbooks-at-the-side.jpeg",
