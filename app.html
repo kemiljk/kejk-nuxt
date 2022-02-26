@@ -23,5 +23,36 @@
       type="module"
       integrity="sha384-by67kQnR+pyfy8yWP4kPO12fHKRLHZPfEsiSXR8u2IKcTdxD805MGUXBzVPnkLHw"
     ></script>
+    <script>
+      function handleLinkEvent(event) {
+        var link = event.target;
+        var middle = event.type == "auxclick" && event.which == 2;
+        var click = event.type == "click";
+        while (
+          link &&
+          (typeof link.tagName == "undefined" ||
+            link.tagName.toLowerCase() != "a" ||
+            !link.href)
+        ) {
+          link = link.parentNode;
+        }
+        if (middle || click) {
+          let attributes = link.getAttribute("data-analytics").split(/,(.+)/);
+          let events = [
+            JSON.parse(attributes[0]),
+            JSON.parse(attributes[1] || "{}"),
+          ];
+          plausible(...events);
+        }
+        if (!link.target) {
+          if (!(event.ctrlKey || event.metaKey || event.shiftKey) && click) {
+            setTimeout(function () {
+              location.href = link.href;
+            }, 150);
+            event.preventDefault();
+          }
+        }
+      }
+    </script>
   </body>
 </html>

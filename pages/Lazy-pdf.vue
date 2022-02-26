@@ -50,12 +50,12 @@
             <div
               class="flex flex-col justify-center md:flex-row md:justify-start"
             >
-              <a :href="`${download.url}`" class="no-underline">
-                <Button
-                  color="purple"
-                  id="DOWNLOAD"
-                  @click="plausible('Downloaded Lazy PDF')"
-                >
+              <a
+                :href="`${download.url}`"
+                class="no-underline"
+                data-analytics='"Downloaded Lazy PDF"'
+              >
+                <Button color="purple">
                   <template #icon>
                     <download-icon
                       size="1x"
@@ -150,6 +150,12 @@
 <script>
 import getSiteMeta from "~/utils/getSiteMeta.js";
 import { DownloadIcon, ArrowUpRightIcon } from "vue-feather-icons";
+
+let links = document.querySelectorAll("a[data-analytics]");
+for (var i = 0; i < links.length; i++) {
+  links[i].addEventListener("click", handleLinkEvent);
+  links[i].addEventListener("auxclick", handleLinkEvent);
+}
 
 export default {
   name: "Lazy-PDF",
