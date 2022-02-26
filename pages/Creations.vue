@@ -119,7 +119,7 @@ export default {
           query: {
             type: "apps",
           },
-          props: "_id,slug,title,content,metadata,created_at,modified_at",
+          props: "_id,slug,title,content,metadata",
         })
         .then((data) => {
           const apps = data.objects;

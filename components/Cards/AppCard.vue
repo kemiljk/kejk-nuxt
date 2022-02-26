@@ -11,10 +11,15 @@
     >
       <header class="flex justify-between">
         <div class="flex w-full">
-          <div class="mr-4">
+          <div class="mr-4 sm:w-1/3">
             <img
               :src="app.metadata.cover.imgix_url"
-              class="max-h-32 rounded-md"
+              class="hidden max-h-32 rounded-md md:block"
+              alt="Image of media"
+            />
+            <img
+              :src="app.metadata.mobile_image.imgix_url"
+              class="block max-h-32 rounded-md md:hidden"
               alt="Image of media"
             />
           </div>
@@ -60,10 +65,15 @@
         <div class="p-4">
           <header class="flex justify-between">
             <div class="flex w-full">
-              <div class="mr-4">
+              <div class="mr-4 sm:w-1/3">
                 <img
                   :src="app.metadata.cover.imgix_url"
-                  class="max-h-32 rounded-md"
+                  class="hidden max-h-32 rounded-md md:block"
+                  alt="Image of media"
+                />
+                <img
+                  :src="app.metadata.mobile_image.imgix_url"
+                  class="block max-h-32 rounded-md md:hidden"
                   alt="Image of media"
                 />
               </div>
