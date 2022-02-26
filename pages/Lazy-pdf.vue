@@ -179,7 +179,7 @@ export default {
   data() {
     return {
       download: {
-        url: "https://cdn.cosmicjs.com/96c86440-9717-11ec-8bb7-91577e4f4933-Lazy-PDF.zip",
+        url: "https://cdn.cosmicjs.com/27efc530-9722-11ec-8bb7-91577e4f4933-Lazy-PDF.zip",
         text: "Download",
       },
       hero: "https://imgix.cosmicjs.com/d2653530-77ca-11ec-bfef-718573fe8f91-mockuuups-black-macbook-mockup-on-a-white-table-with-black-textbooks-at-the-side.jpeg",
