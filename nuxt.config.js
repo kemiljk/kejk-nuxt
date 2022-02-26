@@ -20,7 +20,8 @@ export default {
         content: "default",
       },
       { name: "apple-mobile-web-app-title", content: "KEJK" },
-      { name: "theme-color", content: "#000000" },
+      { name: "theme-color", media: "(prefers-color-scheme: light)", content: "white" },
+{ name: "theme-color", media: "(prefers-color-scheme: dark)", content: "black" },
       {
         hid: "description",
         name: "description",
