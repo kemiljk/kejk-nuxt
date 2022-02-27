@@ -185,6 +185,28 @@
             </div>
           </div>
         </div>
+        <div class="mt-4 flex flex-col items-center justify-center md:flex-row md:justify-start"
+                >
+                  <a
+                    :href="`${download.url}`"
+                    class="no-underline"
+                    data-analytics='"Downloaded Lazy PDF"'
+                    @click="total.metadata.downloads += 1"
+                  >
+                    <ButtonLazy
+                      color="purple"
+                      @updateDownloads="updateDownloads"
+                    >
+                      <template #icon>
+                        <download-icon
+                          size="1x"
+                          class="mr-2 inline-block text-purple-100"
+                        />
+                      </template>
+                      <template #label> Download </template>
+                    </ButtonLazy>
+                  </a>
+                </div>
         <Divider />
         <H2Header id="GET_IN_TOUCH">How to reach me</H2Header>
         <GetInTouch />
