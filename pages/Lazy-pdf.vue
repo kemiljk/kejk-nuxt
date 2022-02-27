@@ -36,7 +36,7 @@
                 >
                   <download-icon
                     size="1x"
-                    class="mr-2 inline-block text-green-700 dark:text-green-200"
+                    class="mr-1 inline-block text-green-700 dark:text-green-200"
                   />
                   <span id="downloads" class="hidden">{{
                     total.metadata.downloads
@@ -48,7 +48,7 @@
                 <button @click="updateLikes()">
                   <heart-icon
                     size="1x"
-                    class="mr-2 inline-block text-red-700 dark:text-red-200"
+                    class="mr-1 inline-block text-red-700 dark:text-red-200"
                   />
                   <span id="likes" class="hidden">{{
                     total.metadata.likes
