@@ -68,7 +68,7 @@
         </div>
         <div class="py-4">
           <div>
-            <div class="flex items-center justify-between">
+            <div class="flex items-center justify-between w-full">
               <div class="w-full">
                 <div class="mt-8 mb-8 space-y-4">
                   <h3
@@ -106,10 +106,10 @@
                   </a>
                 </div>
               </div>
-              <div class="flex w-full items-center justify-center">
+              <div class="hidden md:flex flex w-full items-center justify-center">
                 <img
                   :src="`${appIcon}`"
-                  class="hidden md:block max-h-[10rem] w-auto rounded-[2.5rem]"
+                  class="max-h-[10rem] w-auto rounded-[2.5rem]"
                   alt="image of Lazy PDF app icon"
                 />
               </div>
