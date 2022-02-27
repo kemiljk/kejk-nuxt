@@ -109,7 +109,7 @@
               <div class="flex w-full items-center justify-center">
                 <img
                   :src="`${appIcon}`"
-                  class="max-h-[10rem] w-auto rounded-[2.5rem]"
+                  class="hidden md:block max-h-[10rem] w-auto rounded-[2.5rem]"
                   alt="image of Lazy PDF app icon"
                 />
               </div>
