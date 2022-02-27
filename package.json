@@ -22,7 +22,7 @@
     "autoprefixer": "^10.4.2",
     "axios": "^0.21.1",
     "core-js": "^3.6.5",
-    "cosmicjs": "^4.1.0",
+    "cosmicjs": "^4.1.2",
     "feed": "^4.2.1",
     "global": "^4.4.0",
     "graphql": "^15.4.0",

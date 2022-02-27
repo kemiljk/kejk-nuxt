@@ -4816,10 +4816,10 @@ cors@^2.8.4:
     object-assign "^4"
     vary "^1"
 
-cosmicjs@^4.1.0:
-  version "4.1.0"
-  resolved "https://registry.yarnpkg.com/cosmicjs/-/cosmicjs-4.1.0.tgz#640d4be245dfbebda008dff638cf8c34bc279e16"
-  integrity sha512-DGK7Uz/0mFpYE7YMnQizEEqA54yeAzOt9jKj4s+loydSTWyQgr77ADydPTe8RbRtkhYs0chHoqVMav2y2Wxu0A==
+cosmicjs@^4.1.2:
+  version "4.1.2"
+  resolved "https://registry.yarnpkg.com/cosmicjs/-/cosmicjs-4.1.2.tgz#a6d055c142db1368f676a8d6bf9b322f581cfabf"
+  integrity sha512-ngTcxWVkZ3h2G8MDosGHcss9Akzj0l+cyJ6h4aPWTqSlF0Yn5PaprBjv/mJVtwysCJjDgwYkXZTAtgADkPcj8w==
   dependencies:
     axios "^0.21.1"
     form-data "^3.0.0"
